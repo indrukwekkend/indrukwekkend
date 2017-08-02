@@ -1,2 +1,3 @@
-# indrukwekkend
-Nieuwe website voor indrukwekkend.nl
+# Indrukwekkend Synchronisatie
+
+Deze Git is bedoeld voor synchronisatie tussen clients.
