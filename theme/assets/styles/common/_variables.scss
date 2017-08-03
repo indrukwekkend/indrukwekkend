@@ -2,5 +2,22 @@
 $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1600px
+) !default;
+
 // Colors
-$brand-primary:         #27ae60;
+$brand-primary:			#f17b22;
+$brand-black:			#1e1b1c;
+$brand-gray:				#929291;
+
+$nav-black:				#231f20;
+
+$text-black:				#231f20;
+$text-gray:				#797979;
+
+
+$footer-bg:				#e5eaec;

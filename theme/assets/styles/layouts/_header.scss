@@ -1,0 +1,72 @@
+.banner{
+	background-position: center;
+	background-size: cover;
+	height: 600px;
+	
+	.navigation{
+	
+		.brand{
+			float: left;
+			width: 296px;
+			text-align: right;
+	
+			.brand-logo{
+				color: $brand-primary;
+				    display: block;
+					letter-spacing: 10px;
+					font-size: 26px;
+					line-height: 1;
+					margin-bottom: 6px;
+			
+				span{
+					color: $brand-black;
+				}
+			}
+			.brand-tagline{
+				display: block;
+				color: $brand-gray;
+				font-size: 13px;
+				letter-spacing: 5px;
+				line-height: 1;
+				text-transform: uppercase;
+				text-indent: 103px;
+			
+			}
+			
+			&:hover{
+				text-decoration: none;
+			}
+		
+		}
+	}
+	.nav-primary{
+		float: right;
+		margin-right: 20px;
+				
+		.menu-hoofd-menu-container{
+			height: 38px;
+		
+			.menu-item{
+				margin: 0 10px;
+				
+				a{
+					padding: 2px 4px;
+					color: $nav-black;
+					text-transform: lowercase;
+					line-height: 48px;
+					
+					&:hover{
+						color: $brand-primary;
+						text-decoration: none;
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+	.nav-phone{
+		float: right;
+		color: $brand-primary;
+		line-height: 48px;
+	}
+}
