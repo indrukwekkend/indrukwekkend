@@ -4,8 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6e4dcc3c0900af5f5e76685feedb8cfe",
-    "content-hash": "d0ce163b056002fe67c8e8036573e276",
+    "content-hash": "0767b88876aa7b3b879c354b3802f975",
     "packages": [
         {
             "name": "composer/installers",
@@ -119,7 +118,51 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2017-04-24 06:37:16"
+            "time": "2017-04-24T06:37:16+00:00"
+        },
+        {
+            "name": "gizburdt/cuztom",
+            "version": "3.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gizburdt/cuztom.git",
+                "reference": "ca654d32537838eca11da3d3d96ce46eeafe398f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gizburdt/cuztom/zipball/ca654d32537838eca11da3d3d96ce46eeafe398f",
+                "reference": "ca654d32537838eca11da3d3d96ce46eeafe398f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Gizburdt\\Cuztom\\": "src/"
+                },
+                "files": [
+                    "src/Entities/helpers.php",
+                    "src/Meta/helpers.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gijs Jorissen",
+                    "email": "lol@gizburdt.com"
+                }
+            ],
+            "description": "Cuztom. Easy meta data.",
+            "keywords": [
+                "meta",
+                "wordpress"
+            ],
+            "time": "2017-07-25T16:51:27+00:00"
         }
     ],
     "packages-dev": [],
