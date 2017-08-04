@@ -58,9 +58,5 @@ $background = function($url){
 		
 
 	</div>
-	
-	<div class="container-fluid header-background">
-	
-	</div>
 
 </header>

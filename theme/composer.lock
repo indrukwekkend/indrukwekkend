@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "0767b88876aa7b3b879c354b3802f975",
+    "content-hash": "115df3eaf6e3c9cb34e536280ec84522",
     "packages": [
         {
             "name": "composer/installers",
@@ -121,31 +121,27 @@
             "time": "2017-04-24T06:37:16+00:00"
         },
         {
-            "name": "gizburdt/cuztom",
-            "version": "3.1.6",
+            "name": "twbs/bootstrap",
+            "version": "v3.3.7",
             "source": {
                 "type": "git",
-                "url": "https://github.com/gizburdt/cuztom.git",
-                "reference": "ca654d32537838eca11da3d3d96ce46eeafe398f"
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "0b9c4a4007c44201dce9a6cc1a38407005c26c86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gizburdt/cuztom/zipball/ca654d32537838eca11da3d3d96ce46eeafe398f",
-                "reference": "ca654d32537838eca11da3d3d96ce46eeafe398f",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/0b9c4a4007c44201dce9a6cc1a38407005c26c86",
+                "reference": "0b9c4a4007c44201dce9a6cc1a38407005c26c86",
                 "shasum": ""
             },
-            "require": {
-                "php": ">=5.3.0"
+            "replace": {
+                "twitter/bootstrap": "self.version"
             },
             "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Gizburdt\\Cuztom\\": "src/"
-                },
-                "files": [
-                    "src/Entities/helpers.php",
-                    "src/Meta/helpers.php"
-                ]
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.3.x-dev"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -153,16 +149,27 @@
             ],
             "authors": [
                 {
-                    "name": "Gijs Jorissen",
-                    "email": "lol@gizburdt.com"
+                    "name": "Jacob Thornton",
+                    "email": "jacobthornton@gmail.com"
+                },
+                {
+                    "name": "Mark Otto",
+                    "email": "markdotto@gmail.com"
                 }
             ],
-            "description": "Cuztom. Easy meta data.",
+            "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+            "homepage": "http://getbootstrap.com",
             "keywords": [
-                "meta",
-                "wordpress"
+                "JS",
+                "css",
+                "framework",
+                "front-end",
+                "less",
+                "mobile-first",
+                "responsive",
+                "web"
             ],
-            "time": "2017-07-25T16:51:27+00:00"
+            "time": "2016-07-25T15:51:55+00:00"
         }
     ],
     "packages-dev": [],

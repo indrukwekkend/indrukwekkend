@@ -13,11 +13,20 @@
 			color: $text-gray;
 			
 			.icon{
-				width: 40px;
-				height: 40px;
+				float: left;
+				width: 50px;
+				height: 50px;
+				background-color: $text-gray;
+				border-radius: 3000px;
+				vertical-align: middle;
+				
 			}
 	
 			.content{
+				float: left;
+				padding-left: 10px;
+				vertical-align: middle;
+			
 				.title{
 					display: block;
 				
@@ -33,10 +42,17 @@
 	.footer-social{
 		float: left;
 		width: 30%;
-		padding: 30px 0;
+		padding: 15px 0;
 		color: $text-gray;
+		text-align: right;
 		
-		.title{}
-		.fa{}
+		.title{
+			vertical-align: middle;
+		}
+		.fa{
+			vertical-align: middle;
+			font-size: 40px;
+			margin: 0 6px;
+		}
 	}
 }

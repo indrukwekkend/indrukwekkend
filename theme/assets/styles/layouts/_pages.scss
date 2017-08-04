@@ -1,0 +1,76 @@
+.text-brand{
+	color: $text-brand;
+}
+
+.brands-list{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+    .brands-item{
+		width: 190px;
+		text-align: center;
+    		padding: 20px 5px;
+    		filter: grayscale(100%);
+    		transition:all 80ms ease;
+    		
+    		&:hover{
+    			filter: grayscale(0%);
+    			
+    		}
+    		
+    }
+}
+
+.row-padding{
+	padding-top: 48px;
+	padding-bottom: 48px;
+}
+.quote{
+	position: relative;
+	background-color: $quote-bg;
+	padding: 40px;
+	padding-bottom: 10px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	
+	&:before{
+		display: block;
+		position: absolute;
+		top: -60px;
+		left: 0px;
+		font-size: 100px;
+		font-style: italic;
+		font-weight: bold;
+		color: $quote-encapsule;
+		content: "''";
+	}
+	.quote-content{}
+	.quote-author{
+		color: $text-gray;
+	}
+	.quote-nav{
+		color: transparent;
+		
+		ul{
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			text-align: center;
+			
+			li{
+				display: inline-block;
+				height: 10px;
+				width: 10px;
+				border: 2px solid $brand-gray;
+				border-radius: 20px;
+				background-color: $brand-white;
+				cursor: pointer;
+				
+				&:hover, &.active{
+					border-color: $brand-primary;
+				}
+			}
+		}
+	}
+}

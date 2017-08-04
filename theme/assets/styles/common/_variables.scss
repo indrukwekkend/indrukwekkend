@@ -12,12 +12,17 @@ $container-max-widths: (
 // Colors
 $brand-primary:			#f17b22;
 $brand-black:			#1e1b1c;
-$brand-gray:				#929291;
+$brand-gray:				#929292;
+$brand-white:			#ffffff;
 
 $nav-black:				#231f20;
 
 $text-black:				#231f20;
 $text-gray:				#797979;
+$text-brand:				$brand-primary;
+
+$quote-bg:				#f0f6f8;
+$quote-encapsule:		#d6dfe2;
 
 
 $footer-bg:				#e5eaec;
