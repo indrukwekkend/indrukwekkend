@@ -33,7 +33,7 @@ $background = function($url){
 		</a>
 		
 		<div class="nav-phone">
-			<span><?php the_field('global_telefoon', 'option'); ?></span>
+			<span><a href="tel:0725625482">072 - 562 54 82</a></span>
 		</div>
 	
 		<nav class="nav-primary">
@@ -57,6 +57,17 @@ $background = function($url){
 		</nav>
 		
 
+	</div>
+	
+	<div class="banner-content">
+		<div class="container">		
+    		<h1>Wij zijn indrukwekkend,</h1>
+    		<h2>een partij om op te bouwen <span class="text-gray">|</span></h2>
+    		<div class="buttons">
+    			<a class="btn btn-lg btn-primary" href="/over-ons">Leer ons kennen</a>
+    			<a class="btn btn-lg btn-black" href="/cases">Bekijk ons werk</a>
+    		</div>
+		</div>
 	</div>
 
 </header>

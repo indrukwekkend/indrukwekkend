@@ -6,7 +6,7 @@
         			<div class="content">
         				<span class="title">De beller is sneller</span>
         				<span class="description">
-        					<a href="tel:<?php the_field("global_telefoon", "options"); ?>"><?php the_field("global_telefoon", "options"); ?></a>
+        					<a href="tel:0725625482">072 - 562 54 82</a>
         				</span>
         			</div>
         		</div>
@@ -15,7 +15,7 @@
         			<div class="content">
         				<span class="title">Mailen mag ook</span>
         				<span class="description">
-        					<a href="mailto:<?php the_field("global_email", "options"); ?>"><?php the_field("global_email", "options"); ?></a>
+        					<a href="mailto:info@indrukwekkend.nl">info@indrukwekkend.nl</a>
         				</span>
         			</div>
         		</div>
@@ -23,7 +23,7 @@
         			<div class="icon"></div>
         			<div class="content">
         				<span class="title">Hier vind je ons</span>
-        				<span class="description"><?php the_field("global_adres", "options"); ?></span>
+        				<span class="description">De Droogmakerij 20f, 1851 LX Heiloo</span>
         			</div>
         		</div>
 		</div>
