@@ -74,3 +74,50 @@
 		}
 	}
 }
+
+.instagram-container{
+	
+	.instagram-description{
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 60px;
+	
+		.instagram-text{
+			font-family: 'Madina Script';
+			color: $text-brand;
+			font-size: 50px;
+			font-weight: 100;
+			width: 380px;
+		}
+		.instagram-username{
+			font-weight: bold;
+			font-size: 20px;
+			text-align: right;
+			
+			.fa{
+				font-size: 40px;
+				margin-right: 10px;
+				vertical-align: middle;
+			}
+		}
+	}
+	
+	.instagram-feed{
+		display: inline-block;
+		vertical-align: middle;
+		max-width: 500px;
+		
+		.sbi_item{
+			.sbi_photo_wrap{
+			}
+		}
+	}
+}
+.instagram-link{
+	text-align: center;
+	
+	a{
+		color: $brand-gray;
+		cursor: pointer;
+	}
+}

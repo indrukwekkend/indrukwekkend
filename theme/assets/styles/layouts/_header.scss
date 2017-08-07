@@ -4,13 +4,13 @@
 	height: 600px;
 	
 	.navigation{
-		float:left;
-		margin-top: 20px;
+		padding-top: 20px;
 	
 		.brand{
 			float: left;
-			width: 296px;
+			width: 323px;
 			text-align: right;
+			font-family: 'Montserrat Light';
 	
 			.brand-logo{
 				color: $brand-primary;
@@ -31,14 +31,13 @@
 				letter-spacing: 5px;
 				line-height: 1;
 				text-transform: uppercase;
-				text-indent: 103px;
+				text-align: right;
 			
 			}
 			
-			&:hover{
+			&:hover, &:active, &:focus{
 				text-decoration: none;
 			}
-		
 		}
 	}
 	.nav-primary{
