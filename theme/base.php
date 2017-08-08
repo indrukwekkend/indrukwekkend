@@ -30,7 +30,7 @@ use Roots\Sage\Wrapper;
     ?>
     <div class="container-fluid" role="document">
 		
-		<main class="row">
+		<main">
         
           <?php include Wrapper\template_path(); ?>
         

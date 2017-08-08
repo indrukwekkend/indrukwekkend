@@ -1,0 +1,65 @@
+.single-cases{
+
+	.case-bg{
+		background-color: $cases-bg;
+	}
+	
+	.case-intro{
+		padding: 0;
+	
+		.cases-title{
+			font-family: 'Montserrat Bold';
+			font-size: 3rem;
+			padding: 3rem 0;
+			padding-bottom: 2rem;
+		}
+		.case-description{
+			padding-bottom: 2rem 0;
+			max-width: 50rem;
+			margin: 0 auto;
+		}
+	}
+	
+	.case-content{
+	
+		.case-row{
+			padding: 4rem 0;
+			
+			.case-title{
+				position: relative;
+				font-size: 3rem;
+				line-height: 1.2;
+    				
+    			.heading{
+					position: relative;
+    				font-family: Montserrat Bold;
+    				background-color: $cases-bg;
+					box-shadow: 10px 0px 0px 0px $cases-bg, -10px 0px 0px 0px $cases-bg;
+    				z-index: 1;
+    			}
+			
+				.line{
+					position: absolute;
+					display: block;
+					height: 1px;
+					width: 100%;
+					border: 2px solid $brand-primary;
+					bottom: 16px;
+					z-index: 0;
+				}
+			}
+			.case-image-left{}
+			.case-content-left{}
+			
+			.case-title-right{
+
+				
+				.line{
+				}
+			}
+			.case-image-right{}
+			.case-content-right{}
+			
+		}
+	}
+}
