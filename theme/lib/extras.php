@@ -36,28 +36,6 @@ add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
 
 
 /**
- * ACF Additions
- */
-
-// if( function_exists('acf_add_options_page') ) {
-    
-//     acf_add_options_page(array(
-//         'page_title' 	=> 'Theme General Settings',
-//         'menu_title'	=> 'Theme Settings',
-//         'menu_slug' 	=> 'theme-general-settings',
-//         'capability'	=> 'edit_posts',
-//         'redirect'		=> false
-//     ));
-    
-//     acf_add_options_sub_page(array(
-//         'page_title' 	=> 'Merken',
-//         'menu_title'	=> 'Merken',
-//         'parent_slug'	=> 'theme-general-settings',
-//     ));
-// }
-
-
-/**
  * Quote Post Type
  */
 function quotes_post_type(){
@@ -266,3 +244,61 @@ function cases_post_type(){
     register_post_type('Cases', $args);
 }
 add_action('init', __NAMESPACE__ . '\\cases_post_type', 0);
+
+
+/**
+ * indrukwekkend_quotes()
+ * 
+ * Outputs mutliple quotes
+ */
+function indrukwekkend_cases(){
+    
+    $args = array(
+        'post_type' => 'cases'
+    );
+    
+    $query = new WP_Query($args);
+    
+    $return .= '<div class="container">';
+
+    if ($query->have_posts()) {
+        
+        
+        $return .= '<div class="row cases-list">';
+        
+        while ($query->have_posts()) {
+            
+            $query->the_post();
+            
+            $return .= '<div class="col-md-12 col-lg-6 col-xl-3 case">';
+                
+                $return .= '<div class="card mb-2 mt-2">';
+                
+                    $return .= '<div class="card-block">';
+                
+                        $return .= '<h4 class="card-title">' . get_the_title() . '</h4>';
+                
+                        $return .= '<p class="card-text">' . get_the_excerpt() . '</p>';
+                
+                        $return .= '<a href="'.get_the_permalink().'" class="card-link">Naar case</a>';
+                
+                    $return .= '</div>';
+                
+                $return .= '</div>';
+                
+            $return .= '</div>';
+            
+        }
+        
+        $return .= '</div>';
+        
+    } else {
+        
+        $return = 'Nope. Helemaal niiiks.';
+        
+    }
+    
+    $return .= '</div>';
+    
+    return $return;
+}
