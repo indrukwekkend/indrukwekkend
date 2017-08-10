@@ -1,12 +1,11 @@
-# Indrukwekkend Synchronisatie
+# Indrukwekkend Sync
 
-Deze Git is bedoeld voor synchronisatie tussen clients.
+This repo is used for synchronisation between two workspaces.
 
 run `npm install`
 then `bower install`
 Only after those run `gulp && gulp watch` to get going.
 
 
-### Nodige plugins:
-* ndrkwkknd-posttypes (in deze repo)
+### Required plugins:
 * ACF
