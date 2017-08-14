@@ -1,6 +1,6 @@
 <?php use Roots\Sage\Extras; ?>
 
-<div class="container">
+<div class="container mb-5">
 
 	<div class="row row-padding align-items-center">
 
@@ -68,13 +68,17 @@
 		
 		</div>
 		
-		<div class="row-padding">
+		<div class="row text-center">
 		
-    		<div class="instagram-link">
-    			
-    			<a href="https://instagram.com/ditisindrukwekkend">volg ons werk op Instagram</a> <span class="icon-arrow-right"></span>
-    		
-    		</div>
+			<div class="col mb-3">
+			
+        		<div class="instagram-link">
+        			
+        			<a href="https://instagram.com/ditisindrukwekkend">volg ons werk op Instagram</a> <span class="icon-arrow-right"></span>
+        		
+        		</div>
+        		
+			</div>
 		
 		</div>
 	
