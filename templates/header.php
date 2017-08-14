@@ -7,6 +7,8 @@ $background = function($url){
     echo 'style="background-image: url('.$url.');"';
 };
 
+
+
 ?>
 
 
@@ -18,17 +20,7 @@ $background = function($url){
 	
 		<a class="brand" href="<?= esc_url(home_url('/')); ?>">
     	
-    			<span class="brand-logo">
-    			
-    				<span>indruk</span>wekkend
-    			
-    			</span>
-    	
-    			<span class="brand-tagline">
-    	
-    				<?php bloginfo('description'); ?>
-    	
-    			</span>
+    			<div class="brand-logo"></div>
 	
 		</a>
 		
@@ -60,12 +52,13 @@ $background = function($url){
 	</div>
 	
 	<div class="banner-content">
+		<?php // TODO: If/else $header-content-line-( 1 | 2 ) | $header-content-btn-( 1 | 2 ) :?>
 		<div class="container">		
-    		<h1>Wij zijn indrukwekkend,</h1>
-    		<h2>een partij om op te bouwen <span class="text-gray">|</span></h2>
+    		<h1>Wij zijn indrukwekkend,</h1><?php // line 1 ?>
+    		<h2>een partij om op te bouwen <span class="text-gray">|</span></h2><?php // line 2 ?>
     		<div class="buttons">
-    			<a class="btn btn-lg btn-primary" href="/over-ons">Leer ons kennen</a>
-    			<a class="btn btn-lg btn-black" href="/cases">Bekijk ons werk</a>
+    			<a class="btn btn-lg btn-primary" href="/over-ons">Leer ons kennen</a><?php // btn 1 ?>
+    			<a class="btn btn-lg btn-black" href="/cases">Bekijk ons werk</a><?php // btn 2 ?>
     		</div>
 		</div>
 	</div>

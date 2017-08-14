@@ -2,7 +2,9 @@
 	position: relative;
 	background-position: center;
 	background-size: cover;
-	height: 600px;
+	min-height: 600px;
+    height: 46vw;
+    max-height: 800px;
 	
 	.navigation{
 		padding-top: 20px;
@@ -10,20 +12,13 @@
 		.brand{
 			float: left;
 			width: 323px;
-			text-align: right;
-			font-family: 'Montserrat Light';
 	
 			.brand-logo{
-				color: $brand-primary;
-				    display: block;
-					letter-spacing: 10px;
-					font-size: 26px;
-					line-height: 1;
-					margin-bottom: 6px;
-			
-				span{
-					color: $brand-black;
-				}
+				background-image: url('../images/brand.svg');
+				background-size: contain;
+				background-repeat: no-repeat;
+				height: 60px;
+				width: 360px;
 			}
 			.brand-tagline{
 				display: block;
