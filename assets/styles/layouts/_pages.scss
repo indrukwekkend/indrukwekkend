@@ -25,21 +25,24 @@
 .quote{
 	position: relative;
 	background-color: $quote-bg;
-	padding: 40px;
-	padding-bottom: 10px;
+	padding: 60px 40px 10px;
 	margin-top: 20px;
 	margin-bottom: 30px;
 	
 	&:before{
 		display: block;
 		position: absolute;
-		top: -60px;
-		left: 0px;
-		font-size: 100px;
-		font-style: italic;
-		font-weight: bold;
+		top: 80px;
+    	left: 120px;
+    	font-family: 'Montserrat Bold';
+		font-size: 200px;
 		color: $quote-encapsule;
-		content: "''";
+		content: ',,';
+		height: 0;
+    	width: 0;
+    	line-height: 0;
+    	transform: rotate(180deg);
+    
 	}
 	.quote-content{}
 	.quote-author{
@@ -62,6 +65,7 @@
 				border-radius: 20px;
 				background-color: $brand-white;
 				cursor: pointer;
+				margin: 0 4px;
 				
 				&:hover, &.active{
 					border-color: $brand-primary;
@@ -102,6 +106,7 @@
 		display: inline-block;
 		vertical-align: middle;
 		max-width: 500px;
+		margin-bottom: -20px;
 		
 		.sbi_item{
 			.sbi_photo_wrap{

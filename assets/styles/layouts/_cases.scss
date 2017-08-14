@@ -1,6 +1,6 @@
 .single-cases{
 
-	.case-bg{
+	.case-content{
 		background-color: $cases-bg;
 	}
 	
@@ -10,7 +10,6 @@
 		.cases-title{
 			font-family: 'Montserrat Bold';
 			font-size: 3rem;
-			padding: 3rem 0;
 			padding-bottom: 2rem;
 		}
 		.case-description{
@@ -23,16 +22,17 @@
 	.case-content{
 	
 		.case-row{
-			padding: 4rem 0;
+			padding: 2rem 0;
 			
 			.case-title{
 				position: relative;
 				font-size: 3rem;
 				line-height: 1.2;
+				margin-bottom: -28px;
     				
     			.heading{
 					position: relative;
-    				font-family: Montserrat Bold;
+    				font-family: Montserrat Regular;
     				background-color: $cases-bg;
 					box-shadow: 10px 0px 0px 0px $cases-bg, -10px 0px 0px 0px $cases-bg;
     				z-index: 1;
@@ -59,6 +59,14 @@
 			}
 			.case-image-right{}
 			.case-content-right{}
+			
+			.quote{
+				background-color: $brand-white;
+				margin-top: -300px;
+    			margin-left: -30px;
+    			box-shadow: 0 0 36px -16px $brand-black;
+			}
+			
 			
 		}
 	}
