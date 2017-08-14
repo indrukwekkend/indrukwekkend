@@ -308,13 +308,13 @@ function indrukwekkend_cases(){
  */
 function my_acf_flexible_content_layout_title( $title, $field, $layout, $i ) {
 	
-	if( $title = get_sub_field('title') ) {
+	if( $desc = get_sub_field('title') ) {
 		
-	    return $title;
+	    return $title . " - " . $desc;
 		
-	}elseif( $title = get_sub_field('content') ){
+	}elseif( $desc = get_sub_field('content') ){
 	    
-	    return $title;
+	    return $title . " - " . $desc;
     	
 	}
 
