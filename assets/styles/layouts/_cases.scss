@@ -110,6 +110,26 @@
     		width: 56px;
     		height: 56px;
     		background-image: url(../images/email.svg);
+    		background-size: contain;
+    		letter-spacing: .08rem;
+		}
+		.case-icon-phone{
+			display: inline-block;
+    		vertical-align: middle;
+    		width: 56px;
+    		height: 56px;
+    		background-image: url(../images/telefoon.svg);
+    		background-size: contain;
+    		letter-spacing: .08rem;
+		}
+		.case-icon-mobile{
+			display: inline-block;
+    		vertical-align: middle;
+    		width: 56px;
+    		height: 56px;
+    		background-image: url(../images/mobiel.svg);
+    		background-size: contain;
+    		letter-spacing: .08rem;
 		}
 	}
 }

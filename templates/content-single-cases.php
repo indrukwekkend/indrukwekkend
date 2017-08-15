@@ -18,9 +18,9 @@
     
         	</div>
     
-        	<div class="row">
+        	<div class="row justify-content-center">
     
-        		<div class="col">
+        		<div class="col-8">
     
     				<div class="case-description">
     
@@ -40,19 +40,19 @@
     
     <?php if( have_rows('content') ): ?>
     	
-    	<div class="row case-bg case-content">
+    	<div class="row case-content">
         	
         	<div class="container">
         
             	<?php while( have_rows('content') ): the_row(); ?>
             
-            		<div class="row case-row">
+            		<?php if( get_row_layout() == 'quote_left' ): ?>
             		
-            			<?php if( get_row_layout() == 'quote_left' ): ?>
+            			<div class="row case-row">
             			
-            				<div class="col-5">
+            				<div class="col-lg-6">
             				
-            					<div class="quote">
+            					<div class="case-quote p-4">
             						
             						<div class="quote-content">
                     				
@@ -69,14 +69,18 @@
                     			</div>
             				
             				</div>
+
+        				</div>
             
-            			<?php elseif( get_row_layout() == 'image_left' ): ?>
+            		<?php elseif( get_row_layout() == 'image_left' ): ?>
+            		
+            			<div class="row justify-content-center case-row">
             			
-            				<div class="col-12">
+            				<div class="col-10">
             				
             					<div class="row">
             					
-            						<div class="col-md-6 col-xl-5 offset-xl-1">
+            						<div class="col-lg-6">
             						
                         				<div class="case-title">
                         					
@@ -92,9 +96,9 @@
             					
             					<div class="row">
             					
-            						<div class="col-md-6 col-xl-5 offset-xl-1 mt-5">
+            						<div class="col-lg-6 mt-5">
           			
-                        				<div class="case-image-left">
+                        				<div class="case-image-left text-center">
                     					
                             				<img class="img-fluid" src="<?php the_sub_field('image'); ?>"/>
                     					
@@ -102,9 +106,9 @@
                     				
                     				</div>
                     				
-                    				<div class="col-md-6 col-xl-5">
+                    				<div class="col-lg-6">
             	        			
-            	        				<div class="case-content-left">
+            	        				<div class="case-content-left ">
                     					
                 	        				<?php the_sub_field('content'); ?>
                 	        				
@@ -115,16 +119,20 @@
             					</div>
             				
             				</div>
+            				
+            			</div>
             
-            			<?php elseif(get_row_layout() == 'image_right' ): ?>
+            		<?php elseif(get_row_layout() == 'image_right' ): ?>
+            		
+            			<div class="row justify-content-center case-row">
             			
-            				<div class="col-12">
+            				<div class="col-10">
             				
             					<div class="row">
             					
-            						<div class="col-md-6 col-xl-5 offset-xl-1"></div>
+            						<div class="col-lg-6"></div>
             					
-            						<div class="col-md-6 col-xl-5 text-right">
+            						<div class="col-lg-6 text-right">
             						
                         				<div class="case-title">
                         					
@@ -140,7 +148,7 @@
             					
             					<div class="row">
                     				
-                    				<div class="col-md-6 col-xl-5 offset-xl-1">
+                    				<div class="col-lg-6 mt-5 mt-lg-0">
             	        			
             	        				<div class="case-content-right">
                     					
@@ -150,9 +158,9 @@
                     				
                     				</div>
                     				
-                    				<div class="col-md-6 col-xl-5 mt-5">
+                    				<div class="col-lg-6 mt-5">
           			
-                        				<div class="case-image-right">
+                        				<div class="case-image-right text-center">
                     					
                             				<img class="img-fluid" src="<?php the_sub_field('image'); ?>"/>
                     					
@@ -164,13 +172,17 @@
             				
             				</div>
             				
-            			<?php elseif(get_row_layout() == 'image_fullwidth' ): ?>
+            			</div>
+            				
+            		<?php elseif(get_row_layout() == 'image_fullwidth' ): ?>
+            		
+            			<div class="row justify-content-center case-row">
             			
-            				<div class="col-12">
+            				<div class="col-10">
             				
             					<div class="row">
             					
-            						<div class="col-md-6 col-xl-5 offset-xl-1">
+            						<div class="col-lg-6">
             						
                         				<div class="case-title">
                         					
@@ -186,11 +198,11 @@
             					
             					<div class="row">
             					
-            						<div class="col-md-6 col-xl-5 offset-xl-1 mt-5">
+            						<div class="col-lg-6 mt-5">
                     				
                     				</div>
                     				
-                    				<div class="col-md-6 col-xl-5">
+                    				<div class="col-lg-6">
             	        			
             	        				<div class="case-content-left">
                     					
@@ -218,9 +230,9 @@
             				
             				</div>
             
-            			<?php endif; ?>
-            
-            		</div>
+                		</div>
+                		
+           			<?php endif; ?>            
             
             	<?php endwhile; ?>
         
@@ -238,35 +250,52 @@
         <div class="row case-teamleden">
         
         	<div class="container">
-             
-                <div class="row">
+        	
+            	<div class="row">
+            
+        			<div class="col-12">		
+        				
+        				<div class="row">
+        				
+        					<div class="col-xl-7 order-2 order-xl-1">
+        					
+        						<div class="row justify-content-end pr-4">
+        						
+            						<?php foreach( $post_objects as $post): ?>
+                        
+                    	                <?php setup_postdata($post); ?>
+                    	                
+                    	                
+                    	                <div class="col-2 case-teamlid align-self-end">
+                    	                
+                                            <img class="img-fluid" src="<?php the_post_thumbnail_url('medium'); ?>"/>
                 
-                	<div class="col">
-                	
-                		<div class="teamleden">
-            
-                	        <?php foreach( $post_objects as $post): ?>
-            
-            	                <?php setup_postdata($post); ?>
-            	                
-            	                <div class="teamlid">
-            	                
-                                    <?php the_title(); ?>
-                                    <?php the_field('email'); ?>
-                                    <?php the_field('landline'); ?>
-                                    <?php the_field('mobile'); ?>
-                                    <?php the_post_thumbnail('medium'); ?>
+                    	                </div>
+                    
+                	                <?php endforeach; ?>
+                	                
+        						</div>
+        					
+        					</div>
+        				
+        					<div class="col-xl-5 order-1 order-xl-2 text-right align-self-end">
+        					
+                				<div class="case-title">
+                					
+                					<span class="heading"><?php echo preg_replace('~((\w+\s){2})~', '$1' . "<br>", 'Wij werkten ook mee'); ?></span>
+                				
+        	        				<span class="line"></span>
         
-            	                </div>
-            
-        	                <?php endforeach; ?>
-            
-                		</div>
-                
+                				</div>
+                				
+            				</div>
+        				
+        				</div>
+        			
                 	</div>
-        
-                </div>
-            
+    			
+    			</div>
+    			
         	</div>
 
         </div>
@@ -276,62 +305,132 @@
     <?php endif; ?>
 	
 	
-	<?php // Client Quotes ?>
+	<?php // Client Quote ?>
 	
-	<?php if( have_rows('client_quote') ): ?>
+	<?php if( $post_object = get_field('client_quote') ): ?>
 	
 		<div class="row case-client-quote">
 
-    		<div class="container">
-    
-            	<?php while( have_rows('client_quote') ): the_row(); ?>
-            
-            		<div class="row">
-            			
-            			<div class="col">
-                        	<?php the_sub_field('title'); ?>
-                        	<?php the_sub_field('content'); ?>
+    		<div class="container-fluid">
+    		
+    			<?php $post = $post_object; ?>
+                        
+                <?php setup_postdata($post); ?>
+                
+                <div class="row case-row">
+        			
+    				<div class="col-lg-6 p-0">
+    				
+    					<div class="case-quote">
+    						
+    						<div class="quote-content">
+            				
+            					<?php the_content(); ?>
+            					
+    						</div>
+    						
+    						<div class="quote-author">
+    						
+    							<p><?php the_title(); ?></p>
+    						
+    						</div>
+            				
             			</div>
-            		
-            		</div>
-            	
-            	<?php endwhile; ?>
+    				
+    				</div>
+
+				</div>
         	
     		</div>
     		
 		</div>
+		
+		<?php wp_reset_postdata(); ?>
     
     <?php endif; ?>
     
-    <?php // Case Quotes ?>
+    <?php // Case Quote ?>
 	
 	<?php if( have_rows('case_quote') ): ?>
 	
-		<div class="row case-quote">
+		<div class="row case-team-quote">
 	
         	<div class="container">
         		
         		<?php while( have_rows('case_quote') ): the_row(); ?>
             
-            		<div class="row">
-            			
-            			<div class="col">
-            			
-            				<?php if( $post_objects = get_sub_field('teamlid') ): ?>
-        
-                            	<?php foreach( $post_objects as $post): ?>
+    				<?php if( $post_object = get_sub_field('teamlid') ): ?>
+
+                    	<?php $post = $post_object; ?>
                 
-                	                <?php setup_postdata($post); ?>
-                	                
-                	                <?php the_title(); ?>
-                	                
-        						<?php endforeach; ?>
+        				<?php setup_postdata($post); ?>
+                		
+                		<div class="row justify-content-center">
+                			
+                			<div class="col-10">
+                			
+                				<div class="row team-quote-bg">
+                					
+                					<div class="col-8 p-5">
+                					
+                						<div class="row team-quote-content">
+                						
+                        					<div style="font-size:<?php the_sub_field('fontsize'); ?>px"><?php the_sub_field('content'); ?></div>
+                						
+                						</div>
+                						
+                						<div class="row">
+                						
+                							<div class="py-4">Neem contact op met <?php the_title(); ?></div>
+                							
+                						</div>
+                						
+                						<div class="row">
+                						
+                							<div class="col-5 p-0">
+                								
+                								<div class="case-icon-email">
+                								</div>
+                								
+                								<span><?php the_field('email'); ?></span>
+                								
+                							</div>
+                						
+                							<div class="col p-0">
+                								
+                								<div class="case-icon-phone">
+                								</div>
+                								
+                								<span><?php the_field('landline'); ?></span>
+                								
+                							</div>
+                						
+                							<div class="col p-0">
+                								
+                								<div class="case-icon-mobile">
+                								
+                								</div>
+                								
+                								<span><?php the_field('mobile'); ?></span>
+                								
+                							</div>
+                						
+                						</div>
+                					
+                					</div>
+                					
+                					<div class="col-4 align-self-end text-center">
+                					
+                						<img class="img-fluid" src="<?php the_post_thumbnail_url('medium'); ?>"/>
+                					
+                					</div>
+                				
+                				</div>
+                				
+                				<?php wp_reset_postdata(); ?>
     						
     						<?php endif; ?>
                         	
-                        	
-                        	<?php the_sub_field('content'); ?>
-                        	<?php the_sub_field('fontsize'); ?>
             			</div>
             		
             		</div>
@@ -343,5 +442,7 @@
 		</div>
     	
     <?php endif; ?>
+    
+    <?php // Related Cases ?>
 
 <?php endwhile; ?>
