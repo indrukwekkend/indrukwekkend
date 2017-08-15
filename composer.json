@@ -26,6 +26,6 @@
   "require": {
     "php": ">=5.4.0",
     "composer/installers": "~1.0",
-    "twbs/bootstrap": "3.3.7"
+    "twbs/bootstrap": "4.0.0-beta"
   }
 }
