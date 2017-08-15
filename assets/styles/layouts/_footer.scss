@@ -1,5 +1,5 @@
 .content-info{
-	background-color: $footer-bg;
+	background-color: theme-color(footer-bg);
 	height: 140px;
 	padding: 40px 0;
 	
@@ -10,13 +10,13 @@
 		.footer-block{
 			display: inline-block;
 			padding: 10px;
-			color: $text-gray;
+			color: color(gray);
 			
 			.icon{
 				float: left;
 				width: 50px;
 				height: 50px;
-				background-color: $text-gray;
+				background-color: color(gray);
 				border-radius: 3000px;
 				vertical-align: middle;
 				
@@ -43,7 +43,7 @@
 		float: left;
 		width: 30%;
 		padding: 15px 0;
-		color: $text-gray;
+		color: color(gray);
 		text-align: right;
 		
 		.title{

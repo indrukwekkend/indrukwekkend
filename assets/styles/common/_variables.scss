@@ -1,22 +1,19 @@
+// Global options
+$enable-rounded:		false;
+
 // Grid settings
 $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
 
-
-
-
 // Grid containers
-//
-// Define the maximum width of `.container` for different screen sizes.
-
 $container-max-widths: (
   sm: 540px,
-  md: 720px,
+  md: 800px,
   lg: 1280px,
   xl: 1600px
 ) !default;
 
-
+// Grid columns
 $grid-columns:               12 !default;
 $grid-gutter-width-base:     30px !default;
 $grid-gutter-widths: (
@@ -27,24 +24,72 @@ $grid-gutter-widths: (
   xl: $grid-gutter-width-base * 2
 ) !default;
 
+
+
 $font-size-base:			1rem;
 $font-family-sans-serif:	'Montserrat Light';
 
 // Colors
-$brand-primary:			#f17b22;
-$brand-black:			#1e1b1c;
-$brand-gray:			#929292;
+$white:				#ffffff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600:			#929292;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black:				#1e1b1c;
+
+$blue:    #007bff;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #e83e8c;
+$red:     #dc3545;
+$orange:			#f17b22;
+$yellow:  #ffc107;
+$green:   #28a745;
+$teal:    #20c997;
+$cyan:    #17a2b8;
+
+$colors: (
+  blue: $blue,
+  indigo: $indigo,
+  purple: $purple,
+  pink: $pink,
+  red: $red,
+  orange: $orange,
+  yellow: $yellow,
+  green: $green,
+  teal: $teal,
+  cyan: $cyan,
+  white: $white,
+  gray: $gray-600,
+  gray-dark: $gray-800,
+);
+
+$theme-colors: (
+  primary: $orange,
+  secondary: $gray-600,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $gray-100,
+  dark: $gray-800,
+  black: $black,
+  case-bg: #f0f6f8,
+  footer-bg: #e5eaec,
+	text-black:				#231f20,
+	text-gray:				#797979,
+
+	quote-bg:				#f0f6f8,
+	quote-encapsule:		#d6dfe2,
+);
+
+
 $brand-white:			#ffffff;
 
 $nav-black:				#231f20;
 
-$text-black:			#231f20;
-$text-gray:				#797979;
-$text-brand:			$brand-primary;
-
-$quote-bg:				#f0f6f8;
-$quote-encapsule:		#d6dfe2;
-
-$cases-bg:				#f0f6f8;
-
-$footer-bg:				#e5eaec;

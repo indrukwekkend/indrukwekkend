@@ -14,23 +14,13 @@
 			width: 323px;
 	
 			.brand-logo{
-				background-image: url('../images/brand.svg');
+				background-image: url('../images/indrukwekkend.svg');
 				background-size: contain;
 				background-repeat: no-repeat;
 				height: 60px;
 				width: 360px;
 			}
-			.brand-tagline{
-				display: block;
-				color: $brand-gray;
-				font-size: 13px;
-				letter-spacing: 5px;
-				line-height: 1;
-				text-transform: uppercase;
-				text-align: right;
-			
-			}
-			
+		
 			&:hover, &:active, &:focus{
 				text-decoration: none;
 			}
@@ -56,7 +46,7 @@
 					font-size: 1.1rem;
 					
 					&:hover{
-						color: $brand-primary;
+						color: theme-color('primary');
 						text-decoration: none;
 						cursor: pointer;
 					}
@@ -66,7 +56,7 @@
 	}
 	.nav-phone{
 		float: right;
-		color: $brand-primary;
+		color: theme-color('primary');
 		line-height: 48px;
 		font-family: 'Gochi Hand';
 		font-size: 20px;
@@ -82,7 +72,7 @@
     		font-family: 'Montserrat Bold';
 	
 			h1{
-				color: $brand-primary;
+				color: theme-color('primary');
 				font-size: 50px;
 			}
 			h2{

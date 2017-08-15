@@ -6,11 +6,6 @@
 	font-family: 'Montserrat Regular';
 }
 
-.btn-black{
-	background-color: $brand-black;
-	color: $brand-white;
-	
-	&:hover{
-		color: $brand-primary;
-	}
+.btn-black:hover{
+	color: theme-color(primary);
 }
