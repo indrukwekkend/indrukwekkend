@@ -2,7 +2,7 @@
 
 $background = function($url){
    
-    $url = ($url) ? $url : "http://placehold.it/1600x800?text=HEADER";
+    $url = ($url) ? $url : get_stylesheet_directory_uri()."/dist/images/header_default.png";
     
     echo 'style="background-image: url('.$url.');"';
 };
