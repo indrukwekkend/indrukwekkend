@@ -83,7 +83,7 @@ function indrukwekkend_quotes(){
     
     if ($query->have_posts()) {
         
-        $return .= '<div class="brands-list">';
+        $return .= '<div class="quotes-list">';
         
         while ($query->have_posts()) {
             
