@@ -91,35 +91,35 @@ function indrukwekkend_quotes(){
             
             $return .= '<div class="quote">';
             
-            $return .= '<div class="quote-content">';
-            
-            $return .= '<span class="encapsule"></span>';
-            
-            $return .= '<p>' . get_the_content() . '</p>';
-            
-            $return .= '<span class="encapsule"></span>';
-            
-            $return .= '</div>';
-            
-            $return .= '<div class="quote-author">';
-            
-            $return .= '<p>' . get_the_title() . '</p>';
-            
-            $return .= '</div>';
-            
-            $return .= '<div class="quote-nav">';
-            
-            $return .= '<ul>';
-            
-            $return .= '<li class="active">1</li>';
-            
-            $return .= '<li>2</li>';
-            
-            $return .= '<li>3</li>';
-            
-            $return .= '</ul>';
-            
-            $return .= '</div>';
+                $return .= '<div class="quote-content">';
+                
+                    $return .= '<span class="encapsule"></span>';
+                
+                    $return .= '<p>' . get_the_content() . '</p>';
+                
+                    $return .= '<span class="encapsule"></span>';
+                
+                $return .= '</div>';
+                
+                $return .= '<div class="quote-author">';
+                
+                    $return .= '<p>' . get_the_title() . '</p>';
+                
+                $return .= '</div>';
+                
+                $return .= '<div class="quote-nav">';
+                
+                    $return .= '<ul>';
+                
+                        $return .= '<li class="active">1</li>';
+                
+                        $return .= '<li>2</li>';
+                
+                        $return .= '<li>3</li>';
+                
+                    $return .= '</ul>';
+                
+                $return .= '</div>';
             
             $return .= '</div>';
         }
@@ -225,7 +225,6 @@ function cases_post_type(){
         'supports' => array(
             'title',
             'editor',
-            'thumbnail'
         ),
         'hierarchical' => false,
         'public' => true,
