@@ -80,6 +80,15 @@
 			}
 			.buttons{
 				margin-top: 20px;
+				
+				.btn-arrowdown{
+					display: inline-block;
+					background-image: url('../images/arrow.svg');
+					background-size: contain;
+					background-repeat: no-repeat;
+					width: 30px;
+					height: 30px;
+				}
 			}
 		}
 	}

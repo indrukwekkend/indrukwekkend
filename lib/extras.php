@@ -34,6 +34,40 @@ function excerpt_more() {
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
 
+/**
+ * Cases Post Type
+ */
+function cases_post_type(){
+    
+    $labels = array(
+        'name' => _x('Cases', 'Post Type General Name', 'text_domain'),
+        'singular_name' => _x('Case', 'Post Type Singular Name', 'text_domain')
+    );
+    $args = array(
+        'label' => __('Case', 'text_domain'),
+        'labels' => $labels,
+        'supports' => array(
+            'title',
+            'editor',
+        ),
+        'taxonomies' => array('post_tag'),
+        'hierarchical' => false,
+        'public' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'menu_position' => 6,
+        'show_in_admin_bar' => true,
+        'show_in_nav_menus' => true,
+        'can_export' => true,
+        'has_archive' => false,
+        'exclude_from_search' => true,
+        'publicly_queryable' => true,
+        'capability_type' => 'page',
+        'menu_icon'   => 'dashicons-id-alt',
+    );
+    register_post_type('Cases', $args);
+}
+add_action('init', __NAMESPACE__ . '\\cases_post_type', 0);
 
 /**
  * Quote Post Type
@@ -210,40 +244,6 @@ function indrukwekkend_merken(){
     
 }
 
-/**
- * Cases Post Type
- */
-function cases_post_type(){
-    
-    $labels = array(
-        'name' => _x('Cases', 'Post Type General Name', 'text_domain'),
-        'singular_name' => _x('Case', 'Post Type Singular Name', 'text_domain')
-    );
-    $args = array(
-        'label' => __('Case', 'text_domain'),
-        'labels' => $labels,
-        'supports' => array(
-            'title',
-            'editor',
-        ),
-        'hierarchical' => false,
-        'public' => true,
-        'show_ui' => true,
-        'show_in_menu' => true,
-        'menu_position' => 6,
-        'show_in_admin_bar' => true,
-        'show_in_nav_menus' => true,
-        'can_export' => true,
-        'has_archive' => false,
-        'exclude_from_search' => true,
-        'publicly_queryable' => true,
-        'capability_type' => 'page',
-        'menu_icon'   => 'dashicons-id-alt',
-    );
-    register_post_type('Cases', $args);
-}
-add_action('init', __NAMESPACE__ . '\\cases_post_type', 0);
-
 
 /**
  * indrukwekkend_quotes()
@@ -311,9 +311,9 @@ function my_acf_flexible_content_layout_title( $title, $field, $layout, $i ) {
 		
 	    return $title . " - " . $desc;
 		
-	}elseif( $desc = get_sub_field('content') ){
+	}else{
 	    
-	    return $title . " - " . $desc;
+	    return $title;
     	
 	}
 

@@ -51,16 +51,74 @@ $background = function($url){
 
 	</div>
 	
-	<div class="banner-content">
-		<?php // TODO: If/else $header-content-line-( 1 | 2 ) | $header-content-btn-( 1 | 2 ) :?>
-		<div class="container">		
-    		<h1>Wij zijn indrukwekkend,</h1><?php // line 1 ?>
-    		<h2>een partij om op te bouwen <span class="text-gray">|</span></h2><?php // line 2 ?>
-    		<div class="buttons">
-    			<a class="btn btn-lg btn-primary" href="/over-ons">Leer ons kennen</a><?php // btn 1 ?>
-    			<a class="btn btn-lg btn-black" href="/cases">Bekijk ons werk</a><?php // btn 2 ?>
-    		</div>
-		</div>
-	</div>
+	<?php if( $headline = get_field('headline') ): ?>
+        
+        <div class="banner-content">
+        
+        	<div class="container">
+        	
+        		<div class="row align-items-end">
+        	
+            		<div class="col-7">	
+            
+                		<h1><?php echo $headline; ?></h1>
+                
+                		<?php if( get_field('subheadline') ): ?>
+                
+                			<h2><?php the_field('subheadline'); ?> <span class="text-gray">|</span></h2>
+                
+                		<?php endif; ?>
+                		
+                		<?php $btn_orange = get_field('btn_orange'); ?>
+                		
+                		<?php $btn_black = get_field('btn_black'); ?>
+                
+                		<?php if( $btn_orange || $btn_black ): ?>
+                		
+                    		<div class="buttons">
+                    
+                    			<?php if($btn_orange['text'] && $btn_orange['url']): ?>
+                    				
+                    				<a class="btn btn-lg btn-primary" href="<?php echo $btn_orange['url']; ?>"><?php echo $btn_orange['text']; ?></a>
+                    			
+                    			<?php elseif($btn_orange): ?>
+                    			
+                    				<span class="btn btn-lg btn-primary"><?php echo $btn_orange['text']; ?> \/</span>
+                    			
+                    			<?php endif;?>
+                    			
+                    			<?php if($btn_black['text'] && $btn_black['url']): ?>
+                    				
+                    				<a class="btn btn-lg btn-black" href="<?php echo $btn_black['url']; ?>"><?php echo $btn_black['text']; ?></a>
+                    			
+                    			<?php elseif( $btn_black['text'] ): ?>
+                    			
+                    				<span class="btn btn-lg btn-black"><?php echo $btn_black['text']; ?></span>
+                    			
+                    			<?php endif;?>
+                    
+                    		</div>
+                		
+                		<?php endif; ?>
+                		
+                	</div>
+                	
+            		<?php if($header_foreground = get_field('header_foreground') ): ?>
+            		
+                    	<div class="col-5">
+    
+            				<img class="img-fluid float-right" src="<?php echo $header_foreground; ?>" />
+            		
+            			</div>
+            			
+            		<?php endif; ?>
+        
+        		</div>
+        	
+        	</div>
+        
+        </div>
+	
+	<?php endif; ?>
 
 </header>

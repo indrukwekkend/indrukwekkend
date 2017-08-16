@@ -16,10 +16,19 @@
 				float: left;
 				width: 50px;
 				height: 50px;
-				background-color: color(gray);
-				border-radius: 3000px;
+				background-size: contain;
+    			background-position: center;
 				vertical-align: middle;
 				
+				&.call{
+					background-image: url('../images/beller-is-sneller.svg');
+				}
+				&.mail{
+					background-image: url('../images/mailen-mag-ook.svg');
+				}
+				&.visit{
+					background-image: url('../images/hier-vind-je-ons.svg');
+				}
 			}
 	
 			.content{
@@ -49,10 +58,29 @@
 		.title{
 			vertical-align: middle;
 		}
-		.fa{
-			vertical-align: middle;
-			font-size: 40px;
-			margin: 0 6px;
+		.social{
+			display: inline-block;
+			width: 33px;
+			height: 30px;
+			background-size: contain;
+    		background-position: center;
+    		background-repeat: no-repeat;
+    		vertical-align: middle;
+    		
+			&.twitter{
+				background-image: url('../images/social/twitter.svg');
+			}
+			&.linkedin{
+				background-image: url('../images/social/linkedin.svg');
+			}
+			&.instagram{
+				background-image: url('../images/social/instagram.svg');
+			}
+			&.facebook{
+				width: 20px;
+				background-size: 28px;
+				background-image: url('../images/social/facebook.svg');
+			}
 		}
 	}
 }

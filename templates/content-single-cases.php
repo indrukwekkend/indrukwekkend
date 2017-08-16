@@ -46,7 +46,47 @@
         
             	<?php while( have_rows('content') ): the_row(); ?>
             
-            		<?php if( get_row_layout() == 'quote_left' ): ?>
+            		<?php if( get_row_layout() == 'team_quote_left' ): ?>
+            		
+            			<div class="row case-row">
+            			
+            				<div class="col-lg-6">
+            				
+            					<div class="case-quote p-4">
+            						
+            						<div class="quote-content">
+                    				
+                    					<?php the_sub_field('content')?>
+                    					
+            						</div>
+            						
+            						<div class="quote-autograph">
+            						
+            							<?php if( $post_object = get_sub_field('author') ): ?>
+
+                                    		<?php $post = $post_object; ?>
+                                
+                        					<?php setup_postdata($post); ?>
+                        					
+                        					<?php if( $autograph = get_field('autograph') ): ?>
+                        					
+                        						<img class="mt-3" width="120" src="<?php echo get_stylesheet_directory_uri()."/dist/images/autographs/".$autograph; ?>" />
+                        					
+                        					<?php endif; ?>
+                        					
+                        					<?php wp_reset_postdata(); ?>
+                    						
+                    					<?php endif; ?>
+            						
+            						</div>
+                    				
+                    			</div>
+            				
+            				</div>
+
+        				</div>
+        				
+        			<?php elseif( get_row_layout() == 'client_quote_left' ): ?>
             		
             			<div class="row case-row">
             			
@@ -381,39 +421,65 @@
                 						
                 						<div class="row">
                 						
-                							<div class="py-4">Neem contact op met <?php the_title(); ?></div>
+                							<div class="py-3">Neem contact op met <?php the_title(); ?></div>
                 							
                 						</div>
                 						
                 						<div class="row">
                 						
-                							<div class="col-5 p-0">
-                								
-                								<div class="case-icon-email">
-                								</div>
-                								
-                								<span><?php the_field('email'); ?></span>
-                								
-                							</div>
-                						
-                							<div class="col p-0">
-                								
-                								<div class="case-icon-phone">
-                								</div>
-                								
-                								<span><?php the_field('landline'); ?></span>
-                								
-                							</div>
-                						
-                							<div class="col p-0">
-                								
-                								<div class="case-icon-mobile">
-                								
-                								</div>
-                								
-                								<span><?php the_field('mobile'); ?></span>
-                								
-                							</div>
+                							<?php if( get_field('email') ):?>
+                    						
+                    							<div class="col-5 p-0">
+                    								
+                    								<div class="case-icon email">
+                    								</div>
+                    								
+                    								<a href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?></a>
+                    								
+                    							</div>
+                    						
+                    						<?php endif; ?>
+                    						
+                    						<?php if( get_field('landline') ): ?>
+                    						
+                    							<div class="col p-0">
+                    								
+                    								<div class="case-icon phone">
+                    								</div>
+                    								
+                    								<span><?php the_field('landline'); ?></span>
+                    								
+                    							</div>
+                    							
+                    						<?php endif; ?>
+                    						
+                    						<?php if( get_field('mobile') ):?>
+                    						
+                    							<div class="col p-0">
+                    								
+                    								<div class="case-icon mobile">
+                    								
+                    								</div>
+                    								
+                    								<span><?php the_field('mobile'); ?></span>
+                    								
+                    							</div>
+                    							
+                    						<?php endif; ?>
+                    						
+                    						<?php if( get_field('strava') ):?>
+                    						
+                    							<div class="col p-0">
+                    								
+                    								<div class="case-icon strava">
+                    								
+                    								</div>
+                    								
+                    								<span><?php the_field('strava'); ?></span>
+                    								
+                    							</div>
+                    							
+                    						<?php endif; ?>
                 						
                 						</div>
                 					
@@ -444,5 +510,76 @@
     <?php endif; ?>
     
     <?php // Related Cases ?>
+    
+    <div class="row case-related">
+        
+    	<div class="container-fluid">
+    	
+        	<div class="row align-items-center">
+        		
+        		<div class="col-3 text-right pr-5">
+        		
+        			<span class="case-related-title">
+        			Bekijk de<br>
+        			 andere cases
+        			 </span>
+        		
+        		</div>
+
+                <?php if ( $tags = wp_get_post_tags($post->ID) ) : ?>
+                
+                    <?php $tag_ids = array(); ?>
+            
+            		<?php foreach($tags as $individual_tag) $tag_ids[] = $individual_tag->term_id; ?>
+            
+            		<?php 
+                    $args = array(
+                        'post_type' => 'cases',
+                        'tag__in' => $tag_ids,
+                        'post__not_in' => array($post->ID),
+                        'posts_per_page'=>3,
+                        'caller_get_posts'=>1
+                    );
+                    ?>
+              
+                    <?php $my_query = new wp_query( $args ); ?>
+             
+                    <?php while( $my_query->have_posts() ) : ?>
+                    
+                        <?php $my_query->the_post(); ?>
+               
+            			<div class="col-3 case-related-item">
+                
+            				<div class="related-content">
+            					
+								<div class="related-image">
+									
+									<img class="img-fluid" src="<?php the_field('header_foreground'); ?>" />
+								
+								</div>
+            					
+            					<div class="related-title">
+            					
+            						<?php the_title(); ?>
+            					
+            					</div>
+            				
+            				</div>
+            			
+            			</div>
+               
+              		<?php endwhile; ?>
+            
+            		<?php wp_reset_postdata(); ?>
+            	
+            		<?php wp_reset_query(); ?>
+            	
+            	<?php endif; ?>
+
+			</div>
+
+		</div>
+
+	</div>
 
 <?php endwhile; ?>
