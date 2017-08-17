@@ -10,4 +10,6 @@ Only after those run `gulp && gulp watch` to get going.
 
 
 ### Required plugins:
-* ACF
+* [Advanced Custom Fields / ACF](https://www.advancedcustomfields.com/)
+* [Instagram Feed](https://wordpress.org/plugins/instagram-feed/)
+* [WP Migrate DB Pro](http://deliciousbrains.com/wp-migrate-db-pro/) + Media Files Addon
