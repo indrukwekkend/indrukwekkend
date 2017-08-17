@@ -1,17 +1,14 @@
 <?php
 use Roots\Sage\Setup;
 use Roots\Sage\Wrapper;
-
 ?>
-
 <!doctype html>
 <html <?php language_attributes(); ?>>
 
   <?php get_template_part('templates/head'); ?>
 
   <body <?php body_class(); ?>>
-
-	<!--[if IE]>
+    <!--[if IE]>
 
       <div class="alert alert-warning">
 
@@ -22,21 +19,16 @@ use Roots\Sage\Wrapper;
     <![endif]-->
 
     <?php
-    
-    do_action('get_header');
-    
-    get_template_part('templates/header');
-    
+    do_action( 'get_header' );
+    get_template_part( 'templates/header' );
     ?>
     <div class="container-fluid" role="document">
-		
-		<main>
+        <main>
         
           <?php include Wrapper\template_path(); ?>
         
         </main>
-		
-		<!-- /.main -->
+        <!-- /.main -->
         
         <?php if (Setup\display_sidebar() && false) : ?>
         
@@ -45,21 +37,16 @@ use Roots\Sage\Wrapper;
             <?php include Wrapper\sidebar_path(); ?>
         
           </aside>
-		
-		<!-- /.sidebar -->
+        <!-- /.sidebar -->
         
         <?php endif; ?>
     
     </div>
     
     <?php
-    
-    do_action('get_footer');
-    
-    get_template_part('templates/footer');
-    
+    do_action( 'get_footer' );
+    get_template_part( 'templates/footer' );
     wp_footer();
-    
     ?>
   </body>
 </html>

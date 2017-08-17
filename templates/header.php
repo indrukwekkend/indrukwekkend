@@ -1,71 +1,45 @@
-<?php 
-
-$background = function($url){
-   
-    $url = ($url) ? $url : get_stylesheet_directory_uri()."/dist/images/header_default.png";
-    
-    echo 'style="background-image: url('.$url.');"';
+<?php
+$background = function ( $url ) {
+    $url = ($url) ? $url : get_stylesheet_directory_uri() . "/dist/images/header_default.png";
+    echo 'style="background-image: url(' . esc_url( $url ) . ');"';
 };
-
-
-
 ?>
-
-
-
-
-<header class="banner" <?php $background( get_field('header_background') ); ?> >
-	
-	<div class="container navigation">
-	
-		<a class="brand" href="<?= esc_url(home_url('/')); ?>">
-    	
-    			<div class="brand-logo"></div>
-	
-		</a>
-		
-		<div class="nav-phone">
-			<span><a href="tel:0725625482">072 - 562 54 82</a></span>
-		</div>
-	
-		<nav class="nav-primary">
+<header class="banner" <?php $background( get_field('header_background') ); ?>>
+    <div class="container navigation">
+        <a class="brand" href="<?= esc_url(home_url('/')); ?>">
+            <div class="brand-logo"></div>
+        </a>
+        <div class="nav-phone">
+            <span><a href="tel:0725625482">072 - 562 54 82</a></span>
+        </div>
+        <nav class="nav-primary">
     
       		<?php
-    
-            if (has_nav_menu('primary_navigation')) :
-        
-                wp_nav_menu([
-            
-                    'theme_location' => 'primary_navigation',
-                
-                    'menu_class' => 'nav'
-            
-                ]);
+        if ( has_nav_menu( 'primary_navigation' ) ) :
+            wp_nav_menu( [
+                'theme_location' => 'primary_navigation',
+                'menu_class' => 'nav'
+            ] );
           
             endif;
         
-            ?>
+        ?>
 		
 		</nav>
-		
-
-	</div>
+    </div>
 	
 	<?php if( $headline = get_field('headline') ): ?>
         
         <div class="banner-content">
-        
-        	<div class="container">
-        	
-        		<div class="row align-items-end">
-        	
-            		<div class="col-7">	
-            
-                		<h1><?php echo $headline; ?></h1>
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-6">
+                    <h1><?php echo $headline; ?></h1>
                 
                 		<?php if( get_field('subheadline') ): ?>
                 
-                			<h2><?php the_field('subheadline'); ?> <span class="text-gray">|</span></h2>
+                			<h2><?php the_field('subheadline'); ?> <span class="text-gray">|</span>
+                    </h2>
                 
                 		<?php endif; ?>
                 		
@@ -105,19 +79,15 @@ $background = function($url){
                 	
             		<?php if($header_foreground = get_field('header_foreground') ): ?>
             		
-                    	<div class="col-5">
-    
-            				<img class="img-fluid float-right" src="<?php echo $header_foreground; ?>" />
-            		
-            			</div>
+                    	<div class="col-6">
+                    <img class="img-fluid float-right" src="<?php echo $header_foreground; ?>" />
+                </div>
             			
             		<?php endif; ?>
         
         		</div>
-        	
-        	</div>
-        
         </div>
+    </div>
 	
 	<?php endif; ?>
 
