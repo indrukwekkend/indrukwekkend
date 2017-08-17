@@ -34,5 +34,5 @@ install:
 script:
   - npm run build
   - npm run jshint
-  - npm run jscs
-  - phpcbf --standard=ruleset.xml --extensions=php -n -s .
+  - gulp
+  - gulp --production

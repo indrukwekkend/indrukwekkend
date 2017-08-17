@@ -1,5 +1,4 @@
 jQuery(document).ready(function(){
-	
 	jQuery('.quotes-list').slick({
 		dots: true,
 		infinite: false,
@@ -9,6 +8,5 @@ jQuery(document).ready(function(){
 		arrows: false,
 		fade: true,
 		adaptiveHeight: true,
-	});
-	
+	});	
 });
