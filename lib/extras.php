@@ -123,38 +123,26 @@ function indrukwekkend_quotes(){
             
             $query->the_post();
             
-            $return .= '<div class="quote">';
-            
-                $return .= '<div class="quote-content">';
+            $return .= '<div class="quote-item">';
                 
-                    $return .= '<span class="encapsule"></span>';
+                $return .= '<div class="quote">';
                 
-                    $return .= '<p>' . get_the_content() . '</p>';
-                
-                    $return .= '<span class="encapsule"></span>';
-                
-                $return .= '</div>';
-                
-                $return .= '<div class="quote-author">';
-                
-                    $return .= '<p>' . get_the_title() . '</p>';
-                
-                $return .= '</div>';
-                
-                $return .= '<div class="quote-nav">';
-                
-                    $return .= '<ul>';
-                
-                        $return .= '<li class="active">1</li>';
-                
-                        $return .= '<li>2</li>';
-                
-                        $return .= '<li>3</li>';
-                
-                    $return .= '</ul>';
+                    $return .= '<div class="quote-content">';
+                    
+                    
+                        $return .= '<p>' . get_the_content() . '</p>';
+                    
+                    
+                    $return .= '</div>';
+                    
+                    $return .= '<div class="quote-author">';
+                    
+                        $return .= '<p>' . get_the_title() . '</p>';
+                    
+                    $return .= '</div>';
                 
                 $return .= '</div>';
-            
+                
             $return .= '</div>';
         }
         
@@ -246,9 +234,9 @@ function indrukwekkend_merken(){
 
 
 /**
- * indrukwekkend_quotes()
+ * indrukwekkend_cases()
  * 
- * Outputs mutliple quotes
+ * Outputs mutliple Cases
  */
 function indrukwekkend_cases(){
     
