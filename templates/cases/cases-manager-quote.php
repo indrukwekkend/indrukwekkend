@@ -1,15 +1,15 @@
-<?php if( have_rows('single_quote') ): ?>
-<div class="row team-quote">
+<?php if( have_rows('manager_quote') ): ?>
+<div class="row manager-quote">
 <div class="container">
-<?php while( have_rows('single_quote') ): the_row(); ?>
+<?php while( have_rows('manager_quote') ): the_row(); ?>
 <?php if( $post_object = get_sub_field('teamlid') ): ?>
 <?php $post = $post_object; ?>
 <?php setup_postdata($post); ?>
 <div class="row justify-content-center">
 <div class="col-10">
-<div class="row team-quote-bg">
-<div class="col-8 p-5">
-<div class="row team-quote-content">
+<div class="row bg-orange inset">
+<div class="col-8 d-flex flex-column pl-5 pt-5 pb-3">
+<div class="row mb-auto manager-quote-content">
 <div style="font-size:<?php the_sub_field('fontsize'); ?>px"><?php the_sub_field('content'); ?></div>
 </div>
 <div class="row">

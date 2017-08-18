@@ -1,7 +1,7 @@
 <?php
-$background = function ($url) {
+$background = function ( $url ) {
     $url = ($url) ? $url : get_stylesheet_directory_uri() . "/dist/images/header_default.png";
-    echo 'style="background-image: url(' . esc_url($url) . ');"';
+    echo 'style="background-image: url(' . esc_url( $url ) . ');"';
 };
 ?>
 <header class="banner" <?php $background( get_field('header_background') ); ?>>
@@ -15,11 +15,11 @@ $background = function ($url) {
         <nav class="nav-primary">
     
       		<?php
-        if (has_nav_menu('primary_navigation')) :
-            wp_nav_menu([
+        if ( has_nav_menu( 'primary_navigation' ) ) :
+            wp_nav_menu( [
                 'theme_location' => 'primary_navigation',
                 'menu_class' => 'nav'
-            ]);
+            ] );
           
             endif;
         
@@ -57,7 +57,7 @@ $background = function ($url) {
                     			
                     			<?php elseif($btn_orange): ?>
                     			
-                    				<span class="btn btn-lg btn-primary"><?php echo $btn_orange['text']; ?> \/</span>
+                    				<span class="btn btn-lg btn-primary"><?php echo $btn_orange['text']; ?> <span class="arrow-icon down"></span></span>
                     			
                     			<?php endif;?>
                     			

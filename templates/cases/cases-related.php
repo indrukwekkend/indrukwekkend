@@ -1,4 +1,4 @@
-<div class="row cases-related">
+<div class="row related">
 <div class="container-fluid">
 <div class="row align-items-center">
 <div class="col-3 text-right pr-5">

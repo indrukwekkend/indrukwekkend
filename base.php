@@ -19,8 +19,8 @@ use Roots\Sage\Wrapper;
     <![endif]-->
 
     <?php
-    do_action('get_header');
-    get_template_part('templates/header');
+    do_action( 'get_header' );
+    get_template_part( 'templates/header' );
     ?>
     <div class="container-fluid" role="document">
         <main>
@@ -44,8 +44,8 @@ use Roots\Sage\Wrapper;
     </div>
     
     <?php
-    do_action('get_footer');
-    get_template_part('templates/footer');
+    do_action( 'get_footer' );
+    get_template_part( 'templates/footer' );
     wp_footer();
     ?>
   </body>

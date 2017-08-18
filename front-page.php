@@ -13,7 +13,7 @@
             </div>
 
             <div class="row">
-			
+            
                 <?php echo Extras\indrukwekkend_merken(); ?>
 		
 	           </div>
@@ -57,7 +57,9 @@
                 <div class="instagram-text">Spread the love</div>
 
                 <div class="instagram-username">
+                
                     <span class="fa fa-instagram"></span>@ditisindrukwekkend
+                
                 </div>
 
             </div>

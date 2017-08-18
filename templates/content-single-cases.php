@@ -1,22 +1,6 @@
 <?php while (have_posts()) : the_post(); ?>
-<div class="row single-intro">
-<div class="container p-5">
-<div class="row">
-<div class="col text-center">
-<div class="singles-title">
-<span class="text-brand">single:</span> <?php the_title(); ?>
-</div>
-</div>
-</div>
-<div class="row justify-content-center">
-<div class="col-8">
-<div class="single-description">
-<?php the_content(); ?>
-</div>
-</div>
-</div>
-</div>
-</div>
+<?php get_template_part('templates/parts/single', 'intro'); ?>
+
 <?php // Content ?>
 <?php if( have_rows('content') ): ?>
 <div class="row single-content">
@@ -42,14 +26,17 @@
 <?php get_template_part('templates/parts/image', 'fullwidth'); ?>
 <?php endif; ?>
 <?php endwhile; ?>
+<?php // Teamleden ?>
+<?php get_template_part('templates/cases/cases', 'teamleden'); ?>
 </div>
 </div>
 <?php endif; ?>
-<?php // Teamleden ?>
-<?php get_template_part('templates/cases/cases', 'teamleden'); ?>
+
+<?php // Client Quote ?>	
+<?php get_template_part('templates/cases/cases', 'client-quote'); ?>
 
 <?php // Cases Quote ?>
-<?php get_template_part('templates/cases/cases', 'quote'); ?>
+<?php get_template_part('templates/cases/cases', 'manager-quote'); ?>
 
 <?php // Related singles ?>
 <?php get_template_part('templates/cases/cases', 'related'); ?>
