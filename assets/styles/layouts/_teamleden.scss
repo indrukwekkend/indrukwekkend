@@ -1,0 +1,48 @@
+.single-teamleden{
+	.single-content{
+		padding-top: 4rem;
+	}
+	.teamleden-contact{
+		color: color(white);
+		margin-top: -2rem;
+		box-shadow: inset 0 -8rem theme-color(single-bg);
+		
+		a{
+			color: color(white);
+		}
+		
+		.inset{
+		    box-shadow: inset 0 3rem color(white);
+		    
+		    .text-right{
+		    	border-right:1px solid color(white);
+		    	font-family: 'Montserrat Bold';
+		    	font-size: 42px;
+    			line-height: 1.1;
+		    }
+		    .text-left{
+		    	border-left:1px solid color(white);
+		    	font-size: 42px;
+    			line-height: 1.1;
+		    }
+		}
+	}
+}
+@media (min-width: 576px){}
+@media (min-width: 768px){}
+
+@media (min-width: 992px){
+	
+	.single-teamleden{
+		.case-title{
+			.heading{
+				br{
+					display: initial;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1200px){
+
+}

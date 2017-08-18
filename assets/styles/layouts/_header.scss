@@ -1,6 +1,6 @@
 .banner{
 	position: relative;
-	background-position: top center;
+	background-position: bottom center;
 	background-size: cover;
 	min-height: 600px;
     height: 46vw;
@@ -65,7 +65,7 @@
 	
 	.banner-content{
 		position: absolute;
-    	bottom: 50px;
+    	bottom: 0px;
     	width: 100%;
 	
 		.container{
@@ -80,10 +80,11 @@
 			}
 			.buttons{
 				margin-top: 20px;
+				margin-bottom: 50px;
 				
 				.btn-arrowdown{
 					display: inline-block;
-					background-image: url('../images/arrow.svg');
+					background-image: url('../images/arrow-down.svg');
 					background-size: contain;
 					background-repeat: no-repeat;
 					width: 30px;

@@ -174,3 +174,137 @@
 		cursor: pointer;
 	}
 }
+.single{
+	background-color: color(white);
+	
+	.single-intro{
+		padding: 0;
+	
+		.singles-title{
+			font-family: 'Montserrat Bold';
+			font-size: 3rem;
+			padding-bottom: 2rem;
+		}
+		.single-description{
+			font-family: 'Montserrat Regular';
+		}
+	}
+	.single-title{
+		position: relative;
+		font-size: 3rem;
+		line-height: 1.2;
+		margin-bottom: -28px;
+  				
+		.heading{
+			position: relative;
+			font-family: Montserrat Regular;
+			background-color: theme-color(single-bg);
+			box-shadow: 10px 0px 0px 0px theme-color(single-bg), -10px 0px 0px 0px theme-color(single-bg);
+			z-index: 1;
+				
+			br{
+				display: none;
+			}
+		}
+	
+		.line{
+			position: absolute;
+			display: block;
+			height: 1px;
+			width: 100%;
+			border: 2px solid theme-color(primary);
+			bottom: 16px;
+			z-index: 0;
+		}
+	}
+			
+	.single-content{
+		background-color: theme-color(single-bg);
+	
+		.single-row{
+			padding: 2rem 0;
+						
+			.single-quote{
+				background-color: color(white);
+    			box-shadow: 0 0 36px -16px theme-color(black);
+			}
+			
+			
+		}
+	}
+
+	
+	.team-quote{
+		color: color(white);
+		margin-bottom: 4rem;
+		
+		a{
+			color: color(white);
+		}
+		
+		.team-quote-bg{
+			background-color: theme-color(primary);
+		    box-shadow: inset 0 30px color(white);
+		}
+		.team-quote-content{
+			font-family: 'Montserrat Bold';
+			padding-top: 10px;
+		}
+	}
+}
+.single-icon{
+			display: inline-block;
+    		vertical-align: middle;
+    		width: 56px;
+    		height: 56px;
+    		background-size: contain;
+    		letter-spacing: .08rem;
+    		
+    		&.email{
+    			background-image: url(../images/paper-plane.svg);
+    		}
+    		&.phone{
+    			background-image: url(../images/telefoon.svg);
+    		}
+    		&.mobile{
+    			background-image: url(../images/mobile.svg);
+    		}
+    		&.strava{
+    			background-image: url(../images/social/strava.svg);
+    		}
+		}
+@media (min-width: 576px){}
+@media (min-width: 768px){}
+
+@media (min-width: 992px){
+	
+	.single{
+		.single-title{
+			.heading{
+				br{
+					display: initial;
+				}
+			}
+		}
+		.single-content{
+			.single-row{
+				.single-quote{
+					margin-top: -200px;
+					margin-left: -30px;
+				}
+			}
+		}
+	}
+}
+@media (min-width: 1200px){
+
+	.single{
+		.single-content{
+			.single-row{
+				.single-quote{
+					margin-top: -270px;
+				}
+			}
+		}
+	}
+}
