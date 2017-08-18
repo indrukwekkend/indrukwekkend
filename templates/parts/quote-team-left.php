@@ -1,6 +1,6 @@
-<div class="row single-row">
+<div class="row">
 <div class="col-lg-6">
-<div class="single-quote p-4">
+<div class="quote-team-left">
 <div class="quote-content">		
 <?php the_sub_field('content')?>		
 </div>

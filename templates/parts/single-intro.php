@@ -3,7 +3,7 @@
 <div class="row">
 <div class="col text-center">
 <div class="singles-title">
-<span class="text-brand">single:</span> <?php the_title(); ?>
+<span class="text-orange">Case:</span> <?php the_title(); ?>
 </div>
 </div>
 </div>

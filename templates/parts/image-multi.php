@@ -12,11 +12,18 @@
 <div class="col-lg-6 mt-5 mt-lg-0">
 <?php the_sub_field('content'); ?>
 </div>
-<div class="col-lg-6 mt-5 text-center">
-<figure class="figure mt-4">
-<img src="<?php the_sub_field('image'); ?>" class="figure-img img-fluid" alt="<?php the_sub_field('image_description');?>">
-<figcaption class="figure-caption"><?php the_sub_field('image_description');?></figcaption>
+</div>
+<div class="row">
+<div class="col-12 pt-5 image-multi">
+<?php if( have_rows('images') ): ?>
+<?php $i;?>
+<?php while ( have_rows('images') ) : the_row(); ?>
+<?php $i++;?>
+<figure class="figure image-<?php echo $i; ?>">
+<img src="<?php the_sub_field('image'); ?>" class="figure-img img-fluid">
 </figure>
+<?php endwhile; ?>
+<?php endif; ?>
 </div>
 </div>
 </div>
