@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.org/newfishdev/indrukwekkend.svg?branch=master)](https://travis-ci.org/newfishdev/indrukwekkend)
+[![devDependency Status](https://img.shields.io/david/dev/newfishdev/indrukwekkend.svg?style=flat-square)](https://david-dm.org/newfishdev/indrukwekkend#info=devDependencies)
 
 # Indrukwekkend Sync
 
