@@ -10,7 +10,7 @@
 <?php foreach($tags as $individual_tag) $tag_ids[] = $individual_tag->term_id; ?>
 <?php
 $args = array(
-'post_type' => 'singles',
+'post_type' => 'cases',
 'tag__in' => $tag_ids,
 'post__not_in' => array($post->ID),
 'posts_per_page' => 3,
