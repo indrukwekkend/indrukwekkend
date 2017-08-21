@@ -1,4 +1,4 @@
-<div class="row teamleden-contact">
+<div id="contact" class="row teamleden-contact">
 <div class="container">
 <div class="row justify-content-center">
 <div class="col-10">
@@ -16,7 +16,7 @@
 </div>
 </div>
 <?php endif;?>
-<div class="row text-center my-2">
+<div class="row text-center my-3">
 <?php if( get_field('email') ):?>
 <div class="col p-0">
 <div class="single-icon email"></div>

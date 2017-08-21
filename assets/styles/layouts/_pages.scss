@@ -148,7 +148,7 @@
     		
 	&.email{
 		background-image: url(../images/paper-plane.svg);
-		}
+	}
 	&.phone{
 		background-image: url(../images/telefoon.svg);
 	}
@@ -169,6 +169,22 @@
 	}
 	&.twitter{
 		background-image: url(../images/social/twitter.svg);
+	}
+	
+	&.strava-orange{
+		background-image: url(../images/social/strava-orange.svg);
+	}
+	&.facebook-orange{
+		background-image: url(../images/social/facebook-orange.svg);
+	}
+	&.instagram-orange{
+		background-image: url(../images/social/instagram-orange.svg);
+	}
+	&.linkedin-orange{
+		background-image: url(../images/social/linkedin-orange.svg);
+	}
+	&.twitter-orange{
+		background-image: url(../images/social/twitter-orange.svg);
 	}
 }
 

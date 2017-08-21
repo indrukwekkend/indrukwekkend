@@ -8,3 +8,30 @@
     background-color: color($color);
   }
 }
+
+
+/* Arrow Icons */
+.arrow-icon{
+	display: inline-block;
+	vertical-align: middle;
+	width: 56px;
+	height: 56px;
+	background-size: contain;
+	letter-spacing: .08rem;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: -12px 0;
+
+	&.up{
+		background-image: url(../images/arrow-up.svg);
+	}
+	&.left{
+		background-image: url(../images/arrow-left.svg);
+	}
+	&.right{
+		background-image: url(../images/arrow-right.svg);
+	}
+	&.down{
+		background-image: url(../images/arrow-down.svg);
+	}
+}

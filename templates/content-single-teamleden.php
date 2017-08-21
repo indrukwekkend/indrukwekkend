@@ -30,6 +30,11 @@
 						<?php // Span image over container ?>
 						<?php get_template_part('templates/parts/image', 'multi'); ?>
 
+
+					<?php elseif(get_row_layout() == 'socialmedia' ): ?>
+						<?php // Span image over container ?>
+						<?php get_template_part('templates/teamleden/teamleden', 'socialmedia'); ?>
+
 					<?php endif; ?>
 
 				<?php endwhile; ?>
@@ -37,18 +42,16 @@
 			</div>
 		</div>
 
-		<?php // Social Media ?>
-		<?php get_template_part('templates/teamleden/teamleden', 'socialmedia'); ?>
+	<?php // Wat doet [teamlid] verder? ?>
+	<?php get_template_part('templates/teamleden/teamleden', 'extra'); ?>
 
-		<?php // Wat doet [teamlid] verder? ?>
-		<?php get_template_part('templates/teamleden/teamleden', 'extra'); ?>
-
-		<?php // Cases ?>
-		<?php get_template_part('templates/teamleden/teamleden', 'cases'); ?>
-
-		<?php // Andere teamleden ?>
-		<?php get_template_part('templates/teamleden/teamleden', 'teamleden'); ?>
+	<?php // Cases ?>
+	<?php get_template_part('templates/teamleden/teamleden', 'cases'); ?>
 
 	<?php endif; ?>
+
+
+	<?php // Andere teamleden ?>
+	<?php get_template_part('templates/teamleden/teamleden', 'teamleden'); ?>
 
 <?php endwhile; ?>

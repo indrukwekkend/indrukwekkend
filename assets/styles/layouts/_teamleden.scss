@@ -2,36 +2,193 @@
 	.single-content{
 		padding-top: 4rem;
 	}
+
 	.teamleden-contact{
 		color: color(white);
 		margin-top: -2rem;
 		box-shadow: inset 0 -8rem theme-color(single-bg);
-		
+
 		a{
 			color: color(white);
 		}
-		
+
 		.inset{
-		    box-shadow: inset 0 3rem color(white);
-		    
-		    .text-right{
-		    	border-right:1px solid color(white);
-		    	font-family: 'Montserrat Bold';
-		    	font-size: 42px;
-    			line-height: 1.1;
-		    }
-		    .text-left{
-		    	border-left:1px solid color(white);
-		    	font-size: 42px;
-    			line-height: 1.1;
-		    }
+			box-shadow: inset 0 3rem color(white);
+
+			.text-right{
+				border-right:1px solid color(white);
+				font-family: 'Montserrat Bold';
+				font-size: 42px;
+				line-height: 1.1;
+			}
+
+			.text-left{
+				border-left:1px solid color(white);
+				font-size: 42px;
+				line-height: 1.1;
+			}
 		}
 	}
 	.teamleden-socialmedia{
+		padding-bottom: 6rem;
+		
 		.socialmedia-title{
 			font-family: 'Montserrat Regular';
 			font-size: 32px;
+			line-height: 1;
 			text-align: right;
+			border-right: 2px solid color(orange);
+		}
+	}
+
+	.teamleden-extra{
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+
+		.single-title{
+			.heading{
+				background-color: color(white);
+				box-shadow: 10px 0px 0px 0px color(white), -10px 0px 0px 0px color(white);
+			}
+		}
+	}
+
+	.teamleden-cases{
+		.single-title{
+			.heading{
+				background-color: color(white);
+				box-shadow: 10px 0px 0px 0px color(white), -10px 0px 0px 0px color(white);
+			}
+		}
+
+		.teamleden-case-title{
+			font-family: 'Montserrat Regular';
+			font-size: 32px;
+			line-height: 1;
+		}
+
+		.teamleden-case-item{
+			position: relative;
+			background-image: url('../images/header_default.png');
+			background-size: cover;
+			background-position: center;
+			padding-bottom: 33.3333%;
+			outline: 2px solid color(white);
+
+			.case-content{
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+
+				.case-image{
+					height: calc(100% - 76px);
+					width: 86%;
+					margin: 20px auto;
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-position: bottom center;
+				}
+
+				.case-title{
+					font-family: 'Montserrat Regular';
+					text-align: center;
+					width: 100%;
+					bottom: 0;
+					
+					a{
+						color: theme-color(black);
+					}
+				}
+			}
+		}
+	}
+
+	.teamleden{
+		background-color: theme-color(single-bg);
+		margin-top: 6rem;
+
+		.teamleden-title{
+			font-family: 'Montserrat Regular';
+			font-size: 32px;
+			line-height: 1;
+		}
+		.teamleden-list{
+			background-color: color(white);
+
+			.slick-prev{
+				position: absolute;
+				right: 0;
+				font-size: 0;
+				line-height: 0;
+				position: absolute;
+				top: 50%;
+				display: block;
+				width: 20px;
+				height: 20px;
+				margin-top: -10px;
+				padding: 0;
+				cursor: pointer;
+				color: transparent;
+				border: none;
+				outline: none;
+				background: transparent;
+			}
+
+			.slick-next{
+				position: absolute;
+				right: 0;
+				font-size: 0;
+				line-height: 0;
+				position: absolute;
+				top: 50%;
+				display: block;
+				width: 40px;
+				height: 40px;
+				margin-top: -10px;
+				padding: 0;
+				cursor: pointer;
+				color: transparent;
+				border: none;
+				outline: none;
+				background-color: theme-color(black);
+
+				&:before{
+					display: block;
+					content:" ";
+					height: 40px;
+					width: 40px;
+					background-image:url(../images/arrow-right-white.svg);
+				}
+			}
+			.teamleden-item{
+
+				&:focus{
+					outline:none;
+				}
+
+				.teamleden-content{
+					display: block;
+					position: relative;
+					height: 25vw;
+					
+					.teamleden-title{
+						position: absolute;
+						bottom: 20px;
+						color: color(white);
+						width: 100%;
+						text-align: center;
+					}
+				}
+
+				.teamleden-image{
+					height: 100%;
+					background-size: contain;
+					background-position: bottom center;
+					background-repeat: no-repeat;
+				}
+			}
 		}
 	}
 }
@@ -39,7 +196,7 @@
 @media (min-width: 768px){}
 
 @media (min-width: 992px){
-	
+
 	.single-teamleden{
 		.case-title{
 			.heading{
