@@ -36,3 +36,10 @@ script:
   - npm run jshint
   - gulp
   - gulp --production
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
