@@ -4,10 +4,10 @@
 <div class="col-10">
 <div class="row bg-orange inset">
 <div class="col-2"></div>
-<div class="col-8 align-self-end">
+<div class="col-8 align-self-end pt-4">
 <?php $contact = get_field('contact_block'); ?>
 <?php if( $contact ):?>
-<div class="row mb-4">
+<div class="row mb-4 mt-5">
 <div class="col text-right">
 <?php echo $contact['text_left']; ?>
 </div>
