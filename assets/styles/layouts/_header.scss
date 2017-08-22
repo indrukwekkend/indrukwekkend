@@ -7,7 +7,9 @@
     max-height: 800px;
 	
 	.navigation{
+		position: relative;
 		padding-top: 20px;
+		z-index: 2;
 	
 		.brand{
 			float: left;
@@ -90,6 +92,10 @@
 					width: 30px;
 					height: 30px;
 				}
+			}
+			
+			img{
+				z-index:1;
 			}
 		}
 	}

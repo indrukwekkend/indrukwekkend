@@ -84,6 +84,10 @@
 		}
 		.single-description{
 			font-family: 'Montserrat Regular';
+			
+			h1{
+				font-family: 'Montserrat Bold';
+			}
 		}
 	}
 	.single-title{
@@ -94,7 +98,7 @@
   				
 		.heading{
 			position: relative;
-			font-family: Montserrat Regular;
+			font-family: Montserrat Bold;
 			background-color: theme-color(single-bg);
 			box-shadow: 10px 0px 0px 0px theme-color(single-bg), -10px 0px 0px 0px theme-color(single-bg);
 			z-index: 1;

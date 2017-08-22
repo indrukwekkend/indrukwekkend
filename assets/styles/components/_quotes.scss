@@ -107,7 +107,8 @@
 	position: relative;
 	background-color: color(white);
 	padding: 60px 40px 40px;
-	margin-top: -50%;
+	margin-top: 0;
+	margin-bottom: 30px;
 	box-shadow: 0 0 36px -16px theme-color(black);
 	
 	&:before{
@@ -128,5 +129,21 @@
 	
 	.quote-author{
 		color: color(gray);
+	}
+}
+
+@media (min-width: 576px){}
+@media (min-width: 768px){}
+
+@media (min-width: 992px){
+	
+	.quote-team-left{
+		margin-top: -50%;
+	}
+}
+@media (min-width: 1200px){
+
+	.quote-team-left{
+		margin-top: -60%;
 	}
 }
