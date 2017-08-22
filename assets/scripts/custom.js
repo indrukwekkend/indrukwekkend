@@ -17,4 +17,12 @@ jQuery(document).ready(function(){
 		slidesToShow: 3,
 		fade: false,
 	});
+	jQuery('.related-list').slick({
+		dots: false,
+		infinite: true,
+		speed: 300,
+		slidesToScroll: 1,
+		slidesToShow: 3,
+		fade: false,
+	});
 });
