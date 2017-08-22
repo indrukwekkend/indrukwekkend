@@ -82,8 +82,9 @@ $theme-colors: (
   black: $black,
   single-bg: #f0f6f8,
   footer-bg: #e5eaec,
-	text-black:				#231f20,
-	text-gray:				#797979,
+  footer-text: $gray-600,
+	text-black: #231f20,
+	text-gray: #797979,
 
 	quote-bg:				#f0f6f8,
 	quote-encapsule:		#d6dfe2,
