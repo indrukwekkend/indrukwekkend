@@ -36,37 +36,37 @@ $gray-200: #e9ecef;
 $gray-300: #dee2e6;
 $gray-400: #ced4da;
 $gray-500: #adb5bd;
-$gray-600:			#929292;
+$gray-600: #929292;
 $gray-700: #495057;
 $gray-800: #343a40;
 $gray-900: #212529;
-$black:				#1e1b1c;
+$black:    #1e1b1c;
 
-$blue:    #007bff;
-$indigo:  #6610f2;
-$purple:  #6f42c1;
-$pink:    #e83e8c;
-$red:     #dc3545;
-$orange:			#f17b22;
-$yellow:  #ffc107;
-$green:   #28a745;
-$teal:    #20c997;
-$cyan:    #17a2b8;
+$blue:     #007bff;
+$indigo:   #6610f2;
+$purple:   #6f42c1;
+$pink:     #e83e8c;
+$red:      #dc3545;
+$orange:   #f17b22;
+$yellow:   #ffc107;
+$green:    #28a745;
+$teal:     #20c997;
+$cyan:     #17a2b8;
 
 $colors: (
-  blue: $blue,
-  indigo: $indigo,
-  purple: $purple,
-  pink: $pink,
-  red: $red,
-  orange: $orange,
-  yellow: $yellow,
-  green: $green,
-  teal: $teal,
-  cyan: $cyan,
-  white: $white,
-  black, $black,
-  gray: $gray-600,
+  blue:    $blue,
+  indigo:  $indigo,
+  purple:  $purple,
+  pink:    $pink,
+  red:     $red,
+  orange:  $orange,
+  yellow:  $yellow,
+  green:   $green,
+  teal:    $teal,
+  cyan:    $cyan,
+  white:   $white,
+  black,   $black,
+  gray:    $gray-600,
   gray-dark: $gray-800,
 );
 
@@ -80,6 +80,7 @@ $theme-colors: (
   light: $gray-100,
   dark: $gray-800,
   black: $black,
+
   single-bg: #f0f6f8,
   footer-bg: #e5eaec,
   footer-text: $gray-600,

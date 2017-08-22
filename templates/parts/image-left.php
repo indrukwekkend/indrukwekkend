@@ -1,7 +1,8 @@
 <div class="row justify-content-center">
 <div class="col-10">
 <div class="row">
-<div class="col-lg-6">
+<div class="col-lg-1"></div>
+<div class="col-lg-5">
 <div class="single-title">
 <span class="heading"><?php echo preg_replace('~((\w+\s){3})~', '$1' . "<br>", get_sub_field('title')); ?></span> <span class="line"></span>
 </div>
