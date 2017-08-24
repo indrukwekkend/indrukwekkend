@@ -13,7 +13,7 @@
 			</div>
 		</div>
 		<div class="col-sm-5">
-			<div class="row row-padding">
+			<div class="row row-padding front-content">
 				<?php while (have_posts()) : the_post(); ?>
 					<?php the_content(); ?>
 				<?php endwhile; ?>

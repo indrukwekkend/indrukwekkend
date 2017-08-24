@@ -1,15 +1,14 @@
-@each $color, $value in $colors {
-  .text-#{$color} {
-    color: color($color);
-  }
-}
-@each $color, $value in $colors {
-  .bg-#{$color} {
-    background-color: color($color);
-  }
+body{
+	letter-spacing: .03rem;
 }
 
+p{
+	margin-bottom: 2rem;
+}
 
+h5, h6{
+	font-family: "Montserrat Regular";
+}
 /* Arrow Icons */
 .arrow-icon{
 	display: inline-block;
@@ -34,4 +33,26 @@
 	&.down{
 		background-image: url(../images/arrow-down.svg);
 	}
+}
+.typed-cursor {
+	opacity: 1;
+	animation: typedjsBlink 0.7s infinite;
+	animation: typedjsBlink 0.7s infinite;
+	animation-name: typedjsBlink;
+	animation-duration: 0.7s;
+	animation-timing-function: initial;
+	animation-delay: initial;
+	animation-iteration-count: infinite;
+	animation-direction: initial;
+	animation-fill-mode: initial;
+	animation-play-state: initial;
+}
+@keyframes typedjsBlink{
+	50% { opacity: 0.0; }
+}
+
+@-webkit-keyframes typedjsBlink{
+	0% { opacity: 1; }
+	50% { opacity: 0.0; }
+	100% { opacity: 1; }
 }

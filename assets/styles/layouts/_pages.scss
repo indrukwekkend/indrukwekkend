@@ -1,3 +1,69 @@
+.page-header{
+	.description{
+		h1{
+		}
+	}
+}
+.primary-content{
+	background-color: $content-bg;
+}
+.secondary-content{
+	.heading{
+		.title{
+			background-color: $white;
+			box-shadow: 10px 0px 0px 0px $white, -10px 0px 0px 0px $white;
+		}
+	}
+}
+.heading{
+	position: relative;
+	font-size: 3rem;
+	line-height: 1.2;
+	margin-bottom: -28px;
+
+	.title{
+		position: relative;
+		background-color: $content-bg;
+		box-shadow: 10px 0px 0px 0px $content-bg, -10px 0px 0px 0px $content-bg;
+		color: $black;
+		z-index: 1;
+
+		br{
+			display: none;
+		}
+	}
+
+	.line{
+		position: absolute;
+		display: block;
+		height: 1px;
+		width: 100%;
+		border: 2px solid $orange;
+		bottom: 16px;
+		z-index: 0;
+	}
+}
+
+/* Content Parts */
+.part-socialmedia{
+	h5{
+		font-family: "Montserrat Bold";
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .brands-list{
 	display: flex;
 	flex-flow: row wrap;
@@ -81,47 +147,11 @@
 		padding: 0;
 	
 		.singles-title{
-			font-family: 'Montserrat Bold';
-			font-size: 3rem;
-			padding-bottom: 2rem;
 		}
 		.single-description{
-			font-family: 'Montserrat Regular';
-			
-			h1{
-				font-family: 'Montserrat Bold';
-				margin-bottom: 3rem;
-			}
 		}
 	}
-	.single-title{
-		position: relative;
-		font-size: 3rem;
-		line-height: 1.2;
-		margin-bottom: -28px;
-  				
-		.heading{
-			position: relative;
-			font-family: Montserrat Bold;
-			background-color: theme-color(single-bg);
-			box-shadow: 10px 0px 0px 0px theme-color(single-bg), -10px 0px 0px 0px theme-color(single-bg);
-			z-index: 1;
-				
-			br{
-				display: none;
-			}
-		}
-
-		.line{
-			position: absolute;
-			display: block;
-			height: 1px;
-			width: 100%;
-			border: 2px solid theme-color(primary);
-			bottom: 16px;
-			z-index: 0;
-		}
-	}
+	
 
 	.single-content{
 		background-color: theme-color(single-bg);

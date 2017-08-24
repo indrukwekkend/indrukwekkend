@@ -1,4 +1,5 @@
 jQuery(document).ready(function(){
+
 	jQuery('.quotes-list').slick({
 		dots: true,
 		arrows: false,
@@ -9,6 +10,7 @@ jQuery(document).ready(function(){
 		fade: true,
 		adaptiveHeight: true,
 	});
+
 	jQuery('.teamleden-list').slick({
 		dots: false,
 		infinite: true,
@@ -17,6 +19,7 @@ jQuery(document).ready(function(){
 		slidesToShow: 3,
 		fade: false,
 	});
+
 	jQuery('.related-list').slick({
 		dots: false,
 		infinite: true,
@@ -24,5 +27,29 @@ jQuery(document).ready(function(){
 		slidesToScroll: 1,
 		slidesToShow: 3,
 		fade: false,
+	});
+
+	if(jQuery("#headlines-collect").length){
+		var typed = new Typed('#headlines-typed', {
+			stringsElement: '#headlines-collect',
+			loop: true,
+			showCursor: true,
+			cursorChar: '|',
+			autoInsertCss: true,
+			contentType: 'html',
+			typeSpeed: 50,
+			backSpeed: 20,
+			backDelay: 4000,
+		});
+	}
+
+	jQuery(".btn-arrow").on('click', function(e){
+		var that = e.target;
+		
+		jQuery(that).addClass("btn-activated");
+		
+		setTimeout(function(){
+			jQuery(that).removeClass("btn-activated");
+		}, 500);
 	});
 });

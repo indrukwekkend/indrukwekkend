@@ -1,9 +1,22 @@
 // Global options
-$enable-rounded:		false;
+$enable-rounded:    false !default;
+$enable-shadows:    false !default;
 
 // Grid settings
 $main-sm-columns:       12;
 $sidebar-sm-columns:    4;
+
+// Grid columns
+$grid-columns:               12;
+
+// Grid Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 960px,
+  xl: 1280px
+) !default;
 
 // Grid containers
 $container-max-widths: (
@@ -13,86 +26,93 @@ $container-max-widths: (
   xl: 1600px
 ) !default;
 
-// Grid columns
-$grid-columns:               12 !default;
-$grid-gutter-width-base:     30px !default;
-$grid-gutter-widths: (
-  xs: $grid-gutter-width-base,
-  sm: $grid-gutter-width-base,
-  md: $grid-gutter-width-base,
-  lg: $grid-gutter-width-base * 2,
-  xl: $grid-gutter-width-base * 2
-) !default;
-
-
-
-$font-size-base:			1rem;
-$font-family-sans-serif:	'Montserrat Light';
-
 // Colors
-$white:				#ffffff;
-$gray-100: #f8f9fa;
-$gray-200: #e9ecef;
-$gray-300: #dee2e6;
-$gray-400: #ced4da;
-$gray-500: #adb5bd;
-$gray-600: #929292;
-$gray-700: #495057;
-$gray-800: #343a40;
-$gray-900: #212529;
-$black:    #1e1b1c;
+$white:      #ffffff;
+$gray-100:   #acacac;
+$gray-200:   #e9ecef;
+$gray-300:   #dee2e6;
+$gray-400:   #ced4da;
+$gray-500:   #adb5bd;
+$gray-600:   #929292;
+$gray-700:   #495057;
+$gray-800:   #343a40;
+$gray-900:   #212529;
+$black:      #231f20;
 
-$blue:     #007bff;
-$indigo:   #6610f2;
-$purple:   #6f42c1;
-$pink:     #e83e8c;
-$red:      #dc3545;
-$orange:   #f17b22;
-$yellow:   #ffc107;
-$green:    #28a745;
-$teal:     #20c997;
-$cyan:     #17a2b8;
+$blue:       #007bff;
+$indigo:     #6610f2;
+$purple:     #6f42c1;
+$pink:       #e83e8c;
+$red:        #dc3545;
+$orange:     #EF7D00;
+$yellow:     #ffc107;
+$green:      #28a745;
+$teal:       #20c997;
+$cyan:       #17a2b8;
+
+$content-bg:  #f0f6f8;
+$footer-bg:   #e5eaec;
+$footer-text: $gray-600;
+$text-black:  #231f20;
+$text-gray:   #797979;
 
 $colors: (
-  blue:    $blue,
-  indigo:  $indigo,
-  purple:  $purple,
-  pink:    $pink,
-  red:     $red,
-  orange:  $orange,
-  yellow:  $yellow,
-  green:   $green,
-  teal:    $teal,
-  cyan:    $cyan,
-  white:   $white,
-  black,   $black,
-  gray:    $gray-600,
+  blue:      $blue,
+  indigo:    $indigo,
+  purple:    $purple,
+  pink:      $pink,
+  red:       $red,
+  orange:    $orange,
+  yellow:    $yellow,
+  green:     $green,
+  teal:      $teal,
+  cyan:      $cyan,
+  white:     $white,
+  black,     $black,
+  gray:      $gray-600,
   gray-dark: $gray-800,
 );
 
 $theme-colors: (
-  primary: $orange,
+  primary:   $orange,
   secondary: $gray-600,
-  success: $green,
-  info: $cyan,
-  warning: $yellow,
-  danger: $red,
-  light: $gray-100,
-  dark: $gray-800,
-  black: $black,
+  success:   $green,
+  info:      $cyan,
+  warning:   $yellow,
+  danger:    $red,
+  light:     $gray-100,
+  dark:      $gray-800,
+  black:     $black,
+  white:     $white,
+  orange:    $orange,
 
-  single-bg: #f0f6f8,
-  footer-bg: #e5eaec,
+  content-bg:  #f0f6f8,
+  footer-bg:   #e5eaec,
   footer-text: $gray-600,
-	text-black: #231f20,
-	text-gray: #797979,
+	text-black:  #231f20,
+	text-gray:   #797979,
 
 	quote-bg:				#f0f6f8,
 	quote-encapsule:		#d6dfe2,
 );
 
+$font-family-sans-serif: "Montserrat Regular", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-size-base:         1rem !default;
+$font-weight-bold:       normal !default;
+$line-height-base:       1.8 !default;
 
-$brand-white:			#ffffff;
+$h1-font-size:           3.6rem !default;
+$h2-font-size:           3.4rem !default;
+$h3-font-size:           3.2rem !default;
+$h4-font-size:           2.8rem !default;
+$h5-font-size:           2rem !default;
+$h6-font-size:           1.75rem !default;
 
-$nav-black:				#231f20;
+$headings-font-family:   "Montserrat Bold" !default;
+$headings-font-weight:   normal !default;
+$headings-line-height:   1.1 !default;
 
+$input-btn-padding-y:       .5rem !default;
+$input-btn-padding-x:       .75rem !default;
+$input-btn-line-height:     1.25 !default;
+$btn-focus-box-shadow:      none !important !default;
