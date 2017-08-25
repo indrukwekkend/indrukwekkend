@@ -1,92 +1,16 @@
-.content-info{
-	background-color: theme-color(footer-bg);
-	height: 140px;
-	padding: 40px 0;
-	color: theme-color(footer-text);
-
-	.footer-content{
-		float: left;
-		width: 70%;
-
-		.footer-block{
-			display: inline-block;
-			padding: 10px;
-
-			.icon{
-				float: left;
-				width: 50px;
-				height: 50px;
-				background-size: contain;
-				background-position: center;
-				vertical-align: middle;
-
-				&.call{
-					background-image: url('../images/beller-is-sneller.svg');
-				}
-
-				&.mail{
-					background-image: url('../images/mailen-mag-ook.svg');
-				}
-
-				&.visit{
-					background-image: url('../images/hier-vind-je-ons.svg');
-				}
-			}
-
-			.content{
-				float: left;
-				padding-left: 10px;
-				vertical-align: middle;
-
-				.title{
-					display: block;
-				}
-
-				.description{
-					display: block;
-					font-weight: 600;
-				}
-			}
-		}
-	}
+footer{
+	background-color: $footer-bg;
+	color: $gray-600;
 	
-	.footer-social{
-		float: left;
-		width: 30%;
-		padding: 15px 0;
-		color: color(gray);
-		text-align: right;
+	p{
+		margin: 0;
+		line-height: 1.6;
+		font-size: .9rem;
+		white-space: nowrap;
 
-		.title{
-			vertical-align: middle;
-		}
-
-		.social{
-			display: inline-block;
-			width: 33px;
-			height: 30px;
-			background-size: contain;
-			background-position: center;
-			background-repeat: no-repeat;
-			vertical-align: middle;
-
-			&.twitter{
-				background-image: url('../images/social/twitter.svg');
-			}
-
-			&.linkedin{
-				background-image: url('../images/social/linkedin.svg');
-			}
-
-			&.instagram{
-				background-image: url('../images/social/instagram.svg');
-			}
-
-			&.facebook{
-				width: 20px;
-				background-size: 28px;
-				background-image: url('../images/social/facebook.svg');
-			}
+		strong{
+			font-weight: normal;
+			font-family: "Montserrat Bold";
 		}
 	}
 }

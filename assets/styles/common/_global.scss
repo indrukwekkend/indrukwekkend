@@ -56,3 +56,47 @@ h5, h6{
 	50% { opacity: 0.0; }
 	100% { opacity: 1; }
 }
+
+/* Icons */
+.icon{
+	float: left;
+	width: 50px;
+	height: 50px;
+	background-size: contain;
+	background-position: center;
+	vertical-align: middle;
+
+	&.call-us{
+		background-image: url('../images/beller-is-sneller.svg');
+	}
+
+	&.mail-us{
+		background-image: url('../images/mailen-mag-ook.svg');
+	}
+
+	&.visit-us{
+		background-image: url('../images/hier-vind-je-ons.svg');
+	}
+
+	&.twitter{
+		background-image: url('../images/social/twitter.svg');
+		&-white{
+		}
+	}
+
+	&.linkedin{
+		background-image: url('../images/social/linkedin.svg');
+	}
+
+	&.instagram{
+		background-image: url('../images/social/instagram.svg');
+	}
+
+	&.facebook{
+		background-image: url('../images/social/facebook.svg');
+	}
+
+	&.strava{
+		background-image: url('../images/social/facebook.svg');
+	}
+}
