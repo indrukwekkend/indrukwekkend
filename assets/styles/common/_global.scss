@@ -7,7 +7,7 @@ p{
 }
 
 h5, h6{
-	font-family: "Montserrat Regular";
+	font-family: "Montserrat Light";
 }
 /* Arrow Icons */
 .arrow-icon{
@@ -59,44 +59,165 @@ h5, h6{
 
 /* Icons */
 .icon{
-	float: left;
-	width: 50px;
-	height: 50px;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
 	background-size: contain;
 	background-position: center;
+	background-repeat: no-repeat;
 	vertical-align: middle;
 
 	&.call-us{
-		background-image: url('../images/beller-is-sneller.svg');
+		background-image: url('../images/svg/call-us-white.svg');
+
+		&-orange{
+			background-image: url('../images/svg/call-us-orange.svg');
+		}
+		&-white{
+			background-image: url('../images/svg/call-us-white.svg');
+		}
+		&-gray{
+			background-image: url('../images/svg/call-us-gray.svg');
+		}
 	}
 
 	&.mail-us{
-		background-image: url('../images/mailen-mag-ook.svg');
+		background-image: url('../images/svg/mail-us-white.svg');
+
+		&-orange{
+			background-image: url('../images/svg/mail-us-orange.svg');
+		}
+		&-white{
+			background-image: url('../images/svg/mail-us-white.svg');
+		}
+		&-gray{
+			background-image: url('../images/svg/mail-us-gray.svg');
+		}
 	}
 
 	&.visit-us{
-		background-image: url('../images/hier-vind-je-ons.svg');
+		background-image: url('../images/svg/visit-us-white.svg');
+
+		&-orange{
+			background-image: url('../images/svg/visit-us-orange.svg');
+		}
+		&-white{
+			background-image: url('../images/svg/visit-us-white.svg');
+		}
+		&-gray{
+			background-image: url('../images/svg/visit-us-gray.svg');
+		}
+	}
+
+	&.mail{
+		background-image: url('../images/svg/mail-white.svg');
+
+		&-orange{
+			background-image: url('../images/svg/mail-orange.svg');
+		}
+		&-white{
+			background-image: url('../images/svg/mail-white.svg');
+		}
+		&-gray{
+			background-image: url('../images/svg/mail-gray.svg');
+		}
+	}
+
+	&.phone{
+		background-image: url('../images/svg/phone-white.svg');
+
+		&-orange{
+			background-image: url('../images/svg/phone-orange.svg');
+		}
+		&-white{
+			background-image: url('../images/svg/phone-white.svg');
+		}
+		&-gray{
+			background-image: url('../images/svg/phone-gray.svg');
+		}
+	}
+
+	&.smartphone{
+		background-image: url('../images/svg/smartphone-white.svg');
+
+		&-orange{
+			background-image: url('../images/svg/smartphone-orange.svg');
+		}
+		&-white{
+			background-image: url('../images/svg/smartphone-white.svg');
+		}
+		&-gray{
+			background-image: url('../images/svg/smartphone-gray.svg');
+		}
 	}
 
 	&.twitter{
-		background-image: url('../images/social/twitter.svg');
+		background-image: url('../images/svg/twitter-white.svg');
+
+		&-orange{
+			background-image: url('../images/svg/twitter-orange.svg');
+		}
 		&-white{
+			background-image: url('../images/svg/twitter-white.svg');
+		}
+		&-gray{
+			background-image: url('../images/svg/twitter-gray.svg');
 		}
 	}
 
 	&.linkedin{
-		background-image: url('../images/social/linkedin.svg');
+		background-image: url('../images/svg/linkedin-white.svg');
+
+		&-orange{
+			background-image: url('../images/svg/linkedin-orange.svg');
+		}
+		&-white{
+			background-image: url('../images/svg/linkedin-white.svg');
+		}
+		&-gray{
+			background-image: url('../images/svg/linkedin-gray.svg');
+		}
 	}
 
 	&.instagram{
-		background-image: url('../images/social/instagram.svg');
+		background-image: url('../images/svg/instagram-white.svg');
+
+		&-orange{
+			background-image: url('../images/svg/instagram-orange.svg');
+		}
+		&-white{
+			background-image: url('../images/svg/instagram-white.svg');
+		}
+		&-gray{
+			background-image: url('../images/svg/instagram-gray.svg');
+		}
 	}
 
 	&.facebook{
-		background-image: url('../images/social/facebook.svg');
+		background-image: url('../images/svg/facebook-white.svg');
+
+		&-orange{
+			background-image: url('../images/svg/facebook-orange.svg');
+		}
+		&-white{
+			background-image: url('../images/svg/facebook-white.svg');
+		}
+		&-gray{
+			background-image: url('../images/svg/facebook-gray.svg');
+		}
 	}
 
 	&.strava{
-		background-image: url('../images/social/facebook.svg');
+		background-image: url('../images/svg/strava-white.svg');
+
+		&-orange{
+			background-image: url('../images/svg/strava-orange.svg');
+		}
+		&-white{
+			background-image: url('../images/svg/strava-white.svg');
+		}
+		&-gray{
+			background-image: url('../images/svg/strava-gray.svg');
+		}
 	}
 }

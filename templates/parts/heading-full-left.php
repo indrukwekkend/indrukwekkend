@@ -11,7 +11,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-6 mt-5"></div>
+			<div class="col-lg-6 mt-5 mt-xl-0"></div>
 
 			<div class="col-lg-6">
 				<?php the_sub_field('content'); ?>
@@ -21,10 +21,13 @@
 		<div class="row">
 			<div class="col-12 pt-5 text-center">
 
-				<?php if( get_sub_field('fullwidth') == false ){ $image_class = ( $alignment = get_sub_field('alignment') ) ? "float-".$alignment : ""; }?>
+				<?php if( get_sub_field('fullwidth') == false ): ?>
+				<?php $image_class = ( $alignment = get_sub_field('alignment') ) ? "float-".$alignment : "";?>
+				<?php $text_class = ( $alignment = get_sub_field('alignment') ) ? "text-".$alignment : "";?>
+				<?php endif; ?>
 				<figure class="figure<?php echo " ".$image_class; ?>">
 					<img src="<?php the_sub_field('image'); ?>" class="figure-img img-fluid" alt="<?php the_sub_field('image_description');?>">
-					<figcaption class="figure-caption"><?php the_sub_field('image_description');?></figcaption>
+					<figcaption class="figure-caption<?php echo " ".$text_class; ?>"><?php the_sub_field('image_description');?></figcaption>
 				</figure>
 
 			</div>

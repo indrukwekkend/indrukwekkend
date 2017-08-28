@@ -1,49 +1,132 @@
-<?php while (have_posts()) : the_post(); ?>
-	<?php get_template_part('templates/cases/single', 'intro'); ?>
-
-	<?php // Content ?>
-	<?php if( have_rows('content') ): ?>
-		<div class="row single-content">
-			<div class="container">
-				<?php while( have_rows('content') ): the_row(); ?>
 
 
-					<?php // Quote with autograph?>
-					<?php if( get_row_layout() == 'team_quote_left' ): ?>
-						<?php get_template_part('templates/parts/quote', 'team-left'); ?>
+<?php // Page Intro ?>
+<?php get_template_part('templates/parts/heading', 'cases'); ?>
 
-						<?php // Quote of Client + Name, Company/Position ?>
-						<?php elseif( get_row_layout() == 'client_quote_left' ): ?>
-							<?php get_template_part('templates/parts/quote', 'left'); ?>
+<?php // Primary Content ?>
+<?php if( have_rows('primary_content') ): ?>
+	<div class="row primary-content">
+		<div class="container">
+			<?php while( have_rows('primary_content') ): the_row(); ?>
 
-						<?php // Title left, Image underneat Title, text right ?>
-						<?php elseif( get_row_layout() == 'image_left' ): ?>
-							<?php get_template_part('templates/parts/image', 'left'); ?>
+					<?php // Title left ?>
+					<?php if( get_row_layout() == 'content_left' ): ?>
+						<?php get_template_part('templates/parts/content', 'left'); ?>
 
-						<?php // Title right, Image underneat Title, text left ?>
-						<?php elseif(get_row_layout() == 'image_right' ): ?>		
-							<?php get_template_part('templates/parts/image', 'right'); ?>
+					<?php // Title right ?>
+					<?php elseif( get_row_layout() == 'content_right' ): ?>
+						<?php get_template_part('templates/parts/content', 'right'); ?>
 
-						<?php // Fullwidth image?>
-						<?php elseif(get_row_layout() == 'image_fullwidth' ): ?>
-							<?php get_template_part('templates/parts/image', 'fullwidth'); ?>
+					<?php // Title + Image left ?>
+					<?php elseif( get_row_layout() == 'heading_left' ): ?>
+						<?php get_template_part('templates/parts/heading', 'left'); ?>
 
-					<?php endif; ?>
-				<?php endwhile; ?>
+					<?php // Title + Image right ?>
+					<?php elseif( get_row_layout() == 'heading_right' ): ?>
+						<?php get_template_part('templates/parts/heading', 'right'); ?>
 
-				<?php // Teamleden ?>
-				<?php get_template_part('templates/cases/cases', 'teamleden'); ?>
-			</div>
+					<?php // Title + Teskt row ?>
+					<?php elseif( get_row_layout() == 'heading_full_left' ): ?>
+						<?php get_template_part('templates/parts/heading', 'full-left'); ?>
+
+					<?php // Title + Teskt row ?>
+					<?php elseif( get_row_layout() == 'heading_full_right' ): ?>
+						<?php get_template_part('templates/parts/heading', 'full-right'); ?>
+
+					<?php // Gallerij Links ?>
+					<?php elseif( get_row_layout() == 'heading_gallery_left' ): ?>
+						<?php get_template_part('templates/parts/heading', 'gallery-left'); ?>
+
+					<?php // Gallerij Rechts ?>
+					<?php elseif( get_row_layout() == 'heading_gallery_right' ): ?>
+						<?php get_template_part('templates/parts/heading', 'gallery-right'); ?>
+
+					<?php // Social Media ?>
+					<?php elseif( get_row_layout() == 'socialmedia' ): ?>
+						<?php get_template_part('templates/parts/social', 'media'); ?>
+
+					<?php // Fullwidth image?>
+					<?php elseif(get_row_layout() == 'image_fullwidth' ): ?>
+						<?php get_template_part('templates/parts/image', 'fullwidth'); ?>
+
+				<?php // Quote with autograph?>
+				<?php elseif( get_row_layout() == 'quote_left' ): ?>
+					<?php get_template_part('templates/parts/quote', 'left'); ?>
+
+				<?php // Quote with autograph?>
+				<?php elseif( get_row_layout() == 'quote_right' ): ?>
+					<?php get_template_part('templates/parts/quote', 'right'); ?>
+
+
+				<?php endif; ?>
+			<?php endwhile; ?>
+
 		</div>
-	<?php endif; ?>
+	</div>
+<?php endif; ?>
 
-	<?php // Client Quote ?>	
-	<?php get_template_part('templates/cases/cases', 'client-quote'); ?>
 
-	<?php // Cases Quote ?>
-	<?php get_template_part('templates/cases/cases', 'manager-quote'); ?>
+<?php // Secondary Content ?>
+<?php if( have_rows('secondary_content') ): ?>
+	<div class="row secondary-content">
+		<div class="container">
+			<?php while( have_rows('secondary_content') ): the_row(); ?>
 
-	<?php // Related singles ?>
-	<?php get_template_part('templates/cases/cases', 'related'); ?>
+					<?php // Title left ?>
+					<?php if( get_row_layout() == 'content_left' ): ?>
+						<?php get_template_part('templates/parts/content', 'left'); ?>
 
-<?php endwhile; ?>  
+					<?php // Title right ?>
+					<?php elseif( get_row_layout() == 'content_right' ): ?>
+						<?php get_template_part('templates/parts/content', 'right'); ?>
+
+					<?php // Title + Image left ?>
+					<?php elseif( get_row_layout() == 'heading_left' ): ?>
+						<?php get_template_part('templates/parts/heading', 'left'); ?>
+
+					<?php // Title + Image right ?>
+					<?php elseif( get_row_layout() == 'heading_right' ): ?>
+						<?php get_template_part('templates/parts/heading', 'right'); ?>
+
+					<?php // Title + Teskt row ?>
+					<?php elseif( get_row_layout() == 'heading_full_left' ): ?>
+						<?php get_template_part('templates/parts/heading', 'full-left'); ?>
+
+					<?php // Title + Teskt row ?>
+					<?php elseif( get_row_layout() == 'heading_full_right' ): ?>
+						<?php get_template_part('templates/parts/heading', 'full-right'); ?>
+
+					<?php // Gallerij Links ?>
+					<?php elseif( get_row_layout() == 'heading_gallery_left' ): ?>
+						<?php get_template_part('templates/parts/heading', 'gallery-left'); ?>
+
+					<?php // Gallerij Rechts ?>
+					<?php elseif( get_row_layout() == 'heading_gallery_right' ): ?>
+						<?php get_template_part('templates/parts/heading', 'gallery-right'); ?>
+
+					<?php // Social Media ?>
+					<?php elseif( get_row_layout() == 'socialmedia' ): ?>
+						<?php get_template_part('templates/parts/social', 'media'); ?>
+
+					<?php // Fullwidth image?>
+					<?php elseif(get_row_layout() == 'image_fullwidth' ): ?>
+						<?php get_template_part('templates/parts/image', 'fullwidth'); ?>
+
+					<?php //TODO ?>
+					<?php // Quote of Client + Name, Company/Position ?>
+
+
+				<?php endif; ?>
+			<?php endwhile; ?>
+
+		</div>
+	</div>
+<?php endif; ?>
+
+<?php // Tertiary Content ?>
+<div class="row tertiary-content">
+	<div class="container-fluid">
+		<?php // Related singles ?>
+		<?php get_template_part('templates/parts/related', 'cases'); ?>
+	</div>
+</div>

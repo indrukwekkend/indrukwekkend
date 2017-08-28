@@ -11,7 +11,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-6 mt-5"></div>
+			<div class="col-lg-6 mt-5 mt-xl-0"></div>
 
 			<div class="col-lg-6">
 				<?php the_sub_field('content'); ?>
@@ -20,16 +20,17 @@
 		</div>
 		<div class="row">
 			<div class="col-12 pt-5 text-center">
-
-				<?php if( have_rows('images') ): ?>
-					<?php $i;?>
-					<?php while ( have_rows('images') ) : the_row(); ?>
-						<?php $i++;?>
-						<figure class="figure image-<?php echo $i; ?>">
-							<img src="<?php the_sub_field('image'); ?>" class="figure-img img-fluid">
-						</figure>
-					<?php endwhile; ?>
-				<?php endif; ?>
+				<div class="gallery">
+					<?php if( have_rows('images') ): ?>
+						<?php $i;?>
+						<?php while ( have_rows('images') ) : the_row(); ?>
+							<?php $i++;?>
+							<figure class="figure image-<?php echo $i; ?>">
+								<img src="<?php the_sub_field('image'); ?>" class="figure-img img-fluid">
+							</figure>
+						<?php endwhile; ?>
+					<?php endif; ?>
+				</div>
 
 			</div>
 		</div>

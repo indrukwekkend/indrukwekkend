@@ -26,11 +26,23 @@ $container-max-widths: (
   xl: 1600px
 ) !default;
 
+// Spacing
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: ($spacer * .25),
+  2: ($spacer * .5),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 3),
+  6: ($spacer * 6)
+) !default;
+
 // Colors
 $white:      #ffffff;
 $gray-100:   #acacac;
 $gray-200:   #e9ecef;
-$gray-300:   #dee2e6;
+$gray-300:   #D6DFE2;
 $gray-400:   #ced4da;
 $gray-500:   #adb5bd;
 $gray-600:   #929292;

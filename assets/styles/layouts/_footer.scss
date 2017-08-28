@@ -1,7 +1,7 @@
 footer{
 	background-color: $footer-bg;
 	color: $gray-600;
-	
+
 	p{
 		margin: 0;
 		line-height: 1.6;
@@ -11,6 +11,13 @@ footer{
 		strong{
 			font-weight: normal;
 			font-family: "Montserrat Bold";
+		}
+	}
+
+	.contact{
+		.icon{
+			height: 48px;
+			width: 48px;
 		}
 	}
 }

@@ -1,10 +1,10 @@
 <footer class="container-fluid">
 	<div class="row align-items-center py-5">
 
-		<div class="col">
+		<div class="col-sm-12 col-xl-3 col-md-6 mt-4 mt-xl-0 contact">
 			<div class="row align-items-center">
 				<div class="col-2">
-					<div class="icon call-us"></div>
+					<div class="icon call-us-gray"></div>
 				</div>
 				<div class="col-10">
 					<div class="row">
@@ -17,10 +17,10 @@
 			</div>
 		</div>
 
-		<div class="col">
+		<div class="col-sm-12 col-xl-3 col-md-6 mt-4 mt-xl-0 contact">
 			<div class="row align-items-center">
 				<div class="col-2">
-					<div class="icon mail-us"></div>
+					<div class="icon mail-us-gray"></div>
 				</div>
 				<div class="col-10">
 					<div class="row">
@@ -33,10 +33,10 @@
 			</div>
 		</div>
 
-		<div class="col">
+		<div class="col-sm-12 col-xl-3 col-md-6 mt-4 mt-xl-0 contact">
 			<div class="row align-items-center">
 				<div class="col-2">
-					<div class="icon visit-us"></div>
+					<div class="icon visit-us-gray"></div>
 				</div>
 				<div class="col-10">
 					<div class="row">
@@ -49,9 +49,9 @@
 			</div>
 		</div>
 
-		<div class="col">
+		<div class="col-sm-12 col-xl-3 col-md-6 mt-4 mt-xl-0">
 			<div class="row align-items-center">
-				<div class="col">
+				<div class="col text-right">
 					<span>Wij zijn sociaal</span>
 				</div>
 				<div class="col">

@@ -12,7 +12,7 @@
 		</div>
 
 		<div class="row">
-			<div class="col-lg-6 mt-5 text-center">
+			<div class="col-lg-6 mt-5 mt-xl-0 text-center">
 
 				<figure class="figure mt-4">
 					<img src="<?php the_sub_field('image'); ?>" class="figure-img img-fluid" alt="<?php the_sub_field('image_description');?>">

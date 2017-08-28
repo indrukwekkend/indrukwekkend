@@ -11,7 +11,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-6 mt-5"></div>
+			<div class="col-lg-6 mt-5 mt-xl-0"></div>
 
 			<div class="col-lg-6">
 				<?php the_sub_field('content'); ?>
