@@ -70,6 +70,10 @@
 				position: relative;
 				height: 25vw;
 
+				&:focus{
+					outline:none;
+				}
+
 				.related-item-title{
 					position: absolute;
 					bottom: 0;
@@ -91,6 +95,10 @@
 					background-size: contain;
 					background-position: center;
 					background-repeat: no-repeat;
+
+					&:focus{
+						outline:none;
+					}
 				}
 			}
 		}
