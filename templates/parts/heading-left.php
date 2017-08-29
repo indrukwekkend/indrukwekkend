@@ -14,7 +14,7 @@
 		<div class="row">
 			<div class="col-lg-6 mt-5 mt-xl-0 text-center">
 
-				<figure class="figure mt-4">
+				<figure class="figure mt-4 mt-xl-6">
 					<img src="<?php the_sub_field('image'); ?>" class="figure-img img-fluid" alt="<?php the_sub_field('image_description');?>">
 					<figcaption class="figure-caption"><?php the_sub_field('image_description');?></figcaption>
 				</figure>
