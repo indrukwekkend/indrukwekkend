@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="col-lg-5 p-0">
-		<div class="part-quote p-5">
+		<div class="part-quote p-4 p-md-5 mb-5">
 			<div class="quote-content">
 				<?php the_sub_field('content')?>
 			</div>
