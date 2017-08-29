@@ -1,26 +1,23 @@
-<div class="row teamleden">
-	<div class="container-fluid">
-		<div class="row align-items-center">
-			<div class="col-3 text-right pr-5">
-				<span class="teamleden-title"> Bekijk wat de<br> andere voor<br> je kunnen doen
-				</span>
-			</div>
+		<div class="row align-items-center employee-coworkers">
+				<div class="col-3 text-right pr-5">
+					<span class="coworkers-title">
+						<h5>Bekijk wat anderen<br> voor je kunnen doen</h5>
+					</span>
+				</div>
 			
 			<div class="col-9 p-0">
 				<?php $args = array('post_type' => 'teamleden', 'post__not_in' => array($post->ID), ); ?>
 				<?php $query = new wp_query( $args ); ?>
 
 				<?php if($query->have_posts()): ?>
-					<div class="teamleden-list">
+					<div class="coworkers-list">
 						<?php while( $query->have_posts() ) : ?>
 							<?php $query->the_post(); ?>
-								<div class="col teamleden-item">
-									<a class="teamleden-content" href="<?php echo esc_url( get_post_permalink() ); ?>">
-
-										<div class="teamleden-image" style="background-image:url(<?php the_post_thumbnail_url();?>);"></div>
-
-										<div class="teamleden-title">
-											<?php the_title(); ?>
+								<div class="col coworkers-item">
+									<a class="coworkers-content" href="<?php echo esc_url( get_post_permalink() ); ?>">
+										<div class="coworkers-image" style="background-image:url(<?php the_post_thumbnail_url();?>);"></div>
+										<div class="coworkers-title">
+											<h4><?php the_title(); ?></h4>
 										</div>
 									</a>
 								</div>
@@ -31,5 +28,3 @@
 				<?php endif; ?>
 			</div>
 		</div>
-	</div>
-</div>
