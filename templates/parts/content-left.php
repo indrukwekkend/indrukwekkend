@@ -5,7 +5,10 @@
 			<div class="col-lg-5">
 
 				<div class="heading">
-					<span class="title h4"><?php echo preg_replace('~((\w+\s){3})~', '$1' . "<br>", get_sub_field('title')); ?></span> <span class="line"></span>
+					<h4 class="title">
+						<span><?php echo preg_replace('~((\w+\s){3})~', '$1' . "<br>", get_sub_field('title')); ?></span>
+					</h4>
+					<span class="line"></span>
 				</div>
 
 			</div>

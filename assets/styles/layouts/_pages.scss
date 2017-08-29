@@ -7,7 +7,7 @@
 .primary-content{
 	background-color: $content-bg;
 }
-.secondary-content{
+.secondary-content, .tertiary-content{
 	.heading{
 		.title{
 			background-color: $white;
@@ -17,16 +17,20 @@
 }
 .heading{
 	position: relative;
-	font-size: 3rem;
-	line-height: 1.2;
 	margin-bottom: -28px;
+	z-index: 20;
 
 	.title{
+		display: inline;
 		position: relative;
 		background-color: $content-bg;
 		box-shadow: 10px 0px 0px 0px $content-bg, -10px 0px 0px 0px $content-bg;
 		color: $black;
 		z-index: 1;
+
+		span{
+			position: relative;
+		}
 
 		br{
 			display: none;
@@ -61,23 +65,22 @@
 /* Part: Quote*/
 .part-quote{
 	position: relative;
-	margin-top: -50%;
+	margin-top: 0;
 	background-color: $white;
 	box-shadow: 0 0 2rem -.8rem $gray-900;
 	
 	&:before{
-		display: block;
 		position: absolute;
-		top: 80px;
-		left: 120px;
-		font-family: 'Montserrat Bold';
-		font-size: 200px;
-		color: $gray-300;
-		content: ',,';
-		height: 0;
-		width: 0;
-		line-height: 0;
-		transform: rotate(180deg);
+		display: block;
+		top: -3.1rem;
+		left: 2.5rem;
+		content: " ";
+		height: 5.4rem;
+		width: 5.4rem;
+		background-image: url(../images/svg/quote-open-dark.svg);
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
 	}
 
 	.quote-content{}
@@ -88,7 +91,7 @@
 .part-contact{
 	color: $white;
 	margin-top: -2rem;
-	box-shadow: inset 0 -8rem $content-bg;
+	box-shadow: inset 0 -11rem $content-bg;
 
 	a{
 		color: $white;
@@ -112,9 +115,10 @@
 	}
 }
 
-.gallery{
+/* Part: Gallery */
+.part-gallery{
 	position: relative;
-	min-height: 800px;
+	min-height: 720px;
 
 	.figure{
 		position: absolute;
@@ -137,9 +141,6 @@
 		bottom: 3%;
 	}
 }
-
-
-
 
 
 
@@ -217,8 +218,10 @@
 @media (min-width: 992px){
 
 	.heading{
-		br{
-			display: initial;
+		.title{
+			br{
+				display: initial;
+			}
 		}
 	}
 
@@ -227,7 +230,9 @@
 			display: initial;
 		}
 	}
+	.part-quote{
+		margin-top: -70%;
+	}
 }
 @media (min-width: 1200px){
-
 }
