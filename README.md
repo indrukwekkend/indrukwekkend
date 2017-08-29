@@ -1,13 +1,17 @@
 [![Build Status](https://travis-ci.org/newfishdev/indrukwekkend.svg?branch=master)](https://travis-ci.org/newfishdev/indrukwekkend)
 [![Dependency Status](https://img.shields.io/david/newfishdev/indrukwekkend.svg)](https://david-dm.org/newfishdev/indrukwekkend#info=Dependencies)
 
-# Indrukwekkend Sync
+# Indrukwekkend Theme
 
-This repo is used for synchronisation between two workspaces.
+This is the repository of the Indrukwekkend theme.
+
+Current version: v1.0.0-beta
 
 run `npm install`
 then `bower install`
 Only after those run `gulp && gulp watch` to get going.
+
+After initialisation, import `ACF_Fields.json` to the WordPress installation. This is required to be up to date with the custom fields used in this theme.
 
 
 ### Required plugins:
