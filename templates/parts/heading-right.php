@@ -1,5 +1,5 @@
-<div class="row pb-5">
-	<div class="col-12">
+<div class="row justify-content-center pb-5">
+	<div class="col-10">
 		<div class="row">
 			<div class="col-lg-6"></div>
 				<div class="col-lg-5 text-right">
