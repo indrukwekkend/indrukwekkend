@@ -123,6 +123,12 @@
 <div class="row tertiary-content">
 	<div class="container">
 
+		<?php // Client Quote ?>
+		<?php get_template_part('templates/parts/quote', 'client'); ?>
+
+		<?php // Manager Quote ?>
+		<?php get_template_part('templates/parts/quote', 'manager'); ?>
+
 		<?php // Related Cases ?>
 		<?php get_template_part('templates/parts/content', 'cases'); ?>
 

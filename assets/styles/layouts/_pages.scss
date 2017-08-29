@@ -85,6 +85,13 @@
 
 	.quote-content{}
 	.quote-autograph{}
+
+	&-client{
+		background-color: $content-bg;
+	}
+	&-manager{
+		background-color: $orange;
+	}
 }
 
 /* Part: Contact */
@@ -141,7 +148,6 @@
 		bottom: 3%;
 	}
 }
-
 
 
 
