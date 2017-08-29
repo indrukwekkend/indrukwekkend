@@ -134,7 +134,7 @@
 
 <?php // Quaternary Content ?>
 <div class="row quaternary-content">
-	<div class="container-fluid">
+	<div class="container">
 
 		<?php // Coworkers ?>
 		<?php get_template_part('templates/parts/employee', 'coworkers'); ?>

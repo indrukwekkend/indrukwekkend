@@ -121,7 +121,7 @@
 
 <?php // Tertiary Content ?>
 <div class="row tertiary-content">
-	<div class="container-fluid">
+	<div class="container">
 
 		<?php // Related Cases ?>
 		<?php get_template_part('templates/parts/content', 'cases'); ?>
