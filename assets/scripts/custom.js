@@ -11,16 +11,7 @@ jQuery(document).ready(function(){
 		adaptiveHeight: true,
 	});
 
-	jQuery('.teamleden-list').slick({
-		dots: false,
-		infinite: true,
-		speed: 300,
-		slidesToScroll: 1,
-		slidesToShow: 3,
-		fade: false,
-	});
-
-	jQuery('.related-list').slick({
+	jQuery('.teamleden-list, .related-list, .coworkers-list').slick({
 		dots: false,
 		infinite: true,
 		speed: 300,
