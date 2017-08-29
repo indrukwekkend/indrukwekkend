@@ -123,10 +123,18 @@
 
 <?php // Tertiary Content ?>
 <div class="row tertiary-content">
-	<div class="container-fluid">
+	<div class="container">
 
 		<?php // Cases ?>
-		<?php get_template_part('templates/parts/employee','cases'); ?>
+		<?php get_template_part('templates/parts/employee', 'cases'); ?>
+
+
+	</div>
+</div>
+
+<?php // Quaternary Content ?>
+<div class="row quaternary-content">
+	<div class="container-fluid">
 
 		<?php // Coworkers ?>
 		<?php get_template_part('templates/parts/employee', 'coworkers'); ?>
