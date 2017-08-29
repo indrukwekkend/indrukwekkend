@@ -1,4 +1,4 @@
-<div class="row py-3 part-socialmedia">
+<div class="row pb-5 part-socialmedia">
 	<div class="col-12">
 		<div class="row align-items-center">
 			<div class="col-3 text-right">
@@ -9,7 +9,7 @@
 					<?php if( have_rows('socialmedia') ): ?>
 						<?php while ( have_rows('socialmedia') ) : the_row(); ?>
 							<div class="col text-center text-nowrap">
-								<span class="icon <?php the_sub_field('service'); ?>-orange"></span> <a class="social-link" href="<?php the_sub_field('url'); ?>"><?php the_sub_field('username'); ?></a>
+								<span class="icon <?php the_sub_field('service'); ?>-orange"></span> <a class="social-link" href="<?php the_sub_field('url'); ?>" target="_blank"><?php the_sub_field('username'); ?></a>
 							</div>
 						<?php endwhile; ?>
 					<?php endif; ?>

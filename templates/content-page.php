@@ -6,7 +6,7 @@
 <?php // Primary Content ?>
 <?php if( have_rows('primary_content') ): ?>
 	<div class="row primary-content">
-		<div class="container">
+		<div class="container pt-5">
 			<?php while( have_rows('primary_content') ): the_row(); ?>
 
 					<?php // Title left ?>
@@ -49,22 +49,13 @@
 					<?php elseif(get_row_layout() == 'image_fullwidth' ): ?>
 						<?php get_template_part('templates/parts/image', 'fullwidth'); ?>
 
-
-
-<?php //TODO ?>
 				<?php // Quote with autograph?>
-				<?php elseif( get_row_layout() == 'team_quote_left' ): ?>
-					<?php get_template_part('templates/parts/quote', 'team-left'); ?>
+				<?php elseif( get_row_layout() == 'quote_left' ): ?>
+					<?php get_template_part('templates/parts/quote', 'left'); ?>
 
-					<?php // Quote of Client + Name, Company/Position ?>
-					<?php elseif( get_row_layout() == 'client_quote_left' ): ?>
-						<?php get_template_part('templates/parts/quote', 'left'); ?>
-
-
-					<?php // Title right, Image underneat Title, text left ?>
-					<?php elseif(get_row_layout() == 'image_right' ): ?>		
-						<?php get_template_part('templates/parts/image', 'right'); ?>
-
+				<?php // Quote with autograph?>
+				<?php elseif( get_row_layout() == 'quote_right' ): ?>
+					<?php get_template_part('templates/parts/quote', 'right'); ?>
 
 				<?php endif; ?>
 			<?php endwhile; ?>
@@ -77,7 +68,7 @@
 <?php // Secondary Content ?>
 <?php if( have_rows('secondary_content') ): ?>
 	<div class="row secondary-content">
-		<div class="container">
+		<div class="container pt-5">
 			<?php while( have_rows('secondary_content') ): the_row(); ?>
 
 					<?php // Title left ?>
@@ -120,34 +111,9 @@
 					<?php elseif(get_row_layout() == 'image_fullwidth' ): ?>
 						<?php get_template_part('templates/parts/image', 'fullwidth'); ?>
 
-
-
-<?php //TODO ?>
-				<?php // Quote with autograph?>
-				<?php elseif( get_row_layout() == 'team_quote_left' ): ?>
-					<?php get_template_part('templates/parts/quote', 'team-left'); ?>
-
-					<?php // Quote of Client + Name, Company/Position ?>
-					<?php elseif( get_row_layout() == 'client_quote_left' ): ?>
-						<?php get_template_part('templates/parts/quote', 'left'); ?>
-
-
-					<?php // Title right, Image underneat Title, text left ?>
-					<?php elseif(get_row_layout() == 'image_right' ): ?>		
-						<?php get_template_part('templates/parts/image', 'right'); ?>
-
-
 				<?php endif; ?>
 			<?php endwhile; ?>
 
 		</div>
 	</div>
 <?php endif; ?>
-
-<?php // Tertiary Content ?>
-<div class="row tertiary-content">
-	<div class="container-fluid">
-		<?php // Related singles ?>
-		<?php get_template_part('templates/parts/related', 'cases'); ?>
-	</div>
-</div>

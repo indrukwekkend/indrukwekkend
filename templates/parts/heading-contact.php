@@ -1,8 +1,8 @@
 <div id="contact" class="row part-contact">
 	<div class="container">
-		<div class="row justify-content-center">
+		<div class="row justify-content-center mb-5">
 			<div class="col-10">
-				<div class="row bg-orange inset mb-5">
+				<div class="row bg-orange inset">
 						<div class="col-12 col-xl-10 align-self-end pt-4">
 
 							<div class="row mb-4 mt-5 align-items-center">

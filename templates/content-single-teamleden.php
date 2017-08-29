@@ -9,7 +9,7 @@
 <?php // Primary Content ?>
 <?php if( have_rows('primary_content') ): ?>
 	<div class="row primary-content">
-		<div class="container">
+		<div class="container pt-5">
 			<?php while( have_rows('primary_content') ): the_row(); ?>
 
 					<?php // Title left ?>
@@ -60,7 +60,6 @@
 				<?php elseif( get_row_layout() == 'quote_right' ): ?>
 					<?php get_template_part('templates/parts/quote', 'right'); ?>
 
-
 				<?php endif; ?>
 			<?php endwhile; ?>
 
@@ -72,7 +71,7 @@
 <?php // Secondary Content ?>
 <?php if( have_rows('secondary_content') ): ?>
 	<div class="row secondary-content">
-		<div class="container">
+		<div class="container pt-5">
 			<?php while( have_rows('secondary_content') ): the_row(); ?>
 
 					<?php // Title left ?>
@@ -115,10 +114,6 @@
 					<?php elseif(get_row_layout() == 'image_fullwidth' ): ?>
 						<?php get_template_part('templates/parts/image', 'fullwidth'); ?>
 
-					<?php //TODO ?>
-					<?php // Quote of Client + Name, Company/Position ?>
-
-
 				<?php endif; ?>
 			<?php endwhile; ?>
 
@@ -129,7 +124,12 @@
 <?php // Tertiary Content ?>
 <div class="row tertiary-content">
 	<div class="container-fluid">
-		<?php // Related singles ?>
-		<?php get_template_part('templates/parts/team', 'members'); ?>
+
+		<?php // Cases ?>
+		<?php get_template_part('templates/parts/employee','cases'); ?>
+
+		<?php // Coworkers ?>
+		<?php get_template_part('templates/parts/employee', 'coworkers'); ?>
+
 	</div>
 </div>

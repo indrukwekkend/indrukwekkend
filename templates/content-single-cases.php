@@ -112,10 +112,6 @@
 					<?php elseif(get_row_layout() == 'image_fullwidth' ): ?>
 						<?php get_template_part('templates/parts/image', 'fullwidth'); ?>
 
-					<?php //TODO ?>
-					<?php // Quote of Client + Name, Company/Position ?>
-
-
 				<?php endif; ?>
 			<?php endwhile; ?>
 
@@ -126,7 +122,9 @@
 <?php // Tertiary Content ?>
 <div class="row tertiary-content">
 	<div class="container-fluid">
-		<?php // Related singles ?>
-		<?php get_template_part('templates/parts/related', 'cases'); ?>
+
+		<?php // Related Cases ?>
+		<?php get_template_part('templates/parts/content', 'cases'); ?>
+
 	</div>
 </div>
