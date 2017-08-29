@@ -20,7 +20,7 @@
 		</div>
 		<div class="row">
 			<div class="col-12 pt-5 text-center">
-				<div class="gallery">
+				<div class="part-gallery">
 					<?php if( have_rows('images') ): ?>
 						<?php $i;?>
 						<?php while ( have_rows('images') ) : the_row(); ?>
