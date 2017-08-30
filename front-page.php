@@ -1,5 +1,5 @@
 <?php use Roots\Sage\Extras; ?>
-<div class="container mb-5">
+<div class="container">
 	<div class="row  align-items-center">
 		<div class="col-sm-7">
 			<div class="text-center">
@@ -24,12 +24,12 @@
 			</div>
 			<div class="row">
 				<div class="col-12 text-center pt-5">
-					<a class="btn btn-lg btn-black" href="">Bekijk ons werk</a>
+					<a class="btn btn-lg btn-black" href="/cases" >Bekijk ons werk</a>
 				</div>
 			</div>
 		</div>
 		<div class="col-sm-5">
-			<div class="row pt-5 front-content">
+			<div class="row pt-6 front-content">
 				<?php while (have_posts()) : the_post(); ?>
 					<?php the_content(); ?>
 				<?php endwhile; ?>
@@ -64,22 +64,28 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		<div class="instagram-container">
-			<div class="instagram-description">
-				<div class="instagram-text">Spread the love</div>
-				<div class="instagram-username">
-					<span class="fa fa-instagram"></span>@ditisindrukwekkend
+	<div class="row">
+		<div class="col-12 py-6">
+			<div class="row">
+				<div class="col-12">
+					<div class="instagram-container">
+						<div class="instagram-description">
+							<div class="instagram-text">Spread the love</div>
+							<div class="instagram-username">
+								<span class="fa fa-instagram"></span>@ditisindrukwekkend
+							</div>
+						</div>
+						<div class="instagram-feed">
+							<?php echo do_shortcode('[instagram-feed]'); ?>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="instagram-feed">
-				<?php echo do_shortcode('[instagram-feed]'); ?>
-			</div>
-		</div>
-		<div class="row text-center">
-			<div class="col mb-3">
-				<div class="instagram-link">
-					<a href="https://instagram.com/ditisindrukwekkend">volg ons werk op Instagram</a> <span class="icon-arrow-right"></span>
+			<div class="row text-center">
+				<div class="col pt-4">
+					<div class="instagram-link">
+						<a href="https://instagram.com/ditisindrukwekkend">volg ons werk op Instagram</a>
+					</div>
 				</div>
 			</div>
 		</div>
