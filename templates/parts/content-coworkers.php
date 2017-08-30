@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="col-10">
-		<div class="row part-contributors">
+		<div class="row align-items-center part-contributors">
 			<div class="col-lg-7">
 
 				<?php $args = array(
