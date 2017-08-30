@@ -356,6 +356,81 @@
         "description": ""
     },
     {
+        "key": "group_59a6d3922974a",
+        "title": "Voorpagina Opties",
+        "fields": [
+            {
+                "key": "field_59a6d3a5f87ab",
+                "label": "Merken",
+                "name": "brands",
+                "type": "relationship",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "merken"
+                ],
+                "taxonomy": [],
+                "filters": [
+                    "search"
+                ],
+                "elements": "",
+                "min": "",
+                "max": "",
+                "return_format": "object"
+            },
+            {
+                "key": "field_59a6d3d1f87ac",
+                "label": "Quotes",
+                "name": "quotes",
+                "type": "relationship",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "post_type": [
+                    "quotes"
+                ],
+                "taxonomy": [],
+                "filters": [
+                    "search",
+                    "post_type",
+                    "taxonomy"
+                ],
+                "elements": "",
+                "min": "",
+                "max": "",
+                "return_format": "object"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "page_type",
+                    "operator": "==",
+                    "value": "front_page"
+                }
+            ]
+        ],
+        "menu_order": 11,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": 1,
+        "description": ""
+    },
+    {
         "key": "group_59a4132addb54",
         "title": "Contact Informatie",
         "fields": [
@@ -2627,13 +2702,6 @@
                 {
                     "param": "post_type",
                     "operator": "==",
-                    "value": "page"
-                }
-            ],
-            [
-                {
-                    "param": "post_type",
-                    "operator": "==",
                     "value": "teamleden"
                 }
             ]
@@ -2724,7 +2792,7 @@
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
-                    "width": "",
+                    "width": "80",
                     "class": "",
                     "id": ""
                 },
@@ -2736,6 +2804,35 @@
                 "multiple": 0,
                 "return_format": "object",
                 "ui": 1
+            },
+            {
+                "key": "field_59a68bce96864",
+                "label": "Tekst Grootte",
+                "name": "heading_size",
+                "type": "select",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "h1": "Heading 1",
+                    "h2": "Heading 2",
+                    "h3": "Heading 3",
+                    "h4": "Heading 4",
+                    "h5": "Heading 5",
+                    "h6": "Heading 6"
+                },
+                "default_value": [],
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 1,
+                "ajax": 0,
+                "return_format": "value",
+                "placeholder": ""
             }
         ],
         "location": [
