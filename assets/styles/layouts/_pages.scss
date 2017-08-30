@@ -164,6 +164,33 @@
 	}
 }
 
+/* Part: Contributors */
+.part-contributors{
+	.contributor{
+		position: relative;
+		text-align: center;
+
+		.contributor-image{
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-size: contain;
+			background-position: bottom center;
+			background-repeat: no-repeat;
+		}
+		.contributor-title{
+			position: absolute;
+			bottom: 0;
+			height: 40px;
+			width: 100%;
+			color: $white;
+			margin-right: ($grid-gutter-width / -2);
+			margin-left:  ($grid-gutter-width / -2);
+		}
+	}
+}
 
 
 

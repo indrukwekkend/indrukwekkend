@@ -61,6 +61,9 @@
 				<?php endif; ?>
 			<?php endwhile; ?>
 
+			<?php // 'Wij werkten ook mee' ?>
+			<?php get_template_part('templates/parts/content', 'coworkers'); ?>
+
 		</div>
 	</div>
 <?php endif; ?>
