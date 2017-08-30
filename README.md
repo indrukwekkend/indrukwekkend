@@ -5,8 +5,6 @@
 
 This is the repository of the Indrukwekkend theme.
 
-Current version: v1.0.1-beta
-
 run `npm install`
 then `bower install`
 Only after those run `gulp && gulp watch` to get going.
