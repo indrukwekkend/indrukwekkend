@@ -62,7 +62,7 @@
 			<?php endwhile; ?>
 
 			<?php // 'Wij werkten ook mee' ?>
-			<?php get_template_part('templates/parts/content', 'coworkers'); ?>
+			<?php get_template_part('templates/parts/content', 'contributors'); ?>
 
 		</div>
 	</div>
