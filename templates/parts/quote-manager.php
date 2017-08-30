@@ -22,7 +22,7 @@ endif;
 
 ?>
 
-<div class="row py-5">
+<div class="row pt-5 pb-6">
 	<div class="col-2"></div>
 		<div class="col-10">
 
