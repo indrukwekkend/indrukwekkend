@@ -88,6 +88,20 @@
 
 	&-client{
 		background-color: $content-bg;
+
+		&:before{
+			position: absolute;
+			display: block;
+			top: -2.8rem;
+			left: 2.5rem;
+			content: " ";
+			height: 5.4rem;
+			width: 5.4rem;
+			background-image: url(../images/svg/quote-open-dark.svg);
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
 	}
 	&-manager{
 		background-color: $orange;
