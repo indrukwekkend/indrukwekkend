@@ -194,3 +194,17 @@ function my_acf_flexible_content_layout_title( $title, $field, $layout, $i ) {
 
 }
 add_filter( 'acf/fields/flexible_content/layout_title', __NAMESPACE__ . '\\my_acf_flexible_content_layout_title', 10, 4 );
+
+function wpdocs_custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', __NAMESPACE__ . '\\wpdocs_custom_excerpt_length', 999 );
+
+function wpdocs_excerpt_more( $more ) {
+	return "...";
+	return sprintf( '<a class="read-more" href="%1$s">%2$s</a>',
+		get_permalink( get_the_ID() ),
+		__( 'Read More', 'textdomain' )
+		);
+}
+add_filter( 'excerpt_more', __NAMESPACE__ . '\\wpdocs_excerpt_more' );
