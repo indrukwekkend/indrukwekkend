@@ -8,7 +8,7 @@
                 "label": "Headlines",
                 "name": "headlines",
                 "type": "repeater",
-                "instructions": "",
+                "instructions": "Voer hier de zinnen in voor in de header",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -84,7 +84,7 @@
                 "label": "Oranje Knop",
                 "name": "btn_orange",
                 "type": "group",
-                "instructions": "",
+                "instructions": "Tekst en URL voor de oranje knop in de header",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -169,7 +169,7 @@
                 "label": "Zwarte Knop",
                 "name": "btn_black",
                 "type": "group",
-                "instructions": "",
+                "instructions": "Tekst en URL voor de zwarte knop in de header",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -224,7 +224,7 @@
                 "label": "Voorgrondafbeelding",
                 "name": "header_foreground",
                 "type": "image",
-                "instructions": "",
+                "instructions": "Afbeelding aan de rechterkant in de header",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -248,7 +248,7 @@
                 "label": "Achtergrondafbeelding",
                 "name": "header_background",
                 "type": "image",
-                "instructions": "",
+                "instructions": "De achtergrond afbeelding van de header. Is standaard de studio",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -292,7 +292,7 @@
             ]
         ],
         "menu_order": 10,
-        "position": "acf_after_title",
+        "position": "normal",
         "style": "default",
         "label_placement": "top",
         "instruction_placement": "label",
@@ -364,7 +364,7 @@
                 "label": "Merken",
                 "name": "brands",
                 "type": "relationship",
-                "instructions": "",
+                "instructions": "Merken die op de voorpagina getoond worden",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -389,7 +389,7 @@
                 "label": "Quotes",
                 "name": "quotes",
                 "type": "relationship",
-                "instructions": "",
+                "instructions": "Quotes die op de voorpagina getoond worden",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -402,9 +402,7 @@
                 ],
                 "taxonomy": [],
                 "filters": [
-                    "search",
-                    "post_type",
-                    "taxonomy"
+                    "search"
                 ],
                 "elements": "",
                 "min": "",
@@ -439,7 +437,7 @@
                 "label": "Titel Links",
                 "name": "title_left",
                 "type": "text",
-                "instructions": "",
+                "instructions": "Tekst aan de linkerkant van het contact blok",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -458,7 +456,7 @@
                 "label": "Titel Rechts",
                 "name": "title_right",
                 "type": "text",
-                "instructions": "",
+                "instructions": "Tekst aan de rechterkant van het contact blok",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -484,7 +482,7 @@
         ],
         "menu_order": 15,
         "position": "normal",
-        "style": "default",
+        "style": "seamless",
         "label_placement": "top",
         "instruction_placement": "label",
         "hide_on_screen": "",
@@ -500,7 +498,7 @@
                 "label": "Functie",
                 "name": "company_position",
                 "type": "text",
-                "instructions": "",
+                "instructions": "Functie binnen het bedrijf",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -528,7 +526,7 @@
                     "id": ""
                 },
                 "default_value": "",
-                "placeholder": "",
+                "placeholder": "voornaam@indrukwekkend.nl",
                 "prepend": "",
                 "append": "",
                 "maxlength": ""
@@ -576,7 +574,7 @@
                 "label": "Handtekening",
                 "name": "autograph",
                 "type": "text",
-                "instructions": "Voer hier de bestandsnaam in voor de handtekening.",
+                "instructions": "Voer hier de bestandsnaam in voor de handtekening.\r\nDit veld kan later nog veranderen en misschien komen te vervallen.",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -595,7 +593,7 @@
                 "label": "Social Media",
                 "name": "social_media",
                 "type": "repeater",
-                "instructions": "",
+                "instructions": "Voer hier alle Social Media netwerken in die gebruikt worden.\r\nDe gebruikersnaam word getoond op de site",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -688,7 +686,7 @@
         ],
         "menu_order": 16,
         "position": "normal",
-        "style": "default",
+        "style": "seamless",
         "label_placement": "top",
         "instruction_placement": "label",
         "hide_on_screen": "",
@@ -704,7 +702,7 @@
                 "label": "Primair Inhoud",
                 "name": "primary_content",
                 "type": "flexible_content",
-                "instructions": "",
+                "instructions": "Inhoud voor het grijze deel van de pagina",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -1726,7 +1724,7 @@
                 "label": "Secundair Inhoud",
                 "name": "secondary_content",
                 "type": "flexible_content",
-                "instructions": "",
+                "instructions": "Inhoud voor het witte deel van de pagina",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -2650,7 +2648,7 @@
                 "label": "Cases Titel",
                 "name": "cases_title",
                 "type": "text",
-                "instructions": "",
+                "instructions": "Tekst als begeleidende titel",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -2659,7 +2657,7 @@
                     "id": ""
                 },
                 "default_value": "",
-                "placeholder": "",
+                "placeholder": "Iets van; Bekijk meer cases",
                 "prepend": "",
                 "append": "",
                 "maxlength": ""
@@ -2669,7 +2667,7 @@
                 "label": "Cases",
                 "name": "cases",
                 "type": "relationship",
-                "instructions": "",
+                "instructions": "Kies de Cases die je wilt tonen op de pagina",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -2685,7 +2683,7 @@
                     "search"
                 ],
                 "elements": "",
-                "min": 3,
+                "min": "",
                 "max": 4,
                 "return_format": "object"
             }
@@ -2708,7 +2706,7 @@
         ],
         "menu_order": 30,
         "position": "normal",
-        "style": "default",
+        "style": "seamless",
         "label_placement": "top",
         "instruction_placement": "label",
         "hide_on_screen": "",
@@ -2724,7 +2722,7 @@
                 "label": "Client Quote",
                 "name": "quote_client",
                 "type": "post_object",
-                "instructions": "",
+                "instructions": "Kies een Quote van de klant",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -2753,7 +2751,7 @@
         ],
         "menu_order": 40,
         "position": "normal",
-        "style": "default",
+        "style": "seamless",
         "label_placement": "top",
         "instruction_placement": "label",
         "hide_on_screen": "",
@@ -2769,7 +2767,7 @@
                 "label": "Manager Quote",
                 "name": "quote_manager",
                 "type": "textarea",
-                "instructions": "",
+                "instructions": "Voer hier een korte quote in van de projectmanager",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -2779,7 +2777,7 @@
                 },
                 "default_value": "",
                 "placeholder": "",
-                "maxlength": "",
+                "maxlength": 60,
                 "rows": "",
                 "new_lines": ""
             },
@@ -2788,7 +2786,7 @@
                 "label": "Manager",
                 "name": "manager",
                 "type": "post_object",
-                "instructions": "",
+                "instructions": "Kies de manager van dit project",
                 "required": 0,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -2810,7 +2808,7 @@
                 "label": "Tekst Grootte",
                 "name": "heading_size",
                 "type": "select",
-                "instructions": "",
+                "instructions": "Kies een lettergrootte. H1 is het grootst, H6 is het kleinst",
                 "required": 1,
                 "conditional_logic": 0,
                 "wrapper": {
@@ -2846,7 +2844,7 @@
         ],
         "menu_order": 50,
         "position": "normal",
-        "style": "default",
+        "style": "seamless",
         "label_placement": "top",
         "instruction_placement": "label",
         "hide_on_screen": "",
