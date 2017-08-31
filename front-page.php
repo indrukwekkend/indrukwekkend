@@ -5,7 +5,7 @@
 			<div class="text-center">
 				<p class="lead">Met veel trost werken wij o.a. voor deze merken</p>
 			</div>
-			<div class="row justify-content-center">
+			<div class="row justify-content-center company-brands">
 				<?php if( $post_objects = get_field('brands') ): ?>
 
 					<?php foreach( $post_objects as $post): ?>
@@ -13,7 +13,7 @@
 						<?php setup_postdata($post); ?>
 
 								<div class="col-3">
-									<img class="img-fluid" src="<?php the_post_thumbnail_url(null, 'medium'); ?>" title="<?php the_title(); ?>"/>
+									<img class="brand img-fluid" src="<?php the_post_thumbnail_url(null, 'medium'); ?>" title="<?php the_title(); ?>"/>
 								</div>
 
 						<?php endforeach; ?>
@@ -69,30 +69,41 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="row">
-		<div class="col-12 py-6">
+		<div class="col py-6 part-instagram">
+
 			<div class="row">
-				<div class="col-12">
-					<div class="instagram-container">
-						<div class="instagram-description">
-							<div class="instagram-text">Spread the love</div>
-							<div class="instagram-username">
-								<span class="fa fa-instagram"></span>@ditisindrukwekkend
+				<div class="col-8">
+					<div class="row">
+						<div class="col-6">
+							<div class="row">
+								<div class="col">
+									<span class="spread-the-love">Spread the love</span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-2"></div>
+								<div class="col-10">
+									<span class="dit-is-indrukwekkend"><span class="icon instagram-black"></span> @ditisindrukwekkend</span>
+								</div>
 							</div>
 						</div>
-						<div class="instagram-feed">
-							<?php echo do_shortcode('[instagram-feed]'); ?>
+						<div class="col-6">
+							<div class="instagram-feed">
+								<?php echo do_shortcode('[instagram-feed]'); ?>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+
 			<div class="row text-center">
 				<div class="col pt-4">
-					<div class="instagram-link">
-						<a href="https://instagram.com/ditisindrukwekkend">volg ons werk op Instagram</a>
-					</div>
+					<a class="instagram-link" href="https://instagram.com/ditisindrukwekkend">volg ons werk op Instagram<span class="icon arrow-right-orange"></span></a>
 				</div>
 			</div>
+
 		</div>
 	</div>
 </div>

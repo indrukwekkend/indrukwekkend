@@ -245,19 +245,12 @@
 	}
 }
 
+/* Part: Company Brands */
+.company-brands{
 
-
-.brands-list{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-
-	.brands-item{
-		width: 190px;
-		text-align: center;
-		padding: 20px 5px;
-		filter: grayscale(100%);
+	.brand{
 		transition:all 80ms ease;
+		filter: grayscale(100%);
 
 		&:hover{
 			filter: grayscale(0%);
@@ -265,52 +258,34 @@
 	}
 }
 
-.instagram-container{
-	.instagram-description{
-		display: inline-block;
-		vertical-align: middle;
-		margin-right: 60px;
+/* Part: Instagram */
+.part-instagram{
 
-		.instagram-text{
-			font-family: 'Madina Script';
-			color: theme-color(primary);
-			font-size: 50px;
-			font-weight: 100;
-			width: 380px;
-		}
-
-		.instagram-username{
-			font-weight: bold;
-			font-size: 20px;
-			text-align: right;
-
-			.fa{
-				font-size: 40px;
-				margin-right: 10px;
-				vertical-align: middle;
-			}
-		}
+	.spread-the-love{
+		font-family: 'Madina Script';
+		color: $orange;
+		font-size: 50px;
+		font-weight: 100;
 	}
-	
+
+	.dit-is-indrukwekkend{
+		font-weight: bold;
+		font-size: 20px;
+	}
+
 	.instagram-feed{
 		display: inline-block;
 		vertical-align: middle;
 		max-width: 500px;
 		margin-bottom: -20px;
-		
-		.sbi_item{
-			.sbi_photo_wrap{
-			}
-		}
 	}
 }
+
 .instagram-link{
 	text-align: center;
-	
-	a{
-		color: $gray-600;
-		cursor: pointer;
-	}
+	text-decoration: underline;
+	color: $gray-600;
+	cursor: pointer;
 }
 
 @media (min-width: 576px){}
