@@ -22,16 +22,16 @@ h5, h6{
 	margin: -12px 0;
 
 	&.up{
-		background-image: url(../images/arrow-up.svg);
+		background-image: url(../images/arrows/up-black.svg);
 	}
 	&.left{
-		background-image: url(../images/arrow-left.svg);
+		background-image: url(../images/arrows/left-black.svg);
 	}
 	&.right{
-		background-image: url(../images/arrow-right.svg);
+		background-image: url(../images/arrows/right-black.svg);
 	}
 	&.down{
-		background-image: url(../images/arrow-down.svg);
+		background-image: url(../images/arrows/down-black.svg);
 	}
 }
 .typed-cursor {
@@ -218,6 +218,71 @@ h5, h6{
 		}
 		&-gray{
 			background-image: url('../images/svg/strava-gray.svg');
+		}
+	}
+
+	&.arrow-up{
+		background-image: url(../images/arrows/up-white.svg);
+
+		&-orange{
+			background-image: url(../images/arrows/up-orange.svg);
+		}
+		&-white{
+			background-image: url(../images/arrows/up-white.svg);
+		}
+		&-gray{
+			background-image: url(../images/arrows/up-gray.svg);
+		}
+		&-black{
+			background-image: url(../images/arrows/up-black.svg);
+		}
+	}
+	&.arrow-left{
+		background-image: url(../images/arrows/left-white.svg);
+
+		&-orange{
+			background-image: url(../images/arrows/left-orange.svg);
+		}
+		&-white{
+			background-image: url(../images/arrows/left-white.svg);
+		}
+		&-gray{
+			background-image: url(../images/arrows/left-gray.svg);
+		}
+		&-black{
+			background-image: url(../images/arrows/left-black.svg);
+		}
+	}
+	&.arrow-right{
+		background-image: url(../images/arrows/right-white.svg);
+
+		&-orange{
+			background-image: url(../images/arrows/right-orange.svg);
+		}
+		&-white{
+			background-image: url(../images/arrows/right-white.svg);
+		}
+		&-gray{
+			background-image: url(../images/arrows/right-gray.svg);
+		}
+		&-black{
+			background-image: url(../images/arrows/right-black.svg);
+		}
+	}
+	&.arrow-down{
+		background-image: url(../images/arrows/down-white.svg);
+
+		&-orange{
+			background-image: url(../images/arrows/down-orange.svg);
+		}
+		&-white{
+			background-image: url(../images/arrows/down-white.svg);
+		}
+		&-gray{
+			background-image: url(../images/arrows/down-gray.svg);
+		}
+		&-black{
+			background-image: url(../images/arrows/down-black.svg);
 		}
 	}
 }
