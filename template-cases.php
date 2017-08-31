@@ -2,7 +2,7 @@
 /**
  * Template Name: Cases Template
  */
-use Roots\Sage\Extras;
+
 $args = array(
 	'post_type' => 'cases'
 );
