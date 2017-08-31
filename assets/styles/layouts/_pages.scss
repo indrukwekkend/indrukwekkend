@@ -67,7 +67,7 @@
 	position: relative;
 	margin-top: 0;
 	background-color: $white;
-	box-shadow: 0 0 2rem -.8rem $gray-900;
+	box-shadow: 0 0 2rem -1rem $gray-600;
 	
 	&:before{
 		position: absolute;
@@ -84,7 +84,9 @@
 	}
 
 	.quote-content{}
-	.quote-autograph{}
+	.quote-autograph{
+		margin-top: -1.8rem;
+	}
 
 	&-client{
 		background-color: $content-bg;
