@@ -9,19 +9,13 @@
 
 							<?php setup_postdata($post); ?>
 
-							<div class="col-3 text-center case" href="<?php echo esc_url( get_permalink() ); ?>">
-								<div class="row">
-									<div class="col-12">
-										<img class="img-fluid" src="<?php the_field('header_foreground');?>">
+							<a class="col-4 case" href="<?php echo esc_url( get_permalink() ); ?>">
+									<div class="case-image" style="background-image:url(<?php the_field('header_foreground');?>);">
 									</div>
-								</div>
-
-								<div class="row">
-									<div class="col-12">
+									<div class="case-title">
 										<?php the_title(); ?>
 									</div>
-								</div>
-							</div>
+							</a>
 
 							<?php endforeach; ?>
 
