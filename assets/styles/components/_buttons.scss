@@ -21,7 +21,7 @@
 }
 
 .arrow-up:before{
-	background-image: url(../images/arrow-up.svg);
+	background-image: url(../images/arrows/up-black.svg);
 }
 .arrow-up.btn-activated:before {
 	animation: moveUp 0.5s;
@@ -36,7 +36,7 @@
 }
 
 .arrow-down:before{
-	background-image: url(../images/arrow-down.svg);
+	background-image: url(../images/arrows/down-black.svg);
 }
 .arrow-down.btn-activated:before {
 	animation: moveDown 0.5s;
@@ -51,7 +51,7 @@
 }
 
 .arrow-right:before{
-	background-image: url(../images/arrow-right.svg);
+	background-image: url(../images/arrows/right-black.svg);
 }
 .arrow-right.btn-activated:before {
 	animation: moveRight 0.5s;
@@ -66,7 +66,7 @@
 }
 
 .arrow-left:before{
-	background-image: url(../images/arrow-left.svg);
+	background-image: url(../images/arrows/left-black.svg);
 }
 .arrow-left.btn-activated:before {
 	animation: moveLeft 0.5s;
