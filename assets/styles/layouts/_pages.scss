@@ -135,7 +135,7 @@
 					background-color: color(white);
 
 					&.slick-active{
-						border-color: theme-color(primary);
+						border-color: $orange;
 					}
 
 					button{
@@ -384,10 +384,64 @@
 					display: block;
 					position: relative;
 					height: 400px;
-					width: 400px;
+					margin-right: ($grid-gutter-width / -2);
+					margin-left:  ($grid-gutter-width / -2);
 
 					&:focus{
 						outline:none;
+					}
+
+					.coworkers-hover{
+						position: absolute;
+						opacity: 0;
+						top: 0;
+						right: 0;
+						left: 0;
+						bottom: 0;
+						background-color: rgba($orange, .7);
+						z-index:99;
+						transition:all 80ms ease;
+
+						.coworkers-info{
+							position: absolute;
+							color: $white;
+							width: 100%;
+							text-align: center;
+							top: 10rem;
+							z-index: 999;
+
+							h4{
+								margin-bottom: 2.6rem;
+								text-shadow: 0 2px 13px $gray-900;
+								font-size: 1.6rem;
+							}
+
+							span{
+								border-top: 2px solid $white;
+								padding: 1.2rem .3rem;
+							}
+						}
+
+						.coworkers-contact{
+							position: absolute;
+							color: $white;
+							width: 100%;
+							left: 0;
+							right: 0;
+							bottom: 10px;
+							z-index: 999;
+						}
+					}
+
+					&:hover{
+						.coworkers-hover{
+							opacity: 1;
+							transition:all 80ms ease;
+						}
+						.coworkers-title{
+							opacity: 0;
+							transition:all 80ms ease;
+						}
 					}
 
 					.coworkers-image{
@@ -411,6 +465,7 @@
 						height:40px;
 						width: 100%;
 						text-align: center;
+						transition:all 80ms ease;
 
 						h4{
 							color: $white;
