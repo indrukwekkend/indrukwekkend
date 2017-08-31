@@ -1,6 +1,6 @@
 jQuery(document).ready(function(){
 
-	jQuery('.quotes-list').slick({
+	jQuery('.quote-list').slick({
 		dots: true,
 		arrows: false,
 		infinite: false,

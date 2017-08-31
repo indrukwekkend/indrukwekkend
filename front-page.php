@@ -37,26 +37,31 @@
 			<div class="row pt-6">
 				<?php if( $post_objects = get_field('quotes') ): ?>
 
-					<?php foreach( $post_objects as $post): ?>
+					<div class="col-12">
+						<div class="row p-5 part-quote-client">
+							<div class="col-12 quote-list">
+								<?php foreach( $post_objects as $post): ?>
 
-						<?php setup_postdata($post); ?>
+									<?php setup_postdata($post); ?>
 
-						<div class="col-12">
-							<div class="row p-5 part-quote-client">
-								<div class="col-12">
-									<div class="row">
-										<?php the_content();?>
-									</div>
-									<div class="row">
-										<div class="col-12">
+									<div class="col-12 mb-4">
+										<div class="row">
+											<div class="col-12">
+												<?php the_content();?>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-12">
 											<span class="text-gray"><?php the_title(); ?> - <?php the_field('company_position');?></span>
+											</div>
 										</div>
 									</div>
-								</div>
+
+								<?php endforeach; ?>
 							</div>
 						</div>
+					</div>
 
-						<?php endforeach; ?>
 
 					<?php wp_reset_postdata(); ?>
 
