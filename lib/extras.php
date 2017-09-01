@@ -208,3 +208,8 @@ function wpdocs_excerpt_more( $more ) {
 		);
 }
 add_filter( 'excerpt_more', __NAMESPACE__ . '\\wpdocs_excerpt_more' );
+
+function form_submit_button( $button, $form ) {
+	return "<button class='btn btn-lg btn-orange btn-arrow arrow-right' id='gform_submit_button_{$form['id']}'><span>Versturen</span></button>";
+}
+add_filter( 'gform_submit_button', __NAMESPACE__ . '\\form_submit_button', 10, 2 );

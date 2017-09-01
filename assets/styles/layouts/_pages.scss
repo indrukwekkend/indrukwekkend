@@ -632,6 +632,28 @@
 	}
 }
 
+/* Contact Pagina */
+.contact{
+	.gform_wrapper{
+		.gfield{
+			.gfield_label{}
+			input, textarea{
+				border: 0;
+				box-shadow: 0 0 2rem -1rem $gray-600;
+			}
+		}
+		.gform_footer{
+			text-align: right;
+			padding-right: 16px !important;
+		}
+	}
+	.contact-social{
+		.text-left{
+			border-left: 2px solid $white;
+		}
+	}
+}
+
 @media (min-width: 576px){}
 @media (min-width: 768px){}
 
