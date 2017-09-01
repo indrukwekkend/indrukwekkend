@@ -1,5 +1,23 @@
 jQuery(document).ready(function(){
 
+	jQuery('a[href$="#cases"]').click(function(e){
+		e.preventDefault();
+		jQuery('#overlay-cases').addClass('show');
+	});
+	jQuery('#overlay-cases').click(function(e){
+		e.preventDefault();
+		jQuery('#overlay-cases-close').removeClass('show');
+	});
+
+	jQuery('a[href$="#teamleden"]').click(function(e){
+		e.preventDefault();
+		jQuery('#overlay-teamleden').addClass('show');
+	});
+	jQuery('#overlay-teamleden').click(function(e){
+		e.preventDefault();
+		jQuery('#overlay-teamleden-close').removeClass('show');
+	});
+
 	jQuery('.quote-list').slick({
 		dots: true,
 		arrows: false,

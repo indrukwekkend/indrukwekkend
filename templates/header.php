@@ -4,6 +4,37 @@ $background = function ( $url ) {
     echo 'style="background-image: url(' . esc_url( $url ) . ');"';
 };
 ?>
+<div id="overlay-teamleden" class="hidden">
+	<div class="container">
+		<div class="row">
+			
+		</div>
+	</div>
+</div>
+<div id="overlay-cases" class="hidden">
+	<div class="container-fluid">
+		<div class="row">
+		<?php $args = array('post_type' => 'cases', 'post__not_in' => array($post->ID), ); ?>
+			<?php $query = new wp_query( $args ); ?>
+			<?php if($query->have_posts()): ?>
+				<?php while( $query->have_posts() ) : ?>
+					<?php $query->the_post(); ?>
+						<div class="col-3 overlay-case">
+							<a class="overlay-case-content" href="<?php echo esc_url( get_post_permalink() ); ?>">
+								<div class="overlay-case-image" style="background-image:url(<?php the_field('header_foreground');?>);"></div>
+								<div class="overlay-case-title">
+									<h4><?php the_title(); ?></h4>
+								</div>
+								<div class="overlay-case-hover"></div>
+							</a>
+						</div>
+					<?php endwhile; ?>
+					<?php wp_reset_postdata(); ?>
+					<?php wp_reset_query(); ?>
+			<?php endif; ?>
+		</div>
+	</div>
+</div>
 <header class="container-fluid banner" <?php $background( get_field('header_background') ); ?>>
 	<div class="row">
 		<div class="col-lg-12">
