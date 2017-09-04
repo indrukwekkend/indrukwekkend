@@ -330,4 +330,12 @@ h5, h6{
 			background-image: url(../images/arrows/down-black.svg);
 		}
 	}
+
+	&.close{
+		background-image: url(../images/svg/close-orange.svg);
+
+		&-orange{
+			background-image: url(../images/svg/close-orange.svg);
+		}
+	}
 }
