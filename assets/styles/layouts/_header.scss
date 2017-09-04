@@ -130,13 +130,12 @@
 	width: 100%;
 	height: 200%;
 	background-color: $white;
-	z-index: 9999999;
-
-	&.hidden{
-		display: none;
-	}
-	&.show{
-		display: block;
+	z-index: 9999;
+	display: none;
+	
+	#overlay-teamleden-close,
+	#overlay-cases-close{
+		cursor: pointer;
 	}
 
 	.overlay-case{
@@ -177,6 +176,7 @@
 
 
 		.overlay-case-hover{
+			display: block;
 			position: absolute;
 			opacity: 0;
 			top: 0;
@@ -185,7 +185,23 @@
 			bottom: 0;
 			background-color: rgba($orange, .7);
 			z-index:99;
-			transition:all 80ms ease;
+
+			.overlay-title{
+				position: absolute;
+				top: 10rem;
+				width: 60%;
+				margin: 0 20%;
+				text-align: center;
+
+				h4{
+					text-shadow: 0 2px 13px #212529;
+					font-size: 1.6rem;
+				}
+				hr{
+					border: 1px solid $white;
+					margin: 1rem 3rem;
+				}
+			}
 		}
 
 		&:hover{
@@ -194,5 +210,97 @@
 				transition:all 80ms ease;
 			}
 		}
+	}
+
+	.overlay-teamlid{
+	.overlay-teamlid-content{
+					display: block;
+					position: relative;
+					height: 400px;
+					margin-right: ($grid-gutter-width / -2);
+					margin-left:  ($grid-gutter-width / -2);
+
+					.overlay-teamlid-hover{
+						position: absolute;
+						opacity: 0;
+						top: 0;
+						right: 0;
+						left: 0;
+						bottom: 0;
+						background-color: rgba($orange, .7);
+						z-index:99;
+						transition:all 80ms ease;
+
+						.overlay-teamlid-info{
+							position: absolute;
+							color: $white;
+							width: 100%;
+							text-align: center;
+							top: 10rem;
+							z-index: 999;
+
+							h4{
+								margin-bottom: 2.6rem;
+								text-shadow: 0 2px 13px $gray-900;
+								font-size: 1.6rem;
+							}
+
+							span{
+								border-top: 2px solid $white;
+								padding: 1.2rem .3rem;
+							}
+						}
+
+						.overlay-teamlid-contact{
+							position: absolute;
+							color: $white;
+							width: 100%;
+							left: 0;
+							right: 0;
+							bottom: 10px;
+							z-index: 999;
+						}
+					}
+
+					&:hover{
+						.overlay-teamlid-hover{
+							opacity: 1;
+							transition:all 80ms ease;
+						}
+						.overlay-teamlid-title{
+							opacity: 0;
+							transition:all 80ms ease;
+						}
+					}
+
+					.overlay-teamlid-image{
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						background-size: contain;
+						background-position: center;
+						background-repeat: no-repeat;
+
+						&:focus{
+							outline:none;
+						}
+					}
+
+					.overlay-teamlid-title{
+						position: absolute;
+						bottom: 0;
+						height:40px;
+						width: 100%;
+						text-align: center;
+						transition:all 80ms ease;
+
+						h4{
+							color: $white;
+							font-size: 1.6rem;
+						}
+					}
+				}
 	}
 }

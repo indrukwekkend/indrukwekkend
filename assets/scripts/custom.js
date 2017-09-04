@@ -6,20 +6,20 @@ jQuery(document).ready(function(){
 
 	jQuery('a[href$="#cases"]').click(function(e){
 		e.preventDefault();
-		jQuery('#overlay-cases').addClass('show');
+		jQuery('#overlay-cases').fadeIn(80);
 	});
-	jQuery('#overlay-cases').click(function(e){
+	jQuery('#overlay-cases-close').click(function(e){
 		e.preventDefault();
-		jQuery('#overlay-cases-close').removeClass('show');
+		jQuery('#overlay-cases').fadeOut(80);
 	});
 
 	jQuery('a[href$="#teamleden"]').click(function(e){
 		e.preventDefault();
-		jQuery('#overlay-teamleden').addClass('show');
+		jQuery('#overlay-teamleden').fadeIn(80);
 	});
-	jQuery('#overlay-teamleden').click(function(e){
+	jQuery('#overlay-teamleden-close').click(function(e){
 		e.preventDefault();
-		jQuery('#overlay-teamleden-close').removeClass('show');
+		jQuery('#overlay-teamleden').fadeOut(80);
 	});
 
 	jQuery('.quote-list').slick({
