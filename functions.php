@@ -15,7 +15,8 @@ $sage_includes = [
     'lib/setup.php', // Theme setup
     'lib/titles.php', // Page titles
     'lib/wrapper.php', // Theme wrapper class
-    'lib/customizer.php' // Theme customizer
+    'lib/customizer.php', // Theme customizer
+    'lib/acf.php', // Advanced Custom Fields
 ];
 foreach ( $sage_includes as $file ) {
     if ( ! $filepath = locate_template( $file ) ) {
