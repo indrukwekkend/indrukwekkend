@@ -65,4 +65,6 @@ jQuery(document).ready(function(){
 			jQuery(that).removeClass("btn-activated");
 		}, 500);
 	});
+
+	var scroll = new SmoothScroll('a[href*="#"]');
 });
