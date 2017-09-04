@@ -224,6 +224,48 @@ h5, h6{
 		}
 	}
 
+	&.vsco{
+		background-image: url('../images/svg/vsco-white.svg');
+
+		&-orange{
+			background-image: url('../images/svg/vsco-orange.svg');
+		}
+		&-white{
+			background-image: url('../images/svg/vsco-white.svg');
+		}
+		&-gray{
+			background-image: url('../images/svg/vsco-gray.svg');
+		}
+	}
+
+	&.vsco-2{
+		background-image: url('../images/svg/vsco-2-white.svg');
+
+		&-orange{
+			background-image: url('../images/svg/vsco-2-orange.svg');
+		}
+		&-white{
+			background-image: url('../images/svg/vsco-2-white.svg');
+		}
+		&-gray{
+			background-image: url('../images/svg/vsco-2-gray.svg');
+		}
+	}
+
+	&.website{
+		background-image: url('../images/svg/website-white.svg');
+
+		&-orange{
+			background-image: url('../images/svg/website-orange.svg');
+		}
+		&-white{
+			background-image: url('../images/svg/website-white.svg');
+		}
+		&-gray{
+			background-image: url('../images/svg/website-gray.svg');
+		}
+	}
+
 	&.arrow-up{
 		background-image: url(../images/arrows/up-white.svg);
 
