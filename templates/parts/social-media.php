@@ -8,8 +8,8 @@
 				<div class="row justify-content-around">
 					<?php if( have_rows('social_media') ): ?>
 						<?php while ( have_rows('social_media') ) : the_row(); ?>
-							<div class="col py-2 text-center text-nowrap">
-								<span class="icon <?php the_sub_field('service'); ?>-orange"></span> <a class="social-link" href="<?php the_sub_field('url'); ?>" target="_blank"><?php the_sub_field('username'); ?></a>
+							<div class="col text-center text-nowrap" data-toggle="tooltip" data-placement="top" title="<?php the_sub_field('service'); ?>">
+								<span class="icon <?php the_sub_field('service'); ?>-orange"></span> <a class="social-link d-none d-xl-inline" href="<?php the_sub_field('url'); ?>" target="_blank"><?php the_sub_field('username'); ?></a>
 							</div>
 						<?php endwhile; ?>
 					<?php endif; ?>
