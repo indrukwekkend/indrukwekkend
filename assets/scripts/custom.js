@@ -1,9 +1,5 @@
 jQuery(document).ready(function(){
 
-	jQuery(function () {
-		jQuery('[data-toggle="tooltip"]').tooltip();
-	});
-
 	jQuery('a[href$="#cases"]').click(function(e){
 		e.preventDefault();
 		jQuery('#overlay-cases').fadeIn(80);
