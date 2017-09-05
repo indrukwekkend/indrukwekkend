@@ -85,7 +85,7 @@
 							<div class="row">
 								<div class="col-2"></div>
 								<div class="col-10">
-									<span class="dit-is-indrukwekkend"><span class="icon instagram-black"></span> @ditisindrukwekkend</span>
+									<span class="dit-is-indrukwekkend"><span class="icon instagram-black"></span> <?php the_field('instagram_label', 'option'); ?></span>
 								</div>
 							</div>
 						</div>
@@ -100,7 +100,7 @@
 
 			<div class="row text-center">
 				<div class="col pt-4">
-					<a class="instagram-link" href="https://instagram.com/ditisindrukwekkend">volg ons werk op Instagram<span class="icon arrow-right-orange"></span></a>
+					<a class="instagram-link" href="<?php the_field('instagram_link', 'option'); ?>">volg ons werk op Instagram<span class="icon arrow-right-orange"></span></a>
 				</div>
 			</div>
 

@@ -13,7 +13,7 @@
 
 						<div class="heading">
 							<h4 class="title">
-								<span><?php echo preg_replace('~((\w+\s){2})~', '$1' . "<br>", 'Stuur een bericht'); ?></span>
+								<span>Stuur een<br>bericht</span>
 							</h4>
 							<span class="line"></span>
 						</div>
@@ -32,25 +32,25 @@
 											<div class="row">
 												<div class="col mb-3">
 													<span class="icon twitter-white"></span>
-													<a class="text-white ml-2" href="https://twitter.com/indrukwekkend">@indrukwekkend</a>
+													<a class="text-white ml-2" href="<?php the_field('twitter_link', 'option'); ?>"><?php the_field('twitter_label', 'option'); ?></a>
 												</div>
 											</div>
 											<div class="row">
 												<div class="col mb-3">
 													<span class="icon facebook-white"></span>
-													<a class="text-white ml-2" href="https://facebook.com/indrukwekkend">/indrukwekkend</a>
+													<a class="text-white ml-2" href="<?php the_field('facebook_link', 'option'); ?>"><?php the_field('facebook_label', 'option'); ?></a>
 												</div>
 											</div>
 											<div class="row">
 												<div class="col mb-3">
 													<span class="icon instagram-white"></span>
-													<a class="text-white ml-2" href="https://twitter.com/indrukwekkend">@indrukwekkend</a>
+													<a class="text-white ml-2" href="<?php the_field('instagram_link', 'option'); ?>"><?php the_field('instagram_label', 'option'); ?></a>
 												</div>
 											</div>
 											<div class="row">
 												<div class="col">
 													<span class="icon linkedin-white"></span>
-													<a class="text-white ml-2" href="https://linkedin.com/indrukwekkend">@indrukwekkend</a>
+													<a class="text-white ml-2" href="<?php the_field('linkedin_link', 'option'); ?>"><?php the_field('linkedin_label', 'option'); ?></a>
 												</div>
 											</div>
 										</div>
