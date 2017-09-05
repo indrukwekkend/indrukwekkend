@@ -5,48 +5,39 @@ use Roots\Sage\Wrapper;
 <!doctype html>
 <html <?php language_attributes(); ?>>
 
-  <?php get_template_part('templates/head'); ?>
+	<?php get_template_part('templates/head'); ?>
 
-  <body <?php body_class(); ?>>
-    <!--[if IE]>
+	<body <?php body_class(); ?>>
+		<!--[if IE]>
+			<div class="alert alert-warning">
+				<?php _e('Je gebruikt een <strong>verouderde</strong> browser. Doe elke ontwikkelaar een plezier en <a href="http://browsehappy.com/">update jou browser</a>!', 'sage'); ?>
+			</div>
+		<![endif]-->
 
-      <div class="alert alert-warning">
+		<?php do_action( 'get_header' );?>
+		<?php get_template_part( 'templates/header' );?>
+		<div class="container-fluid" role="document">
+			<main>
 
-        <?php _e('You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.', 'sage'); ?>
+				<?php include Wrapper\template_path(); ?>
 
-      </div>
+			</main>
 
-    <![endif]-->
+			<?php if (Setup\display_sidebar() && false) : ?>
 
-    <?php
-    do_action( 'get_header' );
-    get_template_part( 'templates/header' );
-    ?>
-    <div class="container-fluid" role="document">
-        <main>
-        
-          <?php include Wrapper\template_path(); ?>
-        
-        </main>
-        <!-- /.main -->
-        
-        <?php if (Setup\display_sidebar() && false) : ?>
-        
-          <aside class="sidebar">
-        
-            <?php include Wrapper\sidebar_path(); ?>
-        
-          </aside>
-        <!-- /.sidebar -->
-        
-        <?php endif; ?>
-    
-    </div>
-    
-    <?php
-    do_action( 'get_footer' );
-    get_template_part( 'templates/footer' );
-    wp_footer();
-    ?>
-  </body>
+				<aside class="sidebar">
+
+					<?php include Wrapper\sidebar_path(); ?>
+
+				</aside>
+
+			<?php endif; ?>
+
+		</div>
+		<?php get_template_part('templates/parts/overlay', 'teamleden'); ?>
+		<?php get_template_part('templates/parts/overlay', 'cases'); ?>
+		<?php do_action( 'get_footer' );?>
+		<?php get_template_part( 'templates/footer' );?>
+		<?php wp_footer();?>
+	</body>
 </html>
