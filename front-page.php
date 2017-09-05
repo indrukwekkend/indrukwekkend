@@ -24,7 +24,7 @@
 			</div>
 			<div class="row">
 				<div class="col-12 text-center pt-5">
-					<a class="btn btn-lg btn-black" href="/cases" >Bekijk ons werk</a>
+					<a class="btn btn-lg btn-black" href="#cases" >Bekijk ons werk</a>
 				</div>
 			</div>
 		</div>
