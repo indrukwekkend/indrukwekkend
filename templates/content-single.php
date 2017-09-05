@@ -113,22 +113,9 @@
 						<?php get_template_part('templates/parts/image', 'fullwidth'); ?>
 
 
-
-					<?php //TODO ?>
-					<?php // Quote of Client + Name, Company/Position ?>
-
-
 				<?php endif; ?>
 			<?php endwhile; ?>
 
 		</div>
 	</div>
 <?php endif; ?>
-
-<?php // Tertiary Content ?>
-<div class="row tertiary-content">
-	<div class="container-fluid">
-		<?php // Related singles ?>
-		<?php get_template_part('templates/parts/related', 'cases'); ?>
-	</div>
-</div>
