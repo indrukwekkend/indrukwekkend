@@ -6,10 +6,10 @@
 						<div class="col-12 col-xl-10 align-self-end pt-4">
 
 							<div class="row mb-4 mt-5 align-items-center">
-								<div class="col-6 col-xl-8 text-right">
+								<div class="col-6 col-xl-7 text-right">
 									<h4><?php echo preg_replace('~((\w+\s){3})~', '$1' . "<br>", get_field('title_left')); ?></h4>
 								</div>
-								<div class="col-6 col-xl-4 text-left">
+								<div class="col-6 col-xl-5 text-left">
 									<h5><?php echo preg_replace('~((\w+\s){4})~', '$1' . "<br>", get_field('title_right')); ?></h5>
 							</div>
 						</div>
