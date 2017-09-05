@@ -388,7 +388,7 @@
 		.coworkers-item{
 			background-color: $white;
 
-			&:focus{
+			&:focus, a:focus{
 				outline:none;
 			}
 
@@ -530,6 +530,10 @@
 
 	&:active{
 		opacity: .6;
+	}
+
+	&:focus{
+		outline: none;
 	}
 }
 
