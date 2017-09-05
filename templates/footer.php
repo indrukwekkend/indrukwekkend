@@ -57,10 +57,10 @@
 							<span>Wij zijn sociaal</span>
 						</div>
 						<div class="col">
-							<a href="#instagram"><span class="icon instagram-gray"></span></a>
-							<a href="#facebook"><span class="icon facebook-gray"></span></a>
-							<a href="#twitter"><span class="icon twitter-gray"></span></a>
-							<a href="linkedin"><span class="icon linkedin-gray"></span></a>
+							<a href="<?php the_field('instagram_link', 'option'); ?>"><span class="icon instagram-gray"></span></a>
+							<a href="<?php the_field('facebook_link', 'option'); ?>"><span class="icon facebook-gray"></span></a>
+							<a href="<?php the_field('twitter_link', 'option'); ?>"><span class="icon twitter-gray"></span></a>
+							<a href="<?php the_field('linkedin_link', 'option'); ?>"><span class="icon linkedin-gray"></span></a>
 						</div>
 					</div>
 				</div>
