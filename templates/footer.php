@@ -1,9 +1,9 @@
 <footer class="container-fluid">
 	<div class="row">
 		<div class="container">
-			<div class="row align-items-center py-5">
+			<div class="row justify-content-center pb-5 py-xl-5">
 
-				<div class="col-sm-12 col-xl-3 col-md-6 mt-4 mt-xl-0 contact">
+				<div class="col-sm-8 col-xl-3 col-md-6 mt-5 mt-xl-0 contact">
 					<div class="row align-items-center">
 						<div class="col-2">
 							<div class="icon call-us-gray"></div>
@@ -19,7 +19,7 @@
 					</div>
 				</div>
 
-				<div class="col-sm-12 col-xl-3 col-md-6 mt-4 mt-xl-0 contact">
+				<div class="col-sm-8 col-xl-3 col-md-6 mt-5 mt-xl-0 contact">
 					<div class="row align-items-center">
 						<div class="col-2">
 							<div class="icon mail-us-gray"></div>
@@ -35,7 +35,7 @@
 					</div>
 				</div>
 
-				<div class="col-sm-12 col-xl-3 col-md-6 mt-4 mt-xl-0 contact">
+				<div class="col-sm-8 col-xl-3 col-md-6 mt-5 mt-xl-0 contact">
 					<div class="row align-items-center">
 						<div class="col-2">
 							<div class="icon visit-us-gray"></div>
@@ -51,12 +51,10 @@
 					</div>
 				</div>
 
-				<div class="col-sm-12 col-xl-3 col-md-6 mt-4 mt-xl-0">
+				<div class="col-sm-8 col-xl-3 col-md-6 mt-5 mt-xl-0">
 					<div class="row align-items-center">
-						<div class="col text-right">
+						<div class="col text-xl-right">
 							<span>Wij zijn sociaal</span>
-						</div>
-						<div class="col">
 							<a href="<?php the_field('instagram_link', 'option'); ?>"><span class="icon instagram-gray"></span></a>
 							<a href="<?php the_field('facebook_link', 'option'); ?>"><span class="icon facebook-gray"></span></a>
 							<a href="<?php the_field('twitter_link', 'option'); ?>"><span class="icon twitter-gray"></span></a>
