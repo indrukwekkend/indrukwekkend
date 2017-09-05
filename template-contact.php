@@ -4,7 +4,7 @@
  */
 ?>
 <div class="row primary-content">
-	<div class="container pt-5">
+	<div class="container pt-6">
 		<div class="row justify-content-start pb-5">
 			<div class="col-xl-11">
 				<div class="row">

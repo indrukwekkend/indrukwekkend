@@ -6,7 +6,7 @@
 <?php // Primary Content ?>
 <?php if( have_rows('primary_content') ): ?>
 	<div class="row primary-content">
-		<div class="container pt-5">
+		<div class="container pt-6">
 			<?php while( have_rows('primary_content') ): the_row(); ?>
 
 					<?php // Title left ?>

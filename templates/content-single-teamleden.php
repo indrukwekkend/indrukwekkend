@@ -9,7 +9,7 @@
 <?php // Primary Content ?>
 <?php if( have_rows('primary_content') ): ?>
 	<div class="row primary-content">
-		<div class="container pt-5">
+		<div class="container py-5">
 			<?php while( have_rows('primary_content') ): the_row(); ?>
 
 					<?php // Title left ?>
@@ -71,7 +71,7 @@
 <?php // Secondary Content ?>
 <?php if( have_rows('secondary_content') ): ?>
 	<div class="row secondary-content">
-		<div class="container pt-5">
+		<div class="container pt-6">
 			<?php while( have_rows('secondary_content') ): the_row(); ?>
 
 					<?php // Title left ?>
@@ -127,14 +127,6 @@
 
 		<?php // Cases ?>
 		<?php get_template_part('templates/parts/employee', 'cases'); ?>
-
-
-	</div>
-</div>
-
-<?php // Quaternary Content ?>
-<div class="row quaternary-content">
-	<div class="container">
 
 		<?php // Coworkers ?>
 		<?php get_template_part('templates/parts/employee', 'coworkers'); ?>
