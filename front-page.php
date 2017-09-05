@@ -13,7 +13,7 @@
 						<?php setup_postdata($post); ?>
 
 								<div class="col-3">
-									<img class="brand img-fluid" src="<?php the_post_thumbnail_url(null, 'medium'); ?>" title="<?php the_title(); ?>"/>
+									<img width="200" height="100" class="brand" src="<?php the_post_thumbnail_url(null, 'brand-size'); ?>" title="<?php the_title(); ?>"/>
 								</div>
 
 						<?php endforeach; ?>
