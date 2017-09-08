@@ -60,7 +60,7 @@
 						</div>
 
 					<div class="col-lg-5">
-						<?php gravity_form( 1, false, false, false, '', false );?>
+						<?php gravity_form( 1, false, false, false, '', true );?>
 					</div>
 
 				</div>
