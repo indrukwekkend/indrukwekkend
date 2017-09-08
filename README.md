@@ -7,7 +7,7 @@ This is the repository of the Indrukwekkend theme.
 
 ### Quick start
 
-1. Unpack the zip in the AMPPS theme directory
+1. Unpack the zip in the theme directory
 2. Open a Terminal and go to the theme directory
 3. Run `npm install` to install the required NPM packages
 4. Run `bower install` to install the Bower packages
