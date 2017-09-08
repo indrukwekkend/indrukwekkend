@@ -1,4 +1,4 @@
-<div class="row page-header">
+<div id="intro" class="row page-header">
 	<?php if(is_singular('teamleden')):?>
 	<div class="container pt-6">
 	<?php else:?>
