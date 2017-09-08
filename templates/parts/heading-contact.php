@@ -1,7 +1,7 @@
 <div id="contact" class="row part-contact">
 	<div class="container">
 		<div class="row justify-content-center mb-5">
-			<div class="col-10">
+			<div class="col-12 col-md-10">
 				<div class="row bg-orange inset">
 						<div class="col-12 col-xl-10 align-self-end pt-4">
 
@@ -18,21 +18,21 @@
 							<div class="col-1 d-none d-xl-block"></div>
 
 							<?php if( get_field('email') ):?>
-								<div class="col-4 p-0">
+								<div class="col-12 col-md-4 p-0 mb-3 mb-md-0">
 									<span class="icon mail"></span>
 									<a href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?></a>
 								</div>
 							<?php endif; ?>
 
 							<?php if( get_field('landline') ): ?>
-								<div class="col-3 p-0">
+								<div class="col-12 col-md-3 p-0 mb-3 mb-md-0">
 									<span class="icon phone"></span>
 									<a href="tel:<?php echo str_replace(" ", "", get_field('landline')); ?>"><?php the_field('landline'); ?></a>
 								</div>
 							<?php endif; ?>
 
 							<?php if( get_field('mobile') ):?>
-								<div class="col-3 p-0">
+								<div class="col-12 col-md-3 p-0 mb-3 mb-md-0">
 									<span class="icon smartphone"></span>
 									<a href="tel:<?php echo str_replace(" ", "", get_field('mobile')); ?>"><?php the_field('mobile'); ?></a>
 								</div>
