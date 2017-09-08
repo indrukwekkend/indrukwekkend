@@ -53,7 +53,7 @@
 
 				<div class="col-sm-8 col-xl-3 col-md-6 mt-5 mt-xl-0">
 					<div class="row align-items-center">
-						<div class="col text-center text-xl-right">
+						<div class="col text-center text-md-left text-xl-right">
 							<span>Wij zijn sociaal</span>
 							<a href="<?php the_field('instagram_link', 'option'); ?>" target="_blank"><span class="icon instagram-gray"></span></a>
 							<a href="<?php the_field('facebook_link', 'option'); ?>" target="_blank"><span class="icon facebook-gray"></span></a>
