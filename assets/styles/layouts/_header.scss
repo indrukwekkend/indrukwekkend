@@ -2,7 +2,6 @@
 	position: relative;
 	background-position: bottom center;
 	background-size: cover;
-	overflow-x: hidden;
 	
 	.navigation{
 		position: relative;
@@ -86,8 +85,7 @@
 
 	.banner-content{
 		min-height: 550px;
-		height: 46vw;
-		max-height: 720px;
+		height: auto;
 
 		#headlines-typed{
 			font-family: 'Montserrat Bold';
@@ -96,7 +94,6 @@
 
 			span{
 				z-index: 999;
-				white-space: nowrap;
 			}
 
 			.h3{
@@ -119,8 +116,6 @@
 		}
 
 		.buttons{
-			margin-top: 3rem;
-			margin-bottom: 8rem;
 
 			.btn-arrowdown{
 				display: inline-block;
@@ -134,6 +129,18 @@
 
 		img{
 			z-index:0;
+		}
+	}
+}
+
+@include media-breakpoint-up(xl){
+	.banner{
+		overflow-x: hidden;
+
+		.banner-content{
+			height: 46vw;
+			max-height: 720px;
+
 		}
 	}
 }

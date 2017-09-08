@@ -35,7 +35,7 @@ $background = function ( $url ) {
 		<div class="container">
 
 			<div class="row align-items-end banner-content">
-				<div class="col-6">
+				<div class="col-12 col-xl-6 order-2 order-xl-1">
 
 						<div id="headlines-collect">
 						<?php while( have_rows('headlines') ): the_row(); ?>
@@ -53,7 +53,7 @@ $background = function ( $url ) {
 					<?php $btn_black = get_field('btn_black'); ?>
 
 						<?php if( $btn_orange || $btn_black ): ?>
-							<div class="buttons">
+							<div class="buttons mb-5 mt-4 mb-xl-6">
 
 								<?php if($btn_orange['text'] && $btn_orange['url']): ?>
 									<?php $btn_arrow = ( $btn_orange['arrow'] != "none" ) ? ' btn-arrow arrow-'.$btn_orange['arrow'] : ""; ?>
@@ -85,7 +85,7 @@ $background = function ( $url ) {
 					</div>
 
 					<?php if($header_foreground = get_field('header_foreground') ): ?>
-						<div class="col-6">
+						<div class="col-12 col-xl-6 order-1 order-xl-2">
 							<img class="img-fluid float-right" src="<?php echo $header_foreground; ?>" />
 						</div>
 					<?php endif; ?>
