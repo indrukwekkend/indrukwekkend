@@ -1,3 +1,25 @@
+html {
+  font-size: .8 * $font-size-base;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: .8 * $font-size-base;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: .9 * $font-size-base;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: $font-size-base;
+  }
+}
+
 body{
 	position: relative;
 	letter-spacing: .03rem;
