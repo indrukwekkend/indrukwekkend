@@ -32,25 +32,25 @@
 											<div class="row">
 												<div class="col mb-3">
 													<span class="icon twitter-white"></span>
-													<a class="text-white ml-2" href="<?php the_field('twitter_link', 'option'); ?>"><?php the_field('twitter_label', 'option'); ?></a>
+													<a class="text-white ml-2" href="<?php the_field('twitter_link', 'option'); ?>" target="_blank"><?php the_field('twitter_label', 'option'); ?></a>
 												</div>
 											</div>
 											<div class="row">
 												<div class="col mb-3">
 													<span class="icon facebook-white"></span>
-													<a class="text-white ml-2" href="<?php the_field('facebook_link', 'option'); ?>"><?php the_field('facebook_label', 'option'); ?></a>
+													<a class="text-white ml-2" href="<?php the_field('facebook_link', 'option'); ?>" target="_blank"><?php the_field('facebook_label', 'option'); ?></a>
 												</div>
 											</div>
 											<div class="row">
 												<div class="col mb-3">
 													<span class="icon instagram-white"></span>
-													<a class="text-white ml-2" href="<?php the_field('instagram_link', 'option'); ?>"><?php the_field('instagram_label', 'option'); ?></a>
+													<a class="text-white ml-2" href="<?php the_field('instagram_link', 'option'); ?>" target="_blank"><?php the_field('instagram_label', 'option'); ?></a>
 												</div>
 											</div>
 											<div class="row">
 												<div class="col">
 													<span class="icon linkedin-white"></span>
-													<a class="text-white ml-2" href="<?php the_field('linkedin_link', 'option'); ?>"><?php the_field('linkedin_label', 'option'); ?></a>
+													<a class="text-white ml-2" href="<?php the_field('linkedin_link', 'option'); ?>" target="_blank"><?php the_field('linkedin_label', 'option'); ?></a>
 												</div>
 											</div>
 										</div>
