@@ -5,17 +5,24 @@
 
 This is the repository of the Indrukwekkend theme.
 
-run `npm install`
-then `bower install`
-Only after those run `gulp && gulp watch` to get going.
+### Quick start
 
-After initialisation, import `ACF_Fields.json` to the WordPress installation. This is required to be up to date with the custom fields used in this theme.
+1. Unpack the zip in the AMPPS theme directory
+2. Open a Terminal and go to the theme directory
+3. Run `npm install` to install the required NPM packages
+4. Run `bower install` to install the Bower packages
+5. Run `gulp && gulp watch` to setup the project
+6. Go to `indrukwekkend.dev/wp-admin`
+7. Install the required plugins
+8. Run a Pull in WP Migrate DB from `indrukwekkend.nl`
+
+At this point you can continue developing.
 
 
 ### Requirements:
 
 #### System
- * AMPPS with a wordpress installation on indrukwekkend.dev
+ * AMPPS running WordPress 4.8 or higher on `indrukwekkend.dev`
  * PHP 7 or higher
  * phpMyAdmin 5.6 or higher
 
