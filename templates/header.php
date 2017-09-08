@@ -10,13 +10,13 @@ $background = function ( $url ) {
 			<div class="container navigation">
 			
 				<div class="row">
-					<div class="col-lg-4">
+					<div class="col-12 col-lg-4">
 						<a class="brand" href="<?= esc_url(home_url('/')); ?>">
 							<div class="brand-logo"></div>
 						</a>
 					</div>
 
-					<div class="col-lg-8">
+					<div class="col-12 col-lg-8 d-none d-lg-block">
 						<nav class="nav-primary">
 							<?php if ( has_nav_menu( 'primary_navigation' ) ) :?>
 								<?php wp_nav_menu( ['theme_location' => 'primary_navigation','menu_class' => 'nav'] );?>
