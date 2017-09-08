@@ -1,9 +1,7 @@
 <div id="overlay-cases" class="hidden">
 	<div class="container">
 		<div class="row pb-3 pt-5">
-			<div class="col-10">
-			</div>
-			<div class="col-2 text-right">
+			<div class="col-12 text-right">
 				<div id="overlay-cases-close">
 					<span class="text-orange">sluiten</span><span class="icon close-orange ml-3"></span>
 				</div>
@@ -15,7 +13,7 @@
 			<?php if($query->have_posts()): ?>
 				<?php while( $query->have_posts() ) : ?>
 					<?php $query->the_post(); ?>
-						<div class="col-3 overlay-case">
+						<div class="col-12 col-sm-6 col-md-4 col-lg-3 overlay-case">
 							<div class="overlay-case-content">
 								<div class="overlay-case-image" style="background-image:url(<?php the_field('header_foreground');?>);"></div>
 								<div class="overlay-case-title">
