@@ -10,10 +10,10 @@
 						</div>
 						<div class="col-10">
 							<div class="row">
-								<div class="col-12"><p>De beller is sneller <strong class="d-inline d-md-none">072 - 562 54 82</strong></p></div>
+								<div class="col-12"><p>De beller is sneller <strong class="d-inline d-md-none"><a class="text-gray" href="tel:072-5625482">072 - 562 54 82</a></strong></p></div>
 							</div>
 							<div class="row">
-								<div class="col-12"><p><strong class="d-none d-md-inline">072 - 562 54 82</strong></p></div>
+								<div class="col-12"><p><strong class="d-none d-md-inline"><a class="text-gray" href="tel:072-5625482">072 - 562 54 82</a></strong></p></div>
 							</div>
 						</div>
 					</div>
@@ -26,10 +26,10 @@
 						</div>
 						<div class="col-10">
 							<div class="row">
-								<div class="col-12"><p>Mailen mag ook <strong class="d-inline d-md-none">info@indrukwekkend.nl</strong></p></div>
+								<div class="col-12"><p>Mailen mag ook <strong class="d-inline d-md-none"><a class="text-gray" href="mailto:info@indrukwekkend.nl">info@indrukwekkend.nl</a></strong></p></div>
 							</div>
 							<div class="row">
-								<div class="col-12"><p><strong class="d-none d-md-inline">info@indrukwekkend.nl</strong></p></div>
+								<div class="col-12"><p><strong class="d-none d-md-inline"><a class="text-gray" href="mailto:info@indrukwekkend.nl">info@indrukwekkend.nl</a></strong></p></div>
 							</div>
 							</div>
 					</div>
@@ -42,10 +42,10 @@
 						</div>
 						<div class="col-10">
 							<div class="row">
-								<div class="col-12"><p>Hier vind je ons <strong class="d-inline d-md-none">De Droogmakerij 20f, 1851 LX Heiloo</strong></p></div>
+								<div class="col-12"><p>Hier vind je ons <strong class="d-inline d-md-none"><a class="text-gray" href="https://www.google.com/maps/dir/Current+Location/De Droogmakerij+20f+1851+LX+Heiloo" target="_blank">De Droogmakerij 20f, 1851 LX Heiloo</a></strong></p></div>
 							</div>
 							<div class="row">
-								<div class="col-12"><p><strong class="d-none d-md-inline">De Droogmakerij 20f, 1851 LX Heiloo</strong></p></div>
+								<div class="col-12"><p><strong class="d-none d-md-inline"><a class="text-gray" href="https://www.google.com/maps/dir/Current+Location/De Droogmakerij+20f+1851+LX+Heiloo" target="_blank">De Droogmakerij 20f, 1851 LX Heiloo</a></strong></p></div>
 							</div>
 						</div>
 					</div>
@@ -55,10 +55,10 @@
 					<div class="row align-items-center">
 						<div class="col text-center text-xl-right">
 							<span>Wij zijn sociaal</span>
-							<a href="<?php the_field('instagram_link', 'option'); ?>"><span class="icon instagram-gray"></span></a>
-							<a href="<?php the_field('facebook_link', 'option'); ?>"><span class="icon facebook-gray"></span></a>
-							<a href="<?php the_field('twitter_link', 'option'); ?>"><span class="icon twitter-gray"></span></a>
-							<a href="<?php the_field('linkedin_link', 'option'); ?>"><span class="icon linkedin-gray"></span></a>
+							<a href="<?php the_field('instagram_link', 'option'); ?>" target="_blank"><span class="icon instagram-gray"></span></a>
+							<a href="<?php the_field('facebook_link', 'option'); ?>" target="_blank"><span class="icon facebook-gray"></span></a>
+							<a href="<?php the_field('twitter_link', 'option'); ?>" target="_blank"><span class="icon twitter-gray"></span></a>
+							<a href="<?php the_field('linkedin_link', 'option'); ?>" target="_blank"><span class="icon linkedin-gray"></span></a>
 						</div>
 					</div>
 				</div>
