@@ -56,12 +56,27 @@
 
 				&.nav-phone{
 					a{
+						position: relative;
 						color: $orange;
 						font-family: 'Gochi Hand';
 						letter-spacing: 1px;
 
 						&:hover,&active{
 							border: none;
+						}
+
+						&:after{
+							position: absolute;
+							top: 12px;
+							left: 0;
+							display: block;
+							content:"";
+							background-image: url('../images/lijn.svg');
+							background-size: cover;
+							background-position: center;
+							background-repeat: no-repeat;
+							height: 30px;
+							width: 100%;
 						}
 					}
 				}
