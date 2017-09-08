@@ -1,8 +1,8 @@
 <div class="row justify-content-center mb-6 mt-5 employee-cases">
-	<div class="col-10">
+	<div class="col-12 col-md-10">
 		<div class="row">
 
-			<div class="col-lg-6 text-right">
+			<div class="col-12 col-lg-6 text-right order-2 order-lg-1">
 				<div class="row">
 					<?php if( $post_objects = get_field('cases') ): ?>
 						<?php foreach( $post_objects as $post): ?>
@@ -25,7 +25,7 @@
 				</div>
 			</div>
 
-			<div class="col-lg-6 text-right">
+			<div class="col-12 col-lg-6 text-right order-1 order-lg-2 mb-5 mb-lg-0">
 				<div class="heading">
 					<h4 class="title">
 						<span><?php echo preg_replace('~((\w+\s){2})~', '$1' . "<br>", get_field('cases_title')); ?></span>
