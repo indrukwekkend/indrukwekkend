@@ -1,7 +1,12 @@
 <?php use Roots\Sage\Extras; ?>
 <div class="container">
 	<div class="row  align-items-center">
-		<div class="col-sm-7">
+		<div class="col-12 py-5 d-block d-xl-none">
+			<?php while (have_posts()) : the_post(); ?>
+				<?php the_content(); ?>
+			<?php endwhile; ?>
+		</div>
+		<div class="col-12 col-md-6 col-xl-7">
 			<div class="text-center">
 				<p class="lead">Met veel trost werken wij o.a. voor deze merken</p>
 			</div>
@@ -12,8 +17,8 @@
 
 						<?php setup_postdata($post); ?>
 
-								<div class="col-3">
-									<img width="200" height="100" class="brand" src="<?php the_post_thumbnail_url(null, 'brand-size'); ?>" title="<?php the_title(); ?>"/>
+								<div class="col-4 col-xl-3 mb-4 text-center">
+									<img class="img-fluid brand" src="<?php the_post_thumbnail_url(null, 'brand-size'); ?>" title="<?php the_title(); ?>"/>
 								</div>
 
 						<?php endforeach; ?>
@@ -23,22 +28,24 @@
 				<?php endif; ?>
 			</div>
 			<div class="row">
-				<div class="col-12 text-center pt-5">
+				<div class="col-12 text-center pt-2">
 					<a class="btn btn-lg btn-black" href="#cases" >Bekijk ons werk</a>
 				</div>
 			</div>
 		</div>
-		<div class="col-sm-5">
-			<div class="row pt-6 front-content">
-				<?php while (have_posts()) : the_post(); ?>
-					<?php the_content(); ?>
-				<?php endwhile; ?>
+		<div class="col-12 col-md-6 col-xl-5">
+			<div class="row pt-xl-6 front-content">
+				<div class="col-12 d-none d-xl-block">
+					<?php while (have_posts()) : the_post(); ?>
+						<?php the_content(); ?>
+					<?php endwhile; ?>
+				</div>
 			</div>
-			<div class="row pt-6">
+			<div class="row pt-5 pt-xl-6">
 				<?php if( $post_objects = get_field('quotes') ): ?>
 
 					<div class="col-12">
-						<div class="row p-5 part-quote-client">
+						<div class="row px-0 px-sm-4 py-5 p-md-5 part-quote-client">
 							<div class="col-12 quote-list">
 								<?php foreach( $post_objects as $post): ?>
 
@@ -74,22 +81,22 @@
 		<div class="col py-6 part-instagram">
 
 			<div class="row">
-				<div class="col-8">
-					<div class="row">
-						<div class="col-6">
+				<div class="col-12 col-xl-8">
+					<div class="row text-center text-xl-left">
+						<div class="col-12 col-md-6">
 							<div class="row">
 								<div class="col">
 									<span class="spread-the-love">Spread the love</span>
 								</div>
 							</div>
 							<div class="row">
-								<div class="col-2"></div>
-								<div class="col-10">
+								<div class="col-12 col-md-2"></div>
+								<div class="col-12 col-md-10">
 									<span class="dit-is-indrukwekkend"><span class="icon instagram-black"></span> <?php the_field('instagram_label', 'option'); ?></span>
 								</div>
 							</div>
 						</div>
-						<div class="col-6">
+						<div class="col-12 col-md-6">
 							<div class="instagram-feed">
 								<?php echo do_shortcode('[instagram-feed]'); ?>
 							</div>
