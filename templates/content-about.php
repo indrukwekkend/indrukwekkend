@@ -127,7 +127,7 @@
 		<?php get_template_part('templates/parts/about', 'contact'); ?>
 
 		<?php // Cases ?>
-		<?php get_template_part('templates/parts/about', 'coworkers'); ?>
+		<?php get_template_part('templates/parts/content', 'coworkers'); ?>
 
 	</div>
 </div>
