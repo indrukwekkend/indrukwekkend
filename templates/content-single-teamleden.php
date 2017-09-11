@@ -129,7 +129,7 @@
 		<?php get_template_part('templates/parts/employee', 'cases'); ?>
 
 		<?php // Coworkers ?>
-		<?php get_template_part('templates/parts/employee', 'coworkers'); ?>
+		<?php get_template_part('templates/parts/content', 'coworkers'); ?>
 
 	</div>
 </div>

@@ -1,11 +1,12 @@
-		<div class="row align-items-center employee-coworkers">
-				<div class="col-3 text-right pr-5">
+		<div class="row align-items-center content-coworkers">
+				<div class="col-12 col-md-3 py-3 py-md-0 text-center text-md-right pr-5">
 					<span class="coworkers-title">
-						<h5>Bekijk wat anderen<br> voor je kunnen doen</h5>
+						<h5 class="d-none d-md-block">Bekijk wat anderen<br> voor je kunnen doen</h5>
+						<h4 class="d-block d-md-none">Bekijk wat anderen<br> voor je kunnen doen</h5>
 					</span>
 				</div>
 			
-			<div class="col-9 p-0">
+			<div class="col-12 col-md-9 p-0">
 				<?php $args = array('post_type' => 'teamleden', 'post__not_in' => array($post->ID), ); ?>
 				<?php $query = new wp_query( $args ); ?>
 

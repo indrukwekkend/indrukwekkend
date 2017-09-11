@@ -6,7 +6,7 @@
 						<div class="col-12">
 
 							<div class="row mb-4 mt-4 align-items-center">
-								<div class="col-12 col-md-6 text-center text-md-right">
+								<div class="col-12 col-md-6 text-center text-md-right border-right">
 									<h4>Hebben we<br> je kunnen<br> overtuigen?</h4>
 								</div>
 								<div class="col-12 col-md-6 text-center text-md-left">

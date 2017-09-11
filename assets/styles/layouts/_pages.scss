@@ -370,7 +370,7 @@
 	}
 
 /* Part: Coworkers */
-.employee-coworkers{
+.content-coworkers{
 	background-color: $content-bg;
 
 	.coworkers-title{
@@ -459,7 +459,7 @@
 					left: 0;
 					right: 0;
 					background-size: contain;
-					background-position: center;
+					background-position: bottom center;
 					background-repeat: no-repeat;
 
 					&:focus{
@@ -542,6 +542,10 @@
 		h5{
 			font-family: 'Montserrat Bold';
 		}
+
+		br{
+			display: none;
+		}
 	}
 
 
@@ -563,7 +567,6 @@
 				display: block;
 				position: relative;
 				height: 400px;
-				width: 400px;
 
 				&:focus{
 					outline:none;
@@ -673,6 +676,13 @@
 
 	.heading{
 		.title{
+			br{
+				display: initial;
+			}
+		}
+	}
+	.related-cases{
+		.related-title{
 			br{
 				display: initial;
 			}

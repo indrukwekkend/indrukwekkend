@@ -36,6 +36,20 @@ jQuery(document).ready(function(){
 		slidesToScroll: 1,
 		slidesToShow: 3,
 		fade: false,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					slidesToShow: 1,
+				}
+			},
+		],
 	});
 
 	if(jQuery("#headlines-collect").length){
