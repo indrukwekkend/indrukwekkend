@@ -10,5 +10,10 @@
 				<?php the_content(); ?>
 			</div>
 		</div>
+		<div class="row justify-content-center">
+			<div class="col-12 col-md-8 text-center">
+				<img class="img-fluid" src="<?php the_field('featured_image');?>">
+			</div>
+		</div>
 	</div>
 </div>
