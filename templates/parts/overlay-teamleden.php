@@ -23,8 +23,9 @@
 									</div>
 								</div>
 								<div class="overlay-teamlid-hover">
+									<a class="click-area" href="<?php echo esc_url( get_post_permalink() ); ?>"></a>
 									<div class="overlay-teamlid-info">
-										<h4><a class="text-white" href="<?php echo esc_url( get_post_permalink() ); ?>"><?php the_title(); ?></a></h4>
+										<h4 class="text-white"><?php the_title(); ?></h4>
 										<span><?php the_field('company_position'); ?></span>
 									</div>
 									<div class="overlay-teamlid-contact">

@@ -472,13 +472,20 @@ h5, h6{
 				z-index:99;
 				transition:all 80ms ease;
 
+				.click-area{
+					position: absolute;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					width: 100%;
+					z-index: 9998;
+				}
 				.overlay-teamlid-info{
 					position: absolute;
 					color: $white;
 					width: 100%;
 					text-align: center;
 					top: 10rem;
-					z-index: 999;
 
 					h4{
 						margin-bottom: 2.6rem;
@@ -499,7 +506,7 @@ h5, h6{
 					left: 0;
 					right: 0;
 					bottom: 10px;
-					z-index: 999;
+					z-index: 9999;
 				}
 			}
 

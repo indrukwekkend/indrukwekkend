@@ -19,9 +19,9 @@
 								<div class="overlay-case-title">
 									<h4><?php the_title(); ?></h4>
 								</div>
-								<div class="overlay-case-hover" >
+								<a class="overlay-case-hover" href="<?php echo esc_url( get_post_permalink() ); ?>">
 									<div class="overlay-title">
-										<h4><a class="text-white" href="<?php echo esc_url( get_post_permalink() ); ?>"><?php the_title(); ?></a></h4>
+										<h4 class="text-white"><?php the_title(); ?></h4>
 										<hr>
 										<span class="text-white">
 											<?php
@@ -48,7 +48,7 @@
 											?>
 										</span>
 									</div>
-								</div>
+								</a>
 							</div>
 						</div>
 					<?php endwhile; ?>
