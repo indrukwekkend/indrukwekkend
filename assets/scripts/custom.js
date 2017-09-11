@@ -29,7 +29,7 @@ jQuery(document).ready(function(){
 		adaptiveHeight: true,
 	});
 
-	jQuery('.teamleden-list, .related-list, .coworkers-list').slick({
+	jQuery('.teamleden-list, .related-list, .coworkers-list, .employee-cases-list').slick({
 		dots: false,
 		infinite: true,
 		speed: 300,

@@ -1,21 +1,25 @@
 <div class="row justify-content-center mb-6 mt-5 employee-cases">
-	<div class="col-12 col-md-10">
+	<div class="col-12 col-lg-10">
 		<div class="row">
 
 			<div class="col-12 col-lg-6 text-right order-2 order-lg-1">
-				<div class="row">
+				<div class="row employee-cases-list">
 					<?php if( $post_objects = get_field('cases') ): ?>
 						<?php foreach( $post_objects as $post): ?>
 
 							<?php setup_postdata($post); ?>
 
-							<a class="col-4 case" href="<?php echo esc_url( get_permalink() ); ?>">
-									<div class="case-image" style="background-image:url(<?php the_field('header_foreground');?>);">
-									</div>
-									<div class="case-title">
+								<div class="employee-cases-content">
+									<div class="employee-cases-image" style="background-image:url(<?php the_field('header_foreground');?>);"></div>
+									<div class="employee-cases-title">
 										<?php the_title(); ?>
 									</div>
-							</a>
+									<a class="employee-cases-hover" href="<?php echo esc_url( get_post_permalink() ); ?>">
+										<div class="hover-title">
+											<span class="text-white"><?php the_title(); ?></span>
+										</div>
+									</a>
+								</div>
 
 							<?php endforeach; ?>
 

@@ -10,7 +10,9 @@
 			<div class="row p-5 part-quote-client">
 				<div class="col-12">
 					<div class="row">
-						<?php the_content();?>
+						<div class="col-12">
+							<?php the_content();?>
+						</div>
 					</div>
 					<div class="row">
 						<div class="col-12">
