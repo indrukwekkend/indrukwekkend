@@ -177,10 +177,6 @@
 		box-shadow: inset 0 3rem $white;
 	}
 
-	.text-right{
-		border-right: 2px solid $white;
-	}
-
 	br{
 		display: none;
 	}
@@ -669,11 +665,11 @@
 		}
 	}
 }
+@include media-breakpoint-up(sm){}
 
-@media (min-width: 576px){}
-@media (min-width: 768px){}
+@include media-breakpoint-up(md){}
 
-@media (min-width: 992px){
+@include media-breakpoint-up(lg){
 
 	.heading{
 		.title{
@@ -687,10 +683,13 @@
 		br{
 			display: initial;
 		}
+
+		.border-right{
+			border-right: 2px solid $white;
+		}
 	}
 	.part-quote{
 		margin-top: -70%;
 	}
 }
-@media (min-width: 1200px){
-}
+@include media-breakpoint-up(xl){}
