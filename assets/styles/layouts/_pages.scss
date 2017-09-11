@@ -672,8 +672,46 @@
 					}
 				}
 			}
-		}
+			.related-item-hover{
+				display: block;
+				position: absolute;
+				opacity: 0;
+				top: 0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				background-color: rgba($orange, .7);
+				margin-right: ($grid-gutter-width / -2);
+				margin-left:  ($grid-gutter-width / -2);
+				z-index:99;
+			
+				.hover-title{
+					position: absolute;
+					top: 10rem;
+					width: 60%;
+					margin: 0 20%;
+					text-align: center;
 
+					h4{
+						text-shadow: 0 2px 13px #212529;
+						font-size: 1.6rem;
+					}
+
+					hr{
+						border: 1px solid $white;
+						margin: 1rem 3rem;
+					}
+				}
+			}
+
+			&:hover{
+				.related-item-hover{
+					opacity: 1;
+					transition:all 80ms ease;
+				}
+			}
+
+		}
 		.slick-prev{
 			position: absolute;
 			right: 0;

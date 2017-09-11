@@ -10,12 +10,42 @@
 					<div class="related-list">
 						<?php foreach( $post_objects as $post): ?>
 							<div class="col related-item">
-								<a class="related-item-content" href="<?php echo esc_url( get_post_permalink() ); ?>">
+								<div class="related-item-content">
 									<div class="related-item-image" style="background-image:url(<?php the_field('header_foreground');?>);"></div>
 									<div class="related-item-title">
 										<h4><?php the_title(); ?></h4>
 									</div>
-								</a>
+									<a class="related-item-hover" href="<?php echo esc_url( get_post_permalink() ); ?>">
+										<div class="hover-title">
+											<h4 class="text-white"><?php the_title(); ?></h4>
+											<hr>
+											<span class="text-white">
+												<?php
+												$tags = get_the_tags();
+												$total_tags = count($tags);
+												$i=0;
+												if($tags && ($total_tags > 1) ):
+													foreach($tags as $tag):
+														$i++;
+														echo $tag->name;
+														if($i < ($total_tags - 1) ):
+															echo ', ';
+														elseif($i < ($total_tags) ):
+															echo " en ";
+														endif;
+													endforeach;
+												else:
+													if($tags):
+														foreach($tags as $tag):
+															echo $tag->name;
+														endforeach;
+													endif;
+												endif;
+												?>
+											</span>
+										</div>
+									</a>
+								</div>
 							</div>
 						<?php endforeach; ?>
 						<?php wp_reset_postdata(); ?>
