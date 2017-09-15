@@ -362,10 +362,12 @@ h5, h6{
 		}
 	}
 }
-
+.overlay-active{
+	overflow: hidden !important;
+}
 #overlay-teamleden,
 #overlay-cases{
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -373,6 +375,7 @@ h5, h6{
 	background-color: rgba($white, .95);
 	z-index: 9999;
 	display: none;
+	overflow-y: scroll;
 	
 	#overlay-teamleden-close,
 	#overlay-cases-close{

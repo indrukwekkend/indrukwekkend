@@ -1,21 +1,46 @@
 jQuery(document).ready(function(){
 
+	var scroll = new SmoothScroll('a[href*="#"]');
+	var FadeSpeed = 80;
+	
+	function scrollbarWidth() {
+		var scrollDiv = document.createElement("div");
+		scrollDiv.style.cssText = 'width:100px;height:100px;overflow:scroll !important;position:absolute;top:-9999px';
+		document.body.appendChild(scrollDiv);
+		var result = scrollDiv.offsetWidth - scrollDiv.clientWidth;
+		document.body.removeChild(scrollDiv);
+		return result;
+	}
+	
+	function overlayActive(){
+		jQuery('body').css('padding-right', scrollbarWidth() + 'px');
+		jQuery('body').addClass('overlay-active');
+	}
+	function overlayInactive(){
+		jQuery('body').css('padding-right', '0px');
+		jQuery('body').removeClass('overlay-active');
+	}
+
 	jQuery('a[href$="#cases"]').click(function(e){
 		e.preventDefault();
-		jQuery('#overlay-cases').fadeIn(80);
+		jQuery('#overlay-cases').fadeIn(FadeSpeed);
+		overlayActive();
 	});
 	jQuery('#overlay-cases-close').click(function(e){
 		e.preventDefault();
-		jQuery('#overlay-cases').fadeOut(80);
+		jQuery('#overlay-cases').fadeOut(FadeSpeed);
+		overlayInactive();
 	});
 
 	jQuery('a[href$="#teamleden"]').click(function(e){
 		e.preventDefault();
-		jQuery('#overlay-teamleden').fadeIn(80);
+		jQuery('#overlay-teamleden').fadeIn(FadeSpeed);
+		overlayActive();
 	});
 	jQuery('#overlay-teamleden-close').click(function(e){
 		e.preventDefault();
-		jQuery('#overlay-teamleden').fadeOut(80);
+		jQuery('#overlay-teamleden').fadeOut(FadeSpeed);
+		overlayInactive();
 	});
 
 	jQuery('.quote-list').slick({
@@ -75,6 +100,4 @@ jQuery(document).ready(function(){
 			jQuery(that).removeClass("btn-activated");
 		}, 500);
 	});
-
-	var scroll = new SmoothScroll('a[href*="#"]');
 });
