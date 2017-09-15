@@ -86,31 +86,9 @@ jQuery(document).ready(function(){
 		infinite: true,
 		speed: 300,
 		slidesToScroll: 1,
-		slidesToShow: 3,
 		fade: false,
 		swipe: true,
-		responsive: [
-			{
-				breakpoint: 992,
-				settings: {
-					centerMode: true,
-					slidesToShow: 1,
-				}
-			},
-			{
-				breakpoint: 576,
-				settings: {
-					centerMode: true,
-					slidesToShow: 1,
-				}
-			},
-			{
-				breakpoint: 320,
-				settings: {
-					slidesToShow: 1,
-				}
-			},
-		],
+		variableWidth: true,
 	});
 
 	if(jQuery("#headlines-collect").length){

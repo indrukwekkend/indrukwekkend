@@ -524,6 +524,15 @@
 					z-index:99;
 					transition:all 80ms ease;
 
+					.click-area{
+						position: absolute;
+						top: 0;
+						left: 0;
+						bottom: 0;
+						width: 100%;
+						z-index: 9998;
+					}
+
 					.coworkers-info{
 						position: absolute;
 						color: $white;
@@ -533,13 +542,17 @@
 						z-index: 999;
 
 						h4{
-							margin-bottom: 2.6rem;
+							margin-bottom: 1.6rem;
 							text-shadow: 0 2px 13px $gray-900;
 							font-size: 1.6rem;
+
+							span{
+								border-bottom: 2px solid $white;
+								padding: 1rem 2rem;
+							}
 						}
 
 						span{
-							border-top: 2px solid $white;
 							padding: 1.2rem .3rem;
 						}
 					}
@@ -551,7 +564,7 @@
 						left: 0;
 						right: 0;
 						bottom: 10px;
-						z-index: 999;
+						z-index: 9999;
 					}
 				}
 
@@ -649,12 +662,15 @@
 
 
 .related-cases{
-	background-color: $content-bg;
 	margin-bottom: 4px;
 
 	.related-title{
 		h5{
 			font-family: 'Montserrat Bold';
+		}
+
+		h4{
+			font-size: 1.6rem;
 		}
 
 		br{
@@ -672,6 +688,8 @@
 			background-size:cover;
 			background-repeat: no-repeat;
 			background-position:left bottom;
+			width: 220px;
+			height: 220px;
 
 			&:focus{
 				outline:none;
@@ -680,7 +698,7 @@
 			.related-item-content{
 				display: block;
 				position: relative;
-				height: 200px;
+				height: 100%;
 
 				&:focus{
 					outline:none;
@@ -824,9 +842,8 @@
 	.related-cases{
 		.related-list{
 			.related-item{
-				.related-item-content{
-					height: 240px;
-				}
+				width: 250px;
+				height: 250px;
 			}
 		}
 	}
@@ -835,9 +852,8 @@
 	.related-cases{
 		.related-list{
 			.related-item{
-				.related-item-content{
-					height: 300px;
-				}
+				width: 300px;
+				height: 300px;
 			}
 		}
 	}
@@ -853,9 +869,8 @@
 	.related-cases{
 		.related-list{
 			.related-item{
-				.related-item-content{
-					height: 360px;
-				}
+				width: 350px;
+				height: 350px;
 			}
 		}
 	}
@@ -872,6 +887,8 @@
 	}
 
 	.related-cases{
+		background-color: $content-bg;
+
 		.related-title{
 			br{
 				display: initial;
@@ -896,9 +913,8 @@
 	.related-cases{
 		.related-list{
 			.related-item{
-				.related-item-content{
-					height: 400px;
-				}
+				width: 380px;
+				height: 380px;
 			}
 		}
 	}
@@ -909,4 +925,13 @@
 		}
 	}
 }
-@include media-breakpoint-up(xl){}
+@include media-breakpoint-up(xl){
+	.related-cases{
+		.related-list{
+			.related-item{
+				width: 400px;
+				height: 400px;
+			}
+		}
+	}
+}
