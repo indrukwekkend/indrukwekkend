@@ -54,6 +54,33 @@ jQuery(document).ready(function(){
 		adaptiveHeight: true,
 	});
 
+	jQuery('.contributors-list').slick({
+		dots: false,
+		infinite: true,
+		speed: 300,
+		slidesToScroll: 2,
+		slidesToShow: 3,
+		fade: false,
+		swipe: true,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					centerMode: true,
+					slidesToShow: 1,
+					variableWidth: true,
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					centerMode: true,
+					slidesToShow: 1,
+					variableWidth: true,
+				}
+			},
+		],
+	});
 	jQuery('.teamleden-list, .related-list, .coworkers-list, .employee-cases-list').slick({
 		dots: false,
 		infinite: true,
@@ -61,15 +88,24 @@ jQuery(document).ready(function(){
 		slidesToScroll: 1,
 		slidesToShow: 3,
 		fade: false,
+		swipe: true,
 		responsive: [
 			{
 				breakpoint: 992,
 				settings: {
-					slidesToShow: 2,
+					centerMode: true,
+					slidesToShow: 1,
 				}
 			},
 			{
 				breakpoint: 576,
+				settings: {
+					centerMode: true,
+					slidesToShow: 1,
+				}
+			},
+			{
+				breakpoint: 320,
 				settings: {
 					slidesToShow: 1,
 				}

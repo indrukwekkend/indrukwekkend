@@ -17,11 +17,11 @@
 				<?php $query = new wp_query( $args ); ?>
 
 				<?php if($query->have_posts()): ?>
-					<div class="row justify-content-end">
+					<div class="row justify-content-end contributors-list">
 					<?php while( $query->have_posts() ) : ?>
 						<?php $query->the_post(); ?>
 
-						<div class="col-12 col-sm contributor">
+						<div class="col contributor">
 							<a class="contributor-content" href="<?php echo esc_url( get_post_permalink() ); ?>">
 								<div class="contributor-image" style="background-image:url(<?php the_post_thumbnail_url();?>);"></div>
 								<div class="contributor-title">

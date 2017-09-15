@@ -228,6 +228,11 @@
 	.contributor{
 		position: relative;
 		text-align: center;
+		width: 200px;
+
+		&:focus{
+			outline:none;
+		}
 
 		.contributor-content{
 			display: block;
@@ -322,6 +327,9 @@
 			width: 100%;
 			color: $white;
 		}
+	}
+	&:focus{
+		outline:none;
 	}
 }
 
@@ -672,7 +680,7 @@
 			.related-item-content{
 				display: block;
 				position: relative;
-				height: 400px;
+				height: 200px;
 
 				&:focus{
 					outline:none;
@@ -812,9 +820,46 @@
 		}
 	}
 }
-@include media-breakpoint-up(sm){}
+@include media-breakpoint-up(xs){
+	.related-cases{
+		.related-list{
+			.related-item{
+				.related-item-content{
+					height: 240px;
+				}
+			}
+		}
+	}
+}
+@include media-breakpoint-up(sm){
+	.related-cases{
+		.related-list{
+			.related-item{
+				.related-item-content{
+					height: 300px;
+				}
+			}
+		}
+	}
 
-@include media-breakpoint-up(md){}
+	.part-contributors{
+		.contributor{
+			width: 300px;
+		}
+	}
+}
+
+@include media-breakpoint-up(md){
+	.related-cases{
+		.related-list{
+			.related-item{
+				.related-item-content{
+					height: 360px;
+				}
+			}
+		}
+	}
+}
 
 @include media-breakpoint-up(lg){
 
@@ -825,6 +870,7 @@
 			}
 		}
 	}
+
 	.related-cases{
 		.related-title{
 			br{
@@ -842,8 +888,25 @@
 			border-right: 2px solid $white;
 		}
 	}
+
 	.part-quote{
 		margin-top: -70%;
+	}
+
+	.related-cases{
+		.related-list{
+			.related-item{
+				.related-item-content{
+					height: 400px;
+				}
+			}
+		}
+	}
+
+	.part-contributors{
+		.contributor{
+			width: auto;
+		}
 	}
 }
 @include media-breakpoint-up(xl){}
