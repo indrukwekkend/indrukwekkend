@@ -1,8 +1,12 @@
-.btn:before{
+.btn:active{
+	opacity: .6;
+}
+
+.btn-arrow:before{
 	position: absolute;
+	display: none;
 	top: 0;
 	right: 0;
-	display: block;
 	content: "";
 	width: 4rem;
 	height: 100%;
@@ -10,13 +14,8 @@
 	background-repeat: no-repeat;
 	background-position: center;
 }
-.btn:active{
-	opacity: .6;
-}
-
 .btn-arrow{
 	position: relative;
-	padding-right: 5rem;
 	overflow: hidden;
 }
 
@@ -78,4 +77,26 @@
 	83% { opacity: 0; transform: translateX(50%); }
 	84% { opacity: 1; transform: translateX(50%);  }
 	100% { transform: translatXY(0%); }
+}
+
+@include media-breakpoint-up(xs) {
+}
+
+@include media-breakpoint-up(sm) {
+	.btn-arrow{
+		padding-right: 4rem;
+
+		&:before{
+			display: block;
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+}
+
+@include media-breakpoint-up(lg) {
+}
+
+@include media-breakpoint-up(xl) {
 }
