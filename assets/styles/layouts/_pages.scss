@@ -198,28 +198,22 @@
 
 /* Part: Gallery */
 .part-gallery{
-	position: relative;
-	min-height: 720px;
-
 	.figure{
-		position: absolute;
+		height: 300px;
+		padding: 20px;
+
+		&:focus{
+			outline: none;
+		}
+
+		img{
+			max-height: 100%;
+			box-shadow: 0px 0px 3rem -1rem $black;
+		}
 	}
-	.image-1{
-		top: 2%;
-		right: 5%;
-	}
-	.image-2{
-		top: 10%;
-		left: 5%;
-	}
-	.image-3{
-		position: relative;
-		margin-top: 20%;
-		z-index: 999;
-	}
-	.image-4{
-		left: 5%;
-		bottom: 3%;
+
+	.slick-next, .slick-prev{
+		display: none!important;
 	}
 }
 
@@ -1002,6 +996,34 @@
 					}
 				}
 			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg){
+	.part-gallery{
+		position: relative;
+		min-height: 720px;
+
+		.figure{
+			position: absolute;
+		}
+		.image-1{
+			top: 2%;
+			right: 5%;
+		}
+		.image-2{
+			top: 10%;
+			left: 5%;
+		}
+		.image-3{
+			position: relative;
+			margin-top: 20%;
+			z-index: 999;
+		}
+		.image-4{
+			left: 5%;
+			bottom: 3%;
 		}
 	}
 }
