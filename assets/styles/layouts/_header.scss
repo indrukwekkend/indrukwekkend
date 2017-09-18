@@ -114,7 +114,6 @@
 
 		.typed-cursor{
 			position:relative;
-			font-size: 4rem;
 			color: $gray-100;
 			z-index: 999;
 			bottom: 2px;
@@ -139,6 +138,45 @@
 	}
 }
 
+@include media-breakpoint-up(xs){
+	.banner{
+		.banner-content{
+			.typed-cursor{
+				font-size: $heading-scale-xs * $h1-font-size;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(sm){
+	.banner{
+		.banner-content{
+			.typed-cursor{
+				font-size: $heading-scale-sm * $h1-font-size;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(md){
+	.banner{
+		.banner-content{
+			.typed-cursor{
+				font-size: $heading-scale-md * $h1-font-size;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(lg){
+	.banner{
+		.banner-content{
+			.typed-cursor{
+				font-size: $heading-scale-lg * $h1-font-size;
+			}
+		}
+	}
+}
 @include media-breakpoint-up(xl){
 	.banner{
 		overflow-x: hidden;
@@ -147,6 +185,9 @@
 			height: 46vw;
 			max-height: 720px;
 
+			.typed-cursor{
+				font-size: $h1-font-size;
+			}
 		}
 	}
 }
