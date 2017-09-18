@@ -548,7 +548,7 @@
 						color: $white;
 						width: 100%;
 						text-align: center;
-						top: 10rem;
+						top: 6rem;
 						z-index: 999;
 
 						h4{
@@ -988,6 +988,20 @@
 		.slick-list{
 			float: right;
 			max-width: 596px;
+		}
+	}
+
+	.content-coworkers{
+		.coworkers-list{
+			.coworkers-item{
+				.coworkers-content{
+					.coworkers-hover{
+						.coworkers-info{
+							top: 10rem;
+						}
+					}
+				}
+			}
 		}
 	}
 }
