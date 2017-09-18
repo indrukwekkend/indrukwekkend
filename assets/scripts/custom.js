@@ -2,6 +2,20 @@ jQuery(document).ready(function(){
 
 	var scroll = new SmoothScroll('a[href*="#"]');
 	var FadeSpeed = 80;
+	var gallerySlick = jQuery('.gallery-list');
+	var gallarySettings = {
+			dots: false,
+			infinite: true,
+			speed: 300,
+			slidesToScroll: 1,
+			slidesToShow: 3,
+			fade: false,
+			swipe: true,
+			variableWidth: true,
+			focusOnSelect: false,
+			centerMode: true,
+			slidesToShow: 1,
+		}
 	
 	function scrollbarWidth() {
 		var scrollDiv = document.createElement("div");
@@ -20,6 +34,26 @@ jQuery(document).ready(function(){
 		jQuery('body').css('padding-right', '0px');
 		jQuery('body').removeClass('overlay-active');
 	}
+
+	if (jQuery(window).width() < 992) {
+		gallerySlick.slick(gallarySettings);
+	}
+
+	jQuery(window).on('resize', function() {
+
+		// If viewport is 992px or larger, then unslick
+		if (jQuery(window).width() > 992) {
+			if (gallerySlick.hasClass('slick-initialized')) {
+				gallerySlick.slick('unslick');
+			}
+			return
+		}
+
+		// If not initialized, initialize
+		if (!gallerySlick.hasClass('slick-initialized')) {
+			return gallerySlick.slick(gallarySettings);
+		}
+	});
 
 	jQuery('a[href$="#cases"]').click(function(e){
 		e.preventDefault();
