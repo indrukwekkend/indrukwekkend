@@ -15,6 +15,7 @@ jQuery(document).ready(function(){
 			focusOnSelect: false,
 			centerMode: true,
 			slidesToShow: 1,
+			arrows: false,
 		}
 	
 	function scrollbarWidth() {
@@ -113,6 +114,7 @@ jQuery(document).ready(function(){
 					centerMode: true,
 					slidesToShow: 1,
 					variableWidth: true,
+					arrows: false,
 				}
 			},
 		],
@@ -134,6 +136,7 @@ jQuery(document).ready(function(){
 				settings: {
 					centerMode: true,
 					slidesToShow: 1,
+					arrows: false,
 				}
 			},
 		],
@@ -161,12 +164,13 @@ jQuery(document).ready(function(){
 				settings: {
 					centerMode: true,
 					slidesToShow: 1,
+					arrows: false,
 				}
 			},
 		],
 	});
 
-	jQuery('.teamleden-list, .related-list').slick({
+	jQuery('.related-list').slick({
 		dots: false,
 		infinite: true,
 		speed: 300,
@@ -175,6 +179,14 @@ jQuery(document).ready(function(){
 		swipe: true,
 		variableWidth: true,
 		focusOnSelect: false,
+		responsive: [
+			{
+				breakpoint: 576,
+				settings: {
+					arrows: false,
+				}
+			},
+		],
 	});
 
 	if(jQuery("#headlines-collect").length){

@@ -479,6 +479,10 @@
 				transition:all 80ms ease;
 			}
 		}
+
+		&:focus{
+			outline: none;
+		}
 	}
 }
 
