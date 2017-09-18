@@ -1,8 +1,8 @@
 		<div class="row align-items-center content-coworkers">
-				<div class="col-12 col-md-3 py-3 py-md-0 text-center text-md-right pr-5">
+				<div class="col-12 col-md-3 py-3 py-md-0 text-xl-right pr-5">
 					<span class="coworkers-title">
-						<h5 class="d-none d-md-block">Bekijk wat anderen<br> voor je kunnen doen</h5>
-						<h4 class="d-block d-md-none">Bekijk wat anderen<br> voor je kunnen doen</h5>
+						<h5 class="d-none d-lg-block">Bekijk wat anderen<br> voor je kunnen doen</h5>
+						<h4 class="d-block d-lg-none">Bekijk wat anderen<br> voor je kunnen doen</h5>
 					</span>
 				</div>
 			
@@ -14,7 +14,7 @@
 					<div class="coworkers-list">
 						<?php while( $query->have_posts() ) : ?>
 							<?php $query->the_post(); ?>
-								<div class="col-4 coworkers-item">
+								<div class="col coworkers-item">
 									<div class="coworkers-content">
 										<div class="coworkers-image" style="background-image:url(<?php the_post_thumbnail_url();?>);"></div>
 										<div class="coworkers-title">
@@ -24,18 +24,18 @@
 											<a class="click-area" href="<?php echo esc_url( get_post_permalink() ); ?>"></a>
 											<div class="coworkers-info">
 												<h4><span><?php the_title(); ?></span></h4>
-												<span><?php the_field('company_position'); ?></span>
+												<span class="d-none d-sm-inline"><?php the_field('company_position'); ?></span>
 											</div>
 											<div class="coworkers-contact">
 												<div class="coworkers-phone">
 													<div class="mb-2 px-4">
-														<span class="icon smartphone"></span>
+														<span class="icon smartphone d-none d-sm-inline-block"></span>
 														<a class="ml-2 text-white" href="tel:<?php the_field('mobile'); ?>"><?php the_field('mobile'); ?></a>
 													</div>
 												</div>
 												<div class="coworkers-email">
 													<div class="mb-2 px-4">
-														<span class="icon mail"></span>
+														<span class="icon mail d-none d-sm-inline-block"></span>
 														<a class="ml-2 text-white" href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?></a>
 													</div>
 												</div>

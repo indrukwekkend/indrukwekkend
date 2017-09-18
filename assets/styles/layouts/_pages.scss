@@ -420,11 +420,16 @@
 /* Part: Employee Cases */
 .employee-cases{
 
+	.employee-cases-list{
+		height: 200px;
+	}
+
 	.employee-cases-content{
 		display: block;
 		position: relative;
 		height: 200px;
-		box-shadow: inset 4px 0 0 0 #fff;
+		width: 200px;
+		border-right: 4px solid $white;
 		background-image: url(../images/header_default.png);
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -485,11 +490,14 @@
 
 /* Part: Coworkers */
 .content-coworkers{
-	background-color: $content-bg;
+	background-color: $white;
 
 	.coworkers-title{
 		h5{
 			font-family: 'Montserrat Bold';
+		}
+		h4{
+			font-size: 1.6rem;
 		}
 	}
 	.coworkers-list{
@@ -497,6 +505,8 @@
 
 		.coworkers-item{
 			background-color: $white;
+			height: 200px;
+			width: 200px;
 
 			&:focus, a:focus{
 				outline:none;
@@ -505,7 +515,7 @@
 			.coworkers-content{
 				display: block;
 				position: relative;
-				height: 400px;
+				height: 100%;
 				margin-right: ($grid-gutter-width / -2);
 				margin-left:  ($grid-gutter-width / -2);
 
@@ -618,6 +628,7 @@
 	line-height: 0;
 	width: 0;
 	height: 0;
+	opacity: 0;
 	z-index: -1;
 }
 
@@ -847,11 +858,29 @@
 			}
 		}
 	}
+
+	.content-coworkers{
+		.coworkers-list{
+			.coworkers-item{
+				width: 250px;
+				height: 250px;
+			}
+		}
+	}
 }
 @include media-breakpoint-up(sm){
 	.related-cases{
 		.related-list{
 			.related-item{
+				width: 300px;
+				height: 300px;
+			}
+		}
+	}
+
+	.content-coworkers{
+		.coworkers-list{
+			.coworkers-item{
 				width: 300px;
 				height: 300px;
 			}
@@ -874,6 +903,15 @@
 			}
 		}
 	}
+
+	.content-coworkers{
+		.coworkers-list{
+			.coworkers-item{
+				width: 350px;
+				height: 350px;
+			}
+		}
+	}
 }
 
 @include media-breakpoint-up(lg){
@@ -890,6 +928,16 @@
 		background-color: $content-bg;
 
 		.related-title{
+			br{
+				display: initial;
+			}
+		}
+	}
+
+	.content-coworkers{
+		background-color: $content-bg;
+
+		.coworkers-title{
 			br{
 				display: initial;
 			}
@@ -919,13 +967,40 @@
 		}
 	}
 
+	.content-coworkers{
+		.coworkers-list{
+			.coworkers-item{
+				width: 380px;
+				height: 380px;
+			}
+		}
+	}
+
 	.part-contributors{
 		.contributor{
 			width: auto;
 		}
 	}
 }
+@include media-breakpoint-up(md){
+
+	.employee-cases{
+		.slick-list{
+			float: right;
+			max-width: 596px;
+		}
+	}
+}
+
 @include media-breakpoint-up(xl){
+	.content-coworkers{
+		.coworkers-list{
+			.coworkers-item{
+				width: 400px;
+				height: 400px;
+			}
+		}
+	}
 	.related-cases{
 		.related-list{
 			.related-item{

@@ -52,6 +52,7 @@ jQuery(document).ready(function(){
 		slidesToShow: 1,
 		fade: true,
 		adaptiveHeight: true,
+		focusOnSelect: false,
 	});
 
 	jQuery('.contributors-list').slick({
@@ -62,6 +63,7 @@ jQuery(document).ready(function(){
 		slidesToShow: 3,
 		fade: false,
 		swipe: true,
+		focusOnSelect: false,
 		responsive: [
 			{
 				breakpoint: 992,
@@ -81,7 +83,56 @@ jQuery(document).ready(function(){
 			},
 		],
 	});
-	jQuery('.teamleden-list, .related-list, .coworkers-list, .employee-cases-list').slick({
+
+	jQuery('.employee-cases-list').slick({
+		dots: false,
+		infinite: true,
+		speed: 300,
+		slidesToScroll: 1,
+		slidesToShow: 3,
+		fade: false,
+		swipe: true,
+		variableWidth: true,
+		focusOnSelect: false,
+		responsive: [
+			{
+				breakpoint: 576,
+				settings: {
+					centerMode: true,
+					slidesToShow: 1,
+				}
+			},
+		],
+	});
+	jQuery('.coworkers-list').slick({
+		dots: false,
+		infinite: true,
+		speed: 300,
+		slidesToScroll: 1,
+		slidesToShow: 3,
+		fade: false,
+		swipe: true,
+		variableWidth: true,
+		focusOnSelect: false,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					centerMode: true,
+					slidesToShow: 1,
+				}
+			},
+			{
+				breakpoint: 576,
+				settings: {
+					centerMode: true,
+					slidesToShow: 1,
+				}
+			},
+		],
+	});
+
+	jQuery('.teamleden-list, .related-list').slick({
 		dots: false,
 		infinite: true,
 		speed: 300,
@@ -89,6 +140,7 @@ jQuery(document).ready(function(){
 		fade: false,
 		swipe: true,
 		variableWidth: true,
+		focusOnSelect: false,
 	});
 
 	if(jQuery("#headlines-collect").length){
