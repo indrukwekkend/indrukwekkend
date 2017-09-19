@@ -67,7 +67,7 @@ endif;
 
 						<div class="col-4 d-block d-md-none align-self-end text-center p-0">
 							<a href="<?php echo $manager['permalink'];?>">
-								<img class="img-fluid" src="<?php echo $manager['image']; ?>" />
+								<img class="img-fluid" src="<?php echo $manager['image']; ?>" title="<?php echo $manager['name']; ?>" alt="<?php echo $manager['name']; ?>"/>
 							</a>
 						</div>
 					</div>
@@ -76,7 +76,7 @@ endif;
 
 				<div class="col-md-3 col-xl-2 d-none d-md-block align-self-end text-center p-0">
 					<a href="<?php echo $manager['permalink'];?>">
-						<img class="img-fluid" src="<?php echo $manager['image']; ?>" />
+						<img class="img-fluid" src="<?php echo $manager['image']; ?>" title="<?php echo $manager['name']; ?>" alt="<?php echo $manager['name']; ?>"/>
 					</a>
 				</div>
 			</div>

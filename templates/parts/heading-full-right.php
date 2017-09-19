@@ -1,4 +1,4 @@
-<div class="row justify-content-center pb-5">
+<div class="row justify-content-center pb-5 part-heading">
 	<div class="col-12 col-md-11 col-lg-10">
 		<div class="row">
 			<div class="col-lg-6"></div>
@@ -26,7 +26,7 @@
 
 				<?php if( get_sub_field('fullwidth') == false ){ $image_class = ( $alignment = get_sub_field('alignment') ) ? "float-".$alignment : ""; }?>
 				<figure class="figure<?php echo " ".$image_class; ?>">
-					<img src="<?php the_sub_field('image'); ?>" class="figure-img img-fluid" alt="<?php the_sub_field('image_description');?>">
+					<img src="<?php the_sub_field('image'); ?>" class="figure-img img-fluid" title="<?php echo (get_sub_field('image_description')) ?get_sub_field('image_description') :get_sub_field('title'); ?>" alt="<?php echo (get_sub_field('image_description')) ?get_sub_field('image_description') :get_sub_field('title'); ?>">
 					<figcaption class="figure-caption"><?php the_sub_field('image_description');?></figcaption>
 				</figure>
 

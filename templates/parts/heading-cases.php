@@ -12,7 +12,7 @@
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-8 text-center">
-				<img class="img-fluid" src="<?php the_field('featured_image');?>">
+				<img class="img-fluid" src="<?php the_field('featured_image');?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>">
 			</div>
 		</div>
 	</div>

@@ -16,7 +16,7 @@
 
 						<div class="row text-center justify-content-center my-3">
 
-							<?php if( get_field('email') ):?>
+							<?php if( get_field('email') ): ?>
 								<div class="col-12 col-md-5 p-0 mb-3 mb-md-0">
 									<span class="icon mail"></span>
 									<a href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?></a>
@@ -30,7 +30,7 @@
 								</div>
 							<?php endif; ?>
 
-							<?php if( get_field('mobile') ):?>
+							<?php if( get_field('mobile') ): ?>
 								<div class="col-6 col-md-3 p-0 mb-3 mb-md-0">
 									<span class="icon smartphone"></span>
 									<a href="tel:<?php echo str_replace(" ", "", get_field('mobile')); ?>"><?php the_field('mobile'); ?></a>
@@ -41,8 +41,8 @@
 					</div>
 
 					<div class="col-md-3 col-xl-2 d-none d-md-block align-self-end text-center p-0">
-						<a href="<?php echo get_post_permalink();?>">
-							<img class="img-fluid" src="<?php the_post_thumbnail_url('medium'); ?>" />
+						<a href="<?php echo get_post_permalink(); ?>">
+							<img class="img-fluid" src="<?php the_post_thumbnail_url('medium'); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>"/>
 						</a>
 					</div>
 
