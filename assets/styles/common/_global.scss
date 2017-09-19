@@ -543,11 +543,11 @@ h5, h6{
 .figure{
 	img[src$=".jpg"],
 	img[src$=".jpeg"]{
-		box-shadow: 0 0 1rem -.2rem $gray-600;
+		box-shadow: 0 0 1rem -.2rem $black;
 	}
 
 	img[src$=".png"]{
-		filter: drop-shadow(0 0 .5rem $gray-400);
+		filter: drop-shadow(0 0 .5rem rgba($black, 0.3) );
 	}
 }
 @include media-breakpoint-up(xs){
