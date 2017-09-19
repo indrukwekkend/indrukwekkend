@@ -8,7 +8,6 @@ jQuery(document).ready(function(){
 			infinite: true,
 			speed: 300,
 			slidesToScroll: 1,
-			slidesToShow: 3,
 			fade: false,
 			swipe: true,
 			variableWidth: true,
@@ -16,7 +15,7 @@ jQuery(document).ready(function(){
 			centerMode: true,
 			slidesToShow: 1,
 			arrows: false,
-		}
+		};
 	
 	function scrollbarWidth() {
 		var scrollDiv = document.createElement("div");
@@ -47,7 +46,7 @@ jQuery(document).ready(function(){
 			if (gallerySlick.hasClass('slick-initialized')) {
 				gallerySlick.slick('unslick');
 			}
-			return
+			return;
 		}
 
 		// If not initialized, initialize
