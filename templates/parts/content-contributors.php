@@ -1,6 +1,6 @@
-<div class="row">
+<div class="row part-contributors">
 	<div class="col-12 col-xl-10">
-		<div class="row align-items-center part-contributors">
+		<div class="row align-items-center">
 			<div class="col-lg-7 order-2 order-lg-1">
 
 				<?php $args = array(

@@ -1,5 +1,5 @@
 <?php if( $post_objects = get_field('cases') ): ?>
-			<div class="row align-items-center related-cases">
+			<div class="row align-items-center part-related-cases">
 				<div class="col-12 col-lg-3 py-3 py-lg-0 text-lg-right pr-5">
 					<span class="related-title">
 						<h5 class="d-none d-lg-block"><?php echo preg_replace('~((\w+\s){2})~', '$1' . "<br>", get_field('cases_title')); ?></h5>
