@@ -34,5 +34,6 @@ install:
 script:
   - npm run build
   - npm run jshint
+  - bower install
   - gulp
   - gulp --production
