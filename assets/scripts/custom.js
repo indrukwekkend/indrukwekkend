@@ -180,7 +180,7 @@ jQuery(document).ready(function(){
 		focusOnSelect: false,
 		responsive: [
 			{
-				breakpoint: 576,
+				breakpoint: 992,
 				settings: {
 					arrows: false,
 				}
