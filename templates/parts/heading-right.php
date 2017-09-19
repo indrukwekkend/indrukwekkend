@@ -1,4 +1,4 @@
-<div class="row justify-content-center pb-5">
+<div class="row justify-content-center pb-5 part-heading">
 	<div class="col-12 col-md-11 col-lg-10">
 		<div class="row">
 			<div class="col-lg-6"></div>

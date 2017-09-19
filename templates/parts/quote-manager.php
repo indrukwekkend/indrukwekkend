@@ -22,11 +22,11 @@ endif;
 
 ?>
 
-<div class="row pt-5 pb-6">
+<div class="row pt-5 pb-6 part-quote-manager">
 	<div class="col-12 col-lg-2"></div>
 		<div class="col-12 col-xl-10">
 
-			<div class="row part-quote-manager">
+			<div class="row quote-manager-container">
 				<div class="col-12 col-md-9 col-xl-10 pt-4 align-self-end">
 
 					<div class="row pl-lg-3 mb-4 mt-5 align-items-center">

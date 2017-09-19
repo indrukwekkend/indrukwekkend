@@ -1,7 +1,7 @@
-<div class="row">
+<div class="row part-quote">
 	<div class="col-lg-7 p-0"></div>
 	<div class="col-lg-5 p-0">
-		<div class="part-quote pt-4 px-4 pb-3 pt-md-5 px-md-5 pb-md-4 mb-5">
+		<div class="pt-4 px-4 pb-3 pt-md-5 px-md-5 pb-md-4 mb-5 quote-container">
 			<div class="quote-content">
 				<?php the_sub_field('content')?>
 			</div>

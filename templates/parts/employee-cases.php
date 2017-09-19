@@ -1,4 +1,4 @@
-<div class="row justify-content-center mb-6 mt-5 employee-cases">
+<div class="row justify-content-center mb-6 mt-5 part-employee-cases">
 	<div class="col-12 col-lg-10">
 		<div class="row">
 

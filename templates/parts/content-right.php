@@ -1,4 +1,4 @@
-<div class="row justify-content-center pb-5">
+<div class="row justify-content-center pb-5 part-content">
 	<div class="col-12 col-md-11 col-lg-10">
 		<div class="row">
 			<div class="col-lg-6"></div>
@@ -15,7 +15,7 @@
 			
 		<div class="row">
 			<div class="col-lg-6 mt-5 mt-xl-0">
-								<?php the_sub_field('content'); ?>
+					<?php the_sub_field('content'); ?>
 			</div>
 
 			<div class="col-lg-6"></div>

@@ -1,4 +1,4 @@
-		<div class="row align-items-center content-coworkers">
+		<div class="row align-items-center part-coworkers">
 				<div class="col-12 col-md-3 py-3 py-md-0 text-xl-right pr-5">
 					<span class="coworkers-title">
 						<h5 class="d-none d-lg-block">Bekijk wat anderen<br> voor je kunnen doen</h5>

@@ -5,9 +5,9 @@
 	<?php $post = $post_object; ?>
 	<?php setup_postdata( $post ); ?>
 
-	<div class="row pt-6">
+	<div class="row pt-6 part-quote-client">
 		<div class="col-12 col-xl-10">
-			<div class="row p-5 part-quote-client">
+			<div class="row p-5 quote-client-container">
 				<div class="col-12">
 					<div class="row">
 						<div class="col-12">

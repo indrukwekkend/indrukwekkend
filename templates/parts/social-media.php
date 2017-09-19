@@ -1,6 +1,6 @@
-<div class="row justify-content-center pb-5">
+<div class="row justify-content-center pb-5 part-socialmedia">
 	<div class="col-12 col-lg-10">
-		<div class="row align-items-center part-socialmedia">
+		<div class="row align-items-center">
 			<div class="col-12 col-md-6 col-lg-4 col-xl-3 text-lg-right mb-4 mb-md-0">
 				<h5 class="d-none d-lg-block"><?php echo preg_replace('~((\w+\s){3})~', '$1' . "<br>", get_sub_field('socialmedia_title')); ?></h5>
 				<h4 class="d-block d-lg-none"><?php echo preg_replace('~((\w+\s){3})~', '$1' . "<br>", get_sub_field('socialmedia_title')); ?></h5>

@@ -41,11 +41,11 @@
 					<?php endwhile; ?>
 				</div>
 			</div>
-			<div class="row pt-5 pt-xl-6">
+			<div class="row pt-5 pt-xl-6 part-quote-client">
 				<?php if( $post_objects = get_field('quotes') ): ?>
 
 					<div class="col-12">
-						<div class="row px-0 px-sm-4 py-5 p-md-5 part-quote-client">
+						<div class="row px-0 px-sm-4 py-5 p-md-5 quote-client-container">
 							<div class="col-12 quote-list">
 								<?php foreach( $post_objects as $post): ?>
 
