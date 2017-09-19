@@ -5,7 +5,9 @@
 
 This is the repository of the Indrukwekkend theme.
 
-### Quick start
+### Setting up
+
+Make sure AMPPS has a domain running on `indrukwekkend.dev` 
 
 1. Unpack the zip in the theme directory
 2. Open a Terminal and go to the theme directory
