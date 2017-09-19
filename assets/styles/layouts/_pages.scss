@@ -218,10 +218,6 @@
 			box-shadow: 0px 0px 3rem -1rem $black;
 		}
 	}
-
-	.slick-next, .slick-prev{
-		display: none!important;
-	}
 }
 
 /* Part: Contributors */
@@ -677,7 +673,7 @@
 }
 
 
-.related-cases{
+.part-related-cases{
 	margin-bottom: 4px;
 
 	.related-title{
@@ -787,49 +783,6 @@
 			}
 
 		}
-		.slick-prev{
-			position: absolute;
-			right: 0;
-			font-size: 0;
-			line-height: 0;
-			width: 0;
-			height: 0;
-		}
-
-		.slick-next{
-			position: absolute;
-			right: 0;
-			font-size: 0;
-			line-height: 0;
-			position: absolute;
-			top: 50%;
-			display: block;
-			width: 40px;
-			height: 40px;
-			margin-top: -10px;
-			padding: 0;
-			cursor: pointer;
-			color: transparent;
-			border: none;
-			outline: none;
-			background-color: $black;
-
-			&:before{
-				display: block;
-				content:" ";
-				height: 40px;
-				width: 40px;
-				background-image:url(../images/arrow-right-white.svg);
-			}
-
-			&:hover{
-				background-color: $orange;
-			}
-
-			&:active{
-				opacity: .6;
-			}
-		}
 	}
 }
 
@@ -855,7 +808,7 @@
 	}
 }
 @include media-breakpoint-up(xs){
-	.related-cases{
+	.part-related-cases{
 		.related-list{
 			.related-item{
 				width: 250px;
@@ -864,7 +817,7 @@
 		}
 	}
 
-	.content-coworkers{
+	.part-coworkers{
 		.coworkers-list{
 			.coworkers-item{
 				width: 250px;
@@ -874,7 +827,7 @@
 	}
 }
 @include media-breakpoint-up(sm){
-	.related-cases{
+	.part-related-cases{
 		.related-list{
 			.related-item{
 				width: 300px;
@@ -883,7 +836,7 @@
 		}
 	}
 
-	.content-coworkers{
+	.part-coworkers{
 		.coworkers-list{
 			.coworkers-item{
 				width: 300px;
@@ -900,7 +853,7 @@
 }
 
 @include media-breakpoint-up(md){
-	.related-cases{
+	.part-related-cases{
 		.related-list{
 			.related-item{
 				width: 350px;
@@ -909,7 +862,9 @@
 		}
 	}
 
-	.content-coworkers{
+	.part-coworkers{
+		background-color: $content-bg;
+
 		.coworkers-list{
 			.coworkers-item{
 				width: 350px;
@@ -929,7 +884,7 @@
 		}
 	}
 
-	.related-cases{
+	.part-related-cases{
 		background-color: $content-bg;
 
 		.related-title{
@@ -939,12 +894,17 @@
 		}
 	}
 
-	.content-coworkers{
-		background-color: $content-bg;
-
+	.part-coworkers{
 		.coworkers-title{
 			br{
 				display: initial;
+			}
+		}
+
+		.coworkers-list{
+			.coworkers-item{
+				width: 380px;
+				height: 380px;
 			}
 		}
 	}
@@ -965,18 +925,9 @@
 		}
 	}
 
-	.related-cases{
+	.part-related-cases{
 		.related-list{
 			.related-item{
-				width: 380px;
-				height: 380px;
-			}
-		}
-	}
-
-	.content-coworkers{
-		.coworkers-list{
-			.coworkers-item{
 				width: 380px;
 				height: 380px;
 			}
@@ -991,14 +942,7 @@
 }
 @include media-breakpoint-up(md){
 
-	.employee-cases{
-		.slick-list{
-			float: right;
-			max-width: 596px;
-		}
-	}
-
-	.content-coworkers{
+	.part-coworkers{
 		.coworkers-list{
 			.coworkers-item{
 				.coworkers-content{
@@ -1039,10 +983,17 @@
 			bottom: 3%;
 		}
 	}
+
+	.part-employee-cases{
+		.slick-list{
+			float: right;
+			max-width: 596px;
+		}
+	}
 }
 
 @include media-breakpoint-up(xl){
-	.content-coworkers{
+	.part-coworkers{
 		.coworkers-list{
 			.coworkers-item{
 				width: 400px;
@@ -1050,7 +1001,7 @@
 			}
 		}
 	}
-	.related-cases{
+	.part-related-cases{
 		.related-list{
 			.related-item{
 				width: 400px;

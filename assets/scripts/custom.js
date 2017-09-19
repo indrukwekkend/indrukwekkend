@@ -91,6 +91,7 @@ jQuery(document).ready(function(){
 
 	jQuery('.contributors-list').slick({
 		dots: false,
+		arrows: true,
 		infinite: true,
 		speed: 300,
 		slidesToScroll: 2,
@@ -110,9 +111,6 @@ jQuery(document).ready(function(){
 			{
 				breakpoint: 576,
 				settings: {
-					centerMode: true,
-					slidesToShow: 1,
-					variableWidth: true,
 					arrows: false,
 				}
 			},
@@ -121,6 +119,7 @@ jQuery(document).ready(function(){
 
 	jQuery('.employee-cases-list').slick({
 		dots: false,
+		arrows: true,
 		infinite: true,
 		speed: 300,
 		slidesToScroll: 1,
@@ -142,6 +141,7 @@ jQuery(document).ready(function(){
 	});
 	jQuery('.coworkers-list').slick({
 		dots: false,
+		arrows: true,
 		infinite: true,
 		speed: 300,
 		slidesToScroll: 1,
@@ -156,13 +156,6 @@ jQuery(document).ready(function(){
 				settings: {
 					centerMode: true,
 					slidesToShow: 1,
-				}
-			},
-			{
-				breakpoint: 576,
-				settings: {
-					centerMode: true,
-					slidesToShow: 1,
 					arrows: false,
 				}
 			},
@@ -171,6 +164,7 @@ jQuery(document).ready(function(){
 
 	jQuery('.related-list').slick({
 		dots: false,
+		arrows: true,
 		infinite: true,
 		speed: 300,
 		slidesToScroll: 1,
