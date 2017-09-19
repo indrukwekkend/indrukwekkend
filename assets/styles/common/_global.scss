@@ -540,6 +540,16 @@ h5, h6{
 	}
 }
 
+.figure{
+	img[src$=".jpg"],
+	img[src$=".jpeg"]{
+		box-shadow: 0 0 1rem -.2rem $gray-600;
+	}
+
+	img[src$=".png"]{
+		filter: drop-shadow(0 0 .5rem $gray-400);
+	}
+}
 @include media-breakpoint-up(xs){
 	h1, .h1 { font-size: $heading-scale-xs * $h1-font-size; }
 	h2, .h2 { font-size: $heading-scale-xs * $h2-font-size; }
