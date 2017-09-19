@@ -1,6 +1,6 @@
 <div class="row justify-content-center mb-6 mt-5 part-employee-cases">
 	<div class="col-12 col-lg-10">
-		<div class="row">
+		<div class="row justify-content-center">
 
 			<div class="col-12 col-lg-6 text-right order-2 order-lg-1">
 				<div class="row employee-cases-list">
@@ -29,7 +29,7 @@
 				</div>
 			</div>
 
-			<div class="col-12 col-lg-6 text-right order-1 order-lg-2 mb-5 mb-lg-0">
+			<div class="col-12 col-md-11 col-lg-6 text-right order-1 order-lg-2 mb-5 mb-lg-0">
 				<div class="heading">
 					<h4 class="title">
 						<span><?php echo preg_replace('~((\w+\s){2})~', '$1' . "<br>", get_field('cases_title')); ?></span>

@@ -863,8 +863,6 @@
 	}
 
 	.part-coworkers{
-		background-color: $content-bg;
-
 		.coworkers-list{
 			.coworkers-item{
 				width: 350px;
@@ -895,6 +893,8 @@
 	}
 
 	.part-coworkers{
+		background-color: $content-bg;
+
 		.coworkers-title{
 			br{
 				display: initial;
