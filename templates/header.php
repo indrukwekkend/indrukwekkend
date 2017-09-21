@@ -57,12 +57,12 @@ $background = function ( $url ) {
 
 								<?php if($btn_orange['text'] && $btn_orange['url']): ?>
 									<?php $btn_arrow = ( $btn_orange['arrow'] != "none" ) ? ' btn-arrow arrow-'.$btn_orange['arrow'] : ""; ?>
-									<a class="btn btn-lg btn-primary<?php echo $btn_arrow; ?>" href="<?php echo $btn_orange['url']; ?>">
+									<a class="btn btn-lg btn-primary<?php echo $btn_arrow; ?> mr-2" href="<?php echo $btn_orange['url']; ?>">
 										<?php echo $btn_orange['text']; ?>
 									</a>
 
 								<?php elseif($btn_orange): ?>
-									<span class="btn btn-lg btn-primary">
+									<span class="btn btn-lg btn-primary mr-2">
 										<?php echo $btn_orange['text']; ?>
 									</span>
 								<?php endif;?>
