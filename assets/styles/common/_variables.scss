@@ -1,6 +1,7 @@
 // Global options
 $enable-rounded:    false !default;
 $enable-shadows:    false !default;
+$enable-gradients:    true !default;
 
 // Grid settings
 $main-sm-columns:       12;
@@ -57,8 +58,8 @@ $indigo:        #6610f2;
 $purple:        #6f42c1;
 $pink:          #e83e8c;
 $red:           #dc3545;
-$orange:        #ff7302;
-$orange-light:  #ff8500;
+$orange:        #ef7b31;
+$orange-light:  #f28a2e;
 $yellow:        #ffc107;
 $green:         #28a745;
 $teal:          #20c997;
