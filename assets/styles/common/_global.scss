@@ -550,6 +550,14 @@ h5, h6{
 		filter: drop-shadow(0 0 .5rem rgba($black, 0.3) );
 	}
 }
+
+.bg-orange,
+.btn-orange,
+.btn-primary{
+	@include gradient-x($orange, $orange-light, 0%, 100%);
+	border: none;
+}
+
 @include media-breakpoint-up(xs){
 	h1, .h1 { font-size: $heading-scale-xs * $h1-font-size; }
 	h2, .h2 { font-size: $heading-scale-xs * $h2-font-size; }
