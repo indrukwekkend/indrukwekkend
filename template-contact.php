@@ -25,10 +25,10 @@
 							<div class="row my-5 mt-xl-6">
 								<div class="col-xl-8 mt-3 mt-xl-6">
 									<div class="row align-items-start py-5 bg-orange contact-social">
-										<div class="col-6 text-right">
-											<h4 class="text-white">Wij zijn<br>ook zeer <br>sociaal</h4>
+										<div class="col-12 col-sm-5 col-lg-6 mb-3 mb-lg-0 text-lg-right">
+											<h4 class="text-white">Wij zijn <br>ook zeer <br>sociaal</h4>
 										</div>
-										<div class="col-6 text-left">
+										<div class="col-12 col-sm-7 col-lg-6 text-left">
 											<div class="row">
 												<div class="col mb-3">
 													<span class="icon twitter-white"></span>

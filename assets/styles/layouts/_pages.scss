@@ -797,8 +797,8 @@
 	}
 
 	.contact-social{
-		.text-left{
-			border-left: 2px solid $white;
+		br{
+			display: none;
 		}
 	}
 }
@@ -846,6 +846,18 @@
 	.part-contributors{
 		.contributor{
 			width: 300px;
+		}
+	}
+
+	.contact{
+		.contact-social{
+			.text-left{
+				border-left: 2px solid $white;
+			}
+
+			br{
+				display: initial;
+			}
 		}
 	}
 }
