@@ -138,6 +138,91 @@
 	}
 }
 
+.nav-mobile{
+	position: fixed;
+	bottom: 0;
+	z-index: 9999999;
+	min-width: 100vw;
+	@include gradient-x($orange, $orange-light, 0%, 100%);
+
+	.menu-hoofd-menu-container{
+		.nav-phone{
+			display:none;
+		}
+
+		.menu-item{
+			text-align: center;
+			width: 25%;
+			border-right: 1px solid rgba($white, .2);
+
+			a{
+				display: block;
+				color: $white;
+				padding-bottom: 4px;
+			}
+
+			&.nav-cases{
+				a:before{
+					display: block;
+					content: " ";
+					height: 46px;
+					width: 100%;
+					background-image: url(../images/cases.png);
+					background-position: center 12px;
+					background-repeat: no-repeat;
+				}
+			}
+
+			&.nav-team{
+				a:before{
+					display: block;
+					content: " ";
+					height: 46px;
+					width: 100%;
+					background-image: url(../images/team.png);
+					background-position: center 14px;
+					background-repeat: no-repeat;
+				}
+			}
+
+			&.nav-about{
+				a:before{
+					display: block;
+					content: " ";
+					height: 46px;
+					width: 100%;
+					background-image: url(../images/about.png);
+					background-position: center 6px;
+					background-repeat: no-repeat;
+				}
+			}
+
+			&.nav-contact{
+				a:before{
+					display: block;
+					content: " ";
+					height: 46px;
+					width: 100%;
+					background-image: url(../images/contact.png);
+					background-position: center 14px;
+					background-repeat: no-repeat;
+				}
+			}
+
+			&:last-child{
+				border: none;
+			}
+
+			&:hover, &:active, &.current-menu-item{
+				a{
+					@include gradient-y(#ee8b31, #d8762c, 0%, 100%);
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
 @include media-breakpoint-up(xs){
 	.banner{
 		.banner-content{
@@ -169,6 +254,9 @@
 }
 
 @include media-breakpoint-up(lg){
+	.nav-mobile{
+		display: none;
+	}
 	.banner{
 		.banner-content{
 			.typed-cursor{

@@ -4,6 +4,11 @@ $background = function ( $url ) {
     echo 'style="background-image: url(' . esc_url( $url ) . ');"';
 };
 ?>
+<nav class="nav-mobile">
+	<?php if ( has_nav_menu( 'primary_navigation' ) ) :?>
+		<?php wp_nav_menu( ['theme_location' => 'primary_navigation','menu_class' => 'nav'] );?>
+	<?php endif; ?>
+</nav>
 <header class="container-fluid banner" <?php $background( get_field('header_background') ); ?>>
 	<div class="row">
 		<div class="col-lg-12">
