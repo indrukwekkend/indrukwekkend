@@ -1,6 +1,7 @@
-footer{
+footer.content-info{
 	background-color: $footer-bg;
 	color: $gray-600;
+	padding-bottom: 50px;
 
 	p{
 		margin: 0;
@@ -19,4 +20,11 @@ footer{
 			width: 48px;
 		}
 	}
+}
+
+@include media-breakpoint-up(lg){
+	
+	footer.content-info{
+		padding-bottom: 0px;
+	}	
 }

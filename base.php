@@ -16,7 +16,8 @@ use Roots\Sage\Wrapper;
 
 		<?php do_action( 'get_header' );?>
 		<?php get_template_part( 'templates/header' );?>
-		<div class="container-fluid" role="document">
+		
+		
 			<main>
 
 				<?php include Wrapper\template_path(); ?>
@@ -33,7 +34,8 @@ use Roots\Sage\Wrapper;
 
 			<?php endif; ?>
 
-		</div>
+		
+		
 		<?php get_template_part('templates/parts/overlay', 'teamleden'); ?>
 		<?php get_template_part('templates/parts/overlay', 'cases'); ?>
 		<?php do_action( 'get_footer' );?>

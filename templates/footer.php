@@ -1,4 +1,4 @@
-<footer class="container-fluid">
+<footer class="container-fluid content-info">
 	<div class="row">
 		<div class="container">
 			<div class="row justify-content-center pb-5 py-xl-5">

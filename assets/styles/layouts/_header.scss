@@ -90,35 +90,42 @@
 	}
 
 	.banner-content{
-		min-height: 550px;
+		min-height: 400px;
 		height: auto;
 
-		#headlines-typed{
-			font-family: 'Montserrat Bold';
-			position: relative;
-			z-index: 999;
-
-			span{
+		.headlines {
+			
+			height:60px;
+			
+			#headlines-typed{
+				font-family: 'Montserrat Bold';
+				position: relative;
 				z-index: 999;
+				
+				span{
+					z-index: 999;
+				}
+	
+				.h3{
+					color: $orange;
+					line-height: 1.2;
+				}
+	
+				.h4{
+					color :$black;
+				}
 			}
-
-			.h3{
-				color: $orange;
-				line-height: 1.2;
+	
+			.typed-cursor{
+				position:relative;
+				color: $gray-100;
+				z-index: 999;
+				bottom: 2px;
+				line-height: 1;
 			}
-
-			.h4{
-				color :$black;
-			}
+	
 		}
-
-		.typed-cursor{
-			position:relative;
-			color: $gray-100;
-			z-index: 999;
-			bottom: 2px;
-			line-height: 1;
-		}
+		
 
 		.buttons{
 
@@ -226,6 +233,7 @@
 @include media-breakpoint-up(xs){
 	.banner{
 		.banner-content{
+			
 			.typed-cursor{
 				font-size: $heading-scale-xs * $h1-font-size;
 			}
@@ -236,6 +244,13 @@
 @include media-breakpoint-up(sm){
 	.banner{
 		.banner-content{
+			
+			min-height: 450px;
+			
+			.headlines {
+			
+					height:100px;
+			}
 			.typed-cursor{
 				font-size: $heading-scale-sm * $h1-font-size;
 			}
@@ -246,6 +261,7 @@
 @include media-breakpoint-up(md){
 	.banner{
 		.banner-content{
+			min-height: 500px;
 			.typed-cursor{
 				font-size: $heading-scale-md * $h1-font-size;
 			}
@@ -259,6 +275,11 @@
 	}
 	.banner{
 		.banner-content{
+			min-height: 550px;
+			.headlines {
+			
+					height:140px;
+			}
 			.typed-cursor{
 				font-size: $heading-scale-lg * $h1-font-size;
 			}

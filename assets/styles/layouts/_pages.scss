@@ -324,48 +324,6 @@
 	}
 }
 
-/* Part: Company Brands */
-.company-brands{
-
-	.brand{
-		transition:all 80ms ease;
-		filter: #{'grayscale(100)'};
-
-		&:hover{
-			filter: #{'grayscale(0)'};
-		}
-	}
-}
-
-/* Part: Instagram */
-.part-instagram{
-
-	.spread-the-love{
-		font-family: 'Madina Script';
-		color: $orange;
-		font-size: 50px;
-		font-weight: 100;
-	}
-
-	.dit-is-indrukwekkend{
-		font-weight: bold;
-		font-size: 20px;
-	}
-
-	.instagram-feed{
-		display: inline-block;
-		vertical-align: middle;
-		max-width: 500px;
-		margin-bottom: -20px;
-	}
-}
-
-.instagram-link{
-	text-align: center;
-	text-decoration: underline;
-	color: $gray-600;
-	cursor: pointer;
-}
 
 .single-teamleden{
 

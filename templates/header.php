@@ -42,7 +42,7 @@ $background = function ( $url ) {
 			<div class="row align-items-end banner-content">
 				<div class="col-12 col-xl-6 order-2 order-xl-1">
 
-						<div id="headlines-collect">
+					<div id="headlines-collect">
 						<?php while( have_rows('headlines') ): the_row(); ?>
 							<?php $lines = get_sub_field('lines');?>
 							<p>
@@ -52,8 +52,9 @@ $background = function ( $url ) {
 
 						<?php endwhile; ?>
 					</div>
-					<span id="headlines-typed"></span>
-
+					<div class="headlines">
+						<span id="headlines-typed"></span>
+					</div>
 					<?php $btn_orange = get_field('btn_orange'); ?>
 					<?php $btn_black = get_field('btn_black'); ?>
 
