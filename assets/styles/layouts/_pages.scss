@@ -201,8 +201,8 @@
 /* Part: Gallery */
 .part-gallery{
 	.figure{
-		height: 300px;
-		padding: 20px;
+		//height: 300px;
+		//padding: 20px;
 
 		&:focus{
 			outline: none;
@@ -935,26 +935,29 @@
 	.part-gallery{
 		position: relative;
 		min-height: 720px;
-
-		.figure{
-			position: absolute;
-		}
-		.image-1{
-			top: 2%;
-			right: 5%;
-		}
-		.image-2{
-			top: 10%;
-			left: 5%;
-		}
-		.image-3{
-			position: relative;
-			margin-top: 20%;
-			z-index: 999;
-		}
-		.image-4{
-			left: 5%;
-			bottom: 3%;
+		
+		.gallery-list{
+			height: 650px;
+			.figure{
+				position: absolute;
+			}
+			.image-1{
+				top: 6%;
+				left: 6%;
+			}
+			.image-2{
+				bottom: 0%;
+				left: 0%;
+			}
+			.image-3{
+				bottom:10%;
+				left: 25%;
+				z-index: 999;
+			}
+			.image-4{
+				right: 0%;
+				top: 0%;
+			}
 		}
 	}
 }

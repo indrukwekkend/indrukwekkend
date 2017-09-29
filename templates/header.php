@@ -9,7 +9,8 @@ $background = function ( $url ) {
 		<?php wp_nav_menu( ['theme_location' => 'primary_navigation','menu_class' => 'nav'] );?>
 	<?php endif; ?>
 </nav>
-<header class="container-fluid banner" <?php $background( get_field('header_background') ); ?>>
+
+<header class="jumbotron banner" <?php $background( get_field('header_background') ); ?>>
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="container navigation">

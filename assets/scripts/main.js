@@ -19,9 +19,16 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        
+
+		  // Accepts any class name
+		 
+
+        
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
+         var rellax = new Rellax('.rellax');
       }
     },
     // Home page

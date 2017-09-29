@@ -1,4 +1,4 @@
-<div id="contact" class="row part-contact">
+<div id="contact" class="part-contact">
 	<div class="container">
 		<div class="row justify-content-center mb-5">
 			<div class="col-12 col-md-11 col-xl-10">

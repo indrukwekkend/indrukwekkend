@@ -12,7 +12,9 @@
     "slick-carousel": "^1.7.1",
     "typed.js": "^2.0.5",
     "popper.js": "^1.12.5",
-    "smooth-scroll.js": "^12.1.4"
+    "smooth-scroll.js": "^12.1.4",
+    "lightbox2": "~2.9.0",
+    "rellax": "*"
   },
   "overrides": {
     "font-awesome": {

@@ -16,26 +16,24 @@ use Roots\Sage\Wrapper;
 
 		<?php do_action( 'get_header' );?>
 		<?php get_template_part( 'templates/header' );?>
-		
-		
-			<main>
+				
+		<main>
 
-				<?php include Wrapper\template_path(); ?>
+			<?php include Wrapper\template_path(); ?>
 
-			</main>
+		</main>
 
-			<?php if (Setup\display_sidebar() && false) : ?>
+		<?php if (Setup\display_sidebar() && false) : ?>
 
-				<aside class="sidebar">
+			<aside class="sidebar">
 
-					<?php include Wrapper\sidebar_path(); ?>
+				<?php include Wrapper\sidebar_path(); ?>
 
-				</aside>
+			</aside>
 
-			<?php endif; ?>
+		<?php endif; ?>
 
-		
-		
+
 		<?php get_template_part('templates/parts/overlay', 'teamleden'); ?>
 		<?php get_template_part('templates/parts/overlay', 'cases'); ?>
 		<?php do_action( 'get_footer' );?>

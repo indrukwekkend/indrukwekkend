@@ -1,4 +1,4 @@
-<div class="row justify-content-center pb-5 part-socialmedia">
+<div class="justify-content-center pb-5 part-socialmedia">
 	<div class="col-12 col-md-11 col-lg-10">
 		<div class="row justify-content-md-center align-items-center">
 

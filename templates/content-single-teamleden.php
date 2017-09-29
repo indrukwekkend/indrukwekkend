@@ -70,7 +70,7 @@
 
 <?php // Secondary Content ?>
 <?php if( have_rows('secondary_content') ): ?>
-	<div class="row secondary-content">
+	<div class="secondary-content">
 		<div class="container pt-6">
 			<?php while( have_rows('secondary_content') ): the_row(); ?>
 

@@ -41,11 +41,16 @@
 					letter-spacing: .1rem;
 					font-size: 1.1rem;
 					color: $black;
+					 -webkit-transition: color 0.3s ease-out;
+					  -moz-transition: color 0.3s ease-out;
+					  -o-transition: color 0.3s ease-out;
+					  transition: color 0.3s ease-out;
 
 					&:hover{
 						text-decoration: none;
 						cursor: pointer;
-						border-bottom: 2px solid $gray-100;
+						color: $orange;
+						
 					}
 
 					&:active{
