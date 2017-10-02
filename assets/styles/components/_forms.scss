@@ -13,3 +13,15 @@
   @extend .btn;
   @extend .btn-secondary;
 }
+
+
+//contact form
+
+.gform_wrapper {
+	
+	div.validation_error, .gfield_error .gfield_label, .validation_message {
+		color: #e30000 !important;
+	}
+
+}
+

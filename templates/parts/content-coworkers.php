@@ -1,8 +1,8 @@
 		<div class="row align-items-center part-coworkers">
 				<div class="col-12 col-lg-3 py-3 py-md-0 text-xl-right pr-5">
 					<span class="coworkers-title">
-						<h5 class="d-none d-lg-block">Bekijk wat anderen<br> voor je kunnen doen</h5>
-						<h4 class="d-block d-lg-none">Bekijk wat anderen<br> voor je kunnen doen</h5>
+						<h5 class="d-none d-lg-block">Bekijk wat wij<br> voor je kunnen doen</h5>
+						<h5 class="d-block d-lg-none">Bekijk wat wij<br> voor je kunnen doen</h5>
 					</span>
 				</div>
 			

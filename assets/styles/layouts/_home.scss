@@ -6,6 +6,7 @@
 /* Part: Company Brands */
 	.company-brands{
 	
+		
 		.brand{
 			transition:all 80ms ease;
 			filter: #{'grayscale(100)'};
@@ -40,10 +41,13 @@
 	}
 	
 	.instagram-link{
-		text-align: center;
+		text-align: right;
+		display: block;
 		text-decoration: underline;
 		color: $gray-600;
 		cursor: pointer;
+		margin-right: 15px;
+		
 	}
 
 

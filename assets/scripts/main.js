@@ -20,15 +20,12 @@
       init: function() {
         // JavaScript to be fired on all pages
         
-
 		  // Accepts any class name
-		 
-
         
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
-         var rellax = new Rellax('.rellax');
+         
       }
     },
     // Home page
@@ -41,9 +38,16 @@
       }
     },
     // About us page, note the change from about-us to about_us.
-    'about_us': {
+    'over_ons': {
       init: function() {
         // JavaScript to be fired on the about us page
+        var rellax = new Rellax('.rellax');
+      }
+    },
+    'single_teamleden': {
+      init: function() {
+        // JavaScript to be fired on the about us page
+        var rellax = new Rellax('.rellax');
       }
     }
   };

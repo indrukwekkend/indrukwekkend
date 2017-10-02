@@ -12,9 +12,9 @@
 				<div class="row justify-content-around">
 					<?php if( have_rows('social_media') ): ?>
 						<?php while ( have_rows('social_media') ) : the_row(); ?>
-							<div class="col-12 col-md-4 mb-3 mb-lg-0 my-lg-2 text-xl-center text-nowrap">
+							<div class="col-12 col-md-4 mb-3 mb-lg-0 my-lg-2  text-nowrap">
 								<div class="row no-gutters">
-									<div class="col text-left text-md-center">
+									<div class="col text-left ">
 										<span class="icon <?php the_sub_field('service'); ?>-orange"></span>
 										<a class="social-link" href="<?php the_sub_field('url'); ?>" target="_blank"><?php the_sub_field('username'); ?></a>
 									</div>

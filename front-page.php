@@ -6,7 +6,7 @@
 				<?php the_content(); ?>
 			<?php endwhile; ?>
 		</div>
-		<div class="col-12 col-md-6 col-xl-7">
+		<div class="col-12 col-md-6 col-xl-6 mr-auto">
 			<div class="text-center">
 				<p class="lead">Met veel trost werken wij o.a. voor deze merken</p>
 			</div>
@@ -99,15 +99,10 @@
 						<div class="col-12 col-md-6">
 							<div class="instagram-feed">
 								<?php echo do_shortcode('[instagram-feed]'); ?>
+								<a class="instagram-link text-right" href="<?php the_field('instagram_link', 'option'); ?>" target="_blank">Volg ons werk op Instagram<span class="icon arrow-right-orange"></span></a>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-
-			<div class="row text-center">
-				<div class="col pt-4">
-					<a class="instagram-link" href="<?php the_field('instagram_link', 'option'); ?>" target="_blank">volg ons werk op Instagram<span class="icon arrow-right-orange"></span></a>
 				</div>
 			</div>
 
