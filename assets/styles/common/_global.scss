@@ -60,7 +60,11 @@ h5, h6{
 
 /* Icons */
 .icon{
-	display: inline-block;
+	display: none;
+	.content-info &, .part-socialmedia &, .contact-social & {
+		display: inline-block;	
+	}
+	
 	width: 32px;
 	height: 32px;
 	background-size: contain;
@@ -340,205 +344,8 @@ h5, h6{
 		}
 	}
 }
-.overlay-active{
-	overflow: hidden !important;
-}
-#overlay-teamleden,
-#overlay-cases{
-	position: fixed;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	background-color: rgba($white, .95);
-	z-index: 9999;
-	display: none;
-	overflow-y: scroll;
-	
-	#overlay-teamleden-close,
-	#overlay-cases-close{
-		cursor: pointer;
-	}
-
-	.overlay-case{
-		box-shadow: inset 0 0 0 2px #fff;
-		background-image: url(../images/header_default.png);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: 0 100%;
-
-		&-content{
-			display: block;
-			position: relative;
-			height: 400px;
-			margin-right: ($grid-gutter-width / -2);
-			margin-left:  ($grid-gutter-width / -2);
-		}
-		&-image{
-			position: absolute;
-			top: 40px;
-			bottom: 40px;
-			left: 20px;
-			right: 20px;
-			background-size: contain;
-			background-position: 50%;
-			background-repeat: no-repeat;
-		}
-		&-title{
-			position: absolute;
-			bottom: 0;
-			width: 100%;
-			text-align: center;
-
-			h4{
-				color: #231f20;
-				font-size: 1.6rem;
-			}
-		}
 
 
-		.overlay-case-hover{
-			display: block;
-			position: absolute;
-			opacity: 0;
-			top: 0;
-			right: 0;
-			left: 0;
-			bottom: 0;
-			background-color: rgba($orange, .7);
-			z-index:99;
-
-			.overlay-title{
-				position: absolute;
-				top: 10rem;
-				width: 60%;
-				margin: 0 20%;
-				text-align: center;
-
-				h4{
-					text-shadow: 0 2px 13px #212529;
-					font-size: 1.6rem;
-				}
-				hr{
-					border: 1px solid $white;
-					margin: 1rem 3rem;
-				}
-			}
-		}
-
-		&:hover{
-			.overlay-case-hover{
-				opacity: 1;
-				transition:all 80ms ease;
-			}
-
-			.overlay-case-title{
-				opacity: 0;
-				transition:all 80ms ease;
-			}
-		}
-	}
-
-	.overlay-teamlid{
-	.overlay-teamlid-content{
-			display: block;
-			position: relative;
-			height: 400px;
-			margin-right: ($grid-gutter-width / -2);
-			margin-left:  ($grid-gutter-width / -2);
-
-			.overlay-teamlid-hover{
-				position: absolute;
-				opacity: 0;
-				top: 0;
-				right: 0;
-				left: 0;
-				bottom: 0;
-				background-color: rgba($orange, .7);
-				z-index:99;
-				transition:all 80ms ease;
-
-				.click-area{
-					position: absolute;
-					top: 0;
-					left: 0;
-					bottom: 0;
-					width: 100%;
-					z-index: 9998;
-				}
-				.overlay-teamlid-info{
-					position: absolute;
-					color: $white;
-					width: 100%;
-					text-align: center;
-					top: 10rem;
-
-					h4{
-						margin-bottom: 2.6rem;
-						text-shadow: 0 2px 13px $gray-900;
-						font-size: 1.6rem;
-					}
-
-					span{
-						border-top: 2px solid $white;
-						padding: 1.2rem .3rem;
-					}
-				}
-
-				.overlay-teamlid-contact{
-					position: absolute;
-					color: $white;
-					width: 100%;
-					left: 0;
-					right: 0;
-					bottom: 10px;
-					z-index: 9999;
-				}
-			}
-
-			&:hover{
-				.overlay-teamlid-hover{
-					opacity: 1;
-					transition:all 80ms ease;
-				}
-				.overlay-teamlid-title,
-				.overlay-teamlid-functie{
-					opacity: 0;
-					transition:all 80ms ease;
-				}
-			}
-
-			.overlay-teamlid-image{
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				background-size: contain;
-				background-position: bottom center;
-				background-repeat: no-repeat;
-
-				&:focus{
-					outline:none;
-				}
-			}
-
-			.overlay-teamlid-title{
-				position: absolute;
-				bottom: 0;
-				height:40px;
-				width: 100%;
-				text-align: center;
-				transition:all 80ms ease;
-
-				h4{
-					color: $white;
-					font-size: 1.6rem;
-				}
-			}
-		}
-	}
-}
 
 .figure{
 	img[src$=".jpg"],
@@ -566,7 +373,7 @@ h5, h6{
 	h3, .h3 { font-size: $heading-scale-xs * $h3-font-size; }
 	h4, .h4 { font-size: $heading-scale-xs * $h4-font-size; }
 	h5, .h5 { font-size: $heading-scale-xs * $h5-font-size; }
-	h6, .h6 { font-size: $heading-scale-xs * $h6-font-size; }
+	h6, .h6 { font-size: $heading-scale-md * $h6-font-size; }
 }
 @include media-breakpoint-up(sm){
 	h1, .h1 { font-size: $heading-scale-sm * $h1-font-size; }
@@ -574,7 +381,15 @@ h5, h6{
 	h3, .h3 { font-size: $heading-scale-sm * $h3-font-size; }
 	h4, .h4 { font-size: $heading-scale-sm * $h4-font-size; }
 	h5, .h5 { font-size: $heading-scale-sm * $h5-font-size; }
-	h6, .h6 { font-size: $heading-scale-sm * $h6-font-size; }
+	h6, .h6 { font-size: $heading-scale-md * $h6-font-size; }
+	
+	.overlay-teamlid-content, overlay-case-content{
+		height: 350px;
+	}
+	.icon {
+		display: inline-block;
+	}
+	
 	}
 @include media-breakpoint-up(md){
 	h1, .h1 { font-size: $heading-scale-md * $h1-font-size; }
@@ -583,6 +398,11 @@ h5, h6{
 	h4, .h4 { font-size: $heading-scale-md * $h4-font-size; }
 	h5, .h5 { font-size: $heading-scale-md * $h5-font-size; }
 	h6, .h6 { font-size: $heading-scale-md * $h6-font-size; }
+	
+	.icon {
+		width: 32px;
+		height: 32px;
+	}
 	}
 @include media-breakpoint-up(lg){
 	h1, .h1 { font-size: $heading-scale-lg * $h1-font-size; }
@@ -593,4 +413,28 @@ h5, h6{
 	h6, .h6 { font-size: $heading-scale-lg * $h6-font-size; }
 	
 	.container-fluid, .container {padding-left: 50px; padding-right: 50px;}
+	
+	.overlay-teamlid-content, overlay-case-content{
+		height: 400px;
+	}
+	.icon {
+		width: 25px;
+		height: 25px;
+	}
+}
+@include media-breakpoint-up(xl){
+	.icon {
+		width: 32px;
+		height: 32px;
+	}
+}
+
+@include media-breakpoint-down(xs){
+	
+	#headlines-typed {
+		.h4{
+			display: none;
+		}
+	}
+	
 }

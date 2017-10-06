@@ -1,0 +1,283 @@
+// Team && Cases.
+
+.overlay-active{
+	overflow: hidden !important;
+}
+#overlay-teamleden,
+#overlay-cases{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba($white, .95);
+	z-index: 9999;
+	display: none;
+	overflow-y: scroll;
+	overflow-x: hidden ;
+
+	
+	
+	#overlay-teamleden-close,
+	#overlay-cases-close{
+		cursor: pointer;
+	}
+
+	.overlay-case{
+		box-shadow: inset 0 0 0 2px #fff;
+		background: #eee;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: 0 100%;
+
+		&-content{
+			display: block;
+			position: relative;
+			height: 300px;
+			margin-right: ($grid-gutter-width / -2);
+			margin-left:  ($grid-gutter-width / -2);
+		}
+		&-image{
+			position: absolute;
+			top: 40px;
+			bottom: 40px;
+			left: 20px;
+			right: 20px;
+			background-size: contain;
+			background-position: 50%;
+			background-repeat: no-repeat;
+		}
+		&-title{
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+
+			h4{
+				color: #231f20;
+				font-size: 1.6rem;
+			}
+		}
+
+
+		.overlay-case-hover{
+			display: block;
+			position: absolute;
+			opacity: 0;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			background-color: rgba($orange, .7);
+			z-index:99;
+
+			.overlay-title{
+				position: absolute;
+				top: 10rem;
+				width: 100%;
+				margin: 0 auto;
+				text-align: center;
+
+				h4{
+					text-shadow: 0 2px 13px #212529;
+					font-size: 1.6rem;
+				}
+				hr{
+					border: 1px solid $white;
+					margin: 1rem 3rem;
+				}
+			}
+		}
+
+		&:hover{
+			.overlay-case-hover{
+				opacity: 1;
+				transition:all 80ms ease;
+			}
+
+			.overlay-case-title{
+				opacity: 0;
+				transition:all 80ms ease;
+			}
+		}
+	}
+
+	.overlay-teamlid{
+	.overlay-teamlid-content{
+			display: block;
+			position: relative;
+			height: 300px;
+			margin-right: ($grid-gutter-width / -2);
+			margin-left:  ($grid-gutter-width / -2);
+
+			.overlay-teamlid-hover{
+				position: absolute;
+				opacity: 0;
+				top: 0;
+				right: 0;
+				left: 0;
+				bottom: 0;
+				background-color: rgba($orange, .7);
+				z-index:99;
+				transition:all 80ms ease;
+
+				.click-area{
+					position: absolute;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					width: 100%;
+					z-index: 9998;
+				}
+				.overlay-teamlid-info{
+					position: absolute;
+					color: $white;
+					width: 100%;
+					text-align: center;
+					top: 7rem;
+
+					.h4{
+						margin-bottom: .5rem;
+						text-shadow: 0 2px 13px #212529;
+						font-size: 1.6rem;
+						border-bottom: 2px solid #fff;
+						padding: 0 1.5rem .7rem 1.5rem;
+						width: auto
+											
+					}
+
+					span{
+						
+						padding: 1.2rem .3rem;
+					}
+				}
+
+				.overlay-teamlid-contact{
+					position: absolute;
+					color: $white;
+					width: 100%;
+					left: 0;
+					right: 0;
+					bottom: 10px;
+					z-index: 9999;
+					font-size: 0.9rem
+				}
+			}
+
+			&:hover{
+				.overlay-teamlid-hover{
+					opacity: 1;
+					transition:all 80ms ease;
+				}
+				.overlay-teamlid-title,
+				.overlay-teamlid-functie{
+					opacity: 0;
+					transition:all 80ms ease;
+				}
+			}
+
+			.overlay-teamlid-image{
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-size: contain;
+				background-position: bottom center;
+				background-repeat: no-repeat;
+
+				&:focus{
+					outline:none;
+				}
+			}
+
+			.overlay-teamlid-title{
+				position: absolute;
+				bottom: 0;
+				height:40px;
+				width: 100%;
+				text-align: center;
+				transition:all 80ms ease;
+
+				h4{
+					color: $white;
+					font-size: 1.6rem;
+					text-shadow: 1px 1px 4px black;
+				}
+			}
+		}
+	}
+}
+
+
+
+@include media-breakpoint-down(sm){
+	
+	#overlay-teamleden,
+	#overlay-cases{
+		margin-bottom: 70px;
+		padding-bottom: 20px;
+	}
+	
+	// overlay-teamleden
+	#overlay-teamleden .overlay-teamlid .overlay-teamlid-content {
+		height: 250px;
+		
+		&:hover {
+			.overlay-teamlid-hover{
+				opacity: 0;
+			}
+			.overlay-teamlid-title{
+				opacity: 1;
+			}
+		}
+		.overlay-teamlid-title{
+			height: 75px;
+		}
+		.overlay-teamlid-contact{
+			display: flex;
+			justify-content: space-around;
+			background: #000;
+			
+			
+		}
+		.text-orange, .text-black {
+			
+			padding: 6px;
+			width: 50%;
+			
+			.icon{	
+				display: inline-block;	
+			}
+
+		}
+		.text-orange {
+			background: #ef7b31;
+		} 
+		.text-black {
+			background: #000;
+		}
+		
+		.overlay-teamlid-image {
+		    background-size: auto;
+			background-position: top;
+		}
+		
+	}
+	
+	// overlay-teamleden
+	#overlay-cases .overlay-case .overlay-case-content {
+		height: 250px;
+		
+		&:hover {
+			.overlay-case-hover{
+				opacity: 0;
+			}
+			.overlay-case-title{
+				opacity: 1;
+			}
+		}
+	}
+	
+	
+}

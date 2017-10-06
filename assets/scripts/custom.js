@@ -3,7 +3,7 @@ jQuery(document).ready(function(){
 	var scroll = new SmoothScroll('a[href*="#"]');
 	var FadeSpeed = 80;
 	var gallerySlick = jQuery('.gallery-list');
-	var gallarySettings = {
+	var gallerySettings = {
 			dots: false,
 			infinite: true,
 			speed: 300,
@@ -16,6 +16,7 @@ jQuery(document).ready(function(){
 			slidesToShow: 1,
 			arrows: false,
 		};
+		
 	
 	function scrollbarWidth() {
 		var scrollDiv = document.createElement("div");
@@ -36,7 +37,7 @@ jQuery(document).ready(function(){
 	}
 
 	if (jQuery(window).width() < 992) {
-		gallerySlick.slick(gallarySettings);
+		gallerySlick.slick(gallerySettings);
 	}
 
 	jQuery(window).on('resize', function() {
@@ -51,12 +52,13 @@ jQuery(document).ready(function(){
 
 		// If not initialized, initialize
 		if (!gallerySlick.hasClass('slick-initialized')) {
-			return gallerySlick.slick(gallarySettings);
+			return gallerySlick.slick(gallerySettings);
 		}
 	});
 
 	jQuery('a[href$="#cases"]').click(function(e){
 		e.preventDefault();
+		jQuery('#overlay-teamleden').fadeOut(FadeSpeed);
 		jQuery('#overlay-cases').fadeIn(FadeSpeed);
 		overlayActive();
 	});
@@ -68,6 +70,7 @@ jQuery(document).ready(function(){
 
 	jQuery('a[href$="#teamleden"]').click(function(e){
 		e.preventDefault();
+		jQuery('#overlay-cases').fadeOut(FadeSpeed);
 		jQuery('#overlay-teamleden').fadeIn(FadeSpeed);
 		overlayActive();
 	});

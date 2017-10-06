@@ -56,11 +56,11 @@
 									        break;
 									    case 2:
 									        $size = 'gallery-land';
-									        $rellax_speed = 3;
+									        $rellax_speed = 1;
 									        break;
 									    case 3:
 									        $size = 'gallery-port';
-									        $rellax_speed = -1;
+									        $rellax_speed = -2;
 									        break;    
 									}
 																		
@@ -73,7 +73,7 @@
 							 <figure class="rellax figure image-<?= $i; ?>" data-rellax-speed="<?= $rellax_speed; ?>">
 								<a href="<?php echo $url; ?>" title="<?php echo $title; ?>" data-lightbox="roadtrip">
 							
-									<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+									<img src="<?= $thumb; ?>" alt="<?= $alt; ?>" width="<?= $width; ?>" height="<?= $height; ?>" />
 							
 								</a>
 							</figure>
@@ -82,16 +82,14 @@
 							<?php endif; ?>
 
 						<?php endwhile; ?>
+						<script>
+							window.onload = function () { 
+								var rellax = new Rellax('.rellax'); 
+							}
+						</script>
 					<?php endif; ?>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
-<!--
-<script>
-  // Accepts any class name
-  var rellax = new Rellax('.rellax');
-</script>
--->

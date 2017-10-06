@@ -11,7 +11,18 @@
 						<?php foreach( $post_objects as $post): ?>
 							<div class="col related-item">
 								<div class="related-item-content">
-									<div class="related-item-image" style="background-image:url(<?php the_field('header_foreground');?>);"></div>
+									
+									<?php $image = get_field('header_foreground') ?>
+									<?php 
+										$thumb = $image['sizes'][ 'overlay-land' ]; 
+										$alt = $image['alt'];
+									?>
+								
+										
+								
+									
+									<div class="related-item-image" style="background-image:url(<?= $thumb ?>);"></div>
+																		
 									<div class="related-item-title">
 										<h4><?php the_title(); ?></h4>
 									</div>

@@ -1,4 +1,4 @@
-
+<!-- single teamleden, primary secondary en tertiary holders. -->
 
 <?php // Page Intro ?>
 <?php get_template_part('templates/parts/heading', 'page'); ?>
@@ -8,8 +8,8 @@
 
 <?php // Primary Content ?>
 <?php if( have_rows('primary_content') ): ?>
-	<div class="row primary-content">
-		<div class="container py-5">
+	<div class="primary-content">
+		<div class="container py-5 content-holder">
 			<?php while( have_rows('primary_content') ): the_row(); ?>
 
 					<?php // Title left ?>
@@ -122,7 +122,7 @@
 <?php endif; ?>
 
 <?php // Tertiary Content ?>
-<div class="row tertiary-content">
+<div class="tertiary-content">
 	<div class="container">
 
 		<?php // Cases ?>

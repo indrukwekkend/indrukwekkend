@@ -1,4 +1,5 @@
-<div id="intro" class="row page-header">
+<!-- heading-cases -->
+<div id="intro" class="page-header">
 	<div class="container pt-6 pb-5">
 		<div class="row justify-content-center">
 			<div class="col-12 text-center">

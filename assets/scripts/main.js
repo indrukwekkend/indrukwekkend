@@ -41,13 +41,13 @@
     'over_ons': {
       init: function() {
         // JavaScript to be fired on the about us page
-        var rellax = new Rellax('.rellax');
+        
       }
     },
     'single_teamleden': {
       init: function() {
         // JavaScript to be fired on the about us page
-        var rellax = new Rellax('.rellax');
+        //
       }
     }
   };

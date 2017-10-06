@@ -1,4 +1,4 @@
-
+<!-- single cases, primary secondary en tertiary holders. -->
 
 <?php // Page Intro ?>
 <?php get_template_part('templates/parts/heading', 'cases'); ?>

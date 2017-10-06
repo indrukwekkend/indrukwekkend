@@ -3,27 +3,29 @@
  * Template Name: Contact Template
  */
 ?>
-<div class="row primary-content">
+<div class="primary-content">
 	<div class="container pt-6">
 		<div class="row justify-content-start pb-5">
 			<div class="col-xl-11">
 				<div class="row">
+					
 					<div class="col-lg-2"></div>
+					
 					<div class="col-lg-5">
 
-						<div class="heading">
+						<div class="heading mb-4">
 							<h4 class="title">
-								<span>Stuur een<br>bericht</span>
+								<span>Stuur een <br>bericht</span>
 							</h4>
 							<span class="line"></span>
 						</div>
 
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-lg-7 mt-xl-4">
-							<div class="row my-5 mt-xl-6">
-								<div class="col-xl-8 mt-3 mt-xl-6">
+				<div class="row justify-content-between">
+					<div class="col-lg-6 mt-xl-4 order-2 order-lg-1 ">
+							<div class="row my-5 mt-lg-6">
+								<div class="col mt-3 mt-xl-6">
 									<div class="row align-items-start py-5 bg-orange contact-social">
 										<div class="col-12 col-sm-5 col-lg-6 mb-3 mb-lg-0 text-lg-right">
 											<h4 class="text-white">Wij zijn <br>ook zeer <br>sociaal</h4>
@@ -59,7 +61,7 @@
 							</div>
 						</div>
 
-					<div class="col-lg-5">
+					<div class="col-lg-5 form order-1 order-lg-2 align-self-end">
 						<?php gravity_form( 1, false, false, false, '', true );?>
 					</div>
 

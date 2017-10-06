@@ -13,32 +13,44 @@
 			<?php if($query->have_posts()): ?>
 				<?php while( $query->have_posts() ) : ?>
 					<?php $query->the_post(); ?>
-						<div class="col-12 col-sm-6 col-lg-4 mt-5 overlay-teamlid">
+						<div class="col-6 col-lg-4 mt-sm-5 overlay-teamlid">
 							<div class="overlay-teamlid-content">
 								<div class="overlay-teamlid-image" style="background-image:url(<?php the_post_thumbnail_url();?>);"></div>
 								<div class="overlay-teamlid-title">
 									<h4><?php the_title(); ?></h4>
-									<div class="overlay-teamlid-functie pt-3">
+									<div class="overlay-teamlid-functie pt-3 d-none d-md-block">
 										<?php the_field('company_position');?>
 									</div>
+									
+									<div class="overlay-teamlid-contact">
+												
+										<a class="ml-1 text-black" href="tel:<?php the_field('mobile'); ?>">
+											<span class="icon smartphone"></span>
+										</a>
+										<a class="ml-1 text-orange" href="mailto:<?php the_field('email'); ?>">
+											<span class="icon mail"></span>
+										</a>
+												
+									</div>
+									
 								</div>
 								<div class="overlay-teamlid-hover">
 									<a class="click-area" href="<?php echo esc_url( get_post_permalink() ); ?>"></a>
 									<div class="overlay-teamlid-info">
-										<h4 class="text-white"><?php the_title(); ?></h4>
-										<span><?php the_field('company_position'); ?></span>
+										<span class="h4 text-white d-inline-block"><?php the_title(); ?></span><br>
+										<span class="d-none d-sm-inline" ><?php the_field('company_position'); ?></span>
 									</div>
 									<div class="overlay-teamlid-contact">
 										<div class="overlay-teamlid-phone">
-											<div class="mb-2 px-4">
+											<div class="mb-1 ">
 												<span class="icon smartphone"></span>
-												<a class="ml-2 text-white" href="tel:<?php the_field('mobile'); ?>"><?php the_field('mobile'); ?></a>
+												<a class="ml-1 text-white" href="tel:<?php the_field('mobile'); ?>"><?php the_field('mobile'); ?></a>
 											</div>
 										</div>
 										<div class="overlay-teamlid-email">
-											<div class="mb-2 px-4">
+											<div class="mb-2 ">
 												<span class="icon mail"></span>
-												<a class="ml-2 text-white" href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?></a>
+												<a class="ml-1 text-white" href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?></a>
 											</div>
 										</div>
 									</div>

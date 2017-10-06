@@ -17,7 +17,7 @@
 						</div>
 
 						<div class="row text-center justify-content-center my-3">
-							<div class="col-12 col-lg-11 col-xl-10">
+							<div class="col-12 col-lg-11">
 								<div class="row">
 
 									<div class="col-3 col-sm-6  col-xl-3 mb-2 p-0">

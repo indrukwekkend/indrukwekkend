@@ -34,6 +34,8 @@ function setup() {
     add_theme_support( 'post-thumbnails' );
     add_image_size( 'gallery-square', 300, 300, true );
     add_image_size( 'gallery-land', 400, 300, true );
+    add_image_size( 'overlay-land', 400, 300, false );
+    add_image_size( 'header-land', 600, 450, false );
     add_image_size( 'gallery-port', 550, 650, true );
     
     // Enable post formats

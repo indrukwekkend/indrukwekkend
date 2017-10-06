@@ -5,6 +5,10 @@
 }
 .primary-content{
 	background-color: $content-bg;
+	position: relative;
+	.content-holder{
+		overflow: hidden;
+	}
 }
 .secondary-content, .tertiary-content{
 	.heading{
@@ -49,6 +53,8 @@
 
 /* Part: Social Media */
 .part-socialmedia{
+	background: #f0f6f8;
+	position: relative;
 	.social-link{
 		font-family: "Montserrat Light";
 		font-size: 0.9rem;
@@ -200,10 +206,12 @@
 }
 
 /* Part: Gallery */
+
 .part-gallery{
-	.figure{
+	
 		//height: 300px;
 		//padding: 20px;
+	
 
 		&:focus{
 			outline: none;
@@ -213,7 +221,7 @@
 			max-height: 100%;
 		}
 	}
-}
+
 
 /* Part: Contributors */
 .part-contributors{
@@ -380,7 +388,7 @@
 		height: 200px;
 		width: 200px;
 		border-right: 4px solid $white;
-		background-image: url(../images/header_default.png);
+		background-image: url(../images/background_small.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: 0 100%;
@@ -576,6 +584,17 @@
 	}
 }
 
+@include media-breakpoint-down(sm){
+	.part-coworkers .coworkers-list .coworkers-item .coworkers-content:hover { 
+		.coworkers-hover{
+			opacity: 0;
+		}
+		.coworkers-title{
+			opacity: 1;
+		}
+	}
+}
+
 .slick-prev{
 	position: absolute;
 	font-size: 0;
@@ -649,7 +668,7 @@
 
 		.related-item{
 			box-shadow: inset 4px 0 0 0 $white;
-			background-image: url(../images/header_default.png);
+			background-image: url(../images/background_small.jpg);
 			background-size:cover;
 			background-repeat: no-repeat;
 			background-position:left bottom;
@@ -935,10 +954,48 @@
 
 	.part-gallery{
 		position: relative;
-		min-height: 720px;
+		min-height: 1220px;
 		
 		.gallery-list{
 			height: 650px;
+			margin-bottom: 170px;
+			position: relative;
+			.figure{
+				position: absolute;
+			}
+			.image-1{
+				top: 6%;
+				left: 6%;
+			}
+			.image-2{
+				bottom: 0%;
+				left: 0%;
+				
+			}
+			.image-3{
+				bottom:-10%;
+				left: 25%;
+				z-index: 999;
+			
+			}
+			.image-4{
+				right: -20%;
+				top: -10%;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(xl){
+	
+	
+	.part-gallery{
+		position: relative;
+		
+		
+		.gallery-list{
+			
+			
 			.figure{
 				position: absolute;
 			}
@@ -957,14 +1014,12 @@
 			}
 			.image-4{
 				right: 0%;
-				top: 0%;
+				top: -10%;
 			}
 		}
 	}
-}
-
-@include media-breakpoint-up(xl){
-
+	
+	
 	.part-coworkers{
 		.coworkers-list{
 			.coworkers-item{
@@ -989,4 +1044,33 @@
 			max-width: 596px;
 		}
 	}
+}
+
+@include media-breakpoint-down(md){
+
+.part-gallery{
+	
+		//height: 300px;
+		//padding: 20px;
+		
+		.gallery-list{
+			height: 300px;
+			.figure{
+				position: relative;
+				margin: 0;
+				transform: none!important;
+				img {
+					max-height: 300px;
+					width: auto;
+				}
+			}
+			
+			.image-4{
+				margin-right: 20px;
+
+			   
+			}
+		}
+	}	
+	
 }

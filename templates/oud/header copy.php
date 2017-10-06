@@ -1,13 +1,8 @@
 <?php
 $background = function ( $url ) {
-    $url = ($url) ? $url : get_stylesheet_directory_uri() . "/dist/images/header_default.jpg";
+    $url = ($url) ? $url : get_stylesheet_directory_uri() . "/dist/images/header_default.png";
     echo 'style="background-image: url(' . esc_url( $url ) . ');"';
 };
-
-$display = function ( $url ) {
-    if ($url != ''){echo 'd-none';}
-};
-
 ?>
 <nav class="nav-mobile">
 	<?php if ( has_nav_menu( 'primary_navigation' ) ) :?>
@@ -15,9 +10,7 @@ $display = function ( $url ) {
 	<?php endif; ?>
 </nav>
 
-<!-- header in templates --> 
 <header class="jumbotron banner" <?php $background( get_field('header_background') ); ?>>
-	<div class="lamp <?php $display( get_field('header_background') ); ?>"></div>
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="container navigation">
@@ -64,59 +57,45 @@ $display = function ( $url ) {
 					<div class="headlines">
 						<span id="headlines-typed"></span>
 					</div>
-					
-					
+					<?php $btn_orange = get_field('btn_orange'); ?>
+					<?php $btn_black = get_field('btn_black'); ?>
 
+						<?php if( $btn_orange || $btn_black ): ?>
 							<div class="buttons mb-5 mt-4 mb-xl-6">
-								
-								<?php if ( is_singular( array( 'teamleden', 'cases' ) ) ) : ?>
-	
-								    <?php if (is_singular( 'teamleden' )) {?>
-									   	 <a class="btn btn-lg btn-primary btn-arrow arrow-down mr-2" href="#intro">
-											Leer <?php the_title( ) ?> Kennen
-										</a>
-								    <?php }else{ ?>
-									    	<a class="btn btn-lg btn-primary btn-arrow arrow-down mr-2" href="#intro">
-												Lees onze aanpak
-											</a>
-								    <?php } ?>
-								    
-								<?php elseif (is_page( 'over-ons' )): ?>
-								
-									<a class="btn btn-lg btn-primary btn-arrow arrow-down mr-2" href="#intro">
-										Leer ons beter kennen</a>
-								
-								<?php elseif (is_page( 'contact' )): ?>
-								
-									<a class="btn btn-lg btn-primary btn-arrow arrow-right mr-2" href="https://www.google.com/maps/dir/Current+Location/Indrukwekkend,+De+Droogmakerij+20f,+1851+LX+Heiloo" target="_blank">
-										Check de route</a>
-								
-								<?php elseif (is_home() || is_front_page(  )): ?>
-								
-									<a class="btn btn-lg btn-primary btn-arrow arrow-right mr-2" href="/over-ons">
-										Leer ons kennen	</a>
-									<a class="btn btn-lg btn-black" href="#cases">
-										Bekijk ons werk</a>
-										
+
+								<?php if($btn_orange['text'] && $btn_orange['url']): ?>
+									<?php $btn_arrow = ( $btn_orange['arrow'] != "none" ) ? ' btn-arrow arrow-'.$btn_orange['arrow'] : ""; ?>
+									<a class="btn btn-lg btn-primary<?php echo $btn_arrow; ?> mr-2" href="<?php echo $btn_orange['url']; ?>">
+										<?php echo $btn_orange['text']; ?>
+									</a>
+
+								<?php elseif($btn_orange): ?>
+									<span class="btn btn-lg btn-primary mr-2">
+										<?php echo $btn_orange['text']; ?>
+									</span>
 								<?php endif;?>
-	
 
+								<?php if($btn_black['text'] && $btn_black['url']): ?>
+									<a class="btn btn-lg btn-black" href="<?php echo $btn_black['url']; ?>">
+										<?php echo $btn_black['text']; ?>
+									</a>
 
+								<?php elseif( $btn_black['text'] ): ?>
+									<span class="btn btn-lg btn-black">
+										<?php echo $btn_black['text']; ?>
+									</span>
+								<?php endif;?>
 
 							</div>
 
-						
+						<?php endif; ?>
 
 					</div>
 
-					<?php if($image = get_field('header_foreground') ): ?>
-						<?php 
-							$thumb = $image['sizes'][ 'header-land' ]; 
-							$alt = $image['alt'];
-						?>
+					<?php if($header_foreground = get_field('header_foreground') ): ?>
 						<!-- image content -->
 						<div class="col-12 col-md-9 col-xl-6 order-1 order-md-2 foreground-image">
-							<img class="img-fluid float-right" src="<?php echo $thumb; ?>" alt="<?= $alt; ?>"  />
+							<img class="img-fluid float-right" src="<?php echo $header_foreground; ?>" />
 						</div>
 					<?php endif; ?>
 
