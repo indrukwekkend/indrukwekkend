@@ -34,3 +34,4 @@ When ready to publish on `behoorlijk.indrukwekkend.nl`, **update project version
 * [Instagram Feed](https://wordpress.org/plugins/instagram-feed/)
 * [WP Migrate DB Pro](http://deliciousbrains.com/wp-migrate-db-pro/) + Media Files Addon
 * [Gravity Forms](http://gravityforms.com/)
+* [Regenerate Thumbnails](https://wordpress.org/plugins/regenerate-thumbnails/)
