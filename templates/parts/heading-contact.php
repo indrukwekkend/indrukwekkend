@@ -1,6 +1,6 @@
 <div id="contact" class="part-contact">
 	<div class="container">
-		<div class="row justify-content-center mb-5">
+		<div class="row justify-content-center">
 			<div class="col-12 col-md-11 col-xl-10">
 				<div class="row bg-orange inset">
 						<div class="col-8 col-md-9 col-xl-10 align-self-end pt-4">
