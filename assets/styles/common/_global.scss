@@ -365,7 +365,10 @@ h5, h6{
 	border: none;
 }
 
-.jumbotron {padding: 0 15px;}
+.jumbotron {
+	padding: 0 15px;
+	margin-bottom: 0px;
+}
 
 @include media-breakpoint-up(xs){
 	h1, .h1 { font-size: $heading-scale-xs * $h1-font-size; }
