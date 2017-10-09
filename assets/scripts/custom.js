@@ -111,12 +111,6 @@ jQuery(document).ready(function(){
 					variableWidth: true,
 				}
 			},
-			{
-				breakpoint: 576,
-				settings: {
-					arrows: false,
-				}
-			},
 		],
 	});
 
@@ -137,7 +131,6 @@ jQuery(document).ready(function(){
 				settings: {
 					centerMode: true,
 					slidesToShow: 1,
-					arrows: false,
 				}
 			},
 		],
@@ -153,16 +146,6 @@ jQuery(document).ready(function(){
 		swipe: true,
 		variableWidth: true,
 		focusOnSelect: false,
-		responsive: [
-			{
-				breakpoint: 992,
-				settings: {
-					centerMode: true,
-					slidesToShow: 1,
-					arrows: false,
-				}
-			},
-		],
 	});
 
 	jQuery('.related-list').slick({
@@ -175,14 +158,6 @@ jQuery(document).ready(function(){
 		swipe: true,
 		variableWidth: true,
 		focusOnSelect: false,
-		responsive: [
-			{
-				breakpoint: 992,
-				settings: {
-					arrows: false,
-				}
-			},
-		],
 	});
 
 	if(jQuery("#headlines-collect").length){

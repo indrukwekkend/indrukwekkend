@@ -621,7 +621,7 @@
 	color: transparent;
 	border: none;
 	outline: none;
-	background-color: $black;
+	background-color: $orange;
 
 	&:before{
 		display: block;
@@ -632,7 +632,7 @@
 	}
 
 	&:hover{
-		background-color: $orange;
+		background-color: $black;
 	}
 
 	&:active{
@@ -665,6 +665,7 @@
 
 	.related-list{
 		background-color: $white;
+		overflow: hidden;
 
 		.related-item{
 			box-shadow: inset 4px 0 0 0 $white;
