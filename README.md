@@ -20,8 +20,9 @@ Make sure AMPPS has a domain running on `indrukwekkend.dev`
 
 At this point you can continue developing.
 
+When ready to publish on `behoorlijk.indrukwekkend.nl`, **update project version**
 
-### Requirements:
+### Requirements
 
 #### System
  * AMPPS running WordPress 4.8 or higher on `indrukwekkend.dev`
