@@ -213,3 +213,12 @@ function form_submit_button( $button, $form ) {
 	return "<button class='btn btn-lg btn-orange btn-arrow arrow-right' id='gform_submit_button_{$form['id']}'><span>Versturen</span></button>";
 }
 add_filter( 'gform_submit_button', __NAMESPACE__ . '\\form_submit_button', 10, 2 );
+
+/**
+ * Huidige post uitsluiten van relatieve posts. Word gebruikt bij Cases.
+ */
+function exclude_id ( $args, $field, $post ) {
+	$args['post__not_in'] = array( $post );
+	return $args;
+}
+add_filter('acf/fields/relationship/query/name=cases', __NAMESPACE__ . '\\exclude_id', 10, 3);
