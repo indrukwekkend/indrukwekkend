@@ -24,14 +24,20 @@
 		<div class="row">
 			<div class="col-12 pt-5 text-center">
 
-				<?php if( get_sub_field('fullwidth') == false ): ?>
-				<?php $image_class = ( $alignment = get_sub_field('alignment') ) ? " float-".$alignment : ""; ?>
-				<?php $text_class = ( $alignment = get_sub_field('alignment') ) ? " text-".$alignment : ""; ?>
+				<?php if( get_sub_field('fullwidth') == false ){ $image_class = ( $alignment = get_sub_field('alignment') ) ? "float-".$alignment : ""; }?>
+				<?php $image = get_sub_field('image'); ?>
+				<?php if( !empty($image) ): ?>
+					
+					<?php $title = $image['title']; ?>
+					<?php $alt = $image['alt']; ?>
+					<?php $caption = $image['caption']; ?>
+					<?php $thumb = $image['sizes']['heading-full-image']; ?>
+
+					<figure class="figure<?php echo " ".$image_class; ?>">
+						<img src="<?php echo $thumb; ?>" class="figure-img img-fluid" title="<?php echo $title; ?>" alt="<?php echo $alt; ?>">
+						<figcaption class="figure-caption"><?php $caption; ?></figcaption>
+					</figure>
 				<?php endif; ?>
-				<figure class="figure<?php echo " ".$image_class; ?>">
-					<img src="<?php the_sub_field('image'); ?>" class="figure-img img-fluid" title="<?php echo (get_sub_field('image_description')) ?get_sub_field('image_description') :get_sub_field('title'); ?>" alt="<?php echo (get_sub_field('image_description')) ?get_sub_field('image_description') :get_sub_field('title'); ?>">
-					<figcaption class="figure-caption<?php echo $text_class; ?>"><?php the_sub_field('image_description'); ?></figcaption>
-				</figure>
 
 			</div>
 		</div>

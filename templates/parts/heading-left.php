@@ -17,10 +17,19 @@
 		<div class="row">
 			<div class="col-lg-6 mt-5 mt-xl-0 text-center">
 
-				<figure class="figure mt-4 mt-xl-6">
-					<img src="<?php the_sub_field('image'); ?>" class="figure-img img-fluid" alt="<?php the_sub_field('image_description');?>">
-					<figcaption class="figure-caption"><?php the_sub_field('image_description');?></figcaption>
-				</figure>
+					<?php $image = get_sub_field('image'); ?>
+					<?php if( !empty($image) ): ?>
+
+						<figure class="figure mt-4 mt-xl-6">
+							<?php $title = $image['title']; ?>
+							<?php $alt = $image['alt']; ?>
+							<?php $caption = $image['caption']; ?>
+							<?php $thumb = $image['sizes']['heading-image']; ?>
+
+							<img src="<?php echo $thumb; ?>" class="figure-img img-fluid" title="<?php echo $title; ?>" alt="<?php echo $alt; ?>">
+							<figcaption class="figure-caption"><?php echo $caption; ?></figcaption>
+						</figure>
+					<?php endif; ?>
 
 			</div>
 

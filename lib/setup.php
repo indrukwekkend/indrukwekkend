@@ -38,6 +38,8 @@ function setup() {
     add_image_size( 'header-land', 600, 450, false );
     add_image_size( 'gallery-port', 550, 650, true );
     add_image_size( 'heading-cases', 600, 260, false );
+    add_image_size( 'heading-image', 600, 700, false );
+    add_image_size( 'heading-full-image', 750, 550, false );
     
     // Enable post formats
     // http://codex.wordpress.org/Post_Formats
