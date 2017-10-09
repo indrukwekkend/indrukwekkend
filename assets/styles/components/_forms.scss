@@ -19,11 +19,12 @@
 
 .gform_wrapper {
 
-	.validation_error{
+	.validation_error,
+	.validation_message{
 		display:none;
 	}
 
-	.gfield_error .gfield_label, .validation_message {
+	.gfield_error .gfield_label{
 		color: #e30000 !important;
 	}
 
