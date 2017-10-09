@@ -366,7 +366,7 @@ h5, h6{
 }
 
 .jumbotron {
-	padding: 0 15px;
+	padding: 0 ($grid-gutter-width / 2);
 	margin-bottom: 0px;
 }
 
