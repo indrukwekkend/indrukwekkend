@@ -13,7 +13,13 @@
 		</div>
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-8 text-center">
-				<img class="img-fluid" src="<?php the_field('featured_image');?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>">
+
+				<?php $image = get_field('featured_image'); ?>
+				<?php $thumb = $image['sizes']['heading-cases']; ?>
+				<?php $title = $image['title']; ?>
+				<?php $alt = $image['alt']; ?>
+
+				<img class="img-fluid" src="<?php echo $thumb; ?>" title="<?php echo $title; ?>" alt="<?php echo $alt; ?>">
 			</div>
 		</div>
 	</div>
