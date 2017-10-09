@@ -37,7 +37,7 @@ function setup() {
     add_image_size( 'overlay-land', 400, 300, false );
     add_image_size( 'header-land', 600, 450, false );
     add_image_size( 'gallery-port', 550, 650, true );
-    add_image_size( 'heading-cases', 600, 260, true );
+    add_image_size( 'heading-cases', 600, 260, false );
     
     // Enable post formats
     // http://codex.wordpress.org/Post_Formats
