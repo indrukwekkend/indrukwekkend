@@ -5,7 +5,7 @@
 
 <?php // Primary Content ?>
 <?php if( have_rows('primary_content') ): ?>
-	<div class="row primary-content">
+	<div class="primary-content">
 		<div class="container pt-6">
 			<?php while( have_rows('primary_content') ): the_row(); ?>
 
@@ -67,7 +67,7 @@
 
 <?php // Secondary Content ?>
 <?php if( have_rows('secondary_content') ): ?>
-	<div class="row secondary-content">
+	<div class="secondary-content">
 		<div class="container pt-5">
 			<?php while( have_rows('secondary_content') ): the_row(); ?>
 
