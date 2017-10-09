@@ -13,7 +13,7 @@
 					
 					<div class="col-lg-5">
 
-						<div class="heading mb-4">
+						<div class="heading">
 							<h4 class="title">
 								<span>Stuur een <br>bericht</span>
 							</h4>
@@ -61,7 +61,7 @@
 							</div>
 						</div>
 
-					<div class="col-lg-5 form order-1 order-lg-2 align-self-end">
+					<div class="col-lg-5 mt-4 mt-xl-0 form order-1 order-lg-2 align-self-end">
 						<?php gravity_form( 1, false, false, false, '', true );?>
 					</div>
 
