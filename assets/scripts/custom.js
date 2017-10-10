@@ -160,6 +160,18 @@ jQuery(document).ready(function(){
 		focusOnSelect: false,
 	});
 
+	jQuery('.company-brands').slick({
+		dots: true,
+		arrows: false,
+		infinite: false,
+		speed: 300,
+		slidesToScroll: 1,
+		slidesToShow: 1,
+		fade: true,
+		adaptiveHeight: true,
+		focusOnSelect: false,
+	});
+
 	if(jQuery("#headlines-collect").length){
 		var typed = new Typed('#headlines-typed', {
 			stringsElement: '#headlines-collect',

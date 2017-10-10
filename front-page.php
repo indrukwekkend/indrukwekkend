@@ -10,22 +10,42 @@
 			<div class="text-center">
 				<p class="lead">Met veel trost werken wij o.a. voor deze merken</p>
 			</div>
-			<div class="row justify-content-center company-brands">
-				<?php if( $post_objects = get_field('brands') ): ?>
-
-					<?php foreach( $post_objects as $post): ?>
-
-						<?php setup_postdata($post); ?>
-
-								<div class="col-4 col-xl-3 mb-4 text-center">
-									<img class="img-fluid brand" src="<?php the_post_thumbnail_url(null, 'brand-size'); ?>" title="<?php the_title(); ?>"/>
+			<div class="row justify-content-center">
+				<div class="col-12 company-brands">
+					<?php if( $post_objects = get_field('brands') ): ?>
+						<?php $i = 0;?>
+						<?php $wrap = 8;?>
+	
+							<?php foreach( $post_objects as $post): ?>
+	
+								<?php $i+=1;?>
+								<?php setup_postdata($post); ?>
+	
+									<?php if($i%$wrap==1):?>
+										<div class="col-12">
+											<div class="row">
+									<?php endif;?>
+	
+												<div class="col-4 col-xl-3 text-center">
+													<img class="img-fluid brand" src="<?php the_post_thumbnail_url(null, 'brand-size'); ?>" title="<?php the_title(); ?>"/>
+												</div>
+	
+									<?php if($i%$wrap==0):?>
+												</div>
+											</div>
+									<?php endif;?>
+	
+							<?php endforeach; ?>
+	
+							<?php if($i%$wrap!=0): ?>
+									</div>
 								</div>
-
-						<?php endforeach; ?>
-
-					<?php wp_reset_postdata(); ?>
-
-				<?php endif; ?>
+							<?php endif; ?>
+	
+						<?php wp_reset_postdata(); ?>
+	
+					<?php endif; ?>
+				</div>
 			</div>
 			<div class="row">
 				<div class="col-12 text-center pt-2">
@@ -68,7 +88,6 @@
 							</div>
 						</div>
 					</div>
-
 
 					<?php wp_reset_postdata(); ?>
 
