@@ -183,4 +183,62 @@ jQuery(document).ready(function(){
 			jQuery(that).removeClass("btn-activated");
 		}, 500);
 	});
+
+	var QNR_VIDEO_SCREEN = {};
+	(function(){
+		QNR_VIDEO_SCREEN.videoScreensL = [];
+		QNR_VIDEO_SCREEN.videoScreenObjectsL = [];
+
+		function VideoScreen() {
+			this.object = null; // The embedded YouTube/Vimeo iFrame
+			this.wrap   = null; // DIV to wrap the iFrame, with bg img
+			this.video  = null; // DIV to hold the iFrame in the wrap, sized
+		}
+		VideoScreen.prototype.initialize = function() {
+			//Wrap the video iFrame
+			var vFp = this.object.parentNode;
+			this.wrap = document.createElement("div");
+			this.wrap.className="qnr-video-screen";
+			this.video = document.createElement("div");
+			this.video.className="qnr-video-block qnr-video-center";
+			this.video.appendChild(vFp.removeChild(this.object));
+			this.wrap.appendChild(this.video);
+			vFp.appendChild(this.wrap);
+			// Size the object to computer display
+			this.reset();
+		}
+		VideoScreen.prototype.reset = function() {
+			// Computer image is 16/11 proportions
+			// Computer screen is 1056/681 proportions
+			var oW = this.wrap.offsetWidth;
+			var oH = this.wrap.offsetHeight;
+			var vW = Math.min(oW, oH * (16/11));
+			var vH = vW * (681/1056);
+			this.video.style.width = vW * 0.67 + "px";
+			this.video.style.height = vH * 0.67 + "px";
+			this.video.style.marginTop = "-" + (vH * 0.042) + "px";
+		}
+		window.addEventListener("load", function(event){
+			QNR_VIDEO_SCREEN.videoScreensL = document.getElementsByClassName("qnr-computer-video");
+			if (QNR_VIDEO_SCREEN.videoScreensL.length > 0) {
+				for (var i = 0; i < QNR_VIDEO_SCREEN.videoScreensL.length; i++) {
+					// Create a data- id attribute on the video screen
+					QNR_VIDEO_SCREEN.videoScreensL[i].dataset.qnrVideoScreenId = i;
+					// Create a new JS object for the the video screen
+					QNR_VIDEO_SCREEN.videoScreenObjectsL.push(new VideoScreen());
+					QNR_VIDEO_SCREEN.videoScreenObjectsL[i].object = QNR_VIDEO_SCREEN.videoScreensL[i];
+					// Initialize object
+					QNR_VIDEO_SCREEN.videoScreenObjectsL[i].initialize();
+				}
+			}
+		}, false);
+		window.addEventListener("resize", function(event) {
+			if (document.getElementsByClassName("qnr-video-screen")[0]) {
+				for (var i = 0; i < QNR_VIDEO_SCREEN.videoScreenObjectsL.length; i++) {
+					QNR_VIDEO_SCREEN.videoScreenObjectsL[i].reset();
+				}
+			}
+		}, false);
+	})()
+
 });

@@ -49,6 +49,10 @@
         // JavaScript to be fired on the about us page
         //
       }
+    },
+    'single_cases': {
+    	init: function() {
+    	}
     }
   };
 

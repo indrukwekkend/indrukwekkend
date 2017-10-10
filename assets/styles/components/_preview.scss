@@ -1,0 +1,68 @@
+/*
+  QNR Video Screen Stylesheet
+*/
+
+.qnr-video-screen {
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
+	min-width: 260px;
+	height: 100%;
+	min-height: 260px;
+	box-sizing: border-box;
+	background-image: url("../images/laptop.png");
+	background-position: 50% 50%;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+.qnr-video-block {
+	display: block;
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	width: 0;
+	height: 0;
+	box-sizing: border-box;
+	background-color: $gray-600;
+}
+
+.qnr-video-block iframe {
+	width: 100% !important;
+	height: 100% !important;
+	box-sizing: border-box;
+}
+
+.qnr-video-center {
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	-o-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+@include media-breakpoint-up(sm){
+	.qnr-video-screen{
+		min-height: 320px;
+	}
+}
+@include media-breakpoint-up(md){
+	.qnr-video-screen{
+		min-height: 380px;
+	}
+}
+@include media-breakpoint-up(lg){
+	.qnr-video-screen{
+		min-height: 420px;
+	}
+}
+@include media-breakpoint-up(xl){
+	.qnr-video-screen{
+		min-height: 560px;
+	}
+}
