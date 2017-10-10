@@ -622,6 +622,7 @@
 	border: none;
 	outline: none;
 	background-color: $orange;
+	transition: all .3s ease;
 
 	&:before{
 		display: block;
