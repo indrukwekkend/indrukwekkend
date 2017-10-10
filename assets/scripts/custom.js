@@ -206,7 +206,7 @@ jQuery(document).ready(function(){
 			vFp.appendChild(this.wrap);
 			// Size the object to computer display
 			this.reset();
-		}
+		};
 		VideoScreen.prototype.reset = function() {
 			// Computer image is 16/11 proportions
 			// Computer screen is 1056/681 proportions
@@ -217,7 +217,7 @@ jQuery(document).ready(function(){
 			this.video.style.width = vW * 0.67 + "px";
 			this.video.style.height = vH * 0.67 + "px";
 			this.video.style.marginTop = "-" + (vH * 0.042) + "px";
-		}
+		};
 		window.addEventListener("load", function(event){
 			QNR_VIDEO_SCREEN.videoScreensL = document.getElementsByClassName("qnr-computer-video");
 			if (QNR_VIDEO_SCREEN.videoScreensL.length > 0) {
@@ -239,6 +239,6 @@ jQuery(document).ready(function(){
 				}
 			}
 		}, false);
-	})()
+	})();
 
 });
