@@ -170,6 +170,8 @@ jQuery(document).ready(function(){
 		fade: true,
 		adaptiveHeight: true,
 		focusOnSelect: false,
+		autoplay: true,
+		autoplaySpeed: 4000,
 	});
 
 	if(jQuery("#headlines-collect").length){
