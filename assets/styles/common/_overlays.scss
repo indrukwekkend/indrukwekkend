@@ -24,7 +24,7 @@
 	}
 
 	.overlay-case{
-		box-shadow: inset 0 0 0 2px #fff;
+		box-shadow: inset 0 0 0 2px $white;
 		background: #eee;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -54,7 +54,7 @@
 			text-align: center;
 
 			h4{
-				color: #231f20;
+				color: $black;
 				font-size: 1.6rem;
 			}
 		}
@@ -79,7 +79,7 @@
 				text-align: center;
 
 				h4{
-					text-shadow: 0 2px 13px #212529;
+					text-shadow: 0 2px 13px $gray-900;
 					font-size: 1.6rem;
 				}
 				hr{
@@ -138,16 +138,14 @@
 
 					.h4{
 						margin-bottom: .5rem;
-						text-shadow: 0 2px 13px #212529;
+						text-shadow: 0 2px 13px $gray-900;
 						font-size: 1.6rem;
-						border-bottom: 2px solid #fff;
+						border-bottom: 2px solid $white;
 						padding: 0 1.5rem .7rem 1.5rem;
 						width: auto
-											
 					}
 
 					span{
-						
 						padding: 1.2rem .3rem;
 					}
 				}
@@ -202,7 +200,7 @@
 				h4{
 					color: $white;
 					font-size: 1.6rem;
-					text-shadow: 1px 1px 4px black;
+					text-shadow: 1px 1px 4px $black;
 				}
 			}
 		}
@@ -226,6 +224,7 @@
 		&:hover {
 			.overlay-teamlid-hover{
 				opacity: 0;
+				bottom:44px;
 			}
 			.overlay-teamlid-title{
 				opacity: 1;
@@ -237,29 +236,22 @@
 		.overlay-teamlid-contact{
 			display: flex;
 			justify-content: space-around;
-			background: #000;
+			background: $black;
 			
 			
 		}
 		.text-orange, .text-black {
-			
+			background: $black;
 			padding: 6px;
 			width: 50%;
 			
 			.icon{	
 				display: inline-block;	
 			}
-
-		}
-		.text-orange {
-			background: #ef7b31;
-		} 
-		.text-black {
-			background: #000;
 		}
 		
 		.overlay-teamlid-image {
-		    background-size: auto;
+			background-size: auto;
 			background-position: top;
 		}
 		
@@ -278,6 +270,4 @@
 			}
 		}
 	}
-	
-	
 }
