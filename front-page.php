@@ -14,7 +14,7 @@
 				<div class="col-12 company-brands">
 					<?php if( $post_objects = get_field('brands') ): ?>
 						<?php $i = 0;?>
-						<?php $wrap = 8;?>
+						<?php $wrap = 6;?>
 	
 							<?php foreach( $post_objects as $post): ?>
 	
