@@ -23,7 +23,7 @@
 	
 									<?php if($i%$wrap==1):?>
 										<div class="col-12">
-											<div class="row">
+											<div class="row justify-content-center">
 									<?php endif;?>
 	
 												<div class="col-4 col-xl-3 text-center">
