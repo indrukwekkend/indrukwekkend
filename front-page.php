@@ -26,7 +26,7 @@
 											<div class="row justify-content-center">
 									<?php endif;?>
 	
-												<div class="col-4 col-xl-3 text-center">
+												<div class="col-4 text-center">
 													<img class="img-fluid brand" src="<?php the_post_thumbnail_url(null, 'brand-size'); ?>" title="<?php the_title(); ?>"/>
 												</div>
 	
