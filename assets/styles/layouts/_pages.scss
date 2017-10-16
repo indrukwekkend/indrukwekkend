@@ -208,12 +208,8 @@
 /* Part: Gallery */
 
 .part-gallery{
-	
-		//height: 300px;
-		//padding: 20px;
-	
 
-		&:focus{
+		figure:focus{
 			outline: none;
 		}
 
