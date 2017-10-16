@@ -71,7 +71,7 @@ $display = function ( $url ) {
 
 							<?php if (is_singular( 'teamleden' )) {?>
 								<a class="btn btn-lg btn-primary btn-arrow arrow-down mr-2" href="#intro">
-									Leer <?php the_title( ) ?> Kennen
+									Leer <?php the_title( ) ?> kennen
 								</a>
 							<?php }else{ ?>
 									<a class="btn btn-lg btn-primary btn-arrow arrow-down mr-2" href="#intro">
