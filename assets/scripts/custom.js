@@ -1,6 +1,7 @@
 jQuery(document).ready(function(){
 
 	var scroll = new SmoothScroll('a[href*="#"]');
+	var rellax = new Rellax('.rellax');
 	var FadeSpeed = 80;
 	var gallerySlick = jQuery('.gallery-list');
 	var gallerySettings = {
@@ -41,6 +42,7 @@ jQuery(document).ready(function(){
 	}
 
 	jQuery(window).on('resize', function() {
+		console.log('Resize event fired!');
 
 		// If viewport is 992px or larger, then unslick
 		if (jQuery(window).width() > 992) {
@@ -135,6 +137,7 @@ jQuery(document).ready(function(){
 			},
 		],
 	});
+
 	jQuery('.coworkers-list').slick({
 		dots: false,
 		arrows: true,

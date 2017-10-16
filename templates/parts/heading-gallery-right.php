@@ -82,11 +82,6 @@
 							<?php endif; ?>
 
 						<?php endwhile; ?>
-						<script>
-							window.onload = function () { 
-								var rellax = new Rellax('.rellax'); 
-							}
-						</script>
 					<?php endif; ?>
 				</div>
 			</div>

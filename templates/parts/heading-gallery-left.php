@@ -30,11 +30,11 @@
 						<?php $i;?>
 						<?php while ( have_rows('images') ) : the_row(); ?>
 							<?php 
-							
-								$image = get_sub_field('image');								
-								
+
+								$image = get_sub_field('image');
+
 								if( !empty($image) ): 
-																
+
 									// vars
 									$url = $image['url'];
 									$title = $image['title'];
@@ -78,11 +78,6 @@
 														
 							<?php endif; ?>
 						<?php endwhile; ?>
-						<script>
-							window.onload = function () { 
-								var rellax = new Rellax('.rellax'); 
-							}
-						</script>
 					<?php endif; ?>
 				</div>
 			</div>
