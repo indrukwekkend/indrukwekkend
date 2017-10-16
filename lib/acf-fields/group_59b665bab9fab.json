@@ -7,6 +7,7 @@
             "label": "Begeleidende Afbeelding",
             "name": "featured_image",
             "type": "image",
+            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -36,7 +37,7 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 11,
     "position": "side",
     "style": "default",
     "label_placement": "top",
@@ -44,5 +45,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Uitgelichte afbeelding in Cases",
-    "modified": 1508161707
+    "modified": 1508162610
 }
