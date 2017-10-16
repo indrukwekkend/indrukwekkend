@@ -376,6 +376,7 @@ h5, h6{
 	h5, .h5 { font-size: $heading-scale-xs * $h5-font-size; }
 	h6, .h6 { font-size: $heading-scale-md * $h6-font-size; }
 }
+
 @include media-breakpoint-up(sm){
 	h1, .h1 { font-size: $heading-scale-sm * $h1-font-size; }
 	h2, .h2 { font-size: $heading-scale-sm * $h2-font-size; }
@@ -387,11 +388,8 @@ h5, h6{
 	.overlay-teamlid-content, overlay-case-content{
 		height: 350px;
 	}
-	.icon {
-		display: inline-block;
-	}
-	
-	}
+}
+
 @include media-breakpoint-up(md){
 	h1, .h1 { font-size: $heading-scale-md * $h1-font-size; }
 	h2, .h2 { font-size: $heading-scale-md * $h2-font-size; }
@@ -404,7 +402,8 @@ h5, h6{
 		width: 32px;
 		height: 32px;
 	}
-	}
+}
+
 @include media-breakpoint-up(lg){
 	h1, .h1 { font-size: $heading-scale-lg * $h1-font-size; }
 	h2, .h2 { font-size: $heading-scale-lg * $h2-font-size; }
@@ -418,11 +417,13 @@ h5, h6{
 	.overlay-teamlid-content, overlay-case-content{
 		height: 400px;
 	}
+
 	.icon {
 		width: 25px;
 		height: 25px;
 	}
 }
+
 @include media-breakpoint-up(xl){
 	.icon {
 		width: 32px;
@@ -431,11 +432,9 @@ h5, h6{
 }
 
 @include media-breakpoint-down(xs){
-	
 	#headlines-typed {
 		.h4{
 			display: none;
 		}
 	}
-	
 }
