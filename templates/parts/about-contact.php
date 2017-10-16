@@ -11,7 +11,7 @@
 								</div>
 								<div class="col-12 col-md-6 text-center text-md-left">
 									<h5 class="mb-4">Of kom je eerst langs?</h5>
-									<p>Je kan ons bereiken op <a href="tel:072–5625482">072 – 562 54 82</a></p>
+									<p>Je kan ons bereiken op <a href="tel:072–5625482" class="text-nowrap">072 – 562 54 82</a></p>
 									<p>Mailen mag ook: <a href="mailto:info@indrukwekkend.nl">info@indrukwekkend.nl</a></p>
 							</div>
 						</div>
