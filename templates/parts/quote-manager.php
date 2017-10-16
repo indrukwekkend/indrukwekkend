@@ -22,14 +22,14 @@ endif;
 
 ?>
 
-<div class="row pt-5 pb-6 part-quote-manager">
-	<div class="col-12 col-lg-2"></div>
+<div class="row pt-xl-5 pb-5 pb-xl-6 part-quote-manager">
+	<div class="d-none d-xl-block col-xl-2"></div>
 		<div class="col-12 col-xl-10">
 
 			<div class="row bg-orange quote-manager-container">
 				<div class="col-12 col-md-9 col-xl-10 pt-4 align-self-end">
 
-					<div class="row pl-lg-3 mb-4 mt-5 align-items-center">
+					<div class="row pl-lg-3 mb-4 mt-xl-5 align-items-center">
 						<div class="col">
 						<?php // Verwarrend? ja, maar die </> zijn voor het H element ?>
 							<<?php the_field('heading_size'); ?> class="text-white m-0">
