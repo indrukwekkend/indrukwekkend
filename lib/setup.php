@@ -32,11 +32,19 @@ function setup() {
     // http://codex.wordpress.org/Function_Reference/set_post_thumbnail_size
     // http://codex.wordpress.org/Function_Reference/add_image_size
     add_theme_support( 'post-thumbnails' );
+
+    // Used for header foreground images
+    add_image_size( 'header-land', 800, 600, false );
+
+    // Used in the gallery template part
     add_image_size( 'gallery-square', 300, 300, true );
     add_image_size( 'gallery-land', 400, 300, true );
-    add_image_size( 'overlay-land', 400, 300, false );
-    add_image_size( 'header-land', 600, 450, false );
     add_image_size( 'gallery-port', 550, 650, true );
+
+    // Used in the overlay's as per post foreground images
+    add_image_size( 'overlay-land', 400, 300, false );
+
+    // Used in template content parts
     add_image_size( 'heading-cases', 600, 260, false );
     add_image_size( 'heading-image', 600, 700, false );
     add_image_size( 'heading-full-image', 750, 550, false );
