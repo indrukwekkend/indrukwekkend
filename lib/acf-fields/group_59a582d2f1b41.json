@@ -1,0 +1,94 @@
+{
+    "key": "group_59a582d2f1b41",
+    "title": "Manager Quote",
+    "fields": [
+        {
+            "key": "field_59a582d752415",
+            "label": "Manager Quote",
+            "name": "quote_manager",
+            "type": "textarea",
+            "instructions": "Voer hier een korte quote in van de projectmanager",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": 60,
+            "rows": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_59a584f37536c",
+            "label": "Manager",
+            "name": "manager",
+            "type": "post_object",
+            "instructions": "Kies de manager van dit project",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "80",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "teamleden"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        },
+        {
+            "key": "field_59a68bce96864",
+            "label": "Tekst Grootte",
+            "name": "heading_size",
+            "type": "select",
+            "instructions": "Kies een lettergrootte. H1 is het grootst, H6 is het kleinst",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "20",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "h1": "Heading 1",
+                "h2": "Heading 2",
+                "h3": "Heading 3",
+                "h4": "Heading 4",
+                "h5": "Heading 5",
+                "h6": "Heading 6"
+            },
+            "default_value": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "ui": 1,
+            "ajax": 0,
+            "return_format": "value",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "cases"
+            }
+        ]
+    ],
+    "menu_order": 50,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Keuze lijst van Manager Quotes",
+    "modified": 1508161774
+}

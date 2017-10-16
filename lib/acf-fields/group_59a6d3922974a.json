@@ -1,0 +1,74 @@
+{
+    "key": "group_59a6d3922974a",
+    "title": "Voorpagina Opties",
+    "fields": [
+        {
+            "key": "field_59a6d3a5f87ab",
+            "label": "Merken",
+            "name": "brands",
+            "type": "relationship",
+            "instructions": "Merken die op de voorpagina getoond worden",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "merken"
+            ],
+            "taxonomy": [],
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "object"
+        },
+        {
+            "key": "field_59a6d3d1f87ac",
+            "label": "Quotes",
+            "name": "quotes",
+            "type": "relationship",
+            "instructions": "Quotes die op de voorpagina getoond worden",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "quotes"
+            ],
+            "taxonomy": [],
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": "",
+            "max": "",
+            "return_format": "object"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "front_page"
+            }
+        ]
+    ],
+    "menu_order": 11,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Quotes en Merken",
+    "modified": 1508161736
+}

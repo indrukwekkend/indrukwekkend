@@ -1,0 +1,75 @@
+{
+    "key": "group_598861b10b0c6",
+    "title": "Cases",
+    "fields": [
+        {
+            "key": "field_59a552812f78e",
+            "label": "Cases Titel",
+            "name": "cases_title",
+            "type": "text",
+            "instructions": "Tekst als begeleidende titel",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "Iets van; Bekijk meer cases",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_599aaa80a1c1d",
+            "label": "Cases",
+            "name": "cases",
+            "type": "relationship",
+            "instructions": "Kies de Cases die je wilt tonen op de pagina",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "cases"
+            ],
+            "taxonomy": [],
+            "filters": [
+                "search"
+            ],
+            "elements": "",
+            "min": "",
+            "max": 4,
+            "return_format": "object"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "cases"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "teamleden"
+            }
+        ]
+    ],
+    "menu_order": 30,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Keuze lijst van Cases",
+    "modified": 1508161760
+}

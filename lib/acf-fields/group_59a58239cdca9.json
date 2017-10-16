@@ -1,0 +1,46 @@
+{
+    "key": "group_59a58239cdca9",
+    "title": "Client Quote",
+    "fields": [
+        {
+            "key": "field_59a58242190b0",
+            "label": "Client Quote",
+            "name": "quote_client",
+            "type": "post_object",
+            "instructions": "Kies een Quote van de klant",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "post_type": [
+                "quotes"
+            ],
+            "taxonomy": [],
+            "allow_null": 0,
+            "multiple": 0,
+            "return_format": "object",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "cases"
+            }
+        ]
+    ],
+    "menu_order": 40,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Keuze lijst van Client Quotes",
+    "modified": 1508161767
+}

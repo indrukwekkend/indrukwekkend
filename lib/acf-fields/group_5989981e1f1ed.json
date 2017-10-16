@@ -1,0 +1,190 @@
+{
+    "key": "group_5989981e1f1ed",
+    "title": "Persoons Informatie",
+    "fields": [
+        {
+            "key": "field_59a58635cfbb7",
+            "label": "Functie",
+            "name": "company_position",
+            "type": "text",
+            "instructions": "Voer hier de functie binnen het bedrijf in",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Werknemer",
+            "placeholder": "Marketing, Developer, Designer",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5989982424d80",
+            "label": "Email",
+            "name": "email",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "voornaam@indrukwekkend.nl",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5989983124d81",
+            "label": "Vaste Telefoon",
+            "name": "landline",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5989989924d82",
+            "label": "Mobiele telefoon",
+            "name": "mobile",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
+            "key": "field_5996fe16aa36e",
+            "label": "Social Media",
+            "name": "social_media",
+            "type": "repeater",
+            "instructions": "Voer hier alle Social Media netwerken in die gebruikt worden.\r\nDe gebruikersnaam word getoond op de site",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "collapsed": "field_5996fe47aa36f",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Voeg Dienst toe",
+            "sub_fields": [
+                {
+                    "key": "field_5996fe47aa36f",
+                    "label": "Dienst",
+                    "name": "service",
+                    "type": "select",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "facebook": "Facebook",
+                        "instagram": "Instagram",
+                        "linkedin": "Linkedin",
+                        "twitter": "Twitter",
+                        "strava": "Strava",
+                        "vsco": "VSCO",
+                        "vsco-2": "VSCO 2",
+                        "website": "Website"
+                    },
+                    "default_value": [],
+                    "allow_null": 0,
+                    "multiple": 0,
+                    "ui": 0,
+                    "ajax": 0,
+                    "return_format": "value",
+                    "placeholder": ""
+                },
+                {
+                    "key": "field_5996fe53aa370",
+                    "label": "Gebruikersnaam",
+                    "name": "username",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5996fe60aa371",
+                    "label": "URL",
+                    "name": "url",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "40",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "teamleden"
+            }
+        ]
+    ],
+    "menu_order": 16,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Per teamlid",
+    "modified": 1508161746
+}

@@ -1,0 +1,43 @@
+{
+    "key": "group_59a5830e87d0c",
+    "title": "Quotes Opties",
+    "fields": [
+        {
+            "key": "field_59a5831f91a4f",
+            "label": "Functie",
+            "name": "company_position",
+            "type": "text",
+            "instructions": "Functie binnen het bedrijf",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "Werknemer",
+            "placeholder": "Accountant, Designer, IT Security Specialist....",
+            "prepend": "",
+            "append": "",
+            "maxlength": 40
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "quotes"
+            }
+        ]
+    ],
+    "menu_order": 11,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Functie binnen het bedrijf",
+    "modified": 1508161730
+}

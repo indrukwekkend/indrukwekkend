@@ -1,0 +1,48 @@
+{
+    "key": "group_59b665bab9fab",
+    "title": "Case Featured",
+    "fields": [
+        {
+            "key": "field_59b665c1010d5",
+            "label": "Begeleidende Afbeelding",
+            "name": "featured_image",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": 300,
+            "min_height": "",
+            "min_size": "",
+            "max_width": 600,
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "cases"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Uitgelichte afbeelding in Cases",
+    "modified": 1508161707
+}

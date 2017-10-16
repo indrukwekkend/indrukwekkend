@@ -5,6 +5,19 @@ namespace Roots\Sage\Extras;
 use Roots\Sage\Setup;
 use WP_Query;
 
+// ACF's Sync JSON
+add_filter('acf/settings/save_json', __NAMESPACE__ . '\\acf_json_save_point');
+
+function acf_json_save_point( $path ) {
+	
+	// update path
+	$path = get_stylesheet_directory() . '/lib/acf-fields';
+	
+	// return
+	return $path;
+	
+}
+
 /**
  * Add <body> classes
  */
