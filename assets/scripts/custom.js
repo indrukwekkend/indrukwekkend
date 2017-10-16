@@ -1,7 +1,6 @@
 jQuery(document).ready(function(){
 
 	var scroll = new SmoothScroll('a[href*="#"]');
-	var rellax = new Rellax('.rellax');
 	var FadeSpeed = 80;
 	var gallerySlick = jQuery('.gallery-list');
 	var gallerySettings = {
@@ -41,8 +40,11 @@ jQuery(document).ready(function(){
 		gallerySlick.slick(gallerySettings);
 	}
 
+	if(jQuery('.rellax').length > 0){
+		var rellax = new Rellax('.rellax');
+	}
+
 	jQuery(window).on('resize', function() {
-		console.log('Resize event fired!');
 
 		// If viewport is 992px or larger, then unslick
 		if (jQuery(window).width() > 992) {
