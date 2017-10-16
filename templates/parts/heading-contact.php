@@ -3,13 +3,26 @@
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-11 col-xl-10">
 				<div class="row bg-orange inset">
-						<div class="col-8 col-md-9 col-xl-10 align-self-end pt-4">
+
+						<div class="col-12 pt-4 d-block d-sm-none">
 
 							<div class="row mb-4 mt-xl-5 align-items-center">
 								<div class="col-12 col-lg-7 text-lg-right border-right">
-									<h4><?php echo preg_replace('~((\w+\s){3})~', '$1' . "<br>", get_field('title_left')); ?></h4>
+									<h4>Kan Martijn je <br>ergens mee van <br>dienst zijn?</h4>
 								</div>
 								<div class="col-12 col-lg-5 text-left">
+									<h5>Vraag het hem zelf, hij staat je graag <br>te woord</h5>
+							</div>
+						</div>
+					</div>
+					
+						<div class="col-8 col-md-9 col-xl-10 align-self-end pt-4">
+
+							<div class="row mb-4 mt-xl-5 align-items-center">
+								<div class="col-12 col-lg-7 text-lg-right border-right d-none d-sm-block">
+									<h4><?php echo preg_replace('~((\w+\s){3})~', '$1' . "<br>", get_field('title_left')); ?></h4>
+								</div>
+								<div class="col-12 col-lg-5 text-left d-none d-sm-block">
 									<h5><?php echo preg_replace('~((\w+\s){4})~', '$1' . "<br>", get_field('title_right')); ?></h5>
 							</div>
 						</div>
