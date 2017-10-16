@@ -16,7 +16,10 @@ jQuery(document).ready(function(){
 			slidesToShow: 1,
 			arrows: false,
 		};
-		
+	var videoHeight = jQuery('.actual-video').height();
+	var jumbotronHeight = jQuery('.jumbotron').height();
+
+	jQuery('.actual-video').css('top', (jumbotronHeight - videoHeight) );
 	
 	function scrollbarWidth() {
 		var scrollDiv = document.createElement("div");
@@ -45,6 +48,11 @@ jQuery(document).ready(function(){
 	}
 
 	jQuery(window).on('resize', function() {
+
+		var videoHeight = jQuery('.actual-video').height();
+		var jumbotronHeight = jQuery('.jumbotron').height();
+
+		jQuery('.actual-video').css('top', (jumbotronHeight - videoHeight) );
 
 		// If viewport is 992px or larger, then unslick
 		if (jQuery(window).width() > 992) {

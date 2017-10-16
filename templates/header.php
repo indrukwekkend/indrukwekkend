@@ -8,6 +8,14 @@ $display = function ( $url ) {
 	if ($url != ''){echo 'd-none';}
 };
 
+$header_video = function(){
+	if($video_url = get_field('header_video') ){
+		preg_match('#(?:https?://)?(?:www.)?(?:player.)?vimeo.com/(?:[a-z]*/)*([0-9]{6,11})[?]?.*#', $video_url, $array);
+		return $array[1];
+	}
+
+};
+
 ?>
 <nav class="nav-mobile">
 	<?php if ( has_nav_menu( 'primary_navigation' ) ) :?>
@@ -42,7 +50,7 @@ $display = function ( $url ) {
 		</div>
 	</div>
 
-	<?php if( have_rows('headlines') ): ?>
+	<?php if( have_rows('headlines') && !$header_video() ): ?>
 
 	<div class="row">
 		<div class="container banner-holder">
@@ -55,7 +63,7 @@ $display = function ( $url ) {
 						<?php while( have_rows('headlines') ): the_row(); ?>
 							<?php $lines = get_sub_field('lines');?>
 							<p>
-								<span class="h3"><?php echo $lines['line_orange'];?></span><br/>
+								<span class="h3 text-orange"><?php echo $lines['line_orange'];?></span><br/>
 								<span class="h4"><?php echo $lines['line_black'];?></span>
 							</p>
 
@@ -112,5 +120,58 @@ $display = function ( $url ) {
 			</div>
 		</div>
 	<?php endif; ?>
+	<?php if( $header_video() ):?>
+		<div class="header-video">
+			<div class="container headlines-holder">
 
+				<div id="headlines-collect">
+					<?php while( have_rows('headlines') ): the_row(); ?>
+						<?php $lines = get_sub_field('lines');?>
+						<p>
+							<span class="h3 text-orange"><?php echo $lines['line_orange'];?></span><br/>
+							<span class="h4"><?php echo $lines['line_black'];?></span>
+						</p>
+
+					<?php endwhile; ?>
+				</div>
+				<div class="headlines">
+					<span id="headlines-typed"></span>
+				</div>
+
+				<div class="buttons mb-5 mt-4 mb-xl-6">
+
+					<?php if ( is_singular( array( 'teamleden', 'cases' ) ) ) : ?>
+
+						<?php if (is_singular( 'teamleden' )) {?>
+							<a class="btn btn-lg btn-primary btn-arrow arrow-down mr-2" href="#intro">
+								Leer <?php the_title( ) ?> kennen
+							</a>
+						<?php }else{ ?>
+								<a class="btn btn-lg btn-primary btn-arrow arrow-down mr-2" href="#intro">
+								Lees onze aanpak
+								</a>
+						<?php } ?>
+
+						<?php elseif (is_page( 'over-ons' )): ?>
+							<a class="btn btn-lg btn-primary btn-arrow arrow-down mr-2" href="#intro">
+								Leer ons beter kennen</a>
+						
+						<?php elseif (is_page( 'contact' )): ?>
+							<a class="btn btn-lg btn-primary btn-arrow arrow-right mr-2" href="https://www.google.com/maps/dir/Current+Location/Indrukwekkend,+De+Droogmakerij+20f,+1851+LX+Heiloo" target="_blank">
+								Check de route</a>
+						
+						<?php elseif (is_home() || is_front_page(  )): ?>
+							<a class="btn btn-lg btn-primary btn-arrow arrow-right mr-2" href="/over-ons">
+								Leer ons kennen	</a>
+							<a class="btn btn-lg btn-black" href="#cases">
+								Bekijk ons werk</a>
+
+						<?php endif;?>
+					</div>
+				</div>
+			<div class="video-wrap">
+				<iframe class="actual-video" src="https://player.vimeo.com/video/<?php echo $header_video(); ?>?title=0&byline=0&portrait=0&autoplay=1&loop=1&background=1" width="960" height="540" frameborder="0" data-ready="true"></iframe>
+			</div>
+		</div>
+	<?php endif; ?>
 </header>
