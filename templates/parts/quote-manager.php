@@ -22,12 +22,12 @@ endif;
 
 ?>
 
-<div class="row pt-xl-5 pb-5 pb-xl-6 part-quote-manager">
+<div class="row pt-md-5 pb-5 pb-sm-6 part-quote-manager">
 	<div class="d-none d-xl-block col-xl-2"></div>
 		<div class="col-12 col-xl-10">
 
 			<div class="row bg-orange quote-manager-container">
-				<div class="col-12 col-md-9 col-xl-10 pt-4 align-self-end">
+				<div class="col-12 col-md-9 col-xl-10 pt-4 align-self-stretch">
 
 					<div class="row pl-lg-3 mb-4 mt-xl-5 align-items-center">
 						<div class="col">
@@ -47,7 +47,7 @@ endif;
 					<div class="row pl-lg-4 no-gutters justify-content-start">
 
 						<div class="col-8 col-md-12 mb-3 mb-md-4 mb-lg-5">
-							<div class="row">
+							<div class="row mt-5 mt-lg-0">
 								<div class="col-12 col-md-12 col-lg-5 col-xl-4 mb-4 mb-lg-0 text-nowrap">
 									<span class="icon mail mr-2"></span>
 									<a class="text-white" href="mailto:<?php echo $manager['email'];?>"><?php echo $manager['email'];?></a>
