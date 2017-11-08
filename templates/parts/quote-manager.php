@@ -32,9 +32,9 @@ endif;
 					<div class="row pl-lg-3 mb-4 mt-xl-5 align-items-center">
 						<div class="col">
 						<?php // Verwarrend? ja, maar die </> zijn voor het H element ?>
-							<<?php the_field('heading_size'); ?> class="text-white m-0">
-								<?php the_field('quote_manager');?>
-							</<?php the_field('heading_size'); ?>>
+							<?php // echo "<".get_the_field('heading_size')."class='text-white m-0'>"; ?> 
+								<p class="text-white m-0"><?php the_field('quote_manager');?></p>
+							<?php // echo "</" . get_the_field('heading_size') . ">"; ?>
 						</div>
 					</div>
 

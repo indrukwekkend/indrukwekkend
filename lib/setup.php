@@ -45,7 +45,8 @@ function setup() {
     add_image_size( 'overlay-land', 400, 300, false );
 
     // Used in template content parts
-    add_image_size( 'heading-cases', 600, 260, false );
+
+    add_image_size( 'heading-cases', 600, 9999, false );
     add_image_size( 'heading-image', 600, 700, false );
     add_image_size( 'heading-full-image', 750, 550, false );
     
