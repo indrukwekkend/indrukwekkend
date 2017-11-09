@@ -45,10 +45,11 @@
 							<div class="quote-content">
 								<?= $extra['quote'] ?>
 							</div>
-							<div class="quote-autograph">
-								<img height="120" src="<?php echo get_stylesheet_directory_uri();?>/assets/images/autographs/<?php the_field('autograph',  $extra['author'] );?>"/>	
-							</div>
-							
+							<?php if ( !is_singular( 'teamleden' ) ) { ?>
+								<div class="quote-autograph">
+									<img height="120" src="<?php echo get_stylesheet_directory_uri();?>/dist/images/autographs/<?php the_field('autograph',  $extra['author'] );?>"/>	
+								</div>
+							<?php } ?>
 						</div>
 					</div>
 					

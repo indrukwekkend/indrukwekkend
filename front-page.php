@@ -8,7 +8,7 @@
 		</div>
 		<div class="col-12 col-md-6 col-xl-6 mr-auto">
 			<div class="text-center">
-				<p class="lead">Met veel trost werken wij o.a. voor deze merken</p>
+				<p class="lead">Met veel trots werken wij o.a. voor deze merken</p>
 			</div>
 			<div class="row justify-content-center">
 				<div class="col-12 company-brands">
