@@ -7,6 +7,7 @@
             "label": "Functie",
             "name": "company_position",
             "type": "text",
+            "value": null,
             "instructions": "Voer hier de functie binnen het bedrijf in",
             "required": 0,
             "conditional_logic": 0,
@@ -26,6 +27,7 @@
             "label": "Email",
             "name": "email",
             "type": "text",
+            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -45,6 +47,7 @@
             "label": "Vaste Telefoon",
             "name": "landline",
             "type": "text",
+            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -64,6 +67,7 @@
             "label": "Mobiele telefoon",
             "name": "mobile",
             "type": "text",
+            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -83,6 +87,7 @@
             "label": "Social Media",
             "name": "social_media",
             "type": "repeater",
+            "value": null,
             "instructions": "Voer hier alle Social Media netwerken in die gebruikt worden.\r\nDe gebruikersnaam word getoond op de site",
             "required": 0,
             "conditional_logic": 0,
@@ -102,6 +107,7 @@
                     "label": "Dienst",
                     "name": "service",
                     "type": "select",
+                    "value": null,
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -133,6 +139,7 @@
                     "label": "Gebruikersnaam",
                     "name": "username",
                     "type": "text",
+                    "value": null,
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -152,6 +159,7 @@
                     "label": "URL",
                     "name": "url",
                     "type": "text",
+                    "value": null,
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -167,6 +175,26 @@
                     "maxlength": ""
                 }
             ]
+        },
+        {
+            "key": "field_5a05bde8375dc",
+            "label": "Handtekening",
+            "name": "autograph",
+            "type": "text",
+            "value": null,
+            "instructions": "Voer hier de volledige bestandsnaam in van de handtekening",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -186,5 +214,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Per teamlid",
-    "modified": 1508161746
+    "modified": 1510325832
 }
