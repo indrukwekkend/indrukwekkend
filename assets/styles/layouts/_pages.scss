@@ -45,7 +45,7 @@
 		display: block;
 		height: 1px;
 		width: 100%;
-		border: 2px solid $orange;
+		border-bottom: 4px solid $orange;
 		bottom: 16px;
 		z-index: 0;
 	}
@@ -918,7 +918,11 @@
 			margin-left: 30%;
 		}
 
-		
+		&.no-image{
+			margin-right: 0%;
+			margin-left:  0%;
+			
+		}
 		.quote-container{
 			//margin-top: -70%;
 		}

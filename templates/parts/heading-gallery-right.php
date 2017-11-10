@@ -5,8 +5,22 @@
 		<div class="row justify-content-center">
 			<div class="col-12 col-md-11 col-lg-10">
 				<div class="row">
-					<div class="col-lg-6"></div>
-					<div class="col-lg-5 text-right">
+							<?php  // bepaal de orientatie: 
+			if (get_sub_field('titel_links')): 			
+				//echo "links";
+				$holder_div = 'col-lg-1';
+				$reverser = 'flex-row-reverse';
+				$textOrientation = "";
+			else:		
+				$holder_div = 'col-lg-6';
+				$reverser = '';
+				$textOrientation = "text-right";
+				//echo "rechts";			
+			endif;			
+		?>
+		
+			<div class="<?=$holder_div?>"></div>
+			<div class="col-lg-5 <?=$textOrientation?> ">
 						<div class="heading">
 							<h4 class="title">
 								<span><?php echo preg_replace('~((\w+\s){3})~', '$1' . "<br>", $title); ?></span>
@@ -15,7 +29,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row <?=$reverser?>">
 					<div class="col-lg-6 mt-5 mt-xl-0">
 						<?php the_sub_field('content'); ?>
 					</div>
@@ -23,7 +37,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="row justify-content-center">
+		<div class="row justify-content-center ">
 			<div class="col-12 col-md-11 col-xl-10 px-0 pt-5 text-center">
 				<div class="gallery-list">
 					<?php if( have_rows('images') ): ?>

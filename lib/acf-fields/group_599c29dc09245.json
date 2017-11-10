@@ -16,199 +16,12 @@
                 "id": ""
             },
             "layouts": {
-                "599ed308fcc36": {
-                    "key": "599ed308fcc36",
-                    "name": "content_left",
-                    "label": "Tekst Links",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_599ed308fcc37",
-                            "label": "Titel",
-                            "name": "title",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "30",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_599ed308fcc38",
-                            "label": "Inhoud",
-                            "name": "content",
-                            "type": "textarea",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "70",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "maxlength": "",
-                            "rows": "",
-                            "new_lines": "wpautop"
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "599ed31afcc3b": {
-                    "key": "599ed31afcc3b",
-                    "name": "content_right",
-                    "label": "Tekst Rechts",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_599ed31afcc3d",
-                            "label": "Inhoud",
-                            "name": "content",
-                            "type": "textarea",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "70",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "maxlength": "",
-                            "rows": "",
-                            "new_lines": "wpautop"
-                        },
-                        {
-                            "key": "field_599ed31afcc3c",
-                            "label": "Titel",
-                            "name": "title",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "30",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "598861bb7b9de": {
-                    "key": "598861bb7b9de",
-                    "name": "heading_left",
-                    "label": "Afbeelding Links",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_599c2ad6a3cbc",
-                            "label": "Titel",
-                            "name": "title",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "30",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_599c2ad6a3cbd",
-                            "label": "Inhoud",
-                            "name": "content",
-                            "type": "textarea",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "70",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "maxlength": "",
-                            "rows": "",
-                            "new_lines": "wpautop"
-                        },
-                        {
-                            "key": "field_599c2ad6a3cbe",
-                            "label": "Afbeelding",
-                            "name": "image",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "30",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array",
-                            "preview_size": "thumbnail",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": 600,
-                            "max_height": 700,
-                            "max_size": "",
-                            "mime_types": ""
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
                 "5988727150a63": {
                     "key": "5988727150a63",
                     "name": "heading_right",
-                    "label": "Afbeelding Rechts",
+                    "label": "Content blok met opties",
                     "display": "block",
                     "sub_fields": [
-                        {
-                            "key": "field_599c2ad6a3cc1",
-                            "label": "Inhoud",
-                            "name": "content",
-                            "type": "textarea",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "70",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "maxlength": "",
-                            "rows": "",
-                            "new_lines": "wpautop"
-                        },
                         {
                             "key": "field_599c2ad6a3cc0",
                             "label": "Titel",
@@ -229,60 +42,26 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_599c2ad6a3cc2",
-                            "label": "Afbeelding",
-                            "name": "image",
-                            "type": "image",
+                            "key": "field_5a02e54b3843c",
+                            "label": "Titel links\/rechts",
+                            "name": "titel_links",
+                            "type": "true_false",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "30",
+                                "width": "10",
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "array",
-                            "preview_size": "thumbnail",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": 600,
-                            "max_height": 700,
-                            "max_size": "",
-                            "mime_types": ""
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "59897888626d8": {
-                    "key": "59897888626d8",
-                    "name": "heading_full_left",
-                    "label": "Afbeelding Volledig Links",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_599c2ad6a3cc4",
-                            "label": "Titel",
-                            "name": "title",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "30",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "L.",
+                            "ui_off_text": "R."
                         },
                         {
-                            "key": "field_599c2ad6a3cc5",
+                            "key": "field_599c2ad6a3cc1",
                             "label": "Inhoud",
                             "name": "content",
                             "type": "textarea",
@@ -290,7 +69,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "70",
+                                "width": "60",
                                 "class": "",
                                 "id": ""
                             },
@@ -301,202 +80,204 @@
                             "new_lines": "wpautop"
                         },
                         {
-                            "key": "field_599c2ad6a3cc6",
-                            "label": "Afbeelding",
-                            "name": "image",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "60",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array",
-                            "preview_size": "thumbnail",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
-                        },
-                        {
-                            "key": "field_599c2ad6a3cc7",
-                            "label": "Volledige breedte",
-                            "name": "fullwidth",
+                            "key": "field_5a02e6de3843e",
+                            "label": "Extra content toevoegen",
+                            "name": "extra_content_boolean",
                             "type": "true_false",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "20",
+                                "width": "",
                                 "class": "",
                                 "id": ""
                             },
                             "message": "",
-                            "default_value": 1,
+                            "default_value": 0,
                             "ui": 1,
-                            "ui_on_text": "Aan",
-                            "ui_off_text": "Uit"
+                            "ui_on_text": "",
+                            "ui_off_text": ""
                         },
                         {
-                            "key": "field_599c2ad6a3cc8",
-                            "label": "Uitlijning",
-                            "name": "alignment",
-                            "type": "radio",
+                            "key": "field_5a02e5db3843d",
+                            "label": "Extra content (afbeelding + Quotes)",
+                            "name": "extra_content",
+                            "type": "group",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_599c2ad6a3cc7",
-                                        "operator": "!=",
+                                        "field": "field_5a02e6de3843e",
+                                        "operator": "==",
                                         "value": "1"
                                     }
                                 ]
                             ],
                             "wrapper": {
-                                "width": "20",
+                                "width": "",
                                 "class": "",
                                 "id": ""
                             },
-                            "choices": {
-                                "left": "Links",
-                                "right": "Rechts"
-                            },
-                            "allow_null": 0,
-                            "other_choice": 0,
-                            "save_other_choice": 0,
-                            "default_value": "",
-                            "layout": "horizontal",
-                            "return_format": "value"
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "599d6391b1ecf": {
-                    "key": "599d6391b1ecf",
-                    "name": "heading_full_right",
-                    "label": "Afbeelding Volledig Rechts",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_599d6391b1ed2",
-                            "label": "Inhoud",
-                            "name": "content",
-                            "type": "textarea",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "70",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "maxlength": "",
-                            "rows": "",
-                            "new_lines": "wpautop"
-                        },
-                        {
-                            "key": "field_599d6391b1ed0",
-                            "label": "Titel",
-                            "name": "title",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "30",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_599d6391b1ed3",
-                            "label": "Afbeelding",
-                            "name": "image",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "60",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array",
-                            "preview_size": "thumbnail",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
-                        },
-                        {
-                            "key": "field_599d6391b1ed4",
-                            "label": "Volledige breedte",
-                            "name": "fullwidth",
-                            "type": "true_false",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "20",
-                                "class": "",
-                                "id": ""
-                            },
-                            "message": "",
-                            "default_value": 1,
-                            "ui": 1,
-                            "ui_on_text": "Aan",
-                            "ui_off_text": "Uit"
-                        },
-                        {
-                            "key": "field_599d6391b1ed5",
-                            "label": "Uitlijning",
-                            "name": "alignment",
-                            "type": "radio",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_599d6391b1ed4",
-                                        "operator": "!=",
-                                        "value": "1"
-                                    }
-                                ]
-                            ],
-                            "wrapper": {
-                                "width": "20",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "left": "Links",
-                                "right": "Rechts"
-                            },
-                            "allow_null": 0,
-                            "other_choice": 0,
-                            "save_other_choice": 0,
-                            "default_value": "",
-                            "layout": "horizontal",
-                            "return_format": "value"
+                            "layout": "block",
+                            "sub_fields": [
+                                {
+                                    "key": "field_5a02e82038441",
+                                    "label": "Afbeelding over volle breedte",
+                                    "name": "afbeelding_over_volle_breedte",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "10",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 1,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_599c2ad6a3cc2",
+                                    "label": "Afbeelding",
+                                    "name": "image",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "30",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": ""
+                                },
+                                {
+                                    "key": "field_5a02e88b38442",
+                                    "label": "Afbeelding onderschrift",
+                                    "name": "image_description",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "60",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "maxlength": ""
+                                },
+                                {
+                                    "key": "field_5a02e78c3843f",
+                                    "label": "Quote aan of uit",
+                                    "name": "quote_boolean",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5a02e82038441",
+                                                "operator": "!=",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "10",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 1,
+                                    "ui_on_text": "Aan",
+                                    "ui_off_text": "Uit"
+                                },
+                                {
+                                    "key": "field_59a40ac1642c7",
+                                    "label": "Quote",
+                                    "name": "quote",
+                                    "type": "textarea",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5a02e78c3843f",
+                                                "operator": "==",
+                                                "value": "1"
+                                            },
+                                            {
+                                                "field": "field_5a02e82038441",
+                                                "operator": "!=",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "60",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "placeholder": "",
+                                    "maxlength": "",
+                                    "rows": "",
+                                    "new_lines": "wpautop"
+                                },
+                                {
+                                    "key": "field_59a40ada642c8",
+                                    "label": "Auteur",
+                                    "name": "author",
+                                    "type": "post_object",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5a02e82038441",
+                                                "operator": "!=",
+                                                "value": "1"
+                                            },
+                                            {
+                                                "field": "field_5a02e78c3843f",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "post_type": [
+                                        "teamleden"
+                                    ],
+                                    "taxonomy": [],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "return_format": "object",
+                                    "ui": 1
+                                }
+                            ]
                         }
                     ],
                     "min": "",
@@ -505,7 +286,7 @@
                 "5996a6bb29afe": {
                     "key": "5996a6bb29afe",
                     "name": "heading_gallery_left",
-                    "label": "Gallerij Links",
+                    "label": "Galerij met (4) afbeeldingen",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -528,6 +309,25 @@
                             "maxlength": ""
                         },
                         {
+                            "key": "field_5a0587fcc22c2",
+                            "label": "Titel links\/rechts",
+                            "name": "titel_links",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "10",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "L.",
+                            "ui_off_text": "R."
+                        },
+                        {
                             "key": "field_599c2ad6a3cca",
                             "label": "Inhoud",
                             "name": "content",
@@ -536,7 +336,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "70",
+                                "width": "60",
                                 "class": "",
                                 "id": ""
                             },
@@ -590,201 +390,6 @@
                                     "mime_types": ""
                                 }
                             ]
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "599d67d93288b": {
-                    "key": "599d67d93288b",
-                    "name": "heading_gallery_right",
-                    "label": "Gallerij Rechts",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_599d67d93288d",
-                            "label": "Inhoud",
-                            "name": "content",
-                            "type": "textarea",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "70",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "maxlength": "",
-                            "rows": "",
-                            "new_lines": "wpautop"
-                        },
-                        {
-                            "key": "field_599d67d93288c",
-                            "label": "Titel",
-                            "name": "title",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "30",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_599d67d93288e",
-                            "label": "Afbeeldingen",
-                            "name": "images",
-                            "type": "repeater",
-                            "instructions": "Kies 4 afbeeldingen voor de \"sociale collage\". \r\nVolgorde: 1e klein vierkant, 2e en 3e rechthoekig liggend, 4e staand rechts groot.",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "collapsed": "",
-                            "min": 1,
-                            "max": 4,
-                            "layout": "row",
-                            "button_label": "Afbeelding Toevoegen",
-                            "sub_fields": [
-                                {
-                                    "key": "field_599d67d93288f",
-                                    "label": "Afbeelding",
-                                    "name": "image",
-                                    "type": "image",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "return_format": "array",
-                                    "preview_size": "thumbnail",
-                                    "library": "all",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": ""
-                                }
-                            ]
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "59a40ab4642c6": {
-                    "key": "59a40ab4642c6",
-                    "name": "quote_left",
-                    "label": "Quote Links",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_59a40ac1642c7",
-                            "label": "Quote",
-                            "name": "content",
-                            "type": "textarea",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "maxlength": "",
-                            "rows": "",
-                            "new_lines": "wpautop"
-                        },
-                        {
-                            "key": "field_59a40ada642c8",
-                            "label": "Auteur",
-                            "name": "author",
-                            "type": "post_object",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "post_type": [
-                                "teamleden"
-                            ],
-                            "taxonomy": [],
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "return_format": "",
-                            "ui": 1
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "59a40b35642c9": {
-                    "key": "59a40b35642c9",
-                    "name": "quote_right",
-                    "label": "Quote Rechts",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_59a40b35642ca",
-                            "label": "Quote",
-                            "name": "content",
-                            "type": "textarea",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "maxlength": "",
-                            "rows": "",
-                            "new_lines": "wpautop"
-                        },
-                        {
-                            "key": "field_59a40b35642cb",
-                            "label": "Auteur",
-                            "name": "author",
-                            "type": "post_object",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "post_type": [
-                                "teamleden"
-                            ],
-                            "taxonomy": [],
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "return_format": "id",
-                            "ui": 1
                         }
                     ],
                     "min": "",
@@ -1898,5 +1503,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Primair en Secundair",
-    "modified": 1508161753
+    "modified": 1510313079
 }

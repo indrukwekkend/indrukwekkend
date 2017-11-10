@@ -36,8 +36,9 @@
 				
 				
 				<?php $extra = get_sub_field('extra_content'); ?>
+				<?php $image = $extra['image']; ?>
 				
-				<?php if (get_sub_field('extra_content_boolean') && !$extra['afbeelding_over_volle_breedte'] && $extra['quote_boolean']) : ?>
+				<?php if (get_sub_field('extra_content_boolean') && !$extra['afbeelding_over_volle_breedte'] && $extra['quote_boolean'] && !empty($image)) : ?>
 	
 					<div class="part-quote">						
 						<div class="pt-4 px-4 pb-3 pt-md-5 px-md-5 pb-md-4 mb-5 quote-container">
@@ -78,7 +79,7 @@
 					 ?>
 
 
-				<?php $image = $extra['image']; ?>
+				
 
 				<?php if( !empty($image) ): ?>
 			<div class="<?= $class?> text-center">
@@ -94,6 +95,23 @@
 			
 
 			</div>
+				<?php else: ?>
+			
+			<div class="part-quote no-image col-lg-6 mt-lg-6 ">						
+				<div class="pt-4 px-4 pb-3 pt-md-5 px-md-5 pb-md-4 mb-5 quote-container">
+													
+					<div class="quote-content">
+						<?= $extra['quote'] ?>
+					</div>
+					<?php if ( !is_singular( 'teamleden' ) ) { ?>
+						<div class="quote-autograph">
+							<img height="120" src="<?php echo get_stylesheet_directory_uri();?>/dist/images/autographs/<?php the_field('autograph',  $extra['author'] );?>"/>	
+						</div>
+					<?php } ?>
+				</div>
+			</div>
+					
+			
 				<?php endif; // image ?>
 			
 			<?php endif; //extra content ?>
