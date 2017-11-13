@@ -236,14 +236,18 @@ jQuery(document).ready(function(){
 		};
 		VideoScreen.prototype.reset = function() {
 			// Computer image is 16/11 proportions
-			// Computer screen is 1056/681 proportions
+			// Computer screen is 681/1056 proportions
+			
+			// Macbook Pro 8/5
+			// iMac 16/9
+			
 			var oW = this.wrap.offsetWidth;
 			var oH = this.wrap.offsetHeight;
-			var vW = Math.min(oW, oH * (16/11));
-			var vH = vW * (681/1056);
-			this.video.style.width = vW * 0.67 + "px";
-			this.video.style.height = vH * 0.67 + "px";
-			this.video.style.marginTop = "-" + (vH * 0.042) + "px";
+			var vW = Math.min(oW, oH * (16/9));
+			var vH = vW * (9/16); // was 681/1056
+			this.video.style.width = vW * 0.648 + "px";
+			this.video.style.height = vH * 0.648 + "px"; // was 0.67
+			this.video.style.marginTop = "-" + (vH * 0.125) + "px"; // was 0.042
 		};
 		window.addEventListener("load", function(event){
 			QNR_VIDEO_SCREEN.videoScreensL = document.getElementsByClassName("qnr-computer-video");
