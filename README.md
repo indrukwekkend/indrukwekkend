@@ -8,6 +8,7 @@ This is the repository of the Indrukwekkend theme.
 ### Setting up
 
 Make sure AMPPS has a domain running on `indrukwekkend.dev` 
+Make sure the database prefix is `ndrkwkknd_` this is neccesery for migrating data from the Live location.
 
 1. Unpack the zip in the theme directory
 2. Open a Terminal and go to the theme directory
