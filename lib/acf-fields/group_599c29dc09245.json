@@ -130,7 +130,7 @@
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
-                                        "width": "10",
+                                        "width": "50",
                                         "class": "",
                                         "id": ""
                                     },
@@ -139,6 +139,25 @@
                                     "ui": 1,
                                     "ui_on_text": "",
                                     "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_5a0b07a7774a9",
+                                    "label": "Effect aan of uit",
+                                    "name": "effect_boolean_image",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "50",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 1,
+                                    "ui_on_text": "Aan",
+                                    "ui_off_text": "Uit"
                                 },
                                 {
                                     "key": "field_599c2ad6a3cc2",
@@ -276,6 +295,33 @@
                                     "multiple": 0,
                                     "return_format": "object",
                                     "ui": 1
+                                },
+                                {
+                                    "key": "field_5a0b06d8774a7",
+                                    "label": "Effect aan of uit",
+                                    "name": "effect_boolean_quote",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5a02e78c3843f",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 1,
+                                    "ui_on_text": "Aan",
+                                    "ui_off_text": "Uit"
                                 }
                             ]
                         }
@@ -286,7 +332,7 @@
                 "5996a6bb29afe": {
                     "key": "5996a6bb29afe",
                     "name": "heading_gallery_left",
-                    "label": "Galerij met (4) afbeeldingen",
+                    "label": "Gallerij Links",
                     "display": "block",
                     "sub_fields": [
                         {
@@ -309,7 +355,7 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5a0587fcc22c2",
+                            "key": "field_5a059ceb271e3",
                             "label": "Titel links\/rechts",
                             "name": "titel_links",
                             "type": "true_false",
@@ -1503,5 +1549,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Primair en Secundair",
-    "modified": 1510313079
+    "modified": 1510675358
 }
