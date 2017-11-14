@@ -18,21 +18,20 @@ endif;
 ?>
 
 <div class="row pt-md-5 pb-5 pb-sm-6 part-quote-manager">
-	<div class="col-12 col-xl-5 mt-3 mt-xl0">
+	<div class="col-12 col-xl-4 mt-3 mt-xl0">
 		<div class="heading">
 			<h4 class="title">
-				<span>Case Manager: <br>
-				<span class="text-orange"> <?= $manager['name']; ?></span></span>
+				<span>Case Manager:</span>
 			</h4>
 			<span class="line"></span>
 		</div>
 	</div>
-	<div class="col-12 col-xl-7 mt-5 mt-xl-0">
+	<div class="col-12 col-xl-8 mt-5 mt-xl-0">
 
 		<div class="row bg-orange quote-manager-container">
 			<div class="col-12 col-md-9 col-xl-10 pt-4 align-self-stretch">
 
-				<div class="row pl-lg-3 mb-4 mt-xl-5 align-items-center">
+				<div class="row pl-lg-2 mb-4 mt-xl-5 align-items-center">
 					<div class="col">
 						<?php // Verwarrend? ja, maar die </> zijn voor het H element ?>
 							<?php // echo "<".get_the_field('heading_size')."class='text-white m-0'>"; ?> 
@@ -41,30 +40,35 @@ endif;
 						</div>
 				</div>
 
-				<div class="row pl-lg-3">
+				<div class="row pl-lg-2">
 					<div class="col">
-						<span class="text-white">Bekijk het profiel van <a class="text-white" href="<?php echo $manager['permalink'];?>" title="<?php echo $manager['name']; ?>"><?php echo $manager['name']; ?></a></span>
 						<a class="text-white" href="<?php echo $manager['permalink'];?>" title="<?php echo $manager['name']; ?>">
-							<img height="80" src="<?php echo get_stylesheet_directory_uri();?>/dist/images/autographs/wit/<?php echo $manager['autograph']; ?>"/>
+							<img height="90" src="<?php echo get_stylesheet_directory_uri();?>/dist/images/autographs/wit/<?php echo $manager['autograph']; ?>"/>
 						</a>
 					</div>
 				</div>
 
-				<div class="row pl-lg-3 no-gutters justify-content-start">
+				<div class="row pl-lg-2 no-gutters justify-content-start">
 
-					<div class="col-8 col-md-12 mb-3 mb-md-4 mb-lg-5">
-						<div class="row mt-5 mt-lg-0 no-gutters">
-							<div class="col-12 col-md-12 col-lg-5 col-xl-5 mb-4 mb-lg-0 text-nowrap">
-								<span class="icon mail mr-2"></span> <a class="text-white" href="mailto:<?php echo $manager['email'];?>"><?php echo $manager['email'];?></a>
+					<div class="col-8 col-md-12 mb-3 mb-md-4 mb-lg-2">
+						<div class="row mt-5 mt-lg-0">
+
+							<div class="col mb-4 text-nowrap">
+								<span class="icon info mr-1"></span> <span class="text-white"><a class="text-white" href="<?php echo $manager['permalink'];?>" title="Profiel van <?php echo $manager['name']; ?>">Bekijk profiel</a></span>
 							</div>
 
-							<div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0 text-nowrap">
-								<span class="icon phone mr-2"></span> <a class="text-white" href="tel:<?php echo $manager['landline'];?>"><?php echo $manager['landline'];?></a>
+							<div class="col mb-4 text-nowrap">
+								<span class="icon mail mr-1"></span> <a class="text-white" href="mailto:<?php echo $manager['email'];?>"><?php echo $manager['email'];?></a>
 							</div>
 
-							<div class="col-12 col-md-6 col-lg-3 mb-3 mb-lg-0 text-nowrap">
-								<span class="icon smartphone mr-2"></span> <a class="text-white" href="tel:<?php echo $manager['mobile'];?>"><?php echo $manager['mobile'];?></a>
+							<div class="col mb-4 text-nowrap">
+								<span class="icon phone mr-1"></span> <a class="text-white" href="tel:<?php echo $manager['landline'];?>"><?php echo $manager['landline'];?></a>
 							</div>
+
+							<div class="col mb-3 text-nowrap">
+								<span class="icon smartphone mr-1"></span> <a class="text-white" href="tel:<?php echo $manager['mobile'];?>"><?php echo $manager['mobile'];?></a>
+							</div>
+
 						</div>
 					</div>
 
