@@ -51,13 +51,13 @@ endif;
 				<div class="row pl-lg-2 no-gutters justify-content-start">
 
 					<div class="col-8 col-md-12 mb-3 mb-md-4 mb-lg-2">
-						<div class="row mt-5 mt-lg-0">
+						<div class="row mt-5 mt-lg-0 no-gutters">
 
 							<div class="col mb-4 text-nowrap">
 								<span class="icon info mr-1"></span> <span class="text-white"><a class="text-white" href="<?php echo $manager['permalink'];?>" title="Profiel van <?php echo $manager['name']; ?>">Bekijk profiel</a></span>
 							</div>
 
-							<div class="col mb-4 text-nowrap">
+							<div class="col mb-4 text-nowrap pr-2">
 								<span class="icon mail mr-1"></span> <a class="text-white" href="mailto:<?php echo $manager['email'];?>"><?php echo $manager['email'];?></a>
 							</div>
 
@@ -65,7 +65,7 @@ endif;
 								<span class="icon phone mr-1"></span> <a class="text-white" href="tel:<?php echo $manager['landline'];?>"><?php echo $manager['landline'];?></a>
 							</div>
 
-							<div class="col mb-3 text-nowrap">
+							<div class="col mb-4 text-nowrap">
 								<span class="icon smartphone mr-1"></span> <a class="text-white" href="tel:<?php echo $manager['mobile'];?>"><?php echo $manager['mobile'];?></a>
 							</div>
 
