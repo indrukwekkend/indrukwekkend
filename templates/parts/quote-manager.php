@@ -18,7 +18,7 @@ endif;
 ?>
 
 <div class="row pt-md-5 pb-5 pb-sm-6 part-quote-manager">
-	<div class="col-12 col-xl-4 mt-3 mt-xl0">
+	<div class="col-12 col-xl-4 mt-3 mt-xl-5">
 		<div class="heading">
 			<h4 class="title">
 				<span>Case Manager:</span>
