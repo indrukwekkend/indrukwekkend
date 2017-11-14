@@ -273,6 +273,20 @@ h5, h6{
 		}
 	}
 
+	&.info{
+		background-image: url('../images/svg/info-white.svg');
+
+		&-orange{
+			background-image: url('../images/svg/info-orange.svg');
+		}
+		&-white{
+			background-image: url('../images/svg/info-white.svg');
+		}
+		&-gray{
+			background-image: url('../images/svg/info-gray.svg');
+		}
+	}
+
 	&.arrow-up{
 		background-image: url(../images/arrows/up-white.svg);
 
