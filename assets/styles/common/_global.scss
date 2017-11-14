@@ -448,11 +448,3 @@ h5, h6{
 		height: 32px;
 	}
 }
-
-@include media-breakpoint-down(xs){
-	#headlines-typed {
-		.h4{
-			display: none;
-		}
-	}
-}
