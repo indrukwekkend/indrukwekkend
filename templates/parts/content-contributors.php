@@ -47,7 +47,7 @@
 
 				<div class="heading">
 					<h4 class="title">
-						<span>Wij werkten <br>ook mee</span>
+						<span>Ontmoet de<br> betrokken teamleden</span>
 					</h4>
 					<span class="line"></span>
 				</div>

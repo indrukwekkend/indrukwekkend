@@ -18,9 +18,6 @@
 								<div class="overlay-teamlid-image" style="background-image:url(<?php the_post_thumbnail_url();?>);"></div>
 								<div class="overlay-teamlid-title">
 									<h4><?php the_title(); ?></h4>
-									<div class="overlay-teamlid-functie pt-3 d-none d-md-block">
-										<?php the_field('company_position');?>
-									</div>
 									
 									<div class="overlay-teamlid-contact">
 												
