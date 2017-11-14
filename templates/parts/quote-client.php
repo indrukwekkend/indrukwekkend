@@ -9,7 +9,7 @@
 
 		<div class="col-12 col-xl-8">
 
-			<div class="row p-5 quote-client-container">
+			<div class="row pt-5 px-5 pb-3 quote-client-container">
 
 				<div class="col-12">
 
