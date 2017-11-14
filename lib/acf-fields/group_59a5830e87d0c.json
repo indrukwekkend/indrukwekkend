@@ -4,10 +4,10 @@
     "fields": [
         {
             "key": "field_59a5831f91a4f",
-            "label": "Functie",
-            "name": "company_position",
+            "label": "Quote titel",
+            "name": "quote_title",
             "type": "text",
-            "instructions": "Functie binnen het bedrijf",
+            "instructions": "Titel voor naast het quote blok.",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
@@ -15,8 +15,8 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "Werknemer",
-            "placeholder": "Accountant, Designer, IT Security Specialist....",
+            "default_value": "",
+            "placeholder": "Dit zei [naam]:",
             "prepend": "",
             "append": "",
             "maxlength": 40
@@ -39,5 +39,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Functie binnen het bedrijf",
-    "modified": 1508161730
+    "modified": 1510676024
 }
