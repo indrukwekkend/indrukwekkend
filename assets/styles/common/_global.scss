@@ -53,6 +53,11 @@ h5, h6{
 	animation-fill-mode: initial;
 	animation-play-state: initial;
 }
+
+a.sbi_photo {
+	pointer-events: none;
+}
+
 @keyframes typedjsBlink{
 	50% { opacity: 0.0; }
 }

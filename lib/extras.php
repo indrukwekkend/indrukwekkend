@@ -1,4 +1,4 @@
-<?php
+<?php 
 
 namespace Roots\Sage\Extras;
 
@@ -17,6 +17,23 @@ function acf_json_save_point( $path ) {
 	return $path;
 	
 }
+
+add_filter('acf/settings/load_json',  __NAMESPACE__ . '\\acf_json_load_point');
+
+function acf_json_load_point( $paths ) {
+    
+    // remove original path (optional)
+    unset($paths[0]);
+       
+    // append path
+    $paths[] = get_stylesheet_directory() . '/lib/acf-fields';
+    
+    // return
+    return $paths;
+    
+}
+
+
 
 /**
  * Add <body> classes

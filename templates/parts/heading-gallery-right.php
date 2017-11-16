@@ -1,4 +1,4 @@
-<!-- gallery right -->
+<!-- gallery right // OBSOLETE .... -->
 <?php $title = get_sub_field('title'); ?>
 <div class="pb-5 part-gallery">
 	<div class="col-12">

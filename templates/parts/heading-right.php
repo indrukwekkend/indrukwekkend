@@ -1,4 +1,4 @@
-<!-- Titel / Heading right -->
+<!-- Titel / Heading right / Is nu het complete content blok... -->
 <div class="row justify-content-center pb-5 part-heading">
 	<div class="col-12 col-md-11 col-lg-10">
 		<div class="row">			
@@ -37,11 +37,29 @@
 				
 				<?php $extra = get_sub_field('extra_content'); ?>
 				<?php $image = $extra['image']; ?>
+				<?php $parallaxEffect = ($extra['parallax_effect'] ) ? $extra['parallax_effect'][0] : 0 ; ?>
+				<?php 
+					
+					 $parallaxEffect = intval($parallaxEffect);
+					
+					if ($parallaxEffect > 0 && $parallaxEffect <= 1): 
+						$style = " style='margin: 3rem 0 -3rem!important;' ";
+						
+					elseif ($parallaxEffect > 1):
+						 $style = " style='margin: 6rem 0 -6rem!important;' ";
+					else:	
+						$style = ""; 
+					endif;
+					
+										
+					
+				?>
+				
 				
 				<?php if (get_sub_field('extra_content_boolean') && !$extra['afbeelding_over_volle_breedte'] && $extra['quote_boolean'] && !empty($image)) : ?>
 	
-					<div class="part-quote">						
-						<div class="pt-4 px-4 pb-3 pt-md-5 px-md-5 pb-md-4 mb-5 quote-container">
+					<div class="part-quote" data-aos="fade-up-left" >						
+						<div class="pt-4 px-4 pb-3 pt-md-5 px-md-5 pb-md-4 mb-5 quote-container" >
 															
 							<div class="quote-content">
 								<?= $extra['quote'] ?>
@@ -82,8 +100,11 @@
 				
 
 				<?php if( !empty($image) ): ?>
+			
+								
 			<div class="<?= $class?> text-center">
-				<figure class="figure mt-1 mt-xl-3">
+				<figure class="figure mt-1 mt-xl-3 rellax" data-rellax-speed="<?=$parallaxEffect?>" <?=$style?> >
+				<?php //var_dump($parallaxEffect); ?>
 					<?php $title = $image['title']; ?>
 					<?php $alt = $image['alt']; ?>
 					<?php $caption = $image['caption']; ?>
@@ -98,7 +119,7 @@
 				<?php else: ?>
 			
 			<div class="part-quote no-image col-lg-6 mt-lg-6 ">						
-				<div class="pt-4 px-4 pb-3 pt-md-5 px-md-5 pb-md-4 mb-5 quote-container">
+				<div class="pt-4 px-4 pb-3 pt-md-5 px-md-5 pb-md-4 mb-5 quote-container" data-aos="flip-left">
 													
 					<div class="quote-content">
 						<?= $extra['quote'] ?>

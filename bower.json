@@ -14,7 +14,8 @@
     "popper.js": "^1.12.5",
     "smooth-scroll.js": "^12.1.4",
     "lightbox2": "~2.9.0",
-    "rellax": "*"
+    "rellax": "*",
+    "aos": "~2.2.0"
   },
   "overrides": {
     "font-awesome": {

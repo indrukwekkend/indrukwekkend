@@ -21,6 +21,7 @@
         // JavaScript to be fired on all pages
         
 		  // Accepts any class name
+		  AOS.init();
         
       },
       finalize: function() {

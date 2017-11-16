@@ -8,10 +8,10 @@
 
 							<div class="row mb-4 mt-xl-5 align-items-center">
 								<div class="col-12 col-lg-7 text-lg-right border-right">
-									<h4>Kan Martijn je <br>ergens mee van <br>dienst zijn?</h4>
+									<h4><?php echo preg_replace('~((\w+\s){3})~', '$1' . "<br>", get_field('title_left')); ?></h4>
 								</div>
 								<div class="col-12 col-lg-5 text-left">
-									<h5>Vraag het hem zelf, hij staat je graag <br>te woord</h5>
+									<h5><?php echo preg_replace('~((\w+\s){4})~', '$1' . "<br>", get_field('title_right')); ?></h5>
 							</div>
 						</div>
 					</div>
@@ -55,7 +55,7 @@
 						</div>
 					</div>
 
-					<div class="col-4 col-md-3 col-xl-2 align-self-end text-center p-0">
+					<div class="col-4 col-md-3 col-xl-2 align-self-end text-center p-0" data-aos="fade" data-aos-offset="200" data-aos-duration="600">
 						<a href="<?php echo get_post_permalink(); ?>">
 							<img class="img-fluid" src="<?php the_post_thumbnail_url('medium'); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>"/>
 						</a>
