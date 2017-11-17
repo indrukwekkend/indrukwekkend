@@ -92,6 +92,11 @@ jQuery(document).ready(function(){
 		overlayInactive();
 	});
 
+	jQuery('a[href$="#modal-login"]').click(function(e){
+		e.preventDefault();
+		jQuery('#modal-login').modal('show');
+	});
+
 	jQuery('.quote-list').slick({
 		dots: true,
 		arrows: false,

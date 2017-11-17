@@ -149,4 +149,22 @@ $header_video = function(){
 			</div>
 		</div>
 	<?php endif; ?>
+
+	<div class="modal fade" id="modal-login" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<h5 class="modal-title" id="exampleModalLabel">Inloggen</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<a href="http://bestel.indrukwekkend.nl/" class="btn btn-sm btn-primary" data-dismiss="modal">Webshop</a>
+					<a href="http://overdracht.indrukwekkend.nl/" class="btn btn-sm btn-primary">Dataverkeer</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </header>
