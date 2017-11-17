@@ -7,7 +7,7 @@
 
 	<div class="row pt-6 part-quote-client">
 
-		<div class="col-12 col-xl-8">
+		<div class="col-12 col-xl-8 order-2 order-xl-1">
 
 			<div class="row pt-5 px-5 pb-3 quote-client-container">
 
@@ -25,7 +25,7 @@
 
 		</div>
 
-		<div class="col-12 col-xl-4 text-right">
+		<div class="col-12 col-xl-4 order-1 order-xl-2 text-right">
 
 			<div class="heading">
 
