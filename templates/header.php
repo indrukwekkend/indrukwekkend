@@ -25,7 +25,6 @@ $header_video = function(){
 
 <!-- header in templates --> 
 <header class="jumbotron banner" <?php $background( get_field('header_background') ); ?>>
-	<div class="lamp <?php $display( get_field('header_background') ); ?>"></div>
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="container navigation">
