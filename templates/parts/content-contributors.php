@@ -3,8 +3,14 @@
 		<div class="row align-items-center">
 			<div class="col-lg-7 order-2 order-lg-1">
 
-				<?php $args = array(
+				
+				<?php
+				
+				$manager_ID = ($post_object = get_field( 'manager' )) ? $post_object->ID : NULL ;
+
+				$args = array(
 					'post_type' => 'teamleden',
+					'post__not_in' => array($manager_ID),
 					'meta_query' => array(
 						'relation' => 'OR',
 							array(
@@ -30,6 +36,7 @@
 								<div class="contributor-hover">
 									<div class="contributor-info">
 										<h4 class="text-white"><?php the_title(); ?></h4>
+										<hr>
 										<span><?php the_field('company_position'); ?></span>
 									</div>
 								</div>
