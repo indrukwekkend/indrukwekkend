@@ -93,8 +93,7 @@ jQuery(document).ready(function(){
 	});
 
 	jQuery('a[href$="#modal-login"]').click(function(e){
-		e.preventDefault();
-		jQuery('#modal-login').modal('show');
+		jQuery('#modal-login').modal('toggle');
 	});
 
 	jQuery('.quote-list').slick({
