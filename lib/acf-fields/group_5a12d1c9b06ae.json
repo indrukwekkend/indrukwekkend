@@ -3266,6 +3266,20 @@
                 "operator": "!=",
                 "value": "template-contact.php"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "cases"
+            }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "teamleden"
+            }
         ]
     ],
     "menu_order": 0,
@@ -3276,5 +3290,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Inhoud van de pagina",
-    "modified": 1511186585
+    "modified": 1511186805
 }
