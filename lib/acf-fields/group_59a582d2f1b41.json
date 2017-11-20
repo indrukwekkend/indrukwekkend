@@ -11,13 +11,13 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "",
+                "width": "60",
                 "class": "",
                 "id": ""
             },
             "default_value": "",
             "placeholder": "",
-            "maxlength": 60,
+            "maxlength": "",
             "rows": "",
             "new_lines": ""
         },
@@ -30,7 +30,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "80",
+                "width": "40",
                 "class": "",
                 "id": ""
             },
@@ -42,35 +42,6 @@
             "multiple": 0,
             "return_format": "object",
             "ui": 1
-        },
-        {
-            "key": "field_59a68bce96864",
-            "label": "Tekst Grootte",
-            "name": "heading_size",
-            "type": "select",
-            "instructions": "Kies een lettergrootte. H1 is het grootst, H6 is het kleinst",
-            "required": 1,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "20",
-                "class": "",
-                "id": ""
-            },
-            "choices": {
-                "h1": "Heading 1",
-                "h2": "Heading 2",
-                "h3": "Heading 3",
-                "h4": "Heading 4",
-                "h5": "Heading 5",
-                "h6": "Heading 6"
-            },
-            "default_value": [],
-            "allow_null": 0,
-            "multiple": 0,
-            "ui": 1,
-            "ajax": 0,
-            "return_format": "value",
-            "placeholder": ""
         }
     ],
     "location": [
@@ -90,5 +61,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Keuze lijst van Manager Quotes",
-    "modified": 1508161774
+    "modified": 1511178816
 }
