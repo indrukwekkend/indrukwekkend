@@ -668,25 +668,6 @@
                                     "mime_types": ""
                                 },
                                 {
-                                    "key": "field_5a02e88b38442",
-                                    "label": "Afbeelding onderschrift",
-                                    "name": "image_description",
-                                    "type": "text",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "100",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "default_value": "",
-                                    "placeholder": "",
-                                    "prepend": "",
-                                    "append": "",
-                                    "maxlength": ""
-                                },
-                                {
                                     "key": "field_5a02e78c3843f",
                                     "label": "Quote aan of uit",
                                     "name": "quote_boolean",
@@ -2276,5 +2257,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Primair en Secundair",
-    "modified": 1511177042
+    "modified": 1511178646
 }
