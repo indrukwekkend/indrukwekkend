@@ -3,11 +3,27 @@
     "title": "Pagina Inhoud",
     "fields": [
         {
+            "key": "field_5a129a7191023",
+            "label": "Primair",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
             "key": "field_599c2ad6a3cbb",
-            "label": "Primair Inhoud",
+            "label": "Inhoud voor het grijze deel van de pagina",
             "name": "primary_content",
             "type": "flexible_content",
-            "instructions": "Inhoud voor het grijze deel van de pagina",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -23,6 +39,252 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "key": "field_5a1297263c97c",
+                            "label": "Inhoud",
+                            "name": "",
+                            "type": "tab",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5a02e54b3843c",
+                            "label": "Titel links\/rechts",
+                            "name": "titel_links",
+                            "type": "true_false",
+                            "instructions": "Plaatsing van de titel t.o.v de tekst.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "Links",
+                            "ui_off_text": "Rechts"
+                        },
+                        {
+                            "key": "field_5a129c70e23d0",
+                            "label": "Effect",
+                            "name": "effect",
+                            "type": "select",
+                            "instructions": "Kies het gewenste effect.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "fade": "Vervagen",
+                                "flip": "Omslaan",
+                                "slide": "Inschuiven",
+                                "zoom": "In- en Uitzoomen"
+                            },
+                            "default_value": [],
+                            "allow_null": 1,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5a129c75e23d1",
+                            "label": "Type Vervagen",
+                            "name": "type_fade",
+                            "type": "select",
+                            "instructions": "Kies hier het type effect",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5a129c70e23d0",
+                                        "operator": "==",
+                                        "value": "fade"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "fade": "Vervagen",
+                                "fade-up": "Omhoog",
+                                "fade-down": "Omlaag",
+                                "fade-left": "Links",
+                                "fade-right": "Rechts",
+                                "fade-up-right": "Omhoog Rechts",
+                                "fade-up-left": "Omhoog Links",
+                                "fade-down-right": "Omlaag Rechts",
+                                "fade-down-left": "Omlaag Links"
+                            },
+                            "default_value": [],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5a129ceb536c8",
+                            "label": "Type Omslaan",
+                            "name": "type_flip",
+                            "type": "select",
+                            "instructions": "Kies hier het type effect",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5a129c70e23d0",
+                                        "operator": "==",
+                                        "value": "flip"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "flip-up": "Omhoog",
+                                "flip-down": "Omlaag",
+                                "flip-left": "Links",
+                                "flip-right": "Rechts"
+                            },
+                            "default_value": [
+                                "flip-up"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5a129ce3536c7",
+                            "label": "Type Inschuiven",
+                            "name": "type_slide",
+                            "type": "select",
+                            "instructions": "Kies hier het type effect",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5a129c70e23d0",
+                                        "operator": "==",
+                                        "value": "slide"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "slide-up": "Omhoog",
+                                "slide-down": "Omlaag",
+                                "slide-left": "Links",
+                                "slide-right": "Rechts"
+                            },
+                            "default_value": [
+                                "slide-up"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5a129d04536c9",
+                            "label": "Type Zoomen",
+                            "name": "type_zoom",
+                            "type": "select",
+                            "instructions": "Kies hier het type effect",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5a129c70e23d0",
+                                        "operator": "==",
+                                        "value": "zoom"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "20",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "zoom-in": "Inzoomen",
+                                "zoom-in-up": "Inzoomen Omhoog",
+                                "zoom-in-down": "Inzoomen Omlaag",
+                                "zoom-in-left": "Inzoomen Links",
+                                "zoom-in-right": "Inzoomen Rechts",
+                                "zoom-out": "Uitzoomen",
+                                "zoom-out-up": "Uitzoomen Omhoog",
+                                "zoom-out-down": "Uitzoomen Omlaag",
+                                "zoom-out-left": "Uitzoomen Links",
+                                "zoom-out-right": "Uitzoomen Rechts"
+                            },
+                            "default_value": [
+                                "zoom-in"
+                            ],
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "ui": 1,
+                            "ajax": 0,
+                            "return_format": "value",
+                            "placeholder": ""
+                        },
+                        {
+                            "key": "field_5a12a43e383f9",
+                            "label": "Effect Herhaling",
+                            "name": "effect_once",
+                            "type": "true_false",
+                            "instructions": "Effect herhalen wanneer het in beeld komt",
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5a129c70e23d0",
+                                        "operator": "!=",
+                                        "value": ""
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "26",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 0,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
                             "key": "field_599c2ad6a3cc0",
                             "label": "Titel",
                             "name": "title",
@@ -31,7 +293,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "30",
+                                "width": "100",
                                 "class": "",
                                 "id": ""
                             },
@@ -42,25 +304,6 @@
                             "maxlength": ""
                         },
                         {
-                            "key": "field_5a02e54b3843c",
-                            "label": "Titel links\/rechts",
-                            "name": "titel_links",
-                            "type": "true_false",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "10",
-                                "class": "",
-                                "id": ""
-                            },
-                            "message": "",
-                            "default_value": 0,
-                            "ui": 1,
-                            "ui_on_text": "L.",
-                            "ui_off_text": "R."
-                        },
-                        {
                             "key": "field_599c2ad6a3cc1",
                             "label": "Inhoud",
                             "name": "content",
@@ -69,7 +312,7 @@
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
-                                "width": "60",
+                                "width": "100",
                                 "class": "",
                                 "id": ""
                             },
@@ -80,15 +323,31 @@
                             "new_lines": "wpautop"
                         },
                         {
-                            "key": "field_5a02e6de3843e",
-                            "label": "Extra content toevoegen",
-                            "name": "extra_content_boolean",
-                            "type": "true_false",
+                            "key": "field_5a1299d64bf39",
+                            "label": "Extra Inhoud",
+                            "name": "",
+                            "type": "tab",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "placement": "top",
+                            "endpoint": 0
+                        },
+                        {
+                            "key": "field_5a02e6de3843e",
+                            "label": "Extra Content",
+                            "name": "extra_content_boolean",
+                            "type": "true_false",
+                            "instructions": "Een quote en\/of afbeelding toevoegen.",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "15",
                                 "class": "",
                                 "id": ""
                             },
@@ -100,7 +359,7 @@
                         },
                         {
                             "key": "field_5a02e5db3843d",
-                            "label": "Extra content (afbeelding + Quotes)",
+                            "label": "Extra content",
                             "name": "extra_content",
                             "type": "group",
                             "instructions": "",
@@ -115,12 +374,256 @@
                                 ]
                             ],
                             "wrapper": {
-                                "width": "",
+                                "width": "100",
                                 "class": "",
                                 "id": ""
                             },
                             "layout": "block",
                             "sub_fields": [
+                                {
+                                    "key": "field_5a12aacd2cacb",
+                                    "label": "Afbeelding Effect",
+                                    "name": "image_effect",
+                                    "type": "select",
+                                    "instructions": "Kies het gewenste effect.",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5a02e6de3843e",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "fade": "Vervagen",
+                                        "flip": "Omslaan",
+                                        "slide": "Inschuiven",
+                                        "zoom": "In- en Uitzoomen"
+                                    },
+                                    "default_value": [],
+                                    "allow_null": 1,
+                                    "multiple": 0,
+                                    "ui": 1,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5a12ab122cacc",
+                                    "label": "Type Vervagen",
+                                    "name": "image_type_fade",
+                                    "type": "select",
+                                    "instructions": "Kies hier het type effect",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5a12aacd2cacb",
+                                                "operator": "==",
+                                                "value": "fade"
+                                            },
+                                            {
+                                                "field": "field_5a02e6de3843e",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "fade": "Vervagen",
+                                        "fade-up": "Omhoog",
+                                        "fade-down": "Omlaag",
+                                        "fade-left": "Links",
+                                        "fade-right": "Rechts",
+                                        "fade-up-right": "Omhoog Rechts",
+                                        "fade-up-left": "Omhoog Links",
+                                        "fade-down-right": "Omlaag Rechts",
+                                        "fade-down-left": "Omlaag Links"
+                                    },
+                                    "default_value": [],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 1,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5a12b00a31c9f",
+                                    "label": "Type Omslaan",
+                                    "name": "image_type_flip",
+                                    "type": "select",
+                                    "instructions": "Kies hier het type effect",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5a12aacd2cacb",
+                                                "operator": "==",
+                                                "value": "flip"
+                                            },
+                                            {
+                                                "field": "field_5a02e6de3843e",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "flip-up": "Omhoog",
+                                        "flip-down": "Omlaag",
+                                        "flip-left": "Links",
+                                        "flip-right": "Rechts"
+                                    },
+                                    "default_value": [
+                                        "flip-up"
+                                    ],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 1,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5a12b00d31ca0",
+                                    "label": "Type Inschuiven",
+                                    "name": "image_type_slide",
+                                    "type": "select",
+                                    "instructions": "Kies hier het type effect",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5a12aacd2cacb",
+                                                "operator": "==",
+                                                "value": "slide"
+                                            },
+                                            {
+                                                "field": "field_5a02e6de3843e",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "slide-up": "Omhoog",
+                                        "slide-down": "Omlaag",
+                                        "slide-left": "Links",
+                                        "slide-right": "Rechts"
+                                    },
+                                    "default_value": [
+                                        "slide-up"
+                                    ],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 1,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5a12b01231ca1",
+                                    "label": "Type Zoomen",
+                                    "name": "image_type_zoom",
+                                    "type": "select",
+                                    "instructions": "Kies hier het type effect",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5a12aacd2cacb",
+                                                "operator": "==",
+                                                "value": "zoom"
+                                            },
+                                            {
+                                                "field": "field_5a02e6de3843e",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "zoom-in": "Inzoomen",
+                                        "zoom-in-up": "Inzoomen Omhoog",
+                                        "zoom-in-down": "Inzoomen Omlaag",
+                                        "zoom-in-left": "Inzoomen Links",
+                                        "zoom-in-right": "Inzoomen Rechts",
+                                        "zoom-out": "Uitzoomen",
+                                        "zoom-out-up": "Uitzoomen Omhoog",
+                                        "zoom-out-down": "Uitzoomen Omlaag",
+                                        "zoom-out-left": "Uitzoomen Links",
+                                        "zoom-out-right": "Uitzoomen Rechts"
+                                    },
+                                    "default_value": [
+                                        "zoom-in"
+                                    ],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 1,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5a12b01631ca2",
+                                    "label": "Effect Herhaling",
+                                    "name": "image_effect_once",
+                                    "type": "true_false",
+                                    "instructions": "Effect herhalen wanneer het in beeld komt",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5a12aacd2cacb",
+                                                "operator": "!=",
+                                                "value": ""
+                                            },
+                                            {
+                                                "field": "field_5a02e6de3843e",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "60",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
                                 {
                                     "key": "field_5a02e82038441",
                                     "label": "Afbeelding over volle breedte",
@@ -130,7 +633,7 @@
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
-                                        "width": "10",
+                                        "width": "100",
                                         "class": "",
                                         "id": ""
                                     },
@@ -141,38 +644,6 @@
                                     "ui_off_text": ""
                                 },
                                 {
-                                    "key": "field_5a0c0e7c1d6fb",
-                                    "label": "Parallax effect",
-                                    "name": "parallax_effect",
-                                    "type": "select",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "10",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "choices": {
-                                        "-0.5": "-0.5",
-                                        "0": "0",
-                                        "0.5": "0.5",
-                                        "0.7": "0.7",
-                                        "1": "1",
-                                        "1.5": "1.5",
-                                        "2": "2"
-                                    },
-                                    "default_value": [
-                                        0
-                                    ],
-                                    "allow_null": 0,
-                                    "multiple": 0,
-                                    "ui": 0,
-                                    "ajax": 0,
-                                    "return_format": "value",
-                                    "placeholder": ""
-                                },
-                                {
                                     "key": "field_599c2ad6a3cc2",
                                     "label": "Afbeelding",
                                     "name": "image",
@@ -181,12 +652,12 @@
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
-                                        "width": "30",
+                                        "width": "100",
                                         "class": "",
                                         "id": ""
                                     },
                                     "return_format": "array",
-                                    "preview_size": "thumbnail",
+                                    "preview_size": "medium",
                                     "library": "all",
                                     "min_width": "",
                                     "min_height": "",
@@ -205,7 +676,7 @@
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
-                                        "width": "50",
+                                        "width": "100",
                                         "class": "",
                                         "id": ""
                                     },
@@ -225,6 +696,11 @@
                                     "conditional_logic": [
                                         [
                                             {
+                                                "field": "field_5a02e6de3843e",
+                                                "operator": "==",
+                                                "value": "1"
+                                            },
+                                            {
                                                 "field": "field_5a02e82038441",
                                                 "operator": "!=",
                                                 "value": "1"
@@ -232,7 +708,7 @@
                                         ]
                                     ],
                                     "wrapper": {
-                                        "width": "10",
+                                        "width": "15",
                                         "class": "",
                                         "id": ""
                                     },
@@ -241,6 +717,255 @@
                                     "ui": 1,
                                     "ui_on_text": "Aan",
                                     "ui_off_text": "Uit"
+                                },
+                                {
+                                    "key": "field_5a12b5ddf724f",
+                                    "label": "Quote Effect",
+                                    "name": "quote_effect",
+                                    "type": "select",
+                                    "instructions": "Kies het gewenste effect.",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5a02e78c3843f",
+                                                "operator": "==",
+                                                "value": "1"
+                                            },
+                                            {
+                                                "field": "field_5a02e82038441",
+                                                "operator": "!=",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "fade": "Vervagen",
+                                        "flip": "Omslaan",
+                                        "slide": "Inschuiven",
+                                        "zoom": "In- en Uitzoomen"
+                                    },
+                                    "default_value": [],
+                                    "allow_null": 1,
+                                    "multiple": 0,
+                                    "ui": 1,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5a12b5f5f7250",
+                                    "label": "Type Vervagen",
+                                    "name": "quote_type_fade",
+                                    "type": "select",
+                                    "instructions": "Kies hier het type effect",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5a12b5ddf724f",
+                                                "operator": "==",
+                                                "value": "fade"
+                                            },
+                                            {
+                                                "field": "field_5a02e78c3843f",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "fade": "Vervagen",
+                                        "fade-up": "Omhoog",
+                                        "fade-down": "Omlaag",
+                                        "fade-left": "Links",
+                                        "fade-right": "Rechts",
+                                        "fade-up-right": "Omhoog Rechts",
+                                        "fade-up-left": "Omhoog Links",
+                                        "fade-down-right": "Omlaag Rechts",
+                                        "fade-down-left": "Omlaag Links"
+                                    },
+                                    "default_value": [],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 1,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5a12b5f8f7251",
+                                    "label": "Type Omslaan",
+                                    "name": "quote_type_flip",
+                                    "type": "select",
+                                    "instructions": "Kies hier het type effect",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5a12b5ddf724f",
+                                                "operator": "==",
+                                                "value": "flip"
+                                            },
+                                            {
+                                                "field": "field_5a02e78c3843f",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "flip-up": "Omhoog",
+                                        "flip-down": "Omlaag",
+                                        "flip-left": "Links",
+                                        "flip-right": "Rechts"
+                                    },
+                                    "default_value": [
+                                        "flip-up"
+                                    ],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 1,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5a12b5faf7252",
+                                    "label": "Type Inschuiven",
+                                    "name": "quote_type_slide",
+                                    "type": "select",
+                                    "instructions": "Kies hier het type effect",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5a12b5ddf724f",
+                                                "operator": "==",
+                                                "value": "slide"
+                                            },
+                                            {
+                                                "field": "field_5a02e78c3843f",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "slide-up": "Omhoog",
+                                        "slide-down": "Omlaag",
+                                        "slide-left": "Links",
+                                        "slide-right": "Rechts"
+                                    },
+                                    "default_value": [
+                                        "slide-up"
+                                    ],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 1,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5a12b5fdf7253",
+                                    "label": "Type Zoomen",
+                                    "name": "quote_type_zoom",
+                                    "type": "select",
+                                    "instructions": "Kies hier het type effect",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5a12b5ddf724f",
+                                                "operator": "==",
+                                                "value": "zoom"
+                                            },
+                                            {
+                                                "field": "field_5a02e78c3843f",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "choices": {
+                                        "zoom-in": "Inzoomen",
+                                        "zoom-in-up": "Inzoomen Omhoog",
+                                        "zoom-in-down": "Inzoomen Omlaag",
+                                        "zoom-in-left": "Inzoomen Links",
+                                        "zoom-in-right": "Inzoomen Rechts",
+                                        "zoom-out": "Uitzoomen",
+                                        "zoom-out-up": "Uitzoomen Omhoog",
+                                        "zoom-out-down": "Uitzoomen Omlaag",
+                                        "zoom-out-left": "Uitzoomen Links",
+                                        "zoom-out-right": "Uitzoomen Rechts"
+                                    },
+                                    "default_value": [
+                                        "zoom-in"
+                                    ],
+                                    "allow_null": 0,
+                                    "multiple": 0,
+                                    "ui": 1,
+                                    "ajax": 0,
+                                    "return_format": "value",
+                                    "placeholder": ""
+                                },
+                                {
+                                    "key": "field_5a12b601f7254",
+                                    "label": "Effect Herhaling",
+                                    "name": "quote_effect_once",
+                                    "type": "true_false",
+                                    "instructions": "Effect herhalen wanneer het in beeld komt",
+                                    "required": 0,
+                                    "conditional_logic": [
+                                        [
+                                            {
+                                                "field": "field_5a12b5ddf724f",
+                                                "operator": "!=",
+                                                "value": ""
+                                            },
+                                            {
+                                                "field": "field_5a02e78c3843f",
+                                                "operator": "==",
+                                                "value": "1"
+                                            }
+                                        ]
+                                    ],
+                                    "wrapper": {
+                                        "width": "35",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 0,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
                                 },
                                 {
                                     "key": "field_59a40ac1642c7",
@@ -264,7 +989,7 @@
                                         ]
                                     ],
                                     "wrapper": {
-                                        "width": "60",
+                                        "width": "100",
                                         "class": "",
                                         "id": ""
                                     },
@@ -296,7 +1021,7 @@
                                         ]
                                     ],
                                     "wrapper": {
-                                        "width": "20",
+                                        "width": "100",
                                         "class": "",
                                         "id": ""
                                     },
@@ -675,11 +1400,27 @@
             "max": ""
         },
         {
+            "key": "field_5a129a8791024",
+            "label": "Secondair",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
             "key": "field_599ed35121c53",
-            "label": "Secundair Inhoud",
+            "label": "Inhoud voor het witte deel van de pagina",
             "name": "secondary_content",
             "type": "flexible_content",
-            "instructions": "Inhoud voor het witte deel van de pagina",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -1535,5 +2276,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Primair en Secundair",
-    "modified": 1510741342
+    "modified": 1511177042
 }
