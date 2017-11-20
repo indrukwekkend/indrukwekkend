@@ -72,7 +72,11 @@
 			<?php while( have_rows('secondary_content') ): the_row(); ?>
 
 					<?php // Title left ?>
-					<?php if( get_row_layout() == 'content_left' ): ?>
+					<?php if( get_row_layout() == 'section_content' ): ?>
+						<?php get_template_part('templates/parts/section', 'content'); ?>
+
+					<?php // Title left ?>
+					<?php elseif( get_row_layout() == 'content_left' ): ?>
 						<?php get_template_part('templates/parts/content', 'left'); ?>
 
 					<?php // Title right ?>

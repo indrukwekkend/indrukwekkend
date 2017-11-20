@@ -7,7 +7,6 @@
             "label": "Begeleidende Afbeelding",
             "name": "featured_image",
             "type": "image",
-            "value": null,
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -26,6 +25,52 @@
             "max_height": "",
             "max_size": "",
             "mime_types": ""
+        },
+        {
+            "key": "field_5a02e0f776f8a",
+            "label": "Naast tekst",
+            "name": "afbeelding_naast_tekst",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        },
+        {
+            "key": "field_5a02e14a76f8b",
+            "label": "afbeelding links",
+            "name": "afbeelding_links",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": [
+                [
+                    {
+                        "field": "field_5a02e0f776f8a",
+                        "operator": "==",
+                        "value": "1"
+                    }
+                ]
+            ],
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
         }
     ],
     "location": [
@@ -45,5 +90,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Uitgelichte afbeelding in Cases",
-    "modified": 1508162610
+    "modified": 1511186605
 }

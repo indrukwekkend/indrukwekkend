@@ -43,7 +43,7 @@
             ],
             "elements": "",
             "min": "",
-            "max": 4,
+            "max": "",
             "return_format": "object"
         }
     ],
@@ -71,5 +71,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Keuze lijst van Cases",
-    "modified": 1508161760
+    "modified": 1511186631
 }
