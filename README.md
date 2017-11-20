@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/newfishdev/indrukwekkend.svg?branch=master)](https://travis-ci.org/newfishdev/indrukwekkend)
-[![Dependency Status](https://img.shields.io/david/newfishdev/indrukwekkend.svg)](https://david-dm.org/newfishdev/indrukwekkend#info=Dependencies)
+[![devDependencies Status](https://david-dm.org/newfishdev/indrukwekkend/dev-status.svg)](https://david-dm.org/newfishdev/indrukwekkend?type=dev)
 
 # Indrukwekkend Theme
 
