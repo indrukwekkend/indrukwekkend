@@ -74,15 +74,11 @@ $header_video = function(){
 
 					<div class="buttons mb-5 mt-4 mb-xl-6">
 
-						<?php if (is_page( 'over-ons' )): ?>
-								<a class="btn btn-lg btn-primary btn-arrow arrow-down mr-2" href="#intro">
-									Leer ons beter kennen</a>
-							
-							<?php elseif (is_page( 'contact' )): ?>
+							<?php if (is_page( 'contact' )): ?>
 								<a class="btn btn-lg btn-primary btn-arrow arrow-right mr-2" href="https://www.google.com/maps/dir/Current+Location/Indrukwekkend,+De+Droogmakerij+20f,+1851+LX+Heiloo" target="_blank">
 									Google de route</a>
 							
-							<?php elseif (is_home() || is_front_page(  )): ?>
+							<?php elseif (is_home() || is_front_page()): ?>
 								<a class="btn btn-lg btn-primary btn-arrow arrow-right mr-2" href="/over-ons">
 									Leer ons kennen	</a>
 								<a class="btn btn-lg btn-black" href="#cases">
@@ -127,15 +123,11 @@ $header_video = function(){
 
 				<div class="buttons mb-5 mt-4 mb-xl-6">
 
-					<?php if (is_page( 'over-ons' )): ?>
-							<a class="btn btn-lg btn-primary btn-arrow arrow-down mr-2" href="#intro">
-								Leer ons beter kennen</a>
-						
-						<?php elseif (is_page( 'contact' )): ?>
+						<?php if (is_page( 'contact' )): ?>
 							<a class="btn btn-lg btn-primary btn-arrow arrow-right mr-2" href="https://www.google.com/maps/dir/Current+Location/Indrukwekkend,+De+Droogmakerij+20f,+1851+LX+Heiloo" target="_blank">
 								Google de route</a>
 						
-						<?php elseif (is_home() || is_front_page(  )): ?>
+						<?php elseif (is_home() || is_front_page()): ?>
 							<a class="btn btn-lg btn-primary btn-arrow arrow-right mr-2" href="/over-ons">
 								Leer ons kennen	</a>
 							<a class="btn btn-lg btn-black" href="#cases">
