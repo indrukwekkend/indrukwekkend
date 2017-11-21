@@ -28,12 +28,17 @@ $header_video = function(){
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="container navigation">
-			
-				<div class="row">
-					<div class="col-12 col-lg-4">
+
+				<div class="row align-items-center align-items-lg-start">
+
+					<div class="col-10 col-lg-4">
 						<a class="brand" href="<?= esc_url(home_url('/')); ?>">
 							<div class="brand-logo"></div>
 						</a>
+					</div>
+
+					<div class="col-2 d-lg-none text-center">
+						<a href="#modal-login" class="h5" ><i class="fa fa-lock"></i></a>
 					</div>
 
 					<div class="col-12 col-lg-8 d-none d-lg-block">
