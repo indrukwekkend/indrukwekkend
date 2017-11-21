@@ -15,6 +15,10 @@
 				<?php if( get_row_layout() == 'heading_right' ): ?>
 					<?php get_template_part('templates/parts/section', 'content'); ?>
 
+				<?php // Section Content ?>
+				<?php elseif( get_row_layout() == 'section_content' ): ?>
+					<?php get_template_part('templates/parts/section', 'content'); ?>
+
 				<?php // Gallerij Links ?>
 				<?php elseif( get_row_layout() == 'heading_gallery_left' ): ?>
 					<?php get_template_part('templates/parts/heading', 'gallery-left'); ?>

@@ -8,8 +8,12 @@
 		<div class="container pt-6">
 			<?php while( have_rows('primary_content') ): the_row(); ?>
 
-					<?php // Section Content ?>
+					<?php // OLD Section Content ?>
 					<?php if( get_row_layout() == 'heading_right' ): ?>
+						<?php get_template_part('templates/parts/section', 'content'); ?>
+
+					<?php // Section Content ?>
+					<?php elseif( get_row_layout() == 'section_content' ): ?>
 						<?php get_template_part('templates/parts/section', 'content'); ?>
 
 					<?php // Gallerij Links ?>
@@ -45,6 +49,10 @@
 
 					<?php // Section Content ?>
 					<?php if( get_row_layout() == 'heading_right' ): ?>
+						<?php get_template_part('templates/parts/section', 'content'); ?>
+
+					<?php // Section Content ?>
+					<?php elseif( get_row_layout() == 'section_content' ): ?>
 						<?php get_template_part('templates/parts/section', 'content'); ?>
 
 					<?php // Gallerij Links ?>
