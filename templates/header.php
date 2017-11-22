@@ -166,5 +166,4 @@ $header_video = function(){
 			</div>
 		</div>
 	</div>
-
 </header>
