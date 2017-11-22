@@ -155,9 +155,12 @@ $header_video = function(){
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 						<span aria-hidden="true">&times;</span>
 					</button>
+					
+					
+					
 				</div>
 				<div class="modal-body">
-					<a href="http://bestel.indrukwekkend.nl/" class="btn btn-sm btn-primary" data-dismiss="modal">Webshop</a>
+					<a href="https://bestel.indrukwekkend.nl/account/login" class="btn btn-sm btn-primary">Webshop</a>
 					<a href="http://overdracht.indrukwekkend.nl/" class="btn btn-sm btn-primary">Dataverkeer</a>
 				</div>
 			</div>

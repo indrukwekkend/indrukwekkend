@@ -32,14 +32,14 @@
                 "id": ""
             },
             "layouts": {
-                "5988727150a63": {
-                    "key": "5988727150a63",
-                    "name": "heading_right",
+                "5a140503ace46": {
+                    "key": "5a140503ace46",
+                    "name": "section_content",
                     "label": "Content Met Opties",
                     "display": "block",
                     "sub_fields": [
                         {
-                            "key": "field_5a1297263c97c",
+                            "key": "field_5a14051cace47",
                             "label": "Inhoud",
                             "name": "",
                             "type": "tab",
@@ -55,7 +55,7 @@
                             "endpoint": 0
                         },
                         {
-                            "key": "field_5a02e54b3843c",
+                            "key": "field_5a140524ace48",
                             "label": "Titel links\/rechts",
                             "name": "titel_links",
                             "type": "true_false",
@@ -74,7 +74,7 @@
                             "ui_off_text": "Rechts"
                         },
                         {
-                            "key": "field_5a129c70e23d0",
+                            "key": "field_5a14052cace49",
                             "label": "Effect",
                             "name": "effect",
                             "type": "select",
@@ -101,7 +101,7 @@
                             "placeholder": ""
                         },
                         {
-                            "key": "field_5a129c75e23d1",
+                            "key": "field_5a140534ace4a",
                             "label": "Type Vervagen",
                             "name": "type_fade",
                             "type": "select",
@@ -110,7 +110,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5a129c70e23d0",
+                                        "field": "field_5a14052cace49",
                                         "operator": "==",
                                         "value": "fade"
                                     }
@@ -141,7 +141,7 @@
                             "placeholder": ""
                         },
                         {
-                            "key": "field_5a129ceb536c8",
+                            "key": "field_5a14056b81931",
                             "label": "Type Omslaan",
                             "name": "type_flip",
                             "type": "select",
@@ -150,7 +150,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5a129c70e23d0",
+                                        "field": "field_5a14052cace49",
                                         "operator": "==",
                                         "value": "flip"
                                     }
@@ -178,7 +178,7 @@
                             "placeholder": ""
                         },
                         {
-                            "key": "field_5a129ce3536c7",
+                            "key": "field_5a14056d81932",
                             "label": "Type Inschuiven",
                             "name": "type_slide",
                             "type": "select",
@@ -187,7 +187,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5a129c70e23d0",
+                                        "field": "field_5a14052cace49",
                                         "operator": "==",
                                         "value": "slide"
                                     }
@@ -215,16 +215,16 @@
                             "placeholder": ""
                         },
                         {
-                            "key": "field_5a129d04536c9",
+                            "key": "field_5a14056f81933",
                             "label": "Type Zoomen",
-                            "name": "type_zoom",
+                            "name": "type_zoom_",
                             "type": "select",
                             "instructions": "Kies hier het type effect",
                             "required": 0,
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5a129c70e23d0",
+                                        "field": "field_5a14052cace49",
                                         "operator": "==",
                                         "value": "zoom"
                                     }
@@ -258,7 +258,7 @@
                             "placeholder": ""
                         },
                         {
-                            "key": "field_5a12a43e383f9",
+                            "key": "field_5a14057181934",
                             "label": "Effect Herhaling",
                             "name": "effect_once",
                             "type": "true_false",
@@ -267,7 +267,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5a129c70e23d0",
+                                        "field": "field_5a14052cace49",
                                         "operator": "!=",
                                         "value": ""
                                     }
@@ -285,7 +285,7 @@
                             "ui_off_text": ""
                         },
                         {
-                            "key": "field_599c2ad6a3cc0",
+                            "key": "field_5a14057481935",
                             "label": "Titel",
                             "name": "title",
                             "type": "text",
@@ -304,7 +304,7 @@
                             "maxlength": 60
                         },
                         {
-                            "key": "field_599c2ad6a3cc1",
+                            "key": "field_5a14057781936",
                             "label": "Inhoud",
                             "name": "content",
                             "type": "textarea",
@@ -323,7 +323,7 @@
                             "new_lines": "wpautop"
                         },
                         {
-                            "key": "field_5a1299d64bf39",
+                            "key": "field_5a1405b681937",
                             "label": "Extra Inhoud",
                             "name": "",
                             "type": "tab",
@@ -339,7 +339,7 @@
                             "endpoint": 0
                         },
                         {
-                            "key": "field_5a02e6de3843e",
+                            "key": "field_5a1405bd81938",
                             "label": "Extra Content",
                             "name": "extra_content_boolean",
                             "type": "true_false",
@@ -358,7 +358,7 @@
                             "ui_off_text": ""
                         },
                         {
-                            "key": "field_5a02e5db3843d",
+                            "key": "field_5a1405c581939",
                             "label": "Extra content",
                             "name": "extra_content",
                             "type": "group",
@@ -367,7 +367,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5a02e6de3843e",
+                                        "field": "field_5a1405bd81938",
                                         "operator": "==",
                                         "value": "1"
                                     }
@@ -381,7 +381,26 @@
                             "layout": "block",
                             "sub_fields": [
                                 {
-                                    "key": "field_5a12aacd2cacb",
+                                    "key": "field_5a1405c581940",
+                                    "label": "Afbeelding over volle breedte",
+                                    "name": "afbeelding_over_volle_breedte",
+                                    "type": "true_false",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "20",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "message": "",
+                                    "default_value": 0,
+                                    "ui": 1,
+                                    "ui_on_text": "",
+                                    "ui_off_text": ""
+                                },
+                                {
+                                    "key": "field_5a1405c58193a",
                                     "label": "Afbeelding Effect",
                                     "name": "image_effect",
                                     "type": "select",
@@ -390,7 +409,7 @@
                                     "conditional_logic": [
                                         [
                                             {
-                                                "field": "field_5a02e6de3843e",
+                                                "field": "field_5a1405bd81938",
                                                 "operator": "==",
                                                 "value": "1"
                                             }
@@ -416,7 +435,7 @@
                                     "placeholder": ""
                                 },
                                 {
-                                    "key": "field_5a12ab122cacc",
+                                    "key": "field_5a1405c58193b",
                                     "label": "Type Vervagen",
                                     "name": "image_type_fade",
                                     "type": "select",
@@ -425,14 +444,9 @@
                                     "conditional_logic": [
                                         [
                                             {
-                                                "field": "field_5a12aacd2cacb",
+                                                "field": "field_5a1405c58193a",
                                                 "operator": "==",
                                                 "value": "fade"
-                                            },
-                                            {
-                                                "field": "field_5a02e6de3843e",
-                                                "operator": "==",
-                                                "value": "1"
                                             }
                                         ]
                                     ],
@@ -461,7 +475,7 @@
                                     "placeholder": ""
                                 },
                                 {
-                                    "key": "field_5a12b00a31c9f",
+                                    "key": "field_5a1405c58193c",
                                     "label": "Type Omslaan",
                                     "name": "image_type_flip",
                                     "type": "select",
@@ -470,14 +484,9 @@
                                     "conditional_logic": [
                                         [
                                             {
-                                                "field": "field_5a12aacd2cacb",
+                                                "field": "field_5a1405c58193a",
                                                 "operator": "==",
                                                 "value": "flip"
-                                            },
-                                            {
-                                                "field": "field_5a02e6de3843e",
-                                                "operator": "==",
-                                                "value": "1"
                                             }
                                         ]
                                     ],
@@ -503,7 +512,7 @@
                                     "placeholder": ""
                                 },
                                 {
-                                    "key": "field_5a12b00d31ca0",
+                                    "key": "field_5a1405c58193d",
                                     "label": "Type Inschuiven",
                                     "name": "image_type_slide",
                                     "type": "select",
@@ -512,14 +521,9 @@
                                     "conditional_logic": [
                                         [
                                             {
-                                                "field": "field_5a12aacd2cacb",
+                                                "field": "field_5a1405c58193a",
                                                 "operator": "==",
                                                 "value": "slide"
-                                            },
-                                            {
-                                                "field": "field_5a02e6de3843e",
-                                                "operator": "==",
-                                                "value": "1"
                                             }
                                         ]
                                     ],
@@ -545,7 +549,7 @@
                                     "placeholder": ""
                                 },
                                 {
-                                    "key": "field_5a12b01231ca1",
+                                    "key": "field_5a1405c58193e",
                                     "label": "Type Zoomen",
                                     "name": "image_type_zoom",
                                     "type": "select",
@@ -554,14 +558,9 @@
                                     "conditional_logic": [
                                         [
                                             {
-                                                "field": "field_5a12aacd2cacb",
+                                                "field": "field_5a1405c58193a",
                                                 "operator": "==",
                                                 "value": "zoom"
-                                            },
-                                            {
-                                                "field": "field_5a02e6de3843e",
-                                                "operator": "==",
-                                                "value": "1"
                                             }
                                         ]
                                     ],
@@ -593,7 +592,7 @@
                                     "placeholder": ""
                                 },
                                 {
-                                    "key": "field_5a12b01631ca2",
+                                    "key": "field_5a1405c58193f",
                                     "label": "Effect Herhaling",
                                     "name": "image_effect_once",
                                     "type": "true_false",
@@ -602,19 +601,14 @@
                                     "conditional_logic": [
                                         [
                                             {
-                                                "field": "field_5a12aacd2cacb",
+                                                "field": "field_5a1405c58193a",
                                                 "operator": "!=",
                                                 "value": ""
-                                            },
-                                            {
-                                                "field": "field_5a02e6de3843e",
-                                                "operator": "==",
-                                                "value": "1"
                                             }
                                         ]
                                     ],
                                     "wrapper": {
-                                        "width": "60",
+                                        "width": "40",
                                         "class": "",
                                         "id": ""
                                     },
@@ -625,26 +619,7 @@
                                     "ui_off_text": ""
                                 },
                                 {
-                                    "key": "field_5a02e82038441",
-                                    "label": "Afbeelding over volle breedte",
-                                    "name": "afbeelding_over_volle_breedte",
-                                    "type": "true_false",
-                                    "instructions": "",
-                                    "required": 0,
-                                    "conditional_logic": 0,
-                                    "wrapper": {
-                                        "width": "100",
-                                        "class": "",
-                                        "id": ""
-                                    },
-                                    "message": "",
-                                    "default_value": 0,
-                                    "ui": 1,
-                                    "ui_on_text": "",
-                                    "ui_off_text": ""
-                                },
-                                {
-                                    "key": "field_599c2ad6a3cc2",
+                                    "key": "field_5a1405c581941",
                                     "label": "Afbeelding",
                                     "name": "image",
                                     "type": "image",
@@ -668,7 +643,7 @@
                                     "mime_types": ""
                                 },
                                 {
-                                    "key": "field_5a02e78c3843f",
+                                    "key": "field_5a1405c581942",
                                     "label": "Quote aan of uit",
                                     "name": "quote_boolean",
                                     "type": "true_false",
@@ -677,12 +652,12 @@
                                     "conditional_logic": [
                                         [
                                             {
-                                                "field": "field_5a02e6de3843e",
+                                                "field": "field_5a1405bd81938",
                                                 "operator": "==",
                                                 "value": "1"
                                             },
                                             {
-                                                "field": "field_5a02e82038441",
+                                                "field": "field_5a1405c581940",
                                                 "operator": "!=",
                                                 "value": "1"
                                             }
@@ -700,7 +675,7 @@
                                     "ui_off_text": "Uit"
                                 },
                                 {
-                                    "key": "field_5a12b5ddf724f",
+                                    "key": "field_5a1405c581943",
                                     "label": "Quote Effect",
                                     "name": "quote_effect",
                                     "type": "select",
@@ -709,12 +684,12 @@
                                     "conditional_logic": [
                                         [
                                             {
-                                                "field": "field_5a02e78c3843f",
+                                                "field": "field_5a1405c581942",
                                                 "operator": "==",
                                                 "value": "1"
                                             },
                                             {
-                                                "field": "field_5a02e82038441",
+                                                "field": "field_5a1405c581940",
                                                 "operator": "!=",
                                                 "value": "1"
                                             }
@@ -740,7 +715,7 @@
                                     "placeholder": ""
                                 },
                                 {
-                                    "key": "field_5a12b5f5f7250",
+                                    "key": "field_5a1405c581944",
                                     "label": "Type Vervagen",
                                     "name": "quote_type_fade",
                                     "type": "select",
@@ -749,17 +724,17 @@
                                     "conditional_logic": [
                                         [
                                             {
-                                                "field": "field_5a12b5ddf724f",
+                                                "field": "field_5a1405c581943",
                                                 "operator": "==",
                                                 "value": "fade"
                                             },
                                             {
-                                                "field": "field_5a02e78c3843f",
+                                                "field": "field_5a1405c581942",
                                                 "operator": "==",
                                                 "value": "1"
                                             },
                                             {
-                                                "field": "field_5a02e82038441",
+                                                "field": "field_5a1405c581940",
                                                 "operator": "!=",
                                                 "value": "1"
                                             }
@@ -790,7 +765,7 @@
                                     "placeholder": ""
                                 },
                                 {
-                                    "key": "field_5a12b5f8f7251",
+                                    "key": "field_5a1405c581945",
                                     "label": "Type Omslaan",
                                     "name": "quote_type_flip",
                                     "type": "select",
@@ -799,17 +774,17 @@
                                     "conditional_logic": [
                                         [
                                             {
-                                                "field": "field_5a12b5ddf724f",
+                                                "field": "field_5a1405c581943",
                                                 "operator": "==",
                                                 "value": "flip"
                                             },
                                             {
-                                                "field": "field_5a02e78c3843f",
+                                                "field": "field_5a1405c581942",
                                                 "operator": "==",
                                                 "value": "1"
                                             },
                                             {
-                                                "field": "field_5a02e82038441",
+                                                "field": "field_5a1405c581940",
                                                 "operator": "!=",
                                                 "value": "1"
                                             }
@@ -837,7 +812,7 @@
                                     "placeholder": ""
                                 },
                                 {
-                                    "key": "field_5a12b5faf7252",
+                                    "key": "field_5a1405c581946",
                                     "label": "Type Inschuiven",
                                     "name": "quote_type_slide",
                                     "type": "select",
@@ -846,17 +821,17 @@
                                     "conditional_logic": [
                                         [
                                             {
-                                                "field": "field_5a12b5ddf724f",
+                                                "field": "field_5a1405c581943",
                                                 "operator": "==",
                                                 "value": "slide"
                                             },
                                             {
-                                                "field": "field_5a02e78c3843f",
+                                                "field": "field_5a1405c581942",
                                                 "operator": "==",
                                                 "value": "1"
                                             },
                                             {
-                                                "field": "field_5a02e82038441",
+                                                "field": "field_5a1405c581940",
                                                 "operator": "!=",
                                                 "value": "1"
                                             }
@@ -884,7 +859,7 @@
                                     "placeholder": ""
                                 },
                                 {
-                                    "key": "field_5a12b5fdf7253",
+                                    "key": "field_5a1405c581947",
                                     "label": "Type Zoomen",
                                     "name": "quote_type_zoom",
                                     "type": "select",
@@ -893,17 +868,17 @@
                                     "conditional_logic": [
                                         [
                                             {
-                                                "field": "field_5a12b5ddf724f",
+                                                "field": "field_5a1405c581943",
                                                 "operator": "==",
                                                 "value": "zoom"
                                             },
                                             {
-                                                "field": "field_5a02e78c3843f",
+                                                "field": "field_5a1405c581942",
                                                 "operator": "==",
                                                 "value": "1"
                                             },
                                             {
-                                                "field": "field_5a02e82038441",
+                                                "field": "field_5a1405c581940",
                                                 "operator": "!=",
                                                 "value": "1"
                                             }
@@ -937,7 +912,7 @@
                                     "placeholder": ""
                                 },
                                 {
-                                    "key": "field_5a12b601f7254",
+                                    "key": "field_5a1405c581948",
                                     "label": "Effect Herhaling",
                                     "name": "quote_effect_once",
                                     "type": "true_false",
@@ -946,17 +921,17 @@
                                     "conditional_logic": [
                                         [
                                             {
-                                                "field": "field_5a12b5ddf724f",
+                                                "field": "field_5a1405c581943",
                                                 "operator": "!=",
                                                 "value": ""
                                             },
                                             {
-                                                "field": "field_5a02e78c3843f",
+                                                "field": "field_5a1405c581942",
                                                 "operator": "==",
                                                 "value": "1"
                                             },
                                             {
-                                                "field": "field_5a02e82038441",
+                                                "field": "field_5a1405c581940",
                                                 "operator": "!=",
                                                 "value": "1"
                                             }
@@ -974,7 +949,7 @@
                                     "ui_off_text": ""
                                 },
                                 {
-                                    "key": "field_59a40ac1642c7",
+                                    "key": "field_5a1405c581949",
                                     "label": "Quote",
                                     "name": "quote",
                                     "type": "textarea",
@@ -983,12 +958,12 @@
                                     "conditional_logic": [
                                         [
                                             {
-                                                "field": "field_5a02e78c3843f",
+                                                "field": "field_5a1405c581942",
                                                 "operator": "==",
                                                 "value": "1"
                                             },
                                             {
-                                                "field": "field_5a02e82038441",
+                                                "field": "field_5a1405c581940",
                                                 "operator": "!=",
                                                 "value": "1"
                                             }
@@ -1006,7 +981,7 @@
                                     "new_lines": "wpautop"
                                 },
                                 {
-                                    "key": "field_59a40ada642c8",
+                                    "key": "field_5a1405c58194a",
                                     "label": "Auteur",
                                     "name": "author",
                                     "type": "post_object",
@@ -1015,12 +990,12 @@
                                     "conditional_logic": [
                                         [
                                             {
-                                                "field": "field_5a02e82038441",
+                                                "field": "field_5a1405c581940",
                                                 "operator": "!=",
                                                 "value": "1"
                                             },
                                             {
-                                                "field": "field_5a02e78c3843f",
+                                                "field": "field_5a1405c581942",
                                                 "operator": "==",
                                                 "value": "1"
                                             }
@@ -1091,25 +1066,6 @@
                             "ui_off_text": "R."
                         },
                         {
-                            "key": "field_5a12d0ee4ea77",
-                            "label": "Titel (copy)",
-                            "name": "title_copy",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "100",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": 60
-                        },
-                        {
                             "key": "field_599c2ad6a3cca",
                             "label": "Inhoud",
                             "name": "content",
@@ -1172,6 +1128,25 @@
                                     "mime_types": ""
                                 }
                             ]
+                        },
+                        {
+                            "key": "field_5a12d0ee4ea77",
+                            "label": "Titel (copy)",
+                            "name": "title_copy",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "100",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": 60
                         }
                     ],
                     "min": "",
@@ -2443,492 +2418,6 @@
                     "min": "",
                     "max": ""
                 },
-                "599ed308fcc36": {
-                    "key": "599ed308fcc36",
-                    "name": "content_left",
-                    "label": "Tekst Links",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_599ed35121c54",
-                            "label": "Titel",
-                            "name": "title",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "30",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_599ed35121c55",
-                            "label": "Inhoud",
-                            "name": "content",
-                            "type": "textarea",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "70",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "maxlength": "",
-                            "rows": "",
-                            "new_lines": "wpautop"
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "599ed31afcc3b": {
-                    "key": "599ed31afcc3b",
-                    "name": "content_right",
-                    "label": "Tekst Rechts",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_599ed35121c57",
-                            "label": "Inhoud",
-                            "name": "content",
-                            "type": "textarea",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "70",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "maxlength": "",
-                            "rows": "",
-                            "new_lines": "wpautop"
-                        },
-                        {
-                            "key": "field_599ed35121c56",
-                            "label": "Titel",
-                            "name": "title",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "30",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "598861bb7b9de": {
-                    "key": "598861bb7b9de",
-                    "name": "heading_left",
-                    "label": "Afbeelding Links",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_599ed35121c58",
-                            "label": "Titel",
-                            "name": "title",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "30",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_599ed35121c59",
-                            "label": "Inhoud",
-                            "name": "content",
-                            "type": "textarea",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "70",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "maxlength": "",
-                            "rows": "",
-                            "new_lines": "wpautop"
-                        },
-                        {
-                            "key": "field_599ed35121c5a",
-                            "label": "Afbeelding",
-                            "name": "image",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "30",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array",
-                            "preview_size": "thumbnail",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": 600,
-                            "max_height": 700,
-                            "max_size": "",
-                            "mime_types": "jpg,png"
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "5988727150a63": {
-                    "key": "5988727150a63",
-                    "name": "heading_right",
-                    "label": "Afbeelding Rechts",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_599ed35121c5c",
-                            "label": "Inhoud",
-                            "name": "content",
-                            "type": "textarea",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "70",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "maxlength": "",
-                            "rows": "",
-                            "new_lines": "wpautop"
-                        },
-                        {
-                            "key": "field_599ed35121c5d",
-                            "label": "Titel",
-                            "name": "title",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "30",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_599ed35121c5f",
-                            "label": "Afbeelding",
-                            "name": "image",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "30",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array",
-                            "preview_size": "thumbnail",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": 600,
-                            "max_height": 700,
-                            "max_size": "",
-                            "mime_types": "jpg,png"
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "59897888626d8": {
-                    "key": "59897888626d8",
-                    "name": "heading_full_left",
-                    "label": "Afbeelding Volledig Links",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_599ed35121c60",
-                            "label": "Titel",
-                            "name": "title",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "30",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_599ed35121c61",
-                            "label": "Inhoud",
-                            "name": "content",
-                            "type": "textarea",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "70",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "maxlength": "",
-                            "rows": "",
-                            "new_lines": "wpautop"
-                        },
-                        {
-                            "key": "field_599ed35121c62",
-                            "label": "Afbeelding",
-                            "name": "image",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "60",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array",
-                            "preview_size": "thumbnail",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": 750,
-                            "max_height": 550,
-                            "max_size": "",
-                            "mime_types": "jpg,png"
-                        },
-                        {
-                            "key": "field_599ed35121c63",
-                            "label": "Volledige breedte",
-                            "name": "fullwidth",
-                            "type": "true_false",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "20",
-                                "class": "",
-                                "id": ""
-                            },
-                            "message": "",
-                            "default_value": 1,
-                            "ui": 1,
-                            "ui_on_text": "Aan",
-                            "ui_off_text": "Uit"
-                        },
-                        {
-                            "key": "field_599ed35121c64",
-                            "label": "Uitlijning",
-                            "name": "alignment",
-                            "type": "radio",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_599ed35121c63",
-                                        "operator": "!=",
-                                        "value": "1"
-                                    }
-                                ]
-                            ],
-                            "wrapper": {
-                                "width": "20",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "left": "Links",
-                                "right": "Rechts"
-                            },
-                            "allow_null": 0,
-                            "other_choice": 0,
-                            "save_other_choice": 0,
-                            "default_value": "",
-                            "layout": "horizontal",
-                            "return_format": "value"
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
-                "599d6391b1ecf": {
-                    "key": "599d6391b1ecf",
-                    "name": "heading_full_right",
-                    "label": "Afbeelding Volledig Rechts",
-                    "display": "block",
-                    "sub_fields": [
-                        {
-                            "key": "field_599ed35121c65",
-                            "label": "Inhoud",
-                            "name": "content",
-                            "type": "textarea",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "70",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "maxlength": "",
-                            "rows": "",
-                            "new_lines": "wpautop"
-                        },
-                        {
-                            "key": "field_599ed35121c66",
-                            "label": "Titel",
-                            "name": "title",
-                            "type": "text",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "30",
-                                "class": "",
-                                "id": ""
-                            },
-                            "default_value": "",
-                            "placeholder": "",
-                            "prepend": "",
-                            "append": "",
-                            "maxlength": ""
-                        },
-                        {
-                            "key": "field_599ed35121c67",
-                            "label": "Afbeelding",
-                            "name": "image",
-                            "type": "image",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "60",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "url",
-                            "preview_size": "thumbnail",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": 750,
-                            "max_height": 550,
-                            "max_size": "",
-                            "mime_types": "jpg,png"
-                        },
-                        {
-                            "key": "field_599ed35121c68",
-                            "label": "Volledige breedte",
-                            "name": "fullwidth",
-                            "type": "true_false",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "20",
-                                "class": "",
-                                "id": ""
-                            },
-                            "message": "",
-                            "default_value": 1,
-                            "ui": 1,
-                            "ui_on_text": "Aan",
-                            "ui_off_text": "Uit"
-                        },
-                        {
-                            "key": "field_599ed35121c69",
-                            "label": "Uitlijning",
-                            "name": "alignment",
-                            "type": "radio",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": [
-                                [
-                                    {
-                                        "field": "field_599ed35121c68",
-                                        "operator": "!=",
-                                        "value": "1"
-                                    }
-                                ]
-                            ],
-                            "wrapper": {
-                                "width": "20",
-                                "class": "",
-                                "id": ""
-                            },
-                            "choices": {
-                                "left": "Links",
-                                "right": "Rechts"
-                            },
-                            "allow_null": 0,
-                            "other_choice": 0,
-                            "save_other_choice": 0,
-                            "default_value": "",
-                            "layout": "horizontal",
-                            "return_format": "value"
-                        }
-                    ],
-                    "min": "",
-                    "max": ""
-                },
                 "5996a6bb29afe": {
                     "key": "5996a6bb29afe",
                     "name": "heading_gallery_left",
@@ -3282,7 +2771,7 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 11,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -3290,5 +2779,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Inhoud van de pagina",
-    "modified": 1511186805
+    "modified": 1511272355
 }

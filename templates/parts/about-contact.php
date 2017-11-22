@@ -7,10 +7,10 @@
 
 							<div class="row mb-4 mt-4 align-items-center">
 								<div class="col-12 col-md-6 text-center text-md-right border-right">
-									<h4>Hebben we<br> je kunnen<br> overtuigen?</h4>
+									<h4>Toe aan een beetje nieuwe energie?</h4>
 								</div>
 								<div class="col-12 col-md-6 text-center text-md-left">
-									<h5 class="mb-4">Of kom je eerst langs?</h5>
+									<h5 class="mb-4">Wij geven het graag!</h5>
 									<p>Je kan ons bereiken op <a href="tel:072–5625482" class="text-nowrap">072 – 562 54 82</a></p>
 									<p>Mailen mag ook: <a href="mailto:info@indrukwekkend.nl">info@indrukwekkend.nl</a></p>
 							</div>
