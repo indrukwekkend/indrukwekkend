@@ -35,7 +35,7 @@ $coworkers_title = (is_page_template('template-about.php')) ? "Maak kennis met h
 									</div>
 									<div class="coworkers-contact">
 
-										<?php if(get_field('mobile')):?>
+										<?php if( !empty( get_field('mobile') ) ): ?>
 										<div class="coworkers-phone">
 											<div class="mb-2 px-4">
 												<span class="icon smartphone d-none d-sm-inline-block"></span>
@@ -44,7 +44,7 @@ $coworkers_title = (is_page_template('template-about.php')) ? "Maak kennis met h
 										</div>
 										<?php endif; ?>
 
-										<?php if(get_field('mobile')):?>
+										<?php if( !empty( get_field('email') ) ): ?>
 										<div class="coworkers-email">
 											<div class="mb-2 px-4">
 												<span class="icon mail d-none d-sm-inline-block"></span>
