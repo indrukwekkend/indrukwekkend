@@ -13,6 +13,10 @@
 					<?php if( get_row_layout() == 'section_content' ): ?>
 						<?php get_template_part('templates/parts/section', 'content'); ?>
 
+					<?php // Section Gallerij ?>
+					<?php elseif( get_row_layout() == 'heading_gallery_left' ): ?>
+						<?php get_template_part('templates/parts/section', 'gallery'); ?>
+
 					<?php // Gallerij Links ?>
 					<?php elseif( get_row_layout() == 'heading_gallery_left' ): ?>
 						<?php get_template_part('templates/parts/heading', 'gallery-left'); ?>
@@ -42,6 +46,10 @@
 					<?php // Section Content ?>
 					<?php if( get_row_layout() == 'section_content' ): ?>
 						<?php get_template_part('templates/parts/section', 'content'); ?>
+
+					<?php // Section Gallerij ?>
+					<?php elseif( get_row_layout() == 'heading_gallery_left' ): ?>
+						<?php get_template_part('templates/parts/section', 'gallery'); ?>
 
 					<?php // Gallerij Links ?>
 					<?php elseif( get_row_layout() == 'heading_gallery_left' ): ?>
