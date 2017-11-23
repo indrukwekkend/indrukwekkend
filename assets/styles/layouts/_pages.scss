@@ -1067,10 +1067,6 @@
 @include media-breakpoint-down(md){
 
 .part-gallery{
-	
-		//height: 300px;
-		//padding: 20px;
-		
 		.gallery-list{
 			height: 300px;
 			.figure{
@@ -1083,10 +1079,8 @@
 				}
 			}
 			
-			.image-4{
+			.figure{
 				margin-right: 20px;
-
-			   
 			}
 		}
 	}	

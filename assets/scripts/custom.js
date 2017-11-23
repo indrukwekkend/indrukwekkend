@@ -14,7 +14,7 @@ jQuery(document).ready(function(){
 			focusOnSelect: false,
 			centerMode: true,
 			slidesToShow: 1,
-			arrows: false,
+			arrows: true,
 		};
 	var videoHeight = jQuery('.actual-video').height();
 	var jumbotronHeight = jQuery('.jumbotron').height();
