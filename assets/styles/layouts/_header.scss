@@ -354,6 +354,7 @@
 		}
 	}
 }
+
 @include media-breakpoint-up(xl){
 	.banner{
 		overflow-x: hidden;
@@ -374,18 +375,45 @@
 	}
 }
 
+@include media-breakpoint-down(md){
+	.over-ons{
+		.banner{
+			.banner-content{
+				.foreground-image{
+					img{
+						max-width: 80%;
+						margin-right: 20%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm){
+	.over-ons{
+		.banner{
+			.banner-content{
+				.foreground-image{
+					img{
+						max-width: 100%;
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
 @include media-breakpoint-down(xs) { 
 	.banner{
 		background-image: none!important;
-		
 		.foreground-image{
 			img {
 				max-width: 100%;
 				margin-right: -20%;
 				margin-bottom: -7%
 			}
-
 		}
-			
 	}
 }
