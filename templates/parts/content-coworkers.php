@@ -14,7 +14,7 @@ $coworkers_title = (is_page_template('template-about.php')) ? "Maak kennis met h
 	</div>
 	
 	<div class="col-12 col-lg-9 p-0">
-		<?php $args = array('post_type' => 'teamleden', 'post__not_in' => array($post->ID), ); ?>
+		<?php $args = array('post_type' => 'teamleden', 'post__not_in' => array($post->ID), 'orderby' => 'rand' ); ?>
 		<?php $query = new wp_query( $args ); ?>
 
 		<?php if($query->have_posts()): ?>
