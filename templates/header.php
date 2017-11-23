@@ -41,7 +41,7 @@ $header_video = function(){
 						<a href="#modal-login" class="h5" ><i class="fa fa-lock"></i></a>
 					</div>
 
-					<div class="col-12 col-lg-8 d-none d-lg-block">
+					<div class="col-12 col-md-9 col-lg-8 d-none d-lg-block p-0">
 						<nav class="nav-primary">
 							<?php if ( has_nav_menu( 'primary_navigation' ) ) :?>
 								<?php wp_nav_menu( ['theme_location' => 'primary_navigation','menu_class' => 'nav'] );?>
