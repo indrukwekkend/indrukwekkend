@@ -69,9 +69,6 @@ jQuery(document).ready(function(){
 	});
 
 	jQuery(document).scroll(function(){
-
-		console.log(jQuery(document).scrollTop());
-
 		if( jQuery(document).scrollTop() > 1500 ){
 			jQuery('#back-to-top').removeClass('hide');
 		}else{
