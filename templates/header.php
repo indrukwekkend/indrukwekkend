@@ -23,7 +23,7 @@ $header_video = function(){
 	<?php endif; ?>
 </nav>
 
-<!-- header in templates --> 
+<!-- header in templates -->
 <header class="jumbotron banner" <?php $background( get_field('header_background') ); ?>>
 	<div class="row">
 		<div class="col-lg-12">
@@ -82,7 +82,7 @@ $header_video = function(){
 							<?php if (is_page( 'contact' )): ?>
 								<a class="btn btn-lg btn-primary btn-arrow arrow-right mr-2" href="https://www.google.com/maps/dir/Current+Location/Indrukwekkend,+De+Droogmakerij+20f,+1851+LX+Heiloo" target="_blank">
 									Google de route</a>
-							
+
 							<?php elseif (is_home() || is_front_page()): ?>
 								<a class="btn btn-lg btn-primary btn-arrow arrow-right mr-2" href="/over-ons">
 									Leer ons kennen	</a>
@@ -94,8 +94,8 @@ $header_video = function(){
 					</div>
 
 					<?php if($image = get_field('header_foreground') ): ?>
-						<?php 
-							$thumb = $image['sizes'][ 'header-land' ]; 
+						<?php
+							$thumb = $image['sizes'][ 'header-land' ];
 							$alt = $image['alt'];
 						?>
 						<!-- image content -->
@@ -131,7 +131,7 @@ $header_video = function(){
 						<?php if (is_page( 'contact' )): ?>
 							<a class="btn btn-lg btn-primary btn-arrow arrow-right mr-2" href="https://www.google.com/maps/dir/Current+Location/Indrukwekkend,+De+Droogmakerij+20f,+1851+LX+Heiloo" target="_blank">
 								Google de route</a>
-						
+
 						<?php elseif (is_home() || is_front_page()): ?>
 							<a class="btn btn-lg btn-primary btn-arrow arrow-right mr-2" href="/over-ons">
 								Leer ons kennen	</a>
@@ -157,8 +157,8 @@ $header_video = function(){
 					</button>
 				</div>
 				<div class="modal-body">
-					<a href="http://bestel.indrukwekkend.nl/" class="btn btn-sm btn-primary" data-dismiss="modal">Webshop</a>
-					<a href="http://overdracht.indrukwekkend.nl/" class="btn btn-sm btn-primary">Dataverkeer</a>
+					<a href="<? the_field('webshop_url', 'option'); ?>" class="btn btn-sm btn-primary" target="_blank" data-dismiss="modal">Webshop</a>
+					<a href="<? the_field('dataverkeer_url', 'option'); ?>" class="btn btn-sm btn-primary" target="_blank">Dataverkeer</a>
 				</div>
 			</div>
 		</div>
