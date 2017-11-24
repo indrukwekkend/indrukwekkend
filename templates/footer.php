@@ -54,11 +54,12 @@
 				<div class="col-sm-8 col-md-6 col-xl-3 mt-5 mt-xl-0">
 					<div class="row align-items-center">
 						<div class="col text-center text-md-left text-xl-right">
+							<p class="mb-2">
+								Wij zijn sociaal
+							</p>
 							<p>
-								<span class="pr-md-2">Wij zijn sociaal</span>
 								<a class="pr-lg-2" href="<?php the_field('instagram_link', 'option'); ?>" target="_blank"><span class="icon instagram-gray"></span></a>
 								<a class="pr-lg-2" href="<?php the_field('facebook_link', 'option'); ?>" target="_blank"><span class="icon facebook-gray"></span></a>
-								<a class="pr-lg-2" href="<?php the_field('twitter_link', 'option'); ?>" target="_blank"><span class="icon twitter-gray"></span></a>
 								<a class="" href="<?php the_field('linkedin_link', 'option'); ?>" target="_blank"><span class="icon linkedin-gray"></span></a>
 							</p>
 						</div>
