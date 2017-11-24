@@ -1,10 +1,11 @@
 body{
 	position: relative;
 	letter-spacing: .03rem;
-	
+	overflow-x: hidden;
+
 	&.mark {
 		padding: 0;
-		background-color: #fff;	
+		background-color: #fff;
 	}
 }
 
@@ -71,7 +72,7 @@ a.sbi_photo {
 /* Icons */
 .icon{
 	display: inline-block;
-	
+
 	width: 32px;
 	height: 32px;
 	background-size: contain;
@@ -407,7 +408,7 @@ a.sbi_photo {
 	h4, .h4 { font-size: $heading-scale-sm * $h4-font-size; }
 	h5, .h5 { font-size: $heading-scale-sm * $h5-font-size; }
 	h6, .h6 { font-size: $heading-scale-md * $h6-font-size; }
-	
+
 	.overlay-teamlid-content, overlay-case-content{
 		height: 350px;
 	}
@@ -420,7 +421,7 @@ a.sbi_photo {
 	h4, .h4 { font-size: $heading-scale-md * $h4-font-size; }
 	h5, .h5 { font-size: $heading-scale-md * $h5-font-size; }
 	h6, .h6 { font-size: $heading-scale-md * $h6-font-size; }
-	
+
 	.icon {
 		width: 32px;
 		height: 32px;
@@ -434,9 +435,9 @@ a.sbi_photo {
 	h4, .h4 { font-size: $heading-scale-lg * $h4-font-size; }
 	h5, .h5 { font-size: $heading-scale-lg * $h5-font-size; }
 	h6, .h6 { font-size: $heading-scale-lg * $h6-font-size; }
-	
+
 	.container-fluid, .container {padding-left: 50px; padding-right: 50px;}
-	
+
 	.overlay-teamlid-content, overlay-case-content{
 		height: 400px;
 	}
