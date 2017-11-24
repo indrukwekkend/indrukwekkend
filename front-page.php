@@ -15,35 +15,35 @@
 					<?php if( $post_objects = get_field('brands') ): ?>
 						<?php $i = 0;?>
 						<?php $wrap = 6;?>
-	
+
 							<?php foreach( $post_objects as $post): ?>
-	
+
 								<?php $i+=1;?>
 								<?php setup_postdata($post); ?>
-	
+
 									<?php if($i%$wrap==1):?>
 										<div class="col-12">
 											<div class="row justify-content-center">
 									<?php endif;?>
-	
+
 												<div class="col-4 text-center">
 													<img class="img-fluid brand" src="<?php the_post_thumbnail_url(null, 'brand-size'); ?>" title="<?php the_title(); ?>"/>
 												</div>
-	
+
 									<?php if($i%$wrap==0):?>
 												</div>
 											</div>
 									<?php endif;?>
-	
+
 							<?php endforeach; ?>
-	
+
 							<?php if($i%$wrap!=0): ?>
 									</div>
 								</div>
 							<?php endif; ?>
-	
+
 						<?php wp_reset_postdata(); ?>
-	
+
 					<?php endif; ?>
 				</div>
 			</div>
@@ -100,9 +100,9 @@
 		<div class="col py-6 part-instagram">
 
 			<div class="row">
-				<div class="col-12 col-xl-8">
+				<div class="col-12">
 					<div class="row text-center text-xl-left">
-						<div class="col-12 col-md-6">
+						<div class="col-12 col-md-4">
 							<div class="row">
 								<div class="col">
 									<span class="spread-the-love">Spread the love</span>
@@ -115,7 +115,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-12 col-md-6">
+						<div class="col-12 col-md-8">
 							<div class="instagram-feed">
 								<?php echo do_shortcode('[instagram-feed]'); ?>
 								<a class="instagram-link text-right" href="<?php the_field('instagram_link', 'option'); ?>" target="_blank">Volg ons werk op Instagram<span class="icon arrow-right-orange"></span></a>
