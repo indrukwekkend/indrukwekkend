@@ -20,25 +20,19 @@
 							<div class="col-12 col-lg-11">
 								<div class="row">
 
-									<div class="col-3 col-sm-6  col-xl-3 mb-2 p-0">
-										<a href="<?php the_field('twitter_link', 'option'); ?>" target="_blank">
-											<span class="icon twitter-white mr-1"></span><span class="d-none d-sm-inline"><?php the_field('twitter_label', 'option'); ?></span>
-										</a>
-									</div>
-
-									<div class="col-3 col-sm-6  col-xl-3 mb-2 p-0">
+									<div class="col-3 col-sm-6  col-xl-4 mb-2 p-0">
 										<a href="<?php the_field('facebook_link', 'option'); ?>" target="_blank">
 											<span class="icon facebook-white mr-1"></span><span class="d-none d-sm-inline"><?php the_field('facebook_label', 'option'); ?></span>
 										</a>
 									</div>
 
-									<div class="col-3 col-sm-6  col-xl-3 mb-2 p-0">
+									<div class="col-3 col-sm-6  col-xl-4 mb-2 p-0">
 										<a href="<?php the_field('instagram_link', 'option'); ?>" target="_blank">
 											<span class="icon instagram-white mr-1"></span><span class="d-none d-sm-inline"><?php the_field('instagram_label', 'option'); ?></span>
 										</a>
 									</div>
 
-									<div class="col-3 col-sm-6 col-xl-3 mb-2 p-0">
+									<div class="col-3 col-sm-6 col-xl-4 mb-2 p-0">
 										<a href="<?php the_field('linkedin_link', 'option'); ?>" target="_blank">
 											<span class="icon linkedin-white mr-1"></span><span class="d-none d-sm-inline"><?php the_field('linkedin_label', 'option'); ?></span>
 										</a>
