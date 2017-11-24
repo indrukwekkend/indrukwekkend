@@ -101,7 +101,7 @@
 
 			<div class="row">
 				<div class="col-12">
-					<div class="row text-center text-xl-left">
+					<div class="row text-left">
 						<div class="col-12 col-md-4">
 							<div class="row">
 								<div class="col">
@@ -118,7 +118,7 @@
 						<div class="col-12 col-md-8">
 							<div class="instagram-feed">
 								<?php echo do_shortcode('[instagram-feed]'); ?>
-								<a class="instagram-link text-right" href="<?php the_field('instagram_link', 'option'); ?>" target="_blank">Volg ons werk op Instagram<span class="icon arrow-right-orange"></span></a>
+								<a class="instagram-link text-right" href="<?php the_field('instagram_link', 'option'); ?>" target="_blank">Volg ons op Instagram<span class="icon arrow-right-orange"></span></a>
 							</div>
 						</div>
 					</div>
