@@ -161,7 +161,7 @@ $header_video = function(){
 					</button>
 				</div>
 				<div class="modal-body">
-					<a href="<? the_field('webshop_url', 'option'); ?>" class="btn btn-sm btn-primary" target="_blank" data-dismiss="modal">Webshop</a>
+					<a href="<? the_field('webshop_url', 'option'); ?>" class="btn btn-sm btn-primary" target="_blank">Webshop</a>
 					<a href="<? the_field('dataverkeer_url', 'option'); ?>" class="btn btn-sm btn-primary" target="_blank">Dataverkeer</a>
 				</div>
 			</div>
