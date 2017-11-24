@@ -3,7 +3,7 @@
 	background-position: left bottom;
 	background-size: cover;
 	background-image: none;
-	
+
 	.lamp {
 		background-image: url(../images/lamp.png);
 		background-size: contain;
@@ -12,15 +12,15 @@
 		width: 25px;
 		position: absolute;
 		left: 60%;
-		
+
 	}
-	
+
 	.navigation{
 		position: relative;
 		margin-top: 20px;
 		z-index: 2;
-	
-		.brand{	
+
+		.brand{
 			.brand-logo{
 				background-image: url('../images/indrukwekkend.svg');
 				background-size: contain;
@@ -62,7 +62,7 @@
 						text-decoration: none;
 						cursor: pointer;
 						color: $orange;
-						
+
 					}
 
 					&:active{
@@ -105,37 +105,37 @@
 			}
 		}
 	}
-	
+
 	.banner-holder{
 		overflow: hidden!important; position: relative;
 	}
-	
+
 	.banner-content{
 		min-height: 400px;
 		height: auto;
 
 		.headlines {
-			
+
 			height: 100px;
-			
+
 			#headlines-typed{
 				font-family: 'Montserrat Bold';
 				position: relative;
 				z-index: 999;
-				
+
 				span{
 					z-index: 999;
 				}
-	
+
 				.h3{
 					line-height: 1.2;
 				}
-	
+
 				.h4{
 					color :$black;
 				}
 			}
-	
+
 			.typed-cursor{
 				position:relative;
 				color: $gray-100;
@@ -286,7 +286,38 @@
 			pointer-events: none;
 		}
 	}
-	
+
+}
+
+#back-to-top{
+	display: block;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index:99999;
+	padding: 0;
+	cursor: pointer;
+	color: transparent;
+	border: none;
+	outline: none;
+	background-color: #ef7b31;
+	transition: all .3s ease;
+	width: 40px;
+	height: 40px;
+	border-radius: 4px;
+	opacity:1;
+
+	&.hide{
+		opacity:0;
+		z-index:-1;
+	}
+	&:before{
+		content: " ";
+		background-image: url(../images/arrows/up-white.svg);
+		display: block;
+		width: 40px;
+		height: 40px;
+	}
 }
 
 @include media-breakpoint-up(xs){
@@ -405,7 +436,7 @@
 	}
 }
 
-@include media-breakpoint-down(xs) { 
+@include media-breakpoint-down(xs) {
 	.banner{
 		background-image: none!important;
 		.foreground-image{

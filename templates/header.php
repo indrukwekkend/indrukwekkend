@@ -17,6 +17,10 @@ $header_video = function(){
 };
 
 ?>
+<div id="back-to-top" class="hide">
+	back to top
+</div>
+
 <nav class="nav-mobile">
 	<?php if ( has_nav_menu( 'primary_navigation' ) ) :?>
 		<?php wp_nav_menu( ['theme_location' => 'primary_navigation','menu_class' => 'nav'] );?>

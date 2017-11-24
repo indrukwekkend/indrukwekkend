@@ -20,7 +20,7 @@ jQuery(document).ready(function(){
 	var jumbotronHeight = jQuery('.jumbotron').height();
 
 	jQuery('.actual-video').css('top', (jumbotronHeight - videoHeight) );
-	
+
 	function scrollbarWidth() {
 		var scrollDiv = document.createElement("div");
 		scrollDiv.style.cssText = 'width:100px;height:100px;overflow:scroll !important;position:absolute;top:-9999px';
@@ -29,7 +29,7 @@ jQuery(document).ready(function(){
 		document.body.removeChild(scrollDiv);
 		return result;
 	}
-	
+
 	function overlayActive(){
 		jQuery('body').css('padding-right', scrollbarWidth() + 'px');
 		jQuery('body').addClass('overlay-active');
@@ -68,12 +68,28 @@ jQuery(document).ready(function(){
 		}
 	});
 
+	jQuery(document).scroll(function(){
+
+		console.log(jQuery(document).scrollTop());
+
+		if( jQuery(document).scrollTop() > 1500 ){
+			jQuery('#back-to-top').removeClass('hide');
+		}else{
+			jQuery('#back-to-top').addClass('hide');
+		}
+	});
+
+	jQuery('#back-to-top').click(function(){
+    jQuery('html,body').animate({scrollTop:0},'slow');return false;
+  });
+
 	jQuery('a[href$="#cases"]').click(function(e){
 		e.preventDefault();
 		jQuery('#overlay-teamleden').fadeOut(FadeSpeed);
 		jQuery('#overlay-cases').fadeIn(FadeSpeed);
 		overlayActive();
 	});
+
 	jQuery('#overlay-cases-close').click(function(e){
 		e.preventDefault();
 		jQuery('#overlay-cases').fadeOut(FadeSpeed);
@@ -207,9 +223,9 @@ jQuery(document).ready(function(){
 
 	jQuery(".btn-arrow").on('click', function(e){
 		var that = e.target;
-		
+
 		jQuery(that).addClass("btn-activated");
-		
+
 		setTimeout(function(){
 			jQuery(that).removeClass("btn-activated");
 		}, 500);
@@ -241,10 +257,10 @@ jQuery(document).ready(function(){
 		VideoScreen.prototype.reset = function() {
 			// Computer image is 16/11 proportions
 			// Computer screen is 681/1056 proportions
-			
+
 			// Macbook Pro 8/5
 			// iMac 16/9
-			
+
 			var oW = this.wrap.offsetWidth;
 			var oH = this.wrap.offsetHeight;
 			var vW = Math.min(oW, oH * (16/9));
