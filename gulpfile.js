@@ -19,6 +19,7 @@ var runSequence  = require('run-sequence');
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
+var loadplugins  = require('gulp-load-plugins')();
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
@@ -270,10 +271,21 @@ gulp.task('watch', function() {
 // `gulp build` - Run all the build tasks but don't clean up beforehand.
 // Generally you should be running `gulp` instead of `gulp build`.
 gulp.task('build', function(callback) {
-  runSequence('styles',
-              'scripts',
-              ['fonts', 'images'],
-              callback);
+  var tasks = [
+   'styles',
+   'scripts',
+   ['fonts', 'images']
+ ];
+
+ if (argv.production) {
+   // only add zip to task list if `--production`
+   tasks = tasks.concat(['zip']);
+ }
+
+ runSequence.apply(
+   this,
+   tasks.concat([callback])
+ );
 });
 
 // ### Wiredep
@@ -293,4 +305,24 @@ gulp.task('wiredep', function() {
 // `gulp` - Run a complete build. To compile for production run `gulp --production`.
 gulp.task('default', ['clean'], function() {
   gulp.start('build');
+});
+
+// ### Zip
+//`gulp zip` - Zip up a distribution of the compiled WordPress theme.
+gulp.task('zip', function(callback) {
+return gulp.src([
+   'dist/**/*',
+   'templates/**/*',
+   'vendor/**/*',
+   'lang/*',
+   'lib/**/*',
+   '*.css',
+   '*.md',
+   '*.php',
+   '*.txt'
+], {
+ base: '.'
+})
+  .pipe(loadplugins.zip('indrukwekkend.zip'))
+  .pipe(gulp.dest('release'));
 });
