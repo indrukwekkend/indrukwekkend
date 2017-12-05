@@ -24,7 +24,7 @@
 		<div class="row">
 			<div class="col-12 text-center">
 				<?php if(preg_match('#(?:https?://)?(?:www.)?(?:player.)?vimeo.com/(?:[a-z]*/)*([0-9]{6,11})[?]?.*#', get_sub_field('video_source'), $ID)): ?>
-					<iframe src="https://player.vimeo.com/video/<?php echo $ID[1]; ?>?autoplay=1&amp;loop=1" frameborder="0" class="qnr-computer-video" data-qnr-video-screen-id="0"></iframe>
+					<iframe src="https://player.vimeo.com/video/<?php echo $ID[1]; ?>?autoplay=1&amp;loop=1&amp;autopause=0" frameborder="0" class="qnr-computer-video" data-qnr-video-screen-id="0"></iframe>
 				<?php endif; ?>
 			</div>
 		</div>
