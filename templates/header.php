@@ -17,13 +17,17 @@ $header_video = function(){
 };
 
 ?>
+<div id="back-to-top" class="hide">
+	back to top
+</div>
+
 <nav class="nav-mobile">
 	<?php if ( has_nav_menu( 'primary_navigation' ) ) :?>
 		<?php wp_nav_menu( ['theme_location' => 'primary_navigation','menu_class' => 'nav'] );?>
 	<?php endif; ?>
 </nav>
 
-<!-- header in templates --> 
+<!-- header in templates -->
 <header class="jumbotron banner" <?php $background( get_field('header_background') ); ?>>
 	<div class="row">
 		<div class="col-lg-12">
@@ -41,7 +45,7 @@ $header_video = function(){
 						<a href="#modal-login" class="h5" ><i class="fa fa-lock"></i></a>
 					</div>
 
-					<div class="col-12 col-lg-8 d-none d-lg-block">
+					<div class="col-12 col-md-9 col-lg-8 d-none d-lg-block p-0">
 						<nav class="nav-primary">
 							<?php if ( has_nav_menu( 'primary_navigation' ) ) :?>
 								<?php wp_nav_menu( ['theme_location' => 'primary_navigation','menu_class' => 'nav'] );?>
@@ -82,7 +86,7 @@ $header_video = function(){
 							<?php if (is_page( 'contact' )): ?>
 								<a class="btn btn-lg btn-primary btn-arrow arrow-right mr-2" href="https://www.google.com/maps/dir/Current+Location/Indrukwekkend,+De+Droogmakerij+20f,+1851+LX+Heiloo" target="_blank">
 									Google de route</a>
-							
+
 							<?php elseif (is_home() || is_front_page()): ?>
 								<a class="btn btn-lg btn-primary btn-arrow arrow-right mr-2" href="/over-ons">
 									Leer ons kennen	</a>
@@ -94,8 +98,8 @@ $header_video = function(){
 					</div>
 
 					<?php if($image = get_field('header_foreground') ): ?>
-						<?php 
-							$thumb = $image['sizes'][ 'header-land' ]; 
+						<?php
+							$thumb = $image['sizes'][ 'header-land' ];
 							$alt = $image['alt'];
 						?>
 						<!-- image content -->
@@ -131,7 +135,7 @@ $header_video = function(){
 						<?php if (is_page( 'contact' )): ?>
 							<a class="btn btn-lg btn-primary btn-arrow arrow-right mr-2" href="https://www.google.com/maps/dir/Current+Location/Indrukwekkend,+De+Droogmakerij+20f,+1851+LX+Heiloo" target="_blank">
 								Google de route</a>
-						
+
 						<?php elseif (is_home() || is_front_page()): ?>
 							<a class="btn btn-lg btn-primary btn-arrow arrow-right mr-2" href="/over-ons">
 								Leer ons kennen	</a>
@@ -160,8 +164,10 @@ $header_video = function(){
 					
 				</div>
 				<div class="modal-body">
-					<a href="https://bestel.indrukwekkend.nl/account/login" class="btn btn-sm btn-primary">Webshop</a>
-					<a href="http://overdracht.indrukwekkend.nl/" class="btn btn-sm btn-primary">Dataverkeer</a>
+
+					<a href="<? the_field('webshop_url', 'option'); ?>" class="btn btn-sm btn-primary" target="_blank">Webshop</a>
+					<a href="<? the_field('dataverkeer_url', 'option'); ?>" class="btn btn-sm btn-primary" target="_blank">Dataverkeer</a>
+
 				</div>
 			</div>
 		</div>

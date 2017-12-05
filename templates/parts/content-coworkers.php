@@ -14,7 +14,7 @@ $coworkers_title = (is_page_template('template-about.php')) ? "Maak kennis met h
 	</div>
 	
 	<div class="col-12 col-lg-9 p-0">
-		<?php $args = array('post_type' => 'teamleden', 'post__not_in' => array($post->ID), ); ?>
+		<?php $args = array('post_type' => 'teamleden', 'post__not_in' => array($post->ID), 'orderby' => 'rand' ); ?>
 		<?php $query = new wp_query( $args ); ?>
 
 		<?php if($query->have_posts()): ?>
@@ -34,28 +34,26 @@ $coworkers_title = (is_page_template('template-about.php')) ? "Maak kennis met h
 										<span class="d-none d-sm-inline"><?php the_field('company_position'); ?></span>
 									</div>
 									<div class="coworkers-contact">
-										
-										<?php if (get_field('mobile')!=''): ?>
-										
-											<div class="coworkers-phone">
-												<div class="mb-2 px-4">
-													<span class="icon smartphone d-none d-sm-inline-block"></span>
-													<a class="ml-2 text-white" href="tel:<?php the_field('mobile'); ?>"><?php the_field('mobile'); ?></a>
-												</div>
+
+
+										<?php if( get_field('mobile') ): ?>
+										<div class="coworkers-phone">
+											<div class="mb-2 px-4">
+												<span class="icon smartphone d-none d-sm-inline-block"></span>
+												<a class="ml-2 text-white" href="tel:<?php the_field('mobile'); ?>"><?php the_field('mobile'); ?></a>
 											</div>
-											
-										<?endif; ?>
-										<?php if (get_field('email')!=''): ?>
-										
-											<div class="coworkers-email">
-												<div class="mb-2 px-4">
-													<span class="icon mail d-none d-sm-inline-block"></span>
-													<a class="ml-2 text-white" href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?></a>
-												</div>
+										</div>
+										<?php endif; ?>
+
+										<?php if( get_field('email') ): ?>
+										<div class="coworkers-email">
+											<div class="mb-2 px-4">
+												<span class="icon mail d-none d-sm-inline-block"></span>
+												<a class="ml-2 text-white" href="mailto:<?php the_field('email'); ?>"><?php the_field('email'); ?></a>
 											</div>
-											
-										<?endif; ?>
-										
+										</div>
+										<?php endif; ?>
+
 									</div>
 								</div>
 							</div>

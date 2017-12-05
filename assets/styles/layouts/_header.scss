@@ -3,7 +3,7 @@
 	background-position: left bottom;
 	background-size: cover;
 	background-image: none;
-	
+
 	.lamp {
 		background-image: url(../images/lamp.png);
 		background-size: contain;
@@ -12,15 +12,15 @@
 		width: 25px;
 		position: absolute;
 		left: 60%;
-		
+
 	}
-	
+
 	.navigation{
 		position: relative;
 		margin-top: 20px;
 		z-index: 2;
-	
-		.brand{	
+
+		.brand{
 			.brand-logo{
 				background-image: url('../images/indrukwekkend.svg');
 				background-size: contain;
@@ -62,7 +62,7 @@
 						text-decoration: none;
 						cursor: pointer;
 						color: $orange;
-						
+
 					}
 
 					&:active{
@@ -105,37 +105,37 @@
 			}
 		}
 	}
-	
+
 	.banner-holder{
 		overflow: hidden!important; position: relative;
 	}
-	
+
 	.banner-content{
 		min-height: 400px;
 		height: auto;
 
 		.headlines {
-			
+
 			height: 100px;
-			
+
 			#headlines-typed{
 				font-family: 'Montserrat Bold';
 				position: relative;
 				z-index: 999;
-				
+
 				span{
 					z-index: 999;
 				}
-	
+
 				.h3{
 					line-height: 1.2;
 				}
-	
+
 				.h4{
 					color :$black;
 				}
 			}
-	
+
 			.typed-cursor{
 				position:relative;
 				color: $gray-100;
@@ -143,9 +143,13 @@
 				bottom: 2px;
 				line-height: 1;
 			}
-	
 		}
-		
+
+		.foreground-image{
+			img{
+				max-height: 500px;
+			}
+		}
 
 		.buttons{
 
@@ -282,13 +286,43 @@
 			pointer-events: none;
 		}
 	}
-	
+
+}
+
+#back-to-top{
+	display: block;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index:99999;
+	padding: 0;
+	cursor: pointer;
+	color: transparent;
+	border: none;
+	outline: none;
+	background-color: #ef7b31;
+	transition: all .3s ease;
+	width: 40px;
+	height: 40px;
+	border-radius: 4px;
+	opacity:1;
+
+	&.hide{
+		opacity:0;
+		z-index:-1;
+	}
+	&:before{
+		content: " ";
+		background-image: url(../images/arrows/up-white.svg);
+		display: block;
+		width: 40px;
+		height: 40px;
+	}
 }
 
 @include media-breakpoint-up(xs){
 	.banner{
 		.banner-content{
-			
 			.typed-cursor{
 				font-size: $heading-scale-xs * $h1-font-size;
 			}
@@ -299,13 +333,8 @@
 @include media-breakpoint-up(sm){
 	.banner{
 		.banner-content{
-			
 			min-height: 450px;
-			
-			.headlines {
-			
-					//height:100px;
-			}
+
 			.typed-cursor{
 				font-size: $heading-scale-sm * $h1-font-size;
 			}
@@ -317,17 +346,17 @@
 	.banner{
 		.banner-content{
 			min-height: 500px;
+
 			.headlines {
-				
-						height:auto;
-				}
+				height:auto;
+			}
+
 			.foreground-image{
-				
 				position: absolute;
 				right: 0;
 				margin-right: -20%;
 			}
-				
+
 			.typed-cursor{
 				font-size: $heading-scale-md * $h1-font-size;
 			}
@@ -339,43 +368,37 @@
 	.nav-mobile{
 		display: none;
 	}
+
 	.banner{
 		.banner-content{
-			
 			.headlines {
-			
-					height:auto;
+				height:auto;
 			}
+
 			.foreground-image{
-			
 				margin-right: -5%;
-				
 			}
+
 			.typed-cursor{
 				font-size: $heading-scale-lg * $h1-font-size;
 			}
 		}
 	}
 }
+
 @include media-breakpoint-up(xl){
 	.banner{
 		overflow-x: hidden;
 
 		.banner-content{
-			
 			max-height: 720px;
-			
+
 			.foreground-image{
-			
 				position: relative;
 				right: 0;
 				margin-right: 0;
-				img{
-					width: 130%;
-				}
 			}
 
-			
 			.typed-cursor{
 				font-size: $h1-font-size;
 			}
@@ -383,10 +406,45 @@
 	}
 }
 
-@include media-breakpoint-down(xs) { 
+@include media-breakpoint-down(lg){
+	#back-to-top{
+		bottom: 80px;
+	}
+}
+
+@include media-breakpoint-down(md){
+	.over-ons{
+		.banner{
+			.banner-content{
+				.foreground-image{
+					img{
+						max-width: 80%;
+						margin-right: 20%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(sm){
+	.over-ons{
+		.banner{
+			.banner-content{
+				.foreground-image{
+					img{
+						max-width: 100%;
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include media-breakpoint-down(xs) {
 	.banner{
 		background-image: none!important;
-		
 		.foreground-image{
 			img {
 				max-width: 100%;
@@ -396,8 +454,6 @@
 					margin-right: 0;
 				}
 			}
-
 		}
-			
 	}
 }

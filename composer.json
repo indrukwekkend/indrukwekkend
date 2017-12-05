@@ -26,6 +26,7 @@
   "require": {
     "php": ">=5.4.0",
     "composer/installers": "~1.0",
-    "twbs/bootstrap": "4.0.0-beta"
+    "twbs/bootstrap": "4.0.0-beta",
+    "tgmpa/tgm-plugin-activation": "^2.6"
   }
 }

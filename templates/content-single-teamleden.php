@@ -12,20 +12,20 @@
 			<?php while( have_rows('primary_content') ): the_row(); ?>
 
 				<?php // Section Content ?>
-				<?php if( get_row_layout() == 'heading_right' ): ?>
+				<?php if( get_row_layout() == 'section_content' ): ?>
 					<?php get_template_part('templates/parts/section', 'content'); ?>
 
-				<?php // Section Content ?>
-				<?php elseif( get_row_layout() == 'section_content' ): ?>
-					<?php get_template_part('templates/parts/section', 'content'); ?>
-
-				<?php // Gallerij Links ?>
+				<?php // Section Gallerij ?>
 				<?php elseif( get_row_layout() == 'heading_gallery_left' ): ?>
-					<?php get_template_part('templates/parts/heading', 'gallery-left'); ?>
+					<?php get_template_part('templates/parts/section', 'gallery'); ?>
 
 				<?php // Gallerij Rechts ?>
 				<?php elseif( get_row_layout() == 'heading_gallery_right' ): ?>
 					<?php get_template_part('templates/parts/heading', 'gallery-right'); ?>
+
+				<?php // Gallerij Links ?>
+				<?php elseif( get_row_layout() == 'heading_gallery_left' ): ?>
+					<?php get_template_part('templates/parts/heading', 'gallery-left'); ?>
 
 				<?php // Laptop Prieview Rechts ?>
 				<?php elseif( get_row_layout() == 'preview_laptop_right' ): ?>
@@ -34,6 +34,10 @@
 				<?php // Gallerij Rechts ?>
 				<?php elseif( get_row_layout() == 'preview_laptop_left' ): ?>
 					<?php get_template_part('templates/parts/preview-laptop', 'left'); ?>
+
+				<?php // Social Media ?>
+				<?php elseif( get_row_layout() == 'socialmedia' ): ?>
+					<?php get_template_part('templates/parts/social', 'media'); ?>
 
 				<?php endif; ?>
 			<?php endwhile; ?>
@@ -53,13 +57,17 @@
 				<?php if( get_row_layout() == 'section_content' ): ?>
 					<?php get_template_part('templates/parts/section', 'content'); ?>
 
-				<?php // Gallerij Links ?>
+				<?php // Section Gallerij ?>
 				<?php elseif( get_row_layout() == 'heading_gallery_left' ): ?>
-					<?php get_template_part('templates/parts/heading', 'gallery-left'); ?>
+					<?php get_template_part('templates/parts/section', 'gallery'); ?>
 
 				<?php // Gallerij Rechts ?>
 				<?php elseif( get_row_layout() == 'heading_gallery_right' ): ?>
 					<?php get_template_part('templates/parts/heading', 'gallery-right'); ?>
+
+				<?php // Gallerij Links ?>
+				<?php elseif( get_row_layout() == 'heading_gallery_left' ): ?>
+					<?php get_template_part('templates/parts/heading', 'gallery-left'); ?>
 
 				<?php // Laptop Prieview Rechts ?>
 				<?php elseif( get_row_layout() == 'preview_laptop_right' ): ?>
@@ -68,6 +76,10 @@
 				<?php // Gallerij Rechts ?>
 				<?php elseif( get_row_layout() == 'preview_laptop_left' ): ?>
 					<?php get_template_part('templates/parts/preview-laptop', 'left'); ?>
+
+				<?php // Social Media ?>
+				<?php elseif( get_row_layout() == 'socialmedia' ): ?>
+					<?php get_template_part('templates/parts/social', 'media'); ?>
 
 				<?php endif; ?>
 			<?php endwhile; ?>
