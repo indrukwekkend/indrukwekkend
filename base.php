@@ -35,6 +35,7 @@ use Roots\Sage\Wrapper;
 
 
 		<?php get_template_part('templates/parts/overlay', 'teamleden'); ?>
+		<?php get_template_part('templates/parts/overlay', 'vacatures'); ?>
 		<?php get_template_part('templates/parts/overlay', 'cases'); ?>
 		<?php do_action( 'get_footer' );?>
 		<?php get_template_part( 'templates/footer' );?>

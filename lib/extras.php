@@ -210,6 +210,45 @@ function teamleden_post_type() {
 }
 add_action( 'init', __NAMESPACE__ . '\\teamleden_post_type', 0 );
 
+
+/**
+ * Teamleden Post Type
+ */
+function vacatures_post_type() {
+
+	$labels = array(
+		'name' => _x( 'Vacatures', 'Post Type General Name', 'sage' ),
+		'singular_name' => _x( 'Vacature', 'Post Type Singular Name', 'sage' )
+	);
+	$args = array(
+		'label' => __( 'Vacatures', 'sage' ),
+		'labels' => $labels,
+		'supports' => array(
+			'title',
+			'editor',
+			'thumbnail'
+		),
+		'hierarchical' => false,
+		'public' => true,
+		'show_ui' => true,
+		'show_in_menu' => true,
+		'menu_position' => 6,
+		'show_in_admin_bar' => true,
+		'show_in_nav_menus' => true,
+		'can_export' => true,
+		'has_archive' => false,
+		'exclude_from_search' => true,
+		'publicly_queryable' => true,
+		'capability_type' => 'page',
+		'menu_icon' => 'dashicons-businessman'
+	);
+	register_post_type( 'Vacatures', $args );
+
+}
+add_action( 'init', __NAMESPACE__ . '\\vacatures_post_type', 0 );
+
+
+
 /**
  * Replace Flex Layout title with content
  */

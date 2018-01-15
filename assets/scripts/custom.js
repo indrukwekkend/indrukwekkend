@@ -84,6 +84,7 @@ jQuery(document).ready(function(){
 		e.preventDefault();
 		jQuery('#overlay-teamleden').fadeOut(FadeSpeed);
 		jQuery('#overlay-cases').fadeIn(FadeSpeed);
+		jQuery('#overlay-vacatures').fadeOut(FadeSpeed);
 		overlayActive();
 	});
 
@@ -96,12 +97,27 @@ jQuery(document).ready(function(){
 	jQuery('a[href$="#teamleden"]').click(function(e){
 		e.preventDefault();
 		jQuery('#overlay-cases').fadeOut(FadeSpeed);
+		jQuery('#overlay-vacatures').fadeOut(FadeSpeed);
 		jQuery('#overlay-teamleden').fadeIn(FadeSpeed);
 		overlayActive();
 	});
 	jQuery('#overlay-teamleden-close').click(function(e){
 		e.preventDefault();
 		jQuery('#overlay-teamleden').fadeOut(FadeSpeed);
+		overlayInactive();
+	});
+	
+	jQuery('a[href$="#vacatures"]').click(function(e){
+		e.preventDefault();
+		jQuery('#overlay-teamleden').fadeOut(FadeSpeed);
+		jQuery('#overlay-vacatures').fadeIn(FadeSpeed);
+		jQuery('#overlay-cases').fadeOut(FadeSpeed);
+		overlayActive();
+	});
+	
+	jQuery('#overlay-vacatures-close').click(function(e){
+		e.preventDefault();
+		jQuery('#overlay-vacatures').fadeOut(FadeSpeed);
 		overlayInactive();
 	});
 

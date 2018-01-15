@@ -56,9 +56,33 @@
 					</div>
 
 					<div class="col-4 col-md-3 col-xl-2 align-self-end text-center p-0" data-aos="fade" data-aos-offset="200" data-aos-duration="600">
-						<a href="<?php echo get_post_permalink(); ?>">
-							<img class="img-fluid" src="<?php the_post_thumbnail_url('medium'); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>"/>
-						</a>
+						
+						<?php	
+						if ( is_singular( 'vacatures' ) ) {
+							
+						    // conditional content/code
+						   $query = new WP_Query( array( 'post_type' => 'teamleden',  'name' => 'wouter'  ) );                  
+
+							if ( $query->have_posts() ) : ?>
+							    <?php while ( $query->have_posts() ) : $query->the_post(); ?>   
+							       
+							            <img class="img-fluid" src="<?php the_post_thumbnail_url('medium'); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>"/>
+							          
+							       
+							    <?php endwhile; wp_reset_postdata(); ?>
+								
+							<?php endif; ?> 
+							    
+							<? 
+							} else {?>
+								<img class="img-fluid" src="<?php the_post_thumbnail_url('medium'); ?>" title="<?php the_title(); ?>" alt="<?php the_title(); ?>"/>
+				<?php 	}	
+						?>	
+						
+						
+							
+							
+						
 					</div>
 
 				</div>

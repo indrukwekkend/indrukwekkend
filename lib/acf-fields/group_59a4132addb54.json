@@ -48,6 +48,13 @@
                 "operator": "==",
                 "value": "teamleden"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "vacatures"
+            }
         ]
     ],
     "menu_order": 15,
@@ -58,5 +65,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Per teamlid",
-    "modified": 1511186620
+    "modified": 1514990887
 }

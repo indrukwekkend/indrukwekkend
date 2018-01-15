@@ -164,6 +164,13 @@
                 "operator": "==",
                 "value": "teamleden"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "vacatures"
+            }
         ]
     ],
     "menu_order": 10,
@@ -174,5 +181,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Jumbotron header met Typed.js",
-    "modified": 1511186601
+    "modified": 1514988525
 }

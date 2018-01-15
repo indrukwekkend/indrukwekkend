@@ -88,8 +88,8 @@ $header_video = function(){
 									Google de route</a>
 
 							<?php elseif (is_home() || is_front_page()): ?>
-								<a class="btn btn-lg btn-primary btn-arrow arrow-right mr-2" href="/over-ons">
-									Leer ons kennen	</a>
+								<a class="btn btn-lg btn-primary btn-arrow arrow-right mr-2" href="#vacatures">
+									Kom bij ons werken	</a>
 								<a class="btn btn-lg btn-black" href="#cases">
 									Bekijk ons werk</a>
 
