@@ -1,10 +1,11 @@
-// Team && Cases.
+// Teamleden, cases & vacatures overlays
 
 .overlay-active{
 	overflow: hidden !important;
 }
+
 #overlay-teamleden,
-#overlay-cases, 
+#overlay-cases,
 #overlay-vacatures{
 	position: fixed;
 	top: 0;
@@ -17,8 +18,6 @@
 	overflow-y: scroll;
 	overflow-x: hidden ;
 
-	
-	
 	#overlay-teamleden-close,
 	#overlay-cases-close{
 		cursor: pointer;
@@ -193,8 +192,7 @@
 
 			.overlay-teamlid-title{
 				position: absolute;
-				bottom: 5px;
-				height:40px;
+				bottom: 0px;
 				width: 100%;
 				text-align: center;
 				transition:all 80ms ease;
@@ -212,17 +210,17 @@
 
 
 @include media-breakpoint-down(sm){
-	
+
 	#overlay-teamleden,
 	#overlay-cases{
 		margin-bottom: 70px;
 		padding-bottom: 20px;
 	}
-	
+
 	// overlay-teamleden
 	#overlay-teamleden .overlay-teamlid .overlay-teamlid-content {
 		height: 250px;
-		
+
 		&:hover {
 			.overlay-teamlid-hover{
 				opacity: 0;
@@ -232,37 +230,34 @@
 				opacity: 1;
 			}
 		}
-		.overlay-teamlid-title{
-			height: 75px;
-		}
 		.overlay-teamlid-contact{
 			display: flex;
 			justify-content: space-around;
 			background: $black;
-			
-			
+
+
 		}
 		.text-orange, .text-black {
 			background: $black;
 			padding: 6px;
 			width: 50%;
-			
-			.icon{	
-				display: inline-block;	
+
+			.icon{
+				display: inline-block;
 			}
 		}
-		
+
 		.overlay-teamlid-image {
 			background-size: contain;
 			background-position: top;
 		}
-		
+
 	}
-	
+
 	// overlay-teamleden
 	#overlay-cases .overlay-case .overlay-case-content {
 		height: 250px;
-		
+
 		&:hover {
 			.overlay-case-hover{
 				opacity: 0;
