@@ -311,16 +311,17 @@ gulp.task('default', ['clean'], function() {
 //`gulp zip` - Zip up a distribution of the compiled WordPress theme.
 gulp.task('zip', function(callback) {
 return gulp.src([
-   'dist/**/*',
-   'templates/**/*',
-   'vendor/**/*',
-   'lang/*',
-   'lib/**/*',
-   '*.css',
-   '*.md',
-   '*.php',
-   '*.txt',
-   'screenshot.png'
+	'acf-json/*',
+  'dist/**/*',
+  'templates/**/*',
+  'vendor/**/*',
+  'lang/*',
+  'lib/**/*',
+  '*.css',
+  '*.md',
+  '*.php',
+  '*.txt',
+  '*.png',
 ], {
  base: '.'
 })
