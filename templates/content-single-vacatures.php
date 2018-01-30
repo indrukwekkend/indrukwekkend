@@ -3,7 +3,7 @@
 <?php get_template_part('templates/parts/heading', 'page'); ?>
 
 <?php // Contact ?>
-<?php get_template_part('templates/parts/heading', 'contact'); ?>
+<?php get_template_part('templates/parts/heading', 'vacature'); ?>
 
 <?php // Primary Content ?>
 <?php if( have_rows('primary_content') ): ?>

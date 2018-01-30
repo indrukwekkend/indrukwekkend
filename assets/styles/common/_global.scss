@@ -7,7 +7,7 @@ body{
 		padding: 0;
 		background-color: #fff;
 	}
-	
+
 }
 
 main {
@@ -459,4 +459,9 @@ a.sbi_photo {
 		width: 32px;
 		height: 32px;
 	}
+}
+
+.gform_confirmation_message{
+  @extend .alert;
+  @extend .alert-success;
 }

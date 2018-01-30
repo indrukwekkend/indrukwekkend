@@ -326,6 +326,6 @@ return gulp.src([
 ], {
  base: '.'
 })
-  .pipe(loadplugins.zip('indrukwekkend.zip'))
+  .pipe(loadplugins.zip('zeker_indrukwekkend.zip'))
   .pipe(gulp.dest( OSHome + '/Documents/Releases'));
 });
